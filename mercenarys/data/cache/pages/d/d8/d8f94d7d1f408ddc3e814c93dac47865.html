@@ -1,0 +1,68 @@
+<!-- // Cache_Text 0.6 1613314946
+1613314946 
+-->
+<div id="aline-1"></div>
+<div class="section"><a id='sect-1'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/HelpOnActions?action=edit&amp;section=1'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-1"><a id='s-1'></a>액션 <a class='perma' href='#s-1'>¶</a></h2><div id="sc-1">
+<br />
+<div id="aline-3">모니위키는 액션이라는 확장기능을 제공합니다. 액션은 현재 보고 있는 페이지 혹은 전체 위키에 대한 특별한 확장 기능을 말합니다. 매크로와는 다르게 위키 페이지에 직접 매크로를 삽입해야 하는 것이 아니라 그 페이지를 다른 방식으로 보는 방법을 제공합니다. 예를 들어 페이지를 편집하는 기능를 <code>edit</code> 액션이라고 하며, 북마크를 하는 기능은 <code>bookmark</code>액션을 통해 이루어지고, 전체 검색, 제목 검색, 역링크 검색 등등 여러가지 기능을 제공합니다. 이러한 액션은 플러그인 방식으로 다른 기능을 손쉽게 확장할 수 있게 하여 위키의 풍부한 기능을 가능하게 만들어주고, 일부 액션은 페이지의 내용과 상관 없는 기능을 제공하기도 합니다. (페이지 지우기 기능은 <a href='/mercenarys/wiki.php/DeleteThisPage' title="DeleteThisPage" >DeletePage</a> 혹은 페이지 이름을 바꿔주는 <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/RenamePage'>RenamePage</a> 기능)<span class='line-anchor' id='line-3'></span><br />
+</div>
+<br />
+<div id="aline-5">이러한 기능은 시스템에 설치하거나 일부 기능을 비활성화 시키는 것이 가능하며, 확장을 통해 새로운 기능을 넣을 수도 있습니다. (자세한 내용은 <a href='/mercenarys/wiki.php/HelpForDevelopers' >HelpForDevelopers</a>를 통해 참조하세요)<span class='line-anchor' id='line-5'></span><br />
+</div>
+<br />
+<div id="aline-7">액션의 일부 가장 기본적인 기능은 페이지의 맨 하단의 링크에 제공되거나 상단의 아이콘 메뉴에 제공되기도 합니다. (현재 사용하시는 테마에 따라서 달라질 수 있습니다)<span class='line-anchor' id='line-7'></span><br />
+</div>
+<br />
+<div id="aline-9">다음의 내용은 모니위키에서 기본적으로 제공되는 액션이며, 아래에 기술된 액션의 일부는 시스템에 따라서 비활성화 되어 사용할 수 없을 수도 있습니다.<span class='line-anchor' id='line-9'></span><br />
+<ul><li><code>UploadFile</code>: 파일 업로드 <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/UploadFile'>UploadFile</a> 페이지를 참조하세요.<span class='line-anchor' id='line-10'></span><br />
+</li>
+<li><code>DeletePage</code>: 파일 지우기 - 하단에 파일 지우기 액션 메뉴가 있는 경우가 있습니다. 이 액션을 누르면 페이지의 최종 백업본이 지워지지만 페이지의 역사는 계속 남아있으므로 (시스템 관리자가 이것을 지우지 않는 이상) 언제든지 복구할 수 있습니다. 일부 위키에서는 지우기가 활성화 되어 있지만, 모니위키에서는 기본적으로 관리자만이 페이지를 지울 수 있도록 설정되어 있습니다.<span class='line-anchor' id='line-11'></span><br />
+</li>
+<li><code>LikePages</code>: 비슷한 이름을 가지는 페이지 목록을 찾아줍니다. 영문의 경우 적절히 잘라내어 앞/뒤 단어별로 검색해주며, 한글일 경우에는 앞/뒤 한글자 이상을 잘라내어 비슷한 파일 이름이 있는지 찾아줍니다.<span class='line-anchor' id='line-12'></span><br />
+</li>
+</ul>
+</div>
+<div class='separator'><hr /></div><span class='line-anchor' id='line-13'></span>
+<div id="aline-14">다음의 액션 목록은 기본적 기능으로 사용자에게 특별히 노출되지는 않지만 <strong>내부적</strong>으로 상단/하단의 메뉴에서 사용되는 거의 기본적인 액션 목록입니다.<span class='line-anchor' id='line-14'></span><br />
+<ul><li><code>edit</code>: 페이지 편집<span class='line-anchor' id='line-15'></span><br />
+</li>
+<li><code>diff</code>: 페이지 바뀐점 보기<span class='line-anchor' id='line-16'></span><br />
+</li>
+<li><code>info</code>: 페이지 정보 및 과거 이력<span class='line-anchor' id='line-17'></span><br />
+</li>
+<li><code>show</code>: 페이지 보기 (기본 액션).<span class='line-anchor' id='line-18'></span><br />
+</li>
+<li><code>print</code>: 페이지를 프린트 뷰로 보기. 상단과 하단의 메뉴가 나오지 않고 콘텐츠를 위주로 나옵니다.<span class='line-anchor' id='line-19'></span><br />
+</li>
+<li><code>subscribe</code>: 페이지 구독 <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/SubscribePlugin'>SubscribePlugin</a> 참조<span class='line-anchor' id='line-20'></span><br />
+</li>
+<li><code>userform</code>: <a href='/mercenarys/wiki.php/UserPreferences' >UserPreferences</a> 페이지에서 사용되는 내부 액션<span class='line-anchor' id='line-21'></span><br />
+</li>
+<li><code>revert</code>: 구 버전의 페이지로 되돌리기 위한 액션 (모니위키 1.1.3부터 지원)<span class='line-anchor' id='line-22'></span><br />
+</li>
+<li><code>rename</code>: 페이지이름 바꾸기 액션<span class='line-anchor' id='line-23'></span><br />
+</li>
+<li><code>titleindex</code>: 페이지 목록을 텍스트로 보내거나 (<a class="interwiki" href='/mercenarys/wiki.php/?action=titleindex' ><img class="interwiki" alt="Self:" src='/mercenarys/imgs//interwiki/self-16.png' style='border:0' height='16' width='16' title='Self:' /></a><a href='/mercenarys/wiki.php/?action=titleindex'  title='Self:?action=titleindex'>?action=titleindex</a>) XML로 (<a class="interwiki" href='/mercenarys/wiki.php/?action=titleindex&mimetype=text/xml' ><img class="interwiki" alt="Self:" src='/mercenarys/imgs//interwiki/self-16.png' style='border:0' height='16' width='16' title='Self:' /></a><a href='/mercenarys/wiki.php/?action=titleindex&mimetype=text/xml'  title='Self:?action=titleindex&mimetype=text/xml'>?action=titleindex&mimetype=text/xml</a><strong></strong>) 보내기; <a class="interwiki" href='http://www.usemod.com/cgi-bin/mb.pl?MetaWiki' ><img class="interwiki" alt="MeatBall:" src='/mercenarys/imgs//interwiki/meatball-16.png' style='border:0' height='16' width='16' title='MeatBall:' /></a><a href='http://www.usemod.com/cgi-bin/mb.pl?MetaWiki'  title='MeatBall:MetaWiki'>MetaWiki</a><b></b>를 사용할 목적으로 쓰임.<span class='line-anchor' id='line-24'></span><br />
+</li>
+<li><code>fullsearch</code>: <code><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/FullSearch'>FullSearch</a></code> 매크로와 함께 사용되는 전체 페이지 검색 액션<span class='line-anchor' id='line-25'></span><br />
+</li>
+<li><code>titlesearch</code>: <code><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/TitleSeach'>TitleSeach</a></code> 매크로와 함께 사용되는 제목 검색용 액션<span class='line-anchor' id='line-26'></span><br />
+</li>
+<li><code>highlight</code>: 검색 결과를 하이라이팅해주는 액션<span class='line-anchor' id='line-27'></span><br />
+</li>
+<li><code>bookmark</code>: <a href='/mercenarys/wiki.php/RecentChanges' >RecentChanges</a> 페이지에서 북마크 기능을 지원하는 액션. 북마크를 하게되면 그 시점이 보존되며, 그 시점에서 새로 갱신된 페이지를 보다 손쉽게 알 수 있게 해줍니다.<span class='line-anchor' id='line-28'></span><br />
+</li>
+<li><code>raw</code>: 페이지의 소스(raw)를 텍스트로 그대로 보여주는 액션. 위키 문법을 볼 수 있게 해준다.<span class='line-anchor' id='line-29'></span><br />
+</li>
+<li><code>rss_rc</code>: <a href='/mercenarys/wiki.php/RecentChanges' >RecentChanges</a>를 RSS로 보여주는 액션.<span class='line-anchor' id='line-30'></span><br />
+<br />
+</li>
+</ul>
+모니위키의 모든 액션은 <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/MoniWikiActions'>MoniWikiActions</a> 페이지를 통해 보실 수 있습니다.<span class='line-anchor' id='line-32'></span><br />
+</div>
+<div class='separator'><hr /></div><span class='line-anchor' id='line-33'></span>
+<div id="aline-34">&laquo; <a href='/mercenarys/wiki.php/HelpOnNavigation'  accesskey="," >HelpOnNavigation</a> | <a href='/mercenarys/wiki.php/HelpContents' >HelpContents</a> | <a href='/mercenarys/wiki.php/HelpOnAdministration'  accesskey="." >HelpOnAdministration</a> &raquo;<span class='line-anchor' id='line-34'></span><br />
+</div>
+</div>
+</div>

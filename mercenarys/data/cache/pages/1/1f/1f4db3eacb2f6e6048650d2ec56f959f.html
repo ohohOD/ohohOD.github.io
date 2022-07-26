@@ -1,0 +1,514 @@
+<!-- // Cache_Text 0.6 1613299049
+1613299049 
+-->
+<script type='text/javascript' src='/mercenarys/local/wikibits.js'></script>
+<script type='text/javascript' src='/mercenarys/local/js/swfobject.js'></script>
+<script type='text/javascript' src='/mercenarys/local/SWFUpload/swfupload.js'></script>
+<script type='text/javascript' src='/mercenarys/local/SWFUpload/swfupload.swfobject.js'></script>
+<script type='text/javascript' src='/mercenarys/local/SWFUpload/swfupload.queue.js'></script>
+<script type='text/javascript' src='/mercenarys/local/SWFUpload/preview.js'></script>
+<script type='text/javascript' src='/mercenarys/local/SWFUpload/handlers.js'></script>
+<div id="aline-1">모니위키는 파일 업로드를 위한 3가지의 업로드 폼을 매크로로 지원하고 있다.<span class='line-anchor' id='line-1'></span><br />
+</div>
+<br />
+<div id="aline-3"><code class='wiki'>[[UploadFile]]</code>: 이것은 자바스크립트를 전혀 쓰지 않는다. 그 대신에 간단한 여러개의 파일을 올릴 수 있는 방법을 제공한다.<span class='line-anchor' id='line-3'></span><br />
+</div>
+<br />
+<div id="aline-5"><form enctype='multipart/form-data' method='post' action='/mercenarys/wiki.php/UploadFileMacro'>
+<input type='hidden' name='action' value='UploadFile' />
+   <input type='file' name='upfile' size='30' /><button type='submit'><span>Upload</span></button> or <a href="/mercenarys/wiki.php/UploadFileMacro?action=swfupload" rel="nofollow"><span>Multiple Upload files</span></a>.<br/>
+   
+   <input type='radio' name='replace' value='1' />Replace original file<br />
+   <input type='radio' name='replace' value='0' checked='checked' />Rename if it already exist<br />
+</form>
+<form enctype="multipart/form-data" method='post' action='/mercenarys/wiki.php/UploadFileMacro'>
+   <input type='hidden' name='action' value='UploadFile' />
+   <select name='multiform' />
+<option value='2'>2</option>
+<option value='3'>3</option>
+<option value='4'>4</option>
+<option value='5'>5</option>
+<option value='6'>6</option>
+<option value='7'>7</option>
+<option value='8'>8</option>
+<option value='9'>9</option>
+<option value='10'>10</option>
+</select><button type='submit'><span>Multi upload form</span></button>
+
+</form><span class='line-anchor' id='line-5'></span><br />
+</div>
+<div class='separator'><hr /></div><span class='line-anchor' id='line-6'></span>
+<div id="aline-7"><code class='wiki'>[[UploadForm]]</code> 혹은 <code class='wiki'>[[UploadFile(js)]]</code>: 이 매크로는 여러개의 파일을 올릴 수 있는 폼을 자바스크립트를 사용하여 만들어준다.<span class='line-anchor' id='line-7'></span><br />
+</div>
+<br />
+<div id="aline-9"><script type="text/javascript">
+/*<![CDATA[*/
+function addRow(id, name, size) {
+    if (size == undefined)
+        size = 50;
+    if((tmpbutton = document.getElementById(id).getElementsByTagName('button').item(0)) != undefined)
+	tmpbutton = tmpbutton.clientWidth;
+
+    // check editform
+    var editform = document.getElementById('editform');
+    if (editform) {
+        var iframe = document.getElementById('upload-iframe');
+        if (!iframe) {
+            if (document.all)
+                iframe = document.createElement('<iframe frameBorder="0" name="upload-iframe" width="1px" height="1px">');
+            else
+                iframe = document.createElement('iframe');
+            iframe.setAttribute('id','upload-iframe');
+            iframe.setAttribute('name','upload-iframe');
+            iframe.setAttribute('style','display:none;border:0;');
+            if (document.all) {
+                // magic for IE6
+                /*@cc_on
+                if (@_jscript_version==5.6 ||
+                    (@_jscript_version==5.7 && navigator.userAgent.toLowerCase().indexOf("msie 6.") != -1)) {
+                    iframe.src = 'javascript:document.write("' + "<script>document.domain='" + document.domain + "';</" + "script>" + '");';
+                }
+                @*/
+            }
+            var body = document.getElementsByTagName('body')[0];
+            body.appendChild(iframe);
+        }
+    }
+    var fform = document.getElementById(id);
+    var lastRow = fform.rows.length;
+    var row = fform.insertRow(lastRow);
+
+    var cell = row.insertCell(0);
+    var div = document.createElement('div');
+    div.setAttribute('style', 'position:relative');
+    var newInput = document.createElement('input');
+    newInput.setAttribute('type', 'file');
+    newInput.setAttribute('name', name+'[]');
+    newInput.setAttribute('size', size);
+
+    var tmpstyle = "width:80px";
+    if(tmpbutton != undefined)
+	tmpstyle = "width:" + tmpbutton + "px;";
+    else
+	tmpbutton = 80; // set 80px for IE
+
+    newInput.style.position = 'absolute'; // IE
+    newInput.style.left = -8; // IE
+    newInput.style.width = tmpbutton+3; // IE
+    newInput.setAttribute('style', 'position:absolute;left:-5;'+tmpstyle);
+
+    var btn = document.getElementById('button-' + id);
+    if (btn) {
+        btn.setAttribute('style','display:none;');
+        btn.style.display = 'none';
+    }
+    newInput.className = 'form-file';
+    // get basename with replace() for IE
+    newInput.onchange = function() {
+        // add new row if and only if this input element is in the bottom row of upload table
+        this_row = this.parentNode.parentNode.parentNode.parentNode;
+        this_table = this_row.parentNode;
+        if (this_table.lastChild == this_row) {
+                addRow(id, name, size);
+        }
+
+        fakeInp.style.display='inline-block';
+        fakeInp.value = this.value.replace(/^.*[\\]/g, '');
+
+        var btn = document.getElementById('button-' + id);
+        if (btn) {
+            btn.setAttribute('style','display:inline-block;');
+            btn.style.display = 'inline-block';
+        }
+    };
+
+    var span = document.createElement('span');
+    span.style.position='relative';
+    var fakeInp = document.createElement('input');
+    fakeInp.setAttribute('type', 'text');
+    fakeInp.setAttribute('size', size);
+    fakeInp.className = 'fake-file';
+    fakeInp.setAttribute('readonly', 'true');
+    fakeInp.style.display = 'none';
+    if (document.all)
+        fakeInp.readOnly = true; // for IE
+    fakeInp.onclick = function() {if (this.value) { this.value = ''; newInput.value = ''; } else {delRow(id,this);} };
+
+    var addbtn = document.createElement('button');
+    var span2 = document.createElement('span');
+    var txt = document.createTextNode('Choose File');
+    span2.appendChild(txt);
+    addbtn.appendChild(span2);
+    addbtn.setAttribute('onclick',"return false;");
+    addbtn.className = 'add-file';
+
+    div.appendChild(fakeInp);
+    span.appendChild(addbtn);
+    span.appendChild(newInput);
+    div.appendChild(span);
+    cell.appendChild(div);
+    /* newInput.click(); /* */}
+
+function delRow(id,obj) {
+    obj.parentNode.parentNode.parentNode.parentNode.removeChild(obj.parentNode.parentNode.parentNode);
+    var form = document.getElementById("form-" + id);
+    var inputs = form.getElementsByTagName('input');
+    var mysubmit = null;
+    for (i = 0; i < inputs.length; i++) {
+        if (inputs[i].type == 'file' && inputs[i].value != '') {
+            return;
+        }
+    }
+    var btn = document.getElementById('button-' + id);
+    if (btn) btn.style.display = 'none';
+    
+}
+
+function check_attach(id) {
+    // check if the form has attached files.
+    attach = document.getElementById(id);
+    var ok = false;
+    files = '';
+    var tmp = '';
+    inputs = attach.getElementsByTagName('input');
+    for (i = 0; i < inputs.length; i++) {
+        if (inputs[i].type == 'file' && inputs[i].value != '') {
+            ok = true;
+            break;
+        }
+    }
+    if (ok == false)
+        return false;
+    // check editform
+    var editform = document.getElementById('editform');
+    if (editform) {
+        // iframe upload
+        iframe = document.getElementById('upload-iframe');
+        var attachform = document.getElementById('form-'+id);
+        if (attachform) {
+            // set domain name.
+            if (location.host != document.domain) {
+                if (document.all) {
+                    var mydomain = document.createElement('<input name="domain">');
+                } else {
+                    var mydomain = document.createElement('input');
+                    mydomain.setAttribute('name', 'domain');
+                }
+
+                mydomain.setAttribute('type', 'hidden');
+                mydomain.setAttribute('value', document.domain + '');
+                attachform.appendChild(mydomain);
+            }
+
+            attachform.setAttribute('target', 'upload-iframe');
+            attachform.elements['action'].value='UploadFile/ajax';
+        }
+
+        var timer = setInterval(function() {check_upload_result(iframe, attach, timer);}, 1500);
+        return ok;
+    }
+    return ok;
+}
+
+function check_upload_result (iframe,attach, timer) {
+    if (!iframe) return;
+
+    try {
+        var doc = iframe.contentDocument || iframe.contentWindow.document;
+    } catch(e) {
+        // silently ignore
+        alert('Error: '+ e + ' - Security restriction detected !\nPlease check your "document.domain=' + document.domain + '"');
+        return;
+    }
+    if (!doc || !doc.body) return;
+
+    var p = doc.body.firstChild;
+    if (p && p.nodeType == 3 && p.nodeValue) { // text node
+        eval("var ret = " + p.nodeValue);
+        // remove iframe;
+        iframe.parentNode.removeChild(iframe);
+        alert(ret['title'] + "\n" + ret['msg']);
+        for (var i = 0; i < ret['files'].length; i++) {
+            if (ret['files'][i] == '') continue;
+            insertTags('attachment:',' ', ret['files'][i], 3);
+        }
+        clearInterval(timer);
+        resetForm(attach);
+    }
+}
+
+function resetForm(form) {
+    inputs = form.getElementsByTagName('input');
+    var name = "upfile", size = 50; // default
+    for (i = 0; i < inputs.length; i++) {
+        if (inputs[i].type == 'file') {
+            name = inputs[i].getAttribute('name');
+            size = inputs[i].getAttribute('size');
+            break;
+        }
+    }
+
+    if (form && form.rows.length) { // for UploadForm
+        for (var i=form.rows.length;i>0;i--) {
+            form.deleteRow(i-1);
+        }
+    }
+    name = name.replace(/\[\]$/g, '');
+    addRow(form.getAttribute('id'), name, size);
+}
+
+/*]]>*/
+</script>  <form target='_blank' id="form-upload1" method="post" action="/mercenarys/wiki.php/UploadFileMacro" enctype="multipart/form-data">
+  <div class='uploadForm'>
+  <input type='hidden' name='action' value='UploadFile' />  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td valign='top' rowspan='2'>
+        <span onclick="addRow('upload1','upfile')" class='icon-clip' title="add files">Attachments</span>
+      </td>
+      <td>
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tbody id="upload1">
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <div class='buttons'>
+  <!-- button type='button' class='add-file' onclick="addRow('upload1','upfile')"><span>add a file</span></button -->
+  <input type="hidden" name="upload1" value="upload1" />
+  <input type="hidden" name="popup" value="1" />  <button type="submit" class='upload-file' id='button-upload1' onclick="check_attach('upload1')" name="upload"><span>Upload files</span></button>
+  <!-- <input type="reset" name="reset" value="Reset" /> -->      </div>
+      </td>
+    </tr>
+  </table>
+  </div>
+  </form>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+    var btn = document.getElementById('button-upload1');
+    if (btn) btn.style.display = 'none';
+})();
+
+function init_uploadForm() {
+        addRow('upload1','upfile');
+}
+
+if (window.addEventListener) {
+	window.addEventListener("load", init_uploadForm, false);
+} else if (window.attachEvent) {
+	window.attachEvent("onload", init_uploadForm);
+} else {
+	window.onload = init_uploadForm;
+}
+
+/*]]>*/
+</script><span class='line-anchor' id='line-9'></span><br />
+</div>
+<div class='separator'><hr /></div><span class='line-anchor' id='line-10'></span>
+<div id="aline-11"><code class='wiki'>[[SWFUpload]]</code>  혹은 <code class='wiki'>[[UploadFile(swf)]]</code>: 이 매크로는 모니위키 1.1.3CVS부터 지원하며 다중 파일 업로드를 지원한다. (Flash 10 지원)<span class='line-anchor' id='line-11'></span><br />
+</div>
+<br />
+<div id="aline-13"><style type="text/css">
+@import url("/mercenarys/local/SWFUpload/swfupload.css");
+</style>	<div id="SWFUpload" style='display:none'>
+		<form action="" onsubmit="return false;">
+			<input type="file" name="upload" />
+			<input type="submit" value="Upload" onclick="javascript:alert('disabled...'); return false;" />
+		</form>
+	</div>
+<script type="text/javascript">
+/*<![CDATA[*/
+var swfu;
+
+SWFUpload.onload = function () {
+    var settings = {
+        flash_url : "/mercenarys/local/SWFUpload/swfupload.swf",
+        upload_url: "http://bydarti.dothome.co.kr/mercenarys/wiki.php/UploadFileMacro----swfupload----c6/c6a5f3cf9a6e6a1a9aeac5ddabc8d032/", // Relative to the SWF file
+        file_size_limit : "10 MB",
+        file_types : "*.png;*.jpg;*.jpeg;*.gif;*.mp3;*.zip;*.tgz;*.gz;*.txt;*.css;*.exe;*.hwp;*.pdf;*.flv",
+        file_types_description : "Files",
+        file_upload_limit : 100,
+        file_queue_limit : 0,
+        custom_settings : {
+            progressTarget : "fsUploadProgress",
+            cancelButtonId : "btnCancel"
+        },
+        debug: false, // true
+
+        // Button Settings
+        button_image_url : "/mercenarys/local/SWFUpload/images/btn0.png",
+        button_text : '<span class="button" style="text-align:center">Files...</span>',
+        button_text_style : '.button {font-family:Gulim,Sans-serif;text-align:center;}',
+        button_text_top_padding : 3,
+        button_placeholder_id : "spanButtonPlaceHolder",
+        button_width: 61,
+        button_height: 22,
+        button_window_mode: SWFUpload.WINDOW_MODE.TRANSPARENT,
+        button_cursor: SWFUpload.CURSOR.HAND,
+
+        // The event handler functions are defined in handlers.js
+        swfupload_loaded_handler : swfUploadLoaded,
+        file_queued_handler : fileQueued,
+        file_queue_error_handler : fileQueueError,
+        file_dialog_complete_handler : fileDialogComplete,
+        upload_start_handler : uploadStart,
+        upload_progress_handler : uploadProgress,
+        upload_error_handler : uploadError,
+        upload_success_handler : uploadSuccess,
+        upload_complete_handler : uploadComplete,
+        queue_complete_handler : queueComplete, // Queue plugin event
+        
+        // SWFObject settings
+        minimum_flash_version : "9.0.28",
+        swfupload_pre_load_handler : swfUploadPreLoad,
+        swfupload_load_failed_handler : swfUploadLoadFailed
+    };
+
+    swfu = new SWFUpload(settings);
+}
+/*]]>*/
+</script>
+
+	<div class="fileList">
+	<table border='0' cellpadding='0'>
+	<tr>
+	<td>
+	<div id="previewAlign">
+	</div>
+	<div id="filePreview">
+	</div>
+	</td>
+	<td>
+
+	<div id="filesDisplay">
+            <form id="form1" target='_blanl' action="/mercenarys/wiki.php/UploadFileMacro" method="POST" enctype="multipart/form-data">
+	        <ul id="mmUploadFileListing"></ul>
+		<span id="fileButton">
+                <input type='hidden' name='action' value='swfupload' />
+                <input type='hidden' name='value' value='c6/c6a5f3cf9a6e6a1a9aeac5ddabc8d032/' />
+                <input type='hidden' name='popup' value='1' />
+                <input type='hidden' name='mysubdir' value='c6/c6a5f3cf9a6e6a1a9aeac5ddabc8d032/' />
+<input type='hidden' name='use_lightbox' value='0' />
+                <span id="spanButtonPlaceHolder"><input type="file" name="upload" /></span>
+		<button type='submit' onclick='javascript:fileSubmit(this);' ><span>Upload files</span></button>
+                <button id='btnCancel' onclick='swfu.cancelQueue();' disabled='disabled' ><span>Cancel All files</span></button>
+
+		</span>
+            </form>
+        </div>
+        <noscript style="background-color: #FFFF66; border-top: solid 4px #FF9966; border-bottom: solid 4px #FF9966; margin: 10px 25px; padding: 10px 15px;">
+            We're sorry.  SWFUpload could not load.  You must have JavaScript enabled to enjoy SWFUpload.
+        </noscript>
+        <div id="divLoadingContent" class="content" style="background-color: #FFFF66; border-top: solid 4px #FF9966; border-bottom: solid 4px #FF9966; margin: 10px 25px; padding: 10px 15px; display: none;">
+            SWFUpload is loading. Please wait a moment...
+        </div>
+        <div id="divLongLoading" class="content" style="background-color: #FFFF66; border-top: solid 4px #FF9966; border-bottom: solid 4px #FF9966; margin: 10px 25px; padding: 10px 15px; display: none;">
+            SWFUpload is taking a long time to load or the load has failed.  Please make sure that the Flash Plugin is enabled and that a working version of the Adobe Flash Player is installed.
+        </div>
+        <div id="divAlternateContent" class="content" style="background-color: #FFFF66; border-top: solid 4px #FF9966; border-bottom: solid 4px #FF9966; margin: 10px 25px; padding: 10px 15px; display: none;">
+
+            We're sorry.  SWFUpload could not load.  You may need to install or upgrade Flash Player.
+            Visit the <a href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash">Adobe website</a> to get the Flash Player.
+        </div>
+
+	</td>
+        </tr>
+	<tr>
+	<td colspan='2'>
+		<div id="fileProgressInfo"></div>
+	</td>
+	</tr>
+	</table>
+	</div><span class='line-anchor' id='line-13'></span><br />
+</div>
+<div class='separator'><hr /></div><span class='line-anchor' id='line-14'></span>
+<div id="aline-15">모니위키의 <code class='wiki'>[[UploadFile]]</code> 매크로는 업로드 된 파일을 <code class='wiki'>$upload_dir</code>로 정의된 디렉토리에 각 페이지별 디렉토리를 생성시키고, 그 디렉토리에 업로드된 파일을 저장한다.<span class='line-anchor' id='line-15'></span><br />
+</div>
+<br />
+<div id="aline-17">업로드가 성공하면 업로드된 파일을 다음과 같은 문법으로 연결할 수 있다.<span class='line-anchor' id='line-17'></span><br />
+<pre class='wiki'>
+attachment:filename.ext 혹은 attachment:페이지명:filename.ext
+</pre><span class='line-anchor' id='line-20'></span>
+</div>
+<br />
+<div id="aline-22">예를 들어, <code class='wiki'>MyPage</code>에 들어가서 <code class='wiki'>MyPage?action=UploadFile</code>을 하거나, <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/MyPage'>MyPage</a>에서 <code class='wiki'>[[UploadFile]]</code> 매크로를 사용하여 파일을 업로드를 하면 $upload_dir='pds';라고 되어있는 경우에 <code class='wiki'>pds/MyPage/</code>가 새롭게 만들어지고 거기에 올린 파일이 저장된다.<span class='line-anchor' id='line-22'></span><br />
+</div>
+<div class="section"><a id='sect-1'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/UploadFileMacro?action=edit&amp;section=1'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-23"><a id='s-1'></a>업로드 제한 <a class='perma' href='#s-1'>¶</a></h2><div id="sc-1">
+<div id="aline-24">config.php의 $pds_allowed라는 변수를 조정하면 업로드가능한 파일을 제한을 걸 수 있다. $pds_allowed의 기본값은 다음과 같을 것이다.<span class='line-anchor' id='line-24'></span><br />
+<pre class='wiki'>
+$pds_allowed="png|jpg|jpeg|gif|mp3|zip|tgz|gz|txt|css|exe|hwp|pdf|flv";
+</pre><span class='line-anchor' id='line-27'></span>
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-2'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/UploadFileMacro?action=edit&amp;section=2'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-28"><a id='s-2'></a>안전하지 않은 파일 확장자 점검 <a class='perma' href='#s-2'>¶</a></h2><div id="sc-2">
+<div id="aline-29"><img src='/mercenarys/imgs/smile/alert.png' style='border:0' class='smiley' alt='/!\' title='/!\' /> 모니위키 1.1.3CVS부터 지원<span class='line-anchor' id='line-29'></span><br />
+</div>
+<br />
+<div id="aline-31">아파치 mod_mime의 문제점으로 인해서 안전하지 않은 파일 이름을 점검합니다.<span class='line-anchor' id='line-31'></span><br />
+<pre class='wiki'>
+$pds_protected="pl|cgi|php"; # config.php에 정의하지 않았을 때의 기본값.
+</pre><span class='line-anchor' id='line-34'></span>
+</div>
+<br />
+<div id="aline-36">예를 들어 아파치의 mod_mime이 hwp 확장자를 인식하지 못하는데, <code class='wiki'>my.php.hwp</code>와 같은 파일이름을 업로드할 경우, 아파치의 mod_mime모듈은 my.php.hwp를 hwp가 아닌 php파일로 인식하게 됩니다.<span class='line-anchor' id='line-36'></span><br />
+</div>
+<br />
+<div id="aline-38">$pds_protected를 설정해 놓으면 <code class='wiki'>my.php.hwp</code> 파일 이름이 my.php.txt.hwp로 이름이 바뀌면서 파일이 업로드 됩니다.<span class='line-anchor' id='line-38'></span><br />
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-3'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/UploadFileMacro?action=edit&amp;section=3'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-39"><a id='s-3'></a>$upload_masters <a class='perma' href='#s-3'>¶</a></h2><div id="sc-3">
+<div id="aline-40"><img src='/mercenarys/imgs/smile/alert.png' style='border:0' class='smiley' alt='/!\' title='/!\' /> 모니위키 1.1.3CVS부터 지원<span class='line-anchor' id='line-40'></span><br />
+</div>
+<br />
+<div id="aline-42">$upload_masters=array('Foobar','Babo'); 여기에 등록된 모든 사용자는 파일 확장자와 무관하게 모든 종류의 파일을 업로드 할 수 있습니다.<span class='line-anchor' id='line-42'></span><br />
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-4'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/UploadFileMacro?action=edit&amp;section=4'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-43"><a id='s-4'></a>$use_filetype <a class='perma' href='#s-4'>¶</a></h2><div id="sc-4">
+<div id="aline-44"><img src='/mercenarys/imgs/smile/alert.png' style='border:0' class='smiley' alt='/!\' title='/!\' /> 모니위키 1.1.3CVS부터 지원<span class='line-anchor' id='line-44'></span><br />
+</div>
+<br />
+<div id="aline-46">이 값을 1로 설정하였을 경우, 업로드 할 때의 정보를 이용해서 파일 타입을 판별합니다.<span class='line-anchor' id='line-46'></span><br />
+안전한 업로드가 이미 보장 된 경우 사용하실 수 있을 것입니다.<span class='line-anchor' id='line-47'></span><br />
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-5'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/UploadFileMacro?action=edit&amp;section=5'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-48"><a id='s-5'></a>주의사항 <a class='perma' href='#s-5'>¶</a></h2><div id="sc-5">
+<div id="aline-49">모니위키에서는 모든 업로드 된 파일이 <code class='wiki'>$upload_dir='pds'</code> 하위 디렉토리에 보존된다. 즉 <code class='wiki'>pds/*/</code>에 1단계 하위 디렉토리들이 생성된다. (2단계 이상은 지원하지 않습니다.)<span class='line-anchor' id='line-49'></span><br />
+</div>
+<br />
+<div id="aline-51">그러나 노스모크 모인모인에서는 <code class='wiki'>pds/*</code> 하위 디렉토리로 모든 파일이 저장된다. 노스모크 모인모인과 호환을 보장하기 위해서 <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/UploadFile'>UploadFile</a>액션은 특별히 <code class='wiki'>UploadFile</code>이라는 페이지에서 파일을 업로드하면 <code class='wiki'>pds/UploadFile</code>라는 디렉토리가 만들어지지 않고 pds 아래로 바로 업로드 되게끔 하였다.<span class='line-anchor' id='line-51'></span><br />
+</div>
+<br />
+<div id="aline-53">pds 바로 밑으로 저장된 pds/* 파일을 연결하려면 <code class='wiki'>attachment:/foobar.png</code> 문법을 쓴다. 즉, "/"를 맨 앞에 붙여준다.<span class='line-anchor' id='line-53'></span><br />
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-6'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/UploadFileMacro?action=edit&amp;section=6'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-54"><a id='s-6'></a>기타 <a class='perma' href='#s-6'>¶</a></h2><div id="sc-6">
+<div id="aline-55"></div>
+</div>
+</div>
+<div class="section"><a id='sect-7'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/UploadFileMacro?action=edit&amp;section=7'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h3 id="line-55"><a id='s-6.1'></a>공백이 들어있는 파일 이름 <a class='perma' href='#s-6.1'>¶</a></h3><div id="sc-7">
+<div id="aline-56">공백이 들어있는 파일을 링크를 걸 경우는 <code class='wiki'>attachment:"hello world.png"</code>와 같이 링크를 걸어 준다.<span class='line-anchor' id='line-56'></span><br />
+</div>
+<br />
+<div id="aline-58">See also<span class='line-anchor' id='line-58'></span><br />
+<ul><li><a href='/mercenarys/wiki.php/AttachmentMacro' >AttachmentMacro</a><span class='line-anchor' id='line-59'></span><br />
+</li>
+<li><a href='/mercenarys/wiki.php/UploadedFiles' >UploadedFiles</a><span class='line-anchor' id='line-60'></span><br />
+</li>
+</ul>
+</div>
+</div>
+</div>

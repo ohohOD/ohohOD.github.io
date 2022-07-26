@@ -1,0 +1,421 @@
+<!-- // Cache_Text 0.6 1613274082
+1613274082 
+-->
+<script type="text/javascript" src="/mercenarys/local/toctoggle.js"></script><div id="aline-2">config.php의 옵션.<span class='line-anchor' id='line-2'></span><br />
+</div>
+<br />
+<div id="aline-4"><img src='/mercenarys/imgs/smile/alert.png' style='border:0' class='smiley' alt='/!\' title='/!\' /> 새롭게 추가되는 다양한 옵션은 <code>config.php.default</code>에 들어있습니다.<span class='line-anchor' id='line-4'></span><br />
+</div>
+<br />
+<div id="aline-6">
+<div class='wikiToc' id='toc1'><div class='toctitle'>
+<h2 style='display:inline'><span class="i18n" title="Contents">Contents</span></h2>
+</div><a name='toc' ></a><dl><dd><dl>
+<dt><a id='toc-1' href='#s-1'><span class='num'>1<span class="dot">.</span></span> 개요 </a></dt>
+<dt><a id='toc-2' href='#s-2'><span class='num'>2<span class="dot">.</span></span> 디자인 </a></dt>
+<dt><a id='toc-3' href='#s-3'><span class='num'>3<span class="dot">.</span></span> 위키 문법 관련 </a></dt>
+<dt><a id='toc-4' href='#s-4'><span class='num'>4<span class="dot">.</span></span> 추가기능 </a></dt>
+<dt><a id='toc-5' href='#s-5'><span class='num'>5<span class="dot">.</span></span> 프로세서 옵션 </a></dt>
+<dt><a id='toc-6' href='#s-6'><span class='num'>6<span class="dot">.</span></span> 경로 설정 </a></dt>
+<dt><a id='toc-7' href='#s-7'><span class='num'>7<span class="dot">.</span></span> 시스템 설정 </a></dt>
+</dl></dd></dl>
+</div>
+<script type="text/javascript">
+/*<![CDATA[*/
+ if (window.showTocToggle) { showTocToggle('toc1', '<img src="/mercenarys/imgs/plugin/arrdown.png" width="10px" border="0" alt="[+]" title="[+]" />','<img src="/mercenarys/imgs/plugin/arrup.png" width="10px" border="0" alt="[-]" title="[-]" />'); } 
+/*]]>*/
+</script><span class='line-anchor' id='line-6'></span><br />
+</div>
+<br />
+<div id="aline-8"></div>
+<div class="section"><a id='sect-1'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/MoniWikiOptions?action=edit&amp;section=1'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-8"><a id='s-1'></a><span class='tocnumber'><a href='#toc'>1<span class='dot'>.</span></a> </span>개요 <a class='perma' href='#s-1'>¶</a></h2><div id="sc-1">
+<div id="aline-9">모니위키의 기본 설정값은 <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/config.php'>config.php</a>에 저장되며,<span class='line-anchor' id='line-9'></span><br />
+초기값은 최초 모니위키 셋업을 할 때 <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/monisetup.php'>monisetup.php</a>에 의해서 <code>config.php.default</code>값이 복사되고, 일부 값은 <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/monisetup.php'>monisetup.php</a>에 의해서 자동으로 선택된다.<span class='line-anchor' id='line-10'></span><br />
+</div>
+<br />
+<div id="aline-12">모니위키가 버전을 거듭할 수록 이 설정의 개수가 많아져서<span class='line-anchor' id='line-12'></span><br />
+복잡하고 무거워진다고 생각할 수도 있겠으나,<span class='line-anchor' id='line-13'></span><br />
+<ul><li>상당수의 옵션은 세밀한 컨트롤을 좀 더 쉽게 할 수 있도록 도와주며,<span class='line-anchor' id='line-14'></span><br />
+</li>
+<li>1.2.0의 옵션의 개수는 약 90개로서 <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%EB%8F%84%EC%BF%A0%EC%9C%84%ED%82%A4'>도쿠위키</a> 2013년 최신의 100여개의 옵션보다 많지 않고 대동소이한 수준으로 볼 수 있으며,<span class='line-anchor' id='line-15'></span><br />
+</li>
+<li><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%EB%AF%B8%EB%94%94%EC%96%B4%EC%9C%84%ED%82%A4'>미디어위키</a>의 옵션 개수 약 700여개보다 훨씬 적다. (<code class='wiki'>$wg...</code> 변수)<span class='line-anchor' id='line-16'></span><br />
+</li>
+<li>세세한 옵션에 대한 설명은 단지 몇 줄의 설명으로는 부족해 보일 수 있다. 사용자가 해당 옵션을 완벽하게 이해하기 위해서 소스코드를 봐야할 수도 있다.<span class='line-anchor' id='line-17'></span><br />
+</li>
+<li><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%EB%8F%84%EC%BF%A0%EC%9C%84%ED%82%A4'>도쿠위키</a> <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%EB%AF%B8%EB%94%94%EC%96%B4%EC%9C%84%ED%82%A4'>미디어위키</a> 모두 이러한 세밀한 옵션을 손쉽게 바꿀 방법을 제공하지 않고 있지만 모니위키는 <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/monisetup.php'>monisetup.php</a>를 통해 옵션 조정이 어느정도 가능하다.<span class='line-anchor' id='line-18'></span><br />
+<br />
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-2'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/MoniWikiOptions?action=edit&amp;section=2'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-20"><a id='s-2'></a><span class='tocnumber'><a href='#toc'>2<span class='dot'>.</span></a> </span>디자인 <a class='perma' href='#s-2'>¶</a></h2><div id="sc-2">
+<div id="aline-21"><code><strong>$frontpage="페이지이름";</strong></code> 대문 지정<span class='line-anchor' id='line-21'></span><br />
+<ul><li>대문을 지정한다. 기본값은 <a href='/mercenarys/wiki.php/FrontPage' >FrontPage</a>.<span class='line-anchor' id='line-22'></span><br />
+</li>
+</ul>
+<code><strong>$theme='테마이름';</strong></code> 테마<span class='line-anchor' id='line-23'></span><br />
+<ul><li>테마를 지정한다. See also <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/MoniWikiTheme'>MoniWikiTheme</a><span class='line-anchor' id='line-24'></span><br />
+</li>
+</ul>
+<code><strong>$theme_css</strong></code><span class='line-anchor' id='line-25'></span><br />
+<ul><li>값을 1로 설정하면 항상 테마의 기본 CSS만이 사용되도록 강제 설정. <span class='line-anchor' id='line-26'></span><br />
+</li>
+<li>0으로 하면 테마의 CSS를 사용자가 변경 가능. (기본값 0)<span class='line-anchor' id='line-27'></span><br />
+</li>
+</ul>
+<code><strong>$css_url</strong></code><span class='line-anchor' id='line-28'></span><br />
+<ul><li>기본 css의 경로를 설정한다. 기본값은 <code>$url_prefix.'/css/default.css'</code> <code>$theme</code>를 설정한 경우는 이 값의 초기 설정치가 자동 설정되며, $theme_css=0으로 세팅된 경우에만 CSS를 변경할 수 있다.<span class='line-anchor' id='line-29'></span><br />
+<br />
+</li>
+</ul>
+<code><strong>$iconset</strong></code><span class='line-anchor' id='line-31'></span><br />
+<ul><li>기본값은 <code>'moni2'</code><span class='line-anchor' id='line-32'></span><br />
+</li>
+<li>지정할 수 있는 값으로는 moni,moni2 등이 있다. 디렉토리를 추가하고 파일이름을 똑같게 하면 아이콘을 모두 변경할 수 있다.<span class='line-anchor' id='line-33'></span><br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24icon_list'>$icon_list</a></strong></code><span class='line-anchor' id='line-34'></span><br />
+<ul><li>기본 아이콘 리스트를 손쉽게 바꾸기 위해서 이 값을 조정한다.<span class='line-anchor' id='line-35'></span><br />
+<br />
+</li>
+</ul>
+<code><strong>$logo_page="페이지이름";</strong></code><span class='line-anchor' id='line-37'></span><br />
+<ul><li>로고를 클릭할 때 가는 페이지를 정한다. 기본값은 $frontpage.<span class='line-anchor' id='line-38'></span><br />
+</li>
+</ul>
+<code><strong>$logo_string= '&lt;img src="'.$logo_img.'" alt="" border="0" align="middle" />';</strong></code><span class='line-anchor' id='line-39'></span><br />
+<ul><li>로고 그림. 없애고 싶다면 빈 문자열을 넣는다.<span class='line-anchor' id='line-40'></span><br />
+<br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24menu'>$menu</a></strong>=array('<a href='/mercenarys/wiki.php/MoniWiki'>MoniWiki</a><tt class='sister'><a id='rsister1'></a><a href='#sister1'>&#x203a;1</a></tt>'=>1,'<a href='/mercenarys/wiki.php/FindPage' >FindPage</a>'=>4,'<a href='/mercenarys/wiki.php/TitleIndex' >TitleIndex</a>'=>3,'<a href='/mercenarys/wiki.php/BlogChanges' >BlogChanges</a>'=>'','<a href='/mercenarys/wiki.php/RecentChanges' >RecentChanges</a>'=>2,'<a class='externalLink'  href='http://kldp.org' >http://kldp.org</a> KLDP'=>9);</code><span class='line-anchor' id='line-42'></span><br />
+<ul><li>메뉴를지정한다. 숫자는 accesskey를 지정하기 위해 쓰이는 값이다. "alt-1, alt-4"라는 식으로 지정된다.<span class='line-anchor' id='line-43'></span><br />
+<br />
+</li>
+</ul>
+<code><strong>$menu_bra=""; $menu_cat="";</strong></code><span class='line-anchor' id='line-45'></span><br />
+<ul><li>( <img src='/mercenarys/imgs/smile/alert.png' style='border:0' class='smiley' alt='/!\' title='/!\' /> <em>deprecated</em>)<span class='line-anchor' id='line-46'></span><br />
+<br />
+</li>
+</ul>
+<code><strong>$menu_sep</strong></code><span class='line-anchor' id='line-48'></span><br />
+<ul><li>메뉴의 구분자를 설정한다. 기본값은 <code>'|'</code> ( <img src='/mercenarys/imgs/smile/alert.png' style='border:0' class='smiley' alt='/!\' title='/!\' /> <em>deprecated</em>)<span class='line-anchor' id='line-49'></span><br />
+<br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24actions'>$actions</a></strong>=array('<a href='/mercenarys/wiki.php/DeleteThisPage' title="DeleteThisPage" >DeletePage</a>', '<a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/LikePage'>LikePage</a>');</code><span class='line-anchor' id='line-51'></span><br />
+<ul><li>웹 페이지 하단의 액션 메뉴를 지정한다.<span class='line-anchor' id='line-52'></span><br />
+<br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24sitename'>$sitename</a></strong></code><span class='line-anchor' id='line-54'></span><br />
+<ul><li>웹 브라우저에 타이틀에 표시되는 사이트의 이름. 기본값은 <code class='wiki'>UnnamedWiki</code><span class='line-anchor' id='line-55'></span><br />
+<br />
+</li>
+</ul>
+<code><strong>$kbd_script</strong></code><span class='line-anchor' id='line-57'></span><br />
+<ul><li>기본값은 <code>$url_prefix.'/css/kbd.js'</code> : 사용하기 싫으면 그 값을 빈 문자열로 한다.<span class='line-anchor' id='line-58'></span><br />
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-3'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/MoniWikiOptions?action=edit&amp;section=3'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-59"><a id='s-3'></a><span class='tocnumber'><a href='#toc'>3<span class='dot'>.</span></a> </span>위키 문법 관련 <a class='perma' href='#s-3'>¶</a></h2><div id="sc-3">
+<div id="aline-60"><code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24auto_linebreak'>$auto_linebreak</a></strong></code><span class='line-anchor' id='line-60'></span><br />
+<ul><li>기본값은 0이고, 1로 하면 선별적으로 각 줄에 <code class='wiki'>&lt;br/></code>이 더해진다.<span class='line-anchor' id='line-61'></span><br />
+<br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24nonexists'>$nonexists</a>='simple</strong></code><span class='line-anchor' id='line-63'></span><br />
+<ul><li>존재하지 않는 페이지 링크<span class='line-anchor' id='line-64'></span><br />
+</li>
+<li>simple: 앞에 ?를 붙임.<span class='line-anchor' id='line-65'></span><br />
+</li>
+<li>nolink: 아무표시도 하지 않음<span class='line-anchor' id='line-66'></span><br />
+</li>
+<li>forcelink:무조건 전체 링크<span class='line-anchor' id='line-67'></span><br />
+</li>
+<li>fancy: 첫글자를 링크시킨다.<span class='line-anchor' id='line-68'></span><br />
+<br />
+</li>
+</ul>
+<code><strong>$smiley='wikismiley';</strong></code><span class='line-anchor' id='line-70'></span><br />
+<ul><li>wikismiley.php를 읽어들이게 된다. 이 값을 "foobar"로 고치고 foobar.php를 wikismiley.php 대신으로 쓰면 자신이 원하는 smiley를 설정할 수 있게 된다.<span class='line-anchor' id='line-71'></span><br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24use_smiley'>$use_smiley</a></strong></code><span class='line-anchor' id='line-72'></span><br />
+<ul><li>스마일리 사용을 켜거나 끈다.<span class='line-anchor' id='line-73'></span><br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24mediawiki_style'>$mediawiki_style</a></strong></code><span class='line-anchor' id='line-74'></span><br />
+<ul><li>미디어위키식 위키워드 띄어쓰기 사용 여부 설정<span class='line-anchor' id='line-75'></span><br />
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-4'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/MoniWikiOptions?action=edit&amp;section=4'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-76"><a id='s-4'></a><span class='tocnumber'><a href='#toc'>4<span class='dot'>.</span></a> </span>추가기능 <a class='perma' href='#s-4'>¶</a></h2><div id="sc-4">
+<div id="aline-77"><code><strong>$blog_comments</strong></code><span class='line-anchor' id='line-77'></span><br />
+<ul><li>1로 설정하면, 블로그 아래 댓글(comment)이 함께 보인다. (기본값 0)<span class='line-anchor' id='line-78'></span><br />
+<br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24notify'>$notify</a></strong></code><span class='line-anchor' id='line-80'></span><br />
+<ul><li>Email Notification을 활성화 한다. 이 기능을 키면 <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/SubscribePlugin'>SubscribePlugin</a>을 사용할 수 있다.<span class='line-anchor' id='line-81'></span><br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24sistermap'>$sistermap</a></strong></code><span class='line-anchor' id='line-82'></span><br />
+<ul><li>기본값은 <code>$data_dir.'/sistermap.txt'</code> <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/SisterWiki'>SisterWiki</a>를 위해 사용된다.<span class='line-anchor' id='line-83'></span><br />
+</li>
+</ul>
+<code><strong>$trail</strong></code><span class='line-anchor' id='line-84'></span><br />
+<ul><li><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/Trailer'>Trailer</a>를 활성화 한다. <span class='line-anchor' id='line-85'></span><br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24use_counter'>$use_counter</a></strong></code><span class='line-anchor' id='line-86'></span><br />
+<ul><li>페이지 카운터의 사용 여부를 결정한다 (See <a href='/mercenarys/wiki.php/PageHitsMacro' >PageHitsMacro</a>)<span class='line-anchor' id='line-87'></span><br />
+</li>
+</ul>
+<code><strong>$use_referer</strong></code><span class='line-anchor' id='line-88'></span><br />
+<ul><li>간단한 referer_log 남기기 여부 결정. 옵션값을 1로 변경하면 ./data/cache/referer에 기록이 남는다. <span class='line-anchor' id='line-89'></span><br />
+<br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24use_sectionedit'>$use_sectionedit</a></strong></code><span class='line-anchor' id='line-91'></span><br />
+<ul><li>1로 설정하면 섹션편집을 할 수 있도록 단락마다 edit 링크를 단다. <span class='line-anchor' id='line-92'></span><br />
+<br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24use_sistersites'>$use_sistersites</a></strong></code><span class='line-anchor' id='line-94'></span><br />
+<ul><li><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/SisterWiki'>SisterWiki</a>를 사용하기 위한 옵션.<span class='line-anchor' id='line-95'></span><br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24use_twinpages'>$use_twinpages</a></strong></code><span class='line-anchor' id='line-96'></span><br />
+<ul><li><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/SisterWiki'>SisterWiki</a> 사용 혹은 <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/PageAlias'>PageAlias</a>를 사용하기 위한 옵션.<span class='line-anchor' id='line-97'></span><br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24use_trackback'>$use_trackback</a></strong></code><span class='line-anchor' id='line-98'></span><br />
+<ul><li>모니위키 블로그에서 트랙백을 사용할 수 있게 한다.<span class='line-anchor' id='line-99'></span><br />
+<br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24use_hostname'>$use_hostname</a></strong></code><span class='line-anchor' id='line-101'></span><br />
+<code>gethostbyaddr()</code>의 사용여부 결정. <a href='/mercenarys/wiki.php/RecentChangesMacro' >RecentChangesMacro</a>에서 사용된다.<span class='line-anchor' id='line-102'></span><br />
+</div>
+<br />
+<div id="aline-104"><code><strong>$external_target = '_blank';</strong></code><span class='line-anchor' id='line-104'></span><br />
+<ul><li>외부 링크가 새창으로 열리게 된다.<span class='line-anchor' id='line-105'></span><br />
+</li>
+</ul>
+<code><strong>$use_clipmacro=1;</strong></code><span class='line-anchor' id='line-106'></span><br />
+<ul><li><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/ClipPlugin'>ClipPlugin</a> 활성화, 파일 첨부시 클립보드 이미지 첨부를 쉽게할 수 있다.<span class='line-anchor' id='line-107'></span><br />
+</li>
+</ul>
+<code><strong>$use_save_refresh=1;</strong></code><span class='line-anchor' id='line-108'></span><br />
+<ul><li>문서 저장 후 문서 리프레쉬 하도록 지정. 1 이상의 값이면 그 값에 1을 뺀 시간(초)을 기다린 후에 리프레쉬를 한다.<span class='line-anchor' id='line-109'></span><br />
+</li>
+<li>리플래쉬 하지 않는 경우에 문서를 다시 로딩(!F5)하면 문서를 다시 고치려고 시도하므로 이를 방지하기 위해서 refresh를 하는 것.<span class='line-anchor' id='line-110'></span><br />
+</li>
+<li><code>$use_save_refresh=-1</code>;이라고 하면 http header로 <code>Status 302: Location</code> 헤더를 날려주고 종료함.<span class='line-anchor' id='line-111'></span><br />
+</li>
+</ul>
+<code><strong>$use_refresh=2;</strong></code><span class='line-anchor' id='line-112'></span><br />
+<ul><li>문서 저장 이외의 리플래쉬가 필요한 액션의 경우 이 값이 사용된다. (예: scrap, userform 등등)<span class='line-anchor' id='line-113'></span><br />
+</li>
+<li>문서 저정 후 리프레쉬 되지 않게 하려면 <code>$use_save_refresh=0;</code>으로 지정<span class='line-anchor' id='line-114'></span><br />
+<br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' title="SectionFolding" href='/mercenarys/wiki.php/SectionFolding'>$use_folding</a></strong></code><span class='line-anchor' id='line-116'></span><br />
+<ul><li>섹션 폴딩<span class='line-anchor' id='line-117'></span><br />
+</li>
+<li>모니위키 1.2.0부터는 단순히 $javascripts=array("folding.js",... 추가하여 사용하며, 모바일을 함께 지원합니다.<span class='line-anchor' id='line-118'></span><br />
+</li>
+<li>섹션별 폴딩이 아닌, 본문 내에서 폴딩을 사용하고자 할 때는 <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/FoldingProcessor'>FoldingProcessor</a> 를 참조<span class='line-anchor' id='line-119'></span><br />
+<br />
+</li>
+</ul>
+<code><strong>$rc_strimwidth=0;</strong></code><span class='line-anchor' id='line-121'></span><br />
+<ul><li><a href='/mercenarys/wiki.php/RecentChanges' >RecentChanges</a> 에서 페이지 리스트 글자 수 제한 설정. 값을 0으로 하면 제한이 없어진다. <span class='line-anchor' id='line-122'></span><br />
+<br />
+</li>
+</ul>
+<code><strong>$pull_url</strong></code><span class='line-anchor' id='line-124'></span><br />
+<ul><li>pull 액션으로 문서를 끌어올 위키 사이트 주소 입력. 1.2.2 이후 버전에서 사용 가능.<span class='line-anchor' id='line-125'></span><br />
+<ul><li>config.php에 <code class='wiki'>$pull_url="http://moniwiki.kldp.net/wiki.php/";</code> 입력<span class='line-anchor' id='line-126'></span><br />
+</li>
+<li><a class='externalLink'  href='http://자신이설치한모니위키주소/문서제목?action=pull' >http://자신이설치한모니위키주소/문서제목?action=pull</a><span class='line-anchor' id='line-127'></span><br />
+</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-5'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/MoniWikiOptions?action=edit&amp;section=5'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-128"><a id='s-5'></a><span class='tocnumber'><a href='#toc'>5<span class='dot'>.</span></a> </span>프로세서 옵션 <a class='perma' href='#s-5'>¶</a></h2><div id="sc-5">
+<div id="aline-129"><code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24inline_latex'>$inline_latex</a></strong></code><span class='line-anchor' id='line-129'></span><br />
+<ul><li>inline latex문법을 활성화하거나 끈다. latex, mimetex, itex 등등 지원 <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/LatexProcessor'>LatexProcessor</a><span class='line-anchor' id='line-130'></span><br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' title="MoniMarkup" href='/mercenarys/wiki.php/MoniMarkup'>$default_markup</a></strong></code><span class='line-anchor' id='line-131'></span><br />
+<ul><li>포메팅 프로세서 변경.<span class='line-anchor' id='line-132'></span><br />
+<br />
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-6'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/MoniWikiOptions?action=edit&amp;section=6'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-134"><a id='s-6'></a><span class='tocnumber'><a href='#toc'>6<span class='dot'>.</span></a> </span>경로 설정 <a class='perma' href='#s-6'>¶</a></h2><div id="sc-6">
+<div id="aline-135"><code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24cache_dir'>$cache_dir</a></strong></code><span class='line-anchor' id='line-135'></span><br />
+<ul><li>기본값 <code>$data_dir.'/cache'</code><span class='line-anchor' id='line-136'></span><br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24css_url'>$css_url</a></strong></code><span class='line-anchor' id='line-137'></span><br />
+<ul><li>기본 css의 경로를 설정한다. 기본값은 <code>$url_prefix.'/css/default.css'</code><span class='line-anchor' id='line-138'></span><br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24data_dir'>$data_dir</a></strong></code><span class='line-anchor' id='line-139'></span><br />
+<ul><li>기본값 <code>'./data'</code> ../data라고 지정하고 data디렉토리를 지정된 장소로 옮기면 외부에서 data직접 액세스를 차단할 수 있다.<span class='line-anchor' id='line-140'></span><br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24editlog_name'>$editlog_name</a></strong></code><span class='line-anchor' id='line-141'></span><br />
+<ul><li>기본값 <code>$data_dir.'/editlog'</code><span class='line-anchor' id='line-142'></span><br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24imgs_dir'>$imgs_dir</a></strong></code><span class='line-anchor' id='line-143'></span><br />
+<ul><li>기본값 <code>$url_prefix.'/imgs'</code><span class='line-anchor' id='line-144'></span><br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24intermap'>$intermap</a></strong></code><span class='line-anchor' id='line-145'></span><br />
+<ul><li>기본값 <code>$data_dir.'/intermap.txt'</code><span class='line-anchor' id='line-146'></span><br />
+</li>
+</ul>
+<code><strong>$kbd_script</strong></code><span class='line-anchor' id='line-147'></span><br />
+<ul><li>기본값은 <code>$url_prefix.'/css/kbd.js'</code><span class='line-anchor' id='line-148'></span><br />
+</li>
+</ul>
+<code><strong>$logo_img</strong></code><span class='line-anchor' id='line-149'></span><br />
+<ul><li>기본값은 <code>$imgs_dir.'/moniwiki-logo.png'</code><span class='line-anchor' id='line-150'></span><br />
+</li>
+</ul>
+<code><strong>$shared_metadb</strong></code><span class='line-anchor' id='line-151'></span><br />
+<ul><li>기본값은 <code>$data_dir."/metadb"</code><span class='line-anchor' id='line-152'></span><br />
+</li>
+</ul>
+<code><strong>$shared_intermap</strong></code><span class='line-anchor' id='line-153'></span><br />
+<ul><li>기본값은 <code>$data_dir."/text/<a href='/mercenarys/wiki.php/InterMap' >InterMap</a>"</code><span class='line-anchor' id='line-154'></span><br />
+</li>
+<li>이렇게 페이지가 위키문서이므로 사용자가 추가/변경이 가능하다.<span class='line-anchor' id='line-155'></span><br />
+</li>
+<li>따라서 $intermap + $shared_intermap = <a href='/mercenarys/wiki.php/InterWiki' >InterWiki</a> map이 된다.<span class='line-anchor' id='line-156'></span><br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24text_dir'>$text_dir</a></strong></code><span class='line-anchor' id='line-157'></span><br />
+<ul><li>기본값은 <code>$data_dir.'/text'</code><span class='line-anchor' id='line-158'></span><br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24upload_dir'>$upload_dir</a></strong></code><span class='line-anchor' id='line-159'></span><br />
+<ul><li>기본값은 <code>'pds'</code><span class='line-anchor' id='line-160'></span><br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24url_prefix'>$url_prefix</a></strong></code><span class='line-anchor' id='line-161'></span><br />
+<ul><li>현재 <a href='/mercenarys/wiki.php/MoniWiki' >MoniWiki</a><tt class='sister'><a href='#sister1'>&#x203a;1</a></tt>가 존재하는 경로. 기본값은 <code>monisetup.php</code>에 의해 자동 결정된다.<span class='line-anchor' id='line-162'></span><br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24user_dir'>$user_dir</a></strong></code><span class='line-anchor' id='line-163'></span><br />
+<ul><li>기본값 없음. 설정되어 있지 않으면 <code>'data/user'</code>를 찾아본다.<span class='line-anchor' id='line-164'></span><br />
+</li>
+<li><code>$data_dir</code> 경로 변경시 로그인이 안 된다면 <code>$user_dir</code>이 지정 안 되었기 때문임.<span class='line-anchor' id='line-165'></span><br />
+</li>
+<li><code>$data_dir.'/user'</code> 설정을 권장함.<span class='line-anchor' id='line-166'></span><br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24vartmp_dir'>$vartmp_dir</a></strong></code><span class='line-anchor' id='line-167'></span><br />
+<ul><li>기본값은 '/var/tmp/', 윈도우즈에서는 '/temp', 혹은 '/tmp'<span class='line-anchor' id='line-168'></span><br />
+</li>
+<li>이 값을 '/home/foobar/tmp' 식으로 바꾸고 /home/foobar/tmp 디렉토리의 퍼미션을 777과 같이 주는 방식도 가능합니다.<span class='line-anchor' id='line-169'></span><br />
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-7'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/MoniWikiOptions?action=edit&amp;section=7'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-170"><a id='s-7'></a><span class='tocnumber'><a href='#toc'>7<span class='dot'>.</span></a> </span>시스템 설정 <a class='perma' href='#s-7'>¶</a></h2><div id="sc-7">
+<div id="aline-171"><code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24lang'>$lang</a></strong></code><span class='line-anchor' id='line-171'></span><br />
+<ul><li>기본 언어를 설정한다. 기본값 'auto'로 브라우져 설정을 따르며, 강제로 한국어로 하고자 하면 'ko_KR'로 지정한다.<span class='line-anchor' id='line-172'></span><br />
+<br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24dba_type'>$dba_type</a></strong></code><span class='line-anchor' id='line-174'></span><br />
+<ul><li>"db3, db2, gdbm"등등. php가 지원하는 dba모듈의 유형을 지정한다. 기본값은 보통 db3이며, 처음 설치시 <code><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/monisetup.php'>monisetup.php</a></code>에 의해 자동으로 결정한다.<span class='line-anchor' id='line-175'></span><br />
+</li>
+</ul>
+<code>'''<a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24metatags'>$metatags</a>=<em></em></code><span class='line-anchor' id='line-176'></span><br />
+<ul><li>HTML meta tag를 지정할 수 있는 저수준의 옵션이다.<span class='line-anchor' id='line-177'></span><br />
+</li>
+<li>favicon등을 이곳에서 직접 지정할 수 있다.<span class='line-anchor' id='line-178'></span><br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24path'>$path</a></strong></code><span class='line-anchor' id='line-179'></span><br />
+<ul><li>rcs를 ~/bin같은 곳에 설치할 때 이 변수에 path를 지정한다 예를 들어 <code>/usr/local/bin:/usr/bin</code><span class='line-anchor' id='line-180'></span><br />
+</li>
+<li>윈도우즈 환경이라면 <code class='wiki'>$path='./bin;c:/program files/vim/vimXX';</code>와 같은 식으로 설정한다.<span class='line-anchor' id='line-181'></span><br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24pds_allowed'>$pds_allowed</a></strong></code><span class='line-anchor' id='line-182'></span><br />
+<ul><li><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/UploadFile'>UploadFile</a>에서 허용되는 확장자를 지정한다.<span class='line-anchor' id='line-183'></span><br />
+</li>
+<li>기본값은 <code>'png|jpg|jpeg|gif|mp3|zip|tgz|gz|txt|css|exe|hwp|pdf'</code><span class='line-anchor' id='line-184'></span><br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24query_prefix'>$query_prefix</a>= '/';</strong></code><span class='line-anchor' id='line-185'></span><br />
+<ul><li>(monisetup.php에 의해 자동 결정된다) apache2를 쓸 경우는 '?'를 쓰거나, <code><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/AcceptPathInfo'>AcceptPathInfo</a> on</code>를 쓰고 '/'로 지정한다.<span class='line-anchor' id='line-186'></span><br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24security_class'>$security_class</a>="needtologin";</strong></code><span class='line-anchor' id='line-187'></span><br />
+<ul><li><code>$security_class</code>에 대한 내용은 <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/SecurityPlugin'>SecurityPlugin</a> 참조.<span class='line-anchor' id='line-188'></span><br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24use_autosave'>$use_autosave</a></strong></code><span class='line-anchor' id='line-189'></span><br />
+<ul><li><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/AutoSave'>AutoSave</a> 지원여부 지정.<span class='line-anchor' id='line-190'></span><br />
+</li>
+</ul>
+<code class='wiki'>$extra_macros=array('Comment');</code><span class='line-anchor' id='line-191'></span><br />
+<ul><li>모든 페이지 끝 부분에 자동으로 넣을 매크로를 지정하는 옵션.<span class='line-anchor' id='line-192'></span><br />
+</li>
+<li><a href='/mercenarys/wiki.php/CommentMacro' >CommentMacro</a> 참고<span class='line-anchor' id='line-193'></span><br />
+</li>
+</ul>
+<code><strong><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24admin_passwd'>$admin_passwd</a></strong></code><span class='line-anchor' id='line-194'></span><br />
+<ul><li>모니위키 관리자 패스워드 설정. <code>tools/mkpassswd.pl</code> 이나 <a href='/mercenarys/wiki.php/HelpOnInstallation#s-5' title="HelpOnInstallation" >초기 설정</a>을 통해 입력을 권장함.<span class='line-anchor' id='line-195'></span><br />
+<br />
+</li>
+</ul>
+See also<span class='line-anchor' id='line-197'></span><br />
+<ul><li><a href='/mercenarys/wiki.php/HelpOnConfiguration' >HelpOnConfiguration</a><span class='line-anchor' id='line-198'></span><br />
+</li>
+<li><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/MoniWikiOptionsForBigWikis'>MoniWikiOptionsForBigWikis</a> : 1만페이지 이상 모니위키 운영시 옵션에 대한 설명.<span class='line-anchor' id='line-199'></span><br />
+</li>
+<li><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/MoniWikiOptimize'>MoniWikiOptimize</a> : 최적화를 위한 설정.<span class='line-anchor' id='line-200'></span><br />
+</li>
+<li><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%EC%84%A4%EC%B9%98%EC%84%A4%EB%AA%85%EC%84%9C'>설치설명서</a><span class='line-anchor' id='line-201'></span><br />
+</li>
+<li><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/MoniWikiTips'>MoniWikiTips</a><span class='line-anchor' id='line-202'></span><br />
+</li>
+<li><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/config.php.default.ko'>config.php.default.ko</a><span class='line-anchor' id='line-203'></span><br />
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id='wikiSister'>
+<div class='separator'><tt class='foot'>----</tt></div>
+Sister Sites Index<br />
+<ul><li><tt class='foot'><a id='sister1'></a><a href='#rsister1'>1&#x203a;</a></tt> <a class="interwiki" href='http://moniwiki.kldp.net/wiki.php/MoniWiki' ><img class="interwiki" alt="MoniWiki:" src='/mercenarys/imgs//interwiki/moniwiki-16.png' style='border:0' height='16' width='16' title='MoniWiki:' /></a><a href='http://moniwiki.kldp.net/wiki.php/MoniWiki'  title='MoniWiki:MoniWiki'>MoniWiki</a> </li></ul></div>

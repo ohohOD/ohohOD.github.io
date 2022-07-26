@@ -1,0 +1,41 @@
+<!-- // Cache_Text 0.6 1613307873
+1613307873 
+-->
+<div id="aline-1"><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/PageHits'>PageHits</a>을 보여주는 매크로.<span class='line-anchor' id='line-1'></span><br />
+</div>
+<br />
+<div id="aline-3"></div>
+<div class="section"><a id='sect-1'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/PageHitsMacro?action=edit&amp;section=1'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-3"><a id='s-1'></a>환경 설정 <a class='perma' href='#s-1'>¶</a></h2><div id="sc-1">
+<div id="aline-4"><ul><li>$dba_type : 자신의 호스팅 환경에 따라서 db3,db4, gdbm 등등 다를 수 있습니다. DB는 monisetup.php에서 자동으로 선택됩니다.<span class='line-anchor' id='line-4'></span><br />
+</li>
+<li><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24use_counter'>$use_counter</a> : 기본값이 0으로 되어 있음. <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/PageHits'>PageHits</a>를 사용하려면 1로 바꿔야 함.<span class='line-anchor' id='line-5'></span><br />
+</li>
+</ul>
+<span class='line-anchor' id='line-6'></span><br />
+<pre class='wiki'>
+$dba_type="db4";
+...
+$use_counter=1;
+...
+</pre><span class='line-anchor' id='line-11'></span>
+</div>
+<div class='separator'><hr /></div><span class='line-anchor' id='line-12'></span>
+<div id="aline-13">특정 사용자명, 가령 개인위키라면 그 위키 주인, 은 제외하고 incCounter()하는 게 어떨까요?<span class='line-anchor' id='line-13'></span><br />
+</div>
+<br />
+<div id="aline-15">옵션으로 제공하도록 하겠습니다. <strong>위키 주인</strong>은 여럿이 있을 수 있으니 배열로 하고 $owners=array("홍길동","철수");처럼 하면 되겠죠 ? --<a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/WkPark'>WkPark</a><span class='line-anchor' id='line-15'></span><br />
+</div>
+<br />
+<div class='separator'><hr /></div><span class='line-anchor' id='line-17'></span>
+<div id="aline-18"><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/PageHits'>PageHits</a>에서 히트가 많은 페이지가 위에 오는데, 이를 거꾸로 해서 히트가 빈한 페이지에게도 꽃다발을 주고 싶습니다. r 옵션을 지원해서 arsort()만이 아니라 asort()도 되게 하면 어떨까요 ?<span class='line-anchor' id='line-18'></span><br />
+</div>
+<br />
+<div id="aline-20">reverse 옵션을 넣었습니다. <img src='/mercenarys/imgs/smile/8).png' style='border:0' class='smiley' alt=':)' title=':)' /> (rc16에 넣지요)<span class='line-anchor' id='line-20'></span><br />
+</div>
+<br />
+<div class='separator'><hr /></div><span class='line-anchor' id='line-22'></span>
+<div id="aline-23"><a href='/mercenarys/wiki.php/CategoryMacro' >CategoryMacro</a><span class='line-anchor' id='line-23'></span><br />
+</div>
+</div>
+</div>

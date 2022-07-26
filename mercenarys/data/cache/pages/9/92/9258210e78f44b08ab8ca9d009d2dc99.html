@@ -1,0 +1,118 @@
+<!-- // Cache_Text 0.6 1613298555
+1613298555 
+-->
+<div id="aline-2"></div>
+<div class="section"><a id='sect-1'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/AttachmentMacro?action=edit&amp;section=1'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-2"><a id='s-1'></a>간단한 사용법 <a class='perma' href='#s-1'>¶</a></h2><div id="sc-1">
+<div id="aline-3"><code class='wiki'>attachment:hello.png</code><span class='line-anchor' id='line-3'></span><br />
+</div>
+<br />
+<div id="aline-5">올리고 싶은 파일 이름 혹은 이미 첨부된 파일 이름을 <code class='wiki'>attachment:파일이름.확장자</code>라고 써준다.<span class='line-anchor' id='line-5'></span><br />
+</div>
+<br />
+<div id="aline-7">파일이 이미 올려 있을 경우에는 그 파일을 받을 수 있는 링크가 자동으로 걸리게 되고, 파일이 아직 업로드되지 않았다면 파일을 업로드 할 수 있는 링크가 생성된다.<span class='line-anchor' id='line-7'></span><br />
+</div>
+<div class='separator'><hr /></div><span class='line-anchor' id='line-8'></span>
+<div id="aline-9"><img src='/mercenarys/imgs/smile/alert.png' style='border:0' class='smiley' alt='/!\' title='/!\' /> Attachment는 매크로로 구현되어 있으므로 <code class='wiki'>[[Attachment(hello.png)]]</code>라고 해도 똑같은 방식으로 작동을 합니다. 그러나 <strong>attachment:</strong>문법을 쓰시기 바랍니다.<span class='line-anchor' id='line-9'></span><br />
+</div>
+<br />
+<div id="aline-11">See also <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/UploadFile'>UploadFile</a><span class='line-anchor' id='line-11'></span><br />
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-2'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/AttachmentMacro?action=edit&amp;section=2'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-12"><a id='s-2'></a>그림 파일에 대한 고급 옵션 <a class='perma' href='#s-2'>¶</a></h2><div id="sc-2">
+<div id="aline-13"><img src='/mercenarys/imgs/smile/alert.png' style='border:0' class='smiley' alt='/!\' title='/!\' /> 모니위키 1.0.9 혹은 그 이후에 지원되는 기능입니다.<span class='line-anchor' id='line-13'></span><br />
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-3'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/AttachmentMacro?action=edit&amp;section=3'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h3 id="line-14"><a id='s-2.1'></a>올린 파일의 크기 및 위치 조정 <a class='perma' href='#s-2.1'>¶</a></h3><div id="sc-3">
+<pre class='wiki'>
+attachment:foobar.png?width=300px&amp;align=center
+</pre><div id="aline-17"><span class='line-anchor' id='line-17'></span>
+<div id="aline-18"></div>
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-4'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/AttachmentMacro?action=edit&amp;section=4'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h3 id="line-18"><a id='s-2.2'></a>caption 속성 지원 <a class='perma' href='#s-2.2'>¶</a></h3><div id="sc-4">
+<div id="aline-19"><img src='/mercenarys/imgs/smile/alert.png' style='border:0' class='smiley' alt='/!\' title='/!\' /> 모니위키 1.1.3 CVS부터 지원하는 기능<span class='line-anchor' id='line-19'></span><br />
+<pre class='wiki'>
+attachment:foobar.png?title="안녕하세요"
+</pre><span class='line-anchor' id='line-22'></span>
+</div>
+<br />
+<div id="aline-24">alt 및 title을 지정하면 모두 caption처럼 인식됩니다.<span class='line-anchor' id='line-24'></span><br />
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-5'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/AttachmentMacro?action=edit&amp;section=5'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h3 id="line-25"><a id='s-2.3'></a>손톱 그림 만들기 지원 <a class='perma' href='#s-2.3'>¶</a></h3><div id="sc-5">
+<div id="aline-26"><img src='/mercenarys/imgs/smile/alert.png' style='border:0' class='smiley' alt='/!\' title='/!\' /> 모니위키 1.1.3.1부터 지원하는 기능<span class='line-anchor' id='line-26'></span><br />
+이 경우 config.php에 <code class='wiki'>$use_convert_thumbs=1</code>를 넣어주고 다음과 같이 지정한다.<span class='line-anchor' id='line-27'></span><br />
+</div>
+<br />
+<pre class='wiki'>
+attachment:foobar.png?thumb=1
+</pre><div id="aline-31"><span class='line-anchor' id='line-31'></span>
+<div id="aline-32">손톱그림의 내정된 기본 크기로 손톱 그림이 만들어지고 보여진다.<span class='line-anchor' id='line-32'></span><br />
+</div>
+<br />
+<div id="aline-34"><img src='/mercenarys/imgs/smile/alert.png' style='border:0' class='smiley' alt='/!\' title='/!\' /> 1.1.3에서 제대로 안됩니다. 버전 1.1.3.1을 받아서 사용하시기 바랍니다.<span class='line-anchor' id='line-34'></span><br />
+</div>
+<div class='separator'><hr /></div><span class='line-anchor' id='line-35'></span>
+<pre class='wiki'>
+attachment:foobar.png?thumbwidth=100px
+</pre><div id="aline-38"><span class='line-anchor' id='line-38'></span>
+<div id="aline-39">손톱 그림 크기를 직접 지정할 수 있다.<span class='line-anchor' id='line-39'></span><br />
+</div>
+<br />
+<div id="aline-41"><img src='/mercenarys/imgs/smile/alert.png' style='border:0' class='smiley' alt='/!\' title='/!\' /> 1.2.2 이후부터는 지정된 크기로만 손톱 그림을 지정할 수 있습니다. 내정된 지정값은<span class='line-anchor' id='line-41'></span><br />
+<pre class='wiki'>
+$thumb_widths = array('120', '240', '320', '480', '600', '800', '1024');
+</pre><span class='line-anchor' id='line-44'></span>
+</div>
+<br />
+<div id="aline-46"><img src='/mercenarys/imgs/smile/alert.png' style='border:0' class='smiley' alt='/!\' title='/!\' /> 1.2.2 이후부터는 <code class='wiki'>$max_image_width</code>값을 지정하면 이 값보다 너비가 큰 이미지는 자동으로 축소된 크기의 이미지가 만들어집니다.<span class='line-anchor' id='line-46'></span><br />
+</div>
+<br />
+<div id="aline-48"><ul><li><code class='wiki'>attachment:foobar.png?thumb=1</code> 기본 손톱그림 크기가 사용됩니다.<span class='line-anchor' id='line-48'></span><br />
+</li>
+<li><code class='wiki'>attachment:foobar.png?thumb=0</code> 손톱 그림이 사용되지 않고 원본의 이미지가 그대로 사용됩니다.<span class='line-anchor' id='line-49'></span><br />
+</li>
+</ul>
+</div>
+<div class='separator'><hr /></div><span class='line-anchor' id='line-50'></span>
+<div id="aline-51"><img src='/mercenarys/imgs/smile/alert.png' style='border:0' class='smiley' alt='/!\' title='/!\' /> 1.2.2부터 다음과 같은 방법도 사용 가능합니다.<span class='line-anchor' id='line-51'></span><br />
+</div>
+<br />
+<div id="aline-53"><ul><li><code class='wiki'>attachment:페이지이름/foobar.png</code><span class='line-anchor' id='line-53'></span><br />
+</li>
+<li><code class='wiki'>attachment:페이지이름/thumbnails/foobar.png</code> - 손톱 그림 직접 지정. 기본 손톱그림이 사용됨<span class='line-anchor' id='line-54'></span><br />
+</li>
+<li><code class='wiki'>attachment:페이지이름/foobar.png?thumbwidth=120</code> - 손톱그림 폭이 120px로 지정됨<span class='line-anchor' id='line-55'></span><br />
+</li>
+<li><code class='wiki'>attachment:페이지이름/thumbnails/foobar.w120.png</code> - 손톱그림 폭이 120px인 이미지를 직접 링크.<span class='line-anchor' id='line-56'></span><br />
+<ul><li><code class='wiki'>pds/페이지이름/thumbnails/</code> 아래 디렉토리에 해당 이미지가 없는 경우에는 자동으로 만들어짐<span class='line-anchor' id='line-57'></span><br />
+</li>
+<li>이미 파일이 있는 경우에는 해당 이미지를 출력.<span class='line-anchor' id='line-58'></span><br />
+</li>
+</ul></li>
+<li><code class='wiki'>attachment:페이지이름/foobar.w120.png</code> 위 방식과 같음.<span class='line-anchor' id='line-59'></span><br />
+<ul><li>이 경우 <code class='wiki'>foobar.w120.png</code> 파일을 직접 업로드하는 방식도 사용 가능. (사용자가 직접 만든 손톱그림)<span class='line-anchor' id='line-60'></span><br />
+<br />
+</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-6'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/AttachmentMacro?action=edit&amp;section=6'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-62"><a id='s-3'></a>GUI를 사용하는 경우 <a class='perma' href='#s-3'>¶</a></h2><div id="sc-6">
+<div id="aline-63">모니위키 1.1.3부터 제대로 지원하게 된 <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/WikiWyg'>WikiWyg</a> GUI를 사용하면 좀 더 쉽게 첨부 이미지를 올릴 수 있습니다.<span class='line-anchor' id='line-63'></span><br />
+</div>
+</div>
+</div>

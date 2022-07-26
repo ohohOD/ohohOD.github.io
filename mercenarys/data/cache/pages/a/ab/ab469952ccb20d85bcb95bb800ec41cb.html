@@ -1,0 +1,112 @@
+<!-- // Cache_Text 0.6 1613282190
+1613282190 
+-->
+<script type="text/javascript" src="/mercenarys/local/toctoggle.js"></script><div id="aline-1">
+<div class='wikiToc' id='toc1'><div class='toctitle'>
+<h2 style='display:inline'><span class="i18n" title="Contents">Contents</span></h2>
+</div><a name='toc' ></a><dl><dd><dl>
+<dt><a id='toc-1' href='#s-1'><span class='num'>1<span class="dot">.</span></span> 사용법 </a></dt>
+<dd><dl>
+<dt><a id='toc-1.1' href='#s-1.1'><span class='num'>1.1<span class="dot">.</span></span> 특정 페이지에 추가 </a></dt>
+<dt><a id='toc-1.2' href='#s-1.2'><span class='num'>1.2<span class="dot">.</span></span> 모든 페이지에 추가 </a></dt>
+<dt><a id='toc-1.3' href='#s-1.3'><span class='num'>1.3<span class="dot">.</span></span> 입력창 바꾸기 </a></dt>
+<dt><a id='toc-1.4' href='#s-1.4'><span class='num'>1.4<span class="dot">.</span></span> 댓글 창 동작 </a></dt>
+</dl></dd>
+</dl></dd></dl>
+</div>
+<script type="text/javascript">
+/*<![CDATA[*/
+ if (window.showTocToggle) { showTocToggle('toc1', '<img src="/mercenarys/imgs/plugin/arrdown.png" width="10px" border="0" alt="[+]" title="[+]" />','<img src="/mercenarys/imgs/plugin/arrup.png" width="10px" border="0" alt="[-]" title="[-]" />'); } 
+/*]]>*/
+</script><span class='line-anchor' id='line-1'></span><br />
+</div>
+<br />
+<div id="aline-3"></div>
+<div class="section"><a id='sect-1'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/CommentMacro?action=edit&amp;section=1'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-3"><a id='s-1'></a><span class='tocnumber'><a href='#toc'>1<span class='dot'>.</span></a> </span>사용법 <a class='perma' href='#s-1'>¶</a></h2><div id="sc-1">
+<div id="aline-4"></div>
+</div>
+</div>
+<div class="section"><a id='sect-2'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/CommentMacro?action=edit&amp;section=2'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h3 id="line-4"><a id='s-1.1'></a><span class='tocnumber'><a href='#toc'>1.1<span class='dot'>.</span></a> </span>특정 페이지에 추가 <a class='perma' href='#s-1.1'>¶</a></h3><div id="sc-2">
+<div id="aline-5">특정 페이지 하단에 <code class='wiki'>[[Comment]]</code>를 넣으면 <a class='externalLink'  href='http://moniwiki.kldp.net/' >http://moniwiki.kldp.net/</a><strong></strong>에서 보이듯이 맨 하단에 <a href='/mercenarys/wiki.php/CommentMacro'  class="current">CommentMacro</a>가 붙게 됩니다.<span class='line-anchor' id='line-5'></span><br />
+</div>
+<br />
+<div id="aline-7"></div>
+</div>
+</div>
+<div class="section"><a id='sect-3'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/CommentMacro?action=edit&amp;section=3'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h3 id="line-7"><a id='s-1.2'></a><span class='tocnumber'><a href='#toc'>1.2<span class='dot'>.</span></a> </span>모든 페이지에 추가 <a class='perma' href='#s-1.2'>¶</a></h3><div id="sc-3">
+<div id="aline-8">모든 페이지에 Comment 매크로를 붙이기를 원한다면 config.php에 다음을 추가해주세요.<span class='line-anchor' id='line-8'></span><br />
+<pre class='wiki'>
+$extra_macros=array('FootNote','Comment');
+</pre><span class='line-anchor' id='line-11'></span>
+<img src='/mercenarys/imgs/smile/alert.png' style='border:0' class='smiley' alt='/!\' title='/!\' /> Comment 매크로 이외에 자신이 만든 매크로가 맨 하단에 들어가도록 위의 방법을 쓰실 수 있습니다. 위의 방법으로 <a href='/mercenarys/wiki.php/FootNoteMacro' >FootNoteMacro</a>와 <a href='/mercenarys/wiki.php/CommentMacro'  class="current">CommentMacro</a>를 넣은 예입니다.<span class='line-anchor' id='line-12'></span><br />
+</div>
+<br />
+<div id="aline-14"><img src='/mercenarys/imgs/smile/alert.png' style='border:0' class='smiley' alt='/!\' title='/!\' /> 1.0.9부터 지원합니다.<span class='line-anchor' id='line-14'></span><br />
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-4'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/CommentMacro?action=edit&amp;section=4'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h3 id="line-15"><a id='s-1.3'></a><span class='tocnumber'><a href='#toc'>1.3<span class='dot'>.</span></a> </span>입력창 바꾸기 <a class='perma' href='#s-1.3'>¶</a></h3><div id="sc-4">
+<div id="aline-16">기본 옵션으로 제공되는 입력창이 아닌 한 줄 짜리 입력창을 사용하려는 경우 아래와 같이 'oneliner' 옵션을 코멘트 매크로에 적용해주면 됩니다.<span class='line-anchor' id='line-16'></span><br />
+</div>
+<br />
+<pre class='wiki'>
+$extra_macros=array('FootNote','Comment(oneliner)');
+</pre><div id="aline-20"><span class='line-anchor' id='line-20'></span>
+<div id="aline-21"></div>
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-5'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/CommentMacro?action=edit&amp;section=5'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h3 id="line-21"><a id='s-1.4'></a><span class='tocnumber'><a href='#toc'>1.4<span class='dot'>.</span></a> </span>댓글 창 동작 <a class='perma' href='#s-1.4'>¶</a></h3><div id="sc-5">
+<div id="aline-22">일반적인 동작은 댓글을 달면 <code class='wiki'>[[Comment]]</code>라고 입력한 줄 바로 위에 <code class='wiki'>---- &lt;줄바꿈> 댓글 내용</code> 형식으로 댓글이 추가됩니다. 따라서 페이지 맨 아래에 <code class='wiki'>[[Comment]]</code>를 두면 일반적인 블로그 댓글처럼 최근 글이 제일 아래, 댓글 창 바로 위에 오게 됩니다. <span class='line-anchor' id='line-22'></span><br />
+최근 글을 맨 위에 오게 하고 싶다면 원하는 줄에 <code class='wiki'>##Comment</code>라고 적어두면 됩니다. 페이지에 <code class='wiki'>##Comment</code> 줄이 있으면 바로 그 아래에 <code class='wiki'>---- &lt;줄바꿈> 댓글 내용</code> 형식으로 댓글이 추가됩니다. 아래 예를 참조하십시오.<span class='line-anchor' id='line-23'></span><br />
+<pre class='wiki'>
+본문 내용
+....
+[[Comment]]
+</pre><span class='line-anchor' id='line-28'></span>
+이 상태에서 '가나다'와 'abc'라는 댓글을 차례로 달면 아래와 같이 됩니다.<span class='line-anchor' id='line-29'></span><br />
+<pre class='wiki'>본문 내용
+....
+----
+가나다
+----
+abc
+[[Comment]]
+</pre><span class='line-anchor' id='line-37'></span>
+</div>
+<div class='separator'><hr /></div><span class='line-anchor' id='line-38'></span>
+<br />
+<div id="aline-40">이 페이지 상태에서 <code class='wiki'>##Comment</code> 줄을 아래와 같이 추가한다고 가정합니다.<span class='line-anchor' id='line-40'></span><br />
+<pre class='wiki'>
+본문 내용
+....
+##Comment
+----
+가나다
+----
+abc
+[[Comment]]
+</pre><span class='line-anchor' id='line-50'></span>
+이 상태에서 '라마바사'와 'def'라는 댓글을 차례로 달면 아래와 같이 됩니다.<span class='line-anchor' id='line-51'></span><br />
+<pre class='wiki'>
+본문 내용
+....
+##Comment
+----
+def
+----
+라마바사
+----
+가나다
+----
+abc
+[[Comment]]
+</pre><span class='line-anchor' id='line-65'></span>
+</div>
+</div>
+</div>

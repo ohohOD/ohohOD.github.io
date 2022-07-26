@@ -1,0 +1,240 @@
+<!-- // Cache_Text 0.6 1613160732
+1613160732 
+-->
+<script type='text/javascript' src='/mercenarys/local/wikibits.js'></script>
+<script type='text/javascript' src='/mercenarys/local/js/swfobject.js'></script>
+<script type='text/javascript' src='/mercenarys/local/SWFUpload/swfupload.js'></script>
+<script type='text/javascript' src='/mercenarys/local/SWFUpload/swfupload.swfobject.js'></script>
+<script type='text/javascript' src='/mercenarys/local/SWFUpload/swfupload.queue.js'></script>
+<script type='text/javascript' src='/mercenarys/local/SWFUpload/preview.js'></script>
+<script type='text/javascript' src='/mercenarys/local/SWFUpload/handlers.js'></script>
+<div id="aline-1"><style type='text/css'>
+@import url('/mercenarys/imgs/plugin/EditToolbar/moniwiki/toolbar.css');
+</style>
+<script language="JavaScript" type='text/javascript'>
+/*<![CDATA[*/
+document.writeln("<div id='toolbar'><span>");
+addButton('/mercenarys/imgs/plugin/EditToolbar/moniwiki/button_bold.png',N_('Bold text'),'\'\'\'','\'\'\'',N_('Bold text'));
+addButton('/mercenarys/imgs/plugin/EditToolbar/moniwiki/button_italic.png',N_('Italic text'),'\'\'','\'\'',N_('Italic text'));
+addButton('/mercenarys/imgs/plugin/EditToolbar/moniwiki/button_link.png',N_('Internal link'),'[[',']]',N_('Link title'));
+addButton('/mercenarys/imgs/plugin/EditToolbar/moniwiki/button_extlink.png',N_('External link (remember http:// prefix)'),'[[',']]',N_('http://www.example.com link title'));
+addButton('/mercenarys/imgs/plugin/EditToolbar/moniwiki/button_headline.png',N_('Level 2 headline'),'\n== ',' ==\n',N_('Headline text'));
+addLinkButton('/mercenarys/imgs/plugin/EditToolbar/moniwiki/button_math.png',N_('Mathematical formula (LaTeX)'),'$ ',' $',N_('Insert latex formula here'),'mathChooser');
+addButton('/mercenarys/imgs/plugin/EditToolbar/moniwiki/button_nowiki.png',N_('Ignore wiki formatting'),'{{{','}}}',N_('Insert non-formatted text here'));
+addButton('/mercenarys/imgs/plugin/EditToolbar/moniwiki/button_hr.png',N_('Horizontal line (use sparingly)'),'\n----\n','','');
+addButton('/mercenarys/imgs/plugin/EditToolbar/moniwiki/button_image.png',N_('Embedded image'),'attachment:','','Example.jpg');
+addButton('/mercenarys/imgs/plugin/EditToolbar/moniwiki/button_media.png',N_('Media file link'),'[[Media(',')]]','Example.mp3');
+addLinkButton('/mercenarys/imgs/plugin/EditToolbar/moniwiki/button_smiley.png',N_('Smiley'),'','',':)','smileyChooser',true);
+addButton('/mercenarys/imgs/plugin/EditToolbar/moniwiki/button_sig.png',N_('Your signature with timestamp'),'@SIG@','','');
+addInfobox(N_('Click a button to get an example text'),N_('Please enter the text you want to be formatted.\\n It will be shown in the infobox for copy and pasting.\\nExample:\\n$1\\nwill become:\\n$2'));
+document.writeln("</span></div>");
+/*]]>*/
+</script><span class='line-anchor' id='line-1'></span><br />
+#editform<span class='line-anchor' id='line-2'></span><br />
+<style type="text/css">
+@import url("/mercenarys/local/SWFUpload/swfupload.css");
+</style>	<div id="SWFUpload" style='display:none'>
+		<form action="" onsubmit="return false;">
+			<input type="file" name="upload" />
+			<input type="submit" value="Upload" onclick="javascript:alert('disabled...'); return false;" />
+		</form>
+	</div>
+<script type="text/javascript">
+/*<![CDATA[*/
+var swfu;
+
+SWFUpload.onload = function () {
+    var settings = {
+        flash_url : "/mercenarys/local/SWFUpload/swfupload.swf",
+        upload_url: "http://bydarti.dothome.co.kr/mercenarys/wiki.php/EditTextForm----swfupload----c6/c6a5f3cf9a6e6a1a9aeac5ddabc8d032/", // Relative to the SWF file
+        file_size_limit : "10 MB",
+        file_types : "*.png;*.jpg;*.jpeg;*.gif;*.mp3;*.zip;*.tgz;*.gz;*.txt;*.css;*.exe;*.hwp;*.pdf;*.flv",
+        file_types_description : "Files",
+        file_upload_limit : 100,
+        file_queue_limit : 0,
+        custom_settings : {
+            progressTarget : "fsUploadProgress",
+            cancelButtonId : "btnCancel"
+        },
+        debug: false, // true
+
+        // Button Settings
+        button_image_url : "/mercenarys/local/SWFUpload/images/btn0.png",
+        button_text : '<span class="button" style="text-align:center">Files...</span>',
+        button_text_style : '.button {font-family:Gulim,Sans-serif;text-align:center;}',
+        button_text_top_padding : 3,
+        button_placeholder_id : "spanButtonPlaceHolder",
+        button_width: 61,
+        button_height: 22,
+        button_window_mode: SWFUpload.WINDOW_MODE.TRANSPARENT,
+        button_cursor: SWFUpload.CURSOR.HAND,
+
+        // The event handler functions are defined in handlers.js
+        swfupload_loaded_handler : swfUploadLoaded,
+        file_queued_handler : fileQueued,
+        file_queue_error_handler : fileQueueError,
+        file_dialog_complete_handler : fileDialogComplete,
+        upload_start_handler : uploadStart,
+        upload_progress_handler : uploadProgress,
+        upload_error_handler : uploadError,
+        upload_success_handler : uploadSuccess,
+        upload_complete_handler : uploadComplete,
+        queue_complete_handler : queueComplete, // Queue plugin event
+        
+        // SWFObject settings
+        minimum_flash_version : "9.0.28",
+        swfupload_pre_load_handler : swfUploadPreLoad,
+        swfupload_load_failed_handler : swfUploadLoadFailed
+    };
+
+    swfu = new SWFUpload(settings);
+}
+/*]]>*/
+</script>
+
+	<div class="fileList">
+	<table border='0' cellpadding='0'>
+	<tr>
+	<td>
+	<div id="previewAlign">
+	</div>
+	<div id="filePreview">
+	</div>
+	</td>
+	<td>
+
+	<div id="filesDisplay">
+            <form id="form1" target='_blanl' action="/mercenarys/wiki.php/EditTextForm" method="POST" enctype="multipart/form-data">
+	        <ul id="mmUploadFileListing"></ul>
+		<span id="fileButton">
+                <input type='hidden' name='action' value='swfupload' />
+                <input type='hidden' name='value' value='c6/c6a5f3cf9a6e6a1a9aeac5ddabc8d032/' />
+                <input type='hidden' name='popup' value='1' />
+                <input type='hidden' name='mysubdir' value='c6/c6a5f3cf9a6e6a1a9aeac5ddabc8d032/' />
+<input type='hidden' name='use_lightbox' value='0' />
+                <span id="spanButtonPlaceHolder"><input type="file" name="upload" /></span>
+		<button type='submit' onclick='javascript:fileSubmit(this);' ><span>Upload files</span></button>
+                <button id='btnCancel' onclick='swfu.cancelQueue();' disabled='disabled' ><span>Cancel All files</span></button>
+
+		</span>
+            </form>
+        </div>
+        <noscript style="background-color: #FFFF66; border-top: solid 4px #FF9966; border-bottom: solid 4px #FF9966; margin: 10px 25px; padding: 10px 15px;">
+            We're sorry.  SWFUpload could not load.  You must have JavaScript enabled to enjoy SWFUpload.
+        </noscript>
+        <div id="divLoadingContent" class="content" style="background-color: #FFFF66; border-top: solid 4px #FF9966; border-bottom: solid 4px #FF9966; margin: 10px 25px; padding: 10px 15px; display: none;">
+            SWFUpload is loading. Please wait a moment...
+        </div>
+        <div id="divLongLoading" class="content" style="background-color: #FFFF66; border-top: solid 4px #FF9966; border-bottom: solid 4px #FF9966; margin: 10px 25px; padding: 10px 15px; display: none;">
+            SWFUpload is taking a long time to load or the load has failed.  Please make sure that the Flash Plugin is enabled and that a working version of the Adobe Flash Player is installed.
+        </div>
+        <div id="divAlternateContent" class="content" style="background-color: #FFFF66; border-top: solid 4px #FF9966; border-bottom: solid 4px #FF9966; margin: 10px 25px; padding: 10px 15px; display: none;">
+
+            We're sorry.  SWFUpload could not load.  You may need to install or upgrade Flash Player.
+            Visit the <a href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash">Adobe website</a> to get the Flash Player.
+        </div>
+
+	</td>
+        </tr>
+	<tr>
+	<td colspan='2'>
+		<div id="fileProgressInfo"></div>
+	</td>
+	</tr>
+	</table>
+	</div><span class='line-anchor' id='line-3'></span><br />
+<script language="javascript" type="text/javascript">
+/*<![CDATA[*/
+// from wikibits.js
+function mySmiley(myText)
+{
+  var is_ie = document.selection && document.all;
+  var ef = document.getElementById('editform');
+  if (ef)
+    var txtarea = ef.savetext;
+  else {
+    // some alternate form? take the first one we can find
+    var areas = document.getElementsByTagName('textarea');
+    var txtarea = areas[0];
+  }
+
+  // check WikiWyg
+  var my=document.getElementById('editor_area');
+  
+  while (my.style && my.style.display == 'none') { // wikiwyg hack
+    txtarea = document.getElementById('wikiwyg_wikitext_textarea');
+
+    // get iframe and check visibility.
+    var myframe = document.getElementsByTagName('iframe')[0];
+    // hack. check wrapper also
+    if (myframe.style.display == 'none' || myframe.parentNode.style.display == 'none') break;
+
+    var postdata = 'action=markup/ajax&value=' + encodeURIComponent(myText);
+    var myhtml='';
+    myhtml= HTTPPost(self.location, postdata);
+
+    // check the old wiki-engine or the new monimarkup
+    var m = myhtml.match(/<div>(.*)\n<\/div>/i) || myhtml.match(/<p class="[^"]+">(.*)<\/p>/i); // strip div tag
+    if (m) {
+      var html = m[1] + ' ';
+      if (is_ie) {
+        var range = myframe.contentWindow.document.selection.createRange();
+        if (range.boundingTop == 2 && range.boundingLeft == 2)
+          return;
+        range.pasteHTML(html);
+        range.collapse(false);
+        range.select();
+      } else {
+        myframe.contentWindow.document.execCommand('inserthtml', false, html);
+      }
+    }
+
+    return;
+  }
+
+  txtarea.focus();
+  if(is_ie) {
+    var theSelection = document.selection.createRange().text;
+    if(theSelection.charAt(theSelection.length - 1) == " "){
+      // exclude ending space char, if any
+      theSelection = theSelection.substring(0, theSelection.length - 1);
+      document.selection.createRange().text = theSelection + myText + " ";
+    } else {
+      document.selection.createRange().text = theSelection + myText + " ";
+    }
+  }
+  // Mozilla
+  else if(txtarea.selectionStart || txtarea.selectionStart == '0') {
+    var startPos = txtarea.selectionStart;
+    var endPos = txtarea.selectionEnd;
+    var scrollTop=txtarea.scrollTop;
+    txtarea.value = txtarea.value.substring(0, startPos) + myText + " " +
+      txtarea.value.substring(endPos, txtarea.value.length);
+
+    var cPos=startPos+(myText.length+1);
+
+    txtarea.selectionStart=cPos;
+    txtarea.selectionEnd=cPos;
+    txtarea.scrollTop=scrollTop;
+  } else { // All others
+    txtarea.value += myText + " "; 
+    txtarea.focus();
+  }
+}
+/*]]>*/
+</script><div id="smileyChooser">
+<span onclick='mySmiley(":)")'><img src='/mercenarys/imgs/smile/8).png' style='border:0' class='smiley' alt=':)' title=':)' /></span>&shy;<span onclick='mySmiley(":-)")'><img src='/mercenarys/imgs/smile/8-).png' style='border:0' class='smiley' alt=':-)' title=':-)' /></span>&shy;<span onclick='mySmiley(":))")'><img src='/mercenarys/imgs/smile/8-o.png' style='border:0' class='smiley' alt=':))' title=':))' /></span>&shy;<span onclick='mySmiley(":D")'><img src='/mercenarys/imgs/smile/8-D.png' style='border:0' class='smiley' alt=':D' title=':D' /></span>&shy;<span onclick='mySmiley(":o")'><img src='/mercenarys/imgs/smile/8-o.png' style='border:0' class='smiley' alt=':o' title=':o' /></span>&shy;<span onclick='mySmiley("&lt;:(")'><img src='/mercenarys/imgs/smile/(8(.png' style='border:0' class='smiley' alt='&lt;:(' title='&lt;:(' /></span>&shy;<span onclick='mySmiley(":(")'><img src='/mercenarys/imgs/smile/8-(.png' style='border:0' class='smiley' alt=':(' title=':(' /></span>&shy;<span onclick='mySmiley("X-(")'><img src='/mercenarys/imgs/smile/x-(.png' style='border:0' class='smiley' alt='X-(' title='X-(' /></span>&shy;<span onclick='mySmiley("B)")'><img src='/mercenarys/imgs/smile/B).png' style='border:0' class='smiley' alt='B)' title='B)' /></span>&shy;<span onclick='mySmiley(";)")'><img src='/mercenarys/imgs/smile/;-).png' style='border:0' class='smiley' alt=';)' title=';)' /></span>&shy;<span onclick='mySmiley(":|")'><img src='/mercenarys/imgs/smile/8-l.png' style='border:0' class='smiley' alt=':|' title=':|' /></span>&shy;<span onclick='mySmiley("|)")'><img src='/mercenarys/imgs/smile/l-l.png' style='border:0' class='smiley' alt='|)' title='|)' /></span>&shy;<span onclick='mySmiley("/!\\")'><img src='/mercenarys/imgs/smile/alert.png' style='border:0' class='smiley' alt='/!\' title='/!\' /></span>&shy;<span onclick='mySmiley("\\?/")'><img src='/mercenarys/imgs/smile/icon-question.png' style='border:0' class='smiley' alt='\?/' title='\?/' /></span>&shy;<span onclick='mySmiley("&lt;!>")'><img src='/mercenarys/imgs/smile/attention.png' style='border:0' class='smiley' alt='&lt;!>' title='&lt;!>' /></span>&shy;<span onclick='mySmiley("(!)")'><img src='/mercenarys/imgs/smile/idea.png' style='border:0' class='smiley' alt='(!)' title='(!)' /></span>&shy;<span onclick='mySmiley(":-X")'><img src='/mercenarys/imgs/smile/8-x.png' style='border:0' class='smiley' alt=':-X' title=':-X' /></span>&shy;<span onclick='mySmiley(":-@")'><img src='/mercenarys/imgs/smile/8-@.png' style='border:0' class='smiley' alt=':-@' title=':-@' /></span>&shy;<span onclick='mySmiley(":p")'><img src='/mercenarys/imgs/smile/8-p.png' style='border:0' class='smiley' alt=':p' title=':p' /></span>&shy;<span onclick='mySmiley(":b")'><img src='/mercenarys/imgs/smile/8-b.png' style='border:0' class='smiley' alt=':b' title=':b' /></span>&shy;<span onclick='mySmiley(":9")'><img src='/mercenarys/imgs/smile/8-9.png' style='border:0' class='smiley' alt=':9' title=':9' /></span>&shy;<span onclick='mySmiley(":^)")'><img src='/mercenarys/imgs/smile/8^).png' style='border:0' class='smiley' alt=':^)' title=':^)' /></span>&shy;<span onclick='mySmiley(":_)")'><img src='/mercenarys/imgs/smile/8_).png' style='border:0' class='smiley' alt=':_)' title=':_)' /></span>&shy;<span onclick='mySmiley(":*)")'><img src='/mercenarys/imgs/smile/8star).png' style='border:0' class='smiley' alt=':*)' title=':*)' /></span>&shy;<span onclick='mySmiley("$-)")'><img src='/mercenarys/imgs/smile/%24-).png' style='border:0' class='smiley' alt='$-)' title='$-)' /></span>&shy;<span onclick='mySmiley(":-$")'><img src='/mercenarys/imgs/smile/8-%24.png' style='border:0' class='smiley' alt=':-$' title=':-$' /></span>&shy;<span onclick='mySmiley(":-?")'><img src='/mercenarys/imgs/smile/8-question.png' style='border:0' class='smiley' alt=':-?' title=':-?' /></span>&shy;<span onclick='mySmiley(":\\")'><img src='/mercenarys/imgs/smile/8-ll.png' style='border:0' class='smiley' alt=':\' title=':\' /></span>&shy;<span onclick='mySmiley("):)")'><img src='/mercenarys/imgs/smile/v8v.png' style='border:0' class='smiley' alt='):)' title='):)' /></span>&shy;<span onclick='mySmiley("%-)")'><img src='/mercenarys/imgs/smile/%25-).png' style='border:0' class='smiley' alt='%-)' title='%-)' /></span>&shy;<span onclick='mySmiley(":-S")'><img src='/mercenarys/imgs/smile/8-S.png' style='border:0' class='smiley' alt=':-S' title=':-S' /></span>&shy;<span onclick='mySmiley(":->")'><img src='/mercenarys/imgs/smile/8-v.png' style='border:0' class='smiley' alt=':->' title=':->' /></span>&shy;<span onclick='mySmiley("@)")'><img src='/mercenarys/imgs/smile/@-).png' style='border:0' class='smiley' alt='@)' title='@)' /></span>&shy;<span onclick='mySmiley("%-^")'><img src='/mercenarys/imgs/smile/%25-^.png' style='border:0' class='smiley' alt='%-^' title='%-^' /></span>&shy;<span onclick='mySmiley("-L-")'><img src='/mercenarys/imgs/smile/-L-.png' style='border:0' class='smiley' alt='-L-' title='-L-' /></span>&shy;<span onclick='mySmiley("(:)-)")'><img src='/mercenarys/imgs/smile/(8)-).png' style='border:0' class='smiley' alt='(:)-)' title='(:)-)' /></span>&shy;<span onclick='mySmiley("-_-")'><img src='/mercenarys/imgs/smile/--.png' style='border:0' class='smiley' alt='-_-' title='-_-' /></span>&shy;<span onclick='mySmiley(";;")'><img src='/mercenarys/imgs/smile/;;.gif' style='border:0' class='smiley' alt=';;' title=';;' /></span>&shy;<span onclick='mySmiley("^^")'><img src='/mercenarys/imgs/smile/^^.png' style='border:0' class='smiley' alt='^^' title='^^' /></span>&shy;<span onclick='mySmiley(":-9")'><img src='/mercenarys/imgs/smile/8-9.png' style='border:0' class='smiley' alt=':-9' title=':-9' /></span>&shy;<span onclick='mySmiley("(./)")'><img src='/mercenarys/imgs/smile/checkbox.png' style='border:0' class='smiley' alt='(./)' title='(./)' /></span>&shy;<span onclick='mySmiley("(V)")'><img src='/mercenarys/imgs/smile/checkmark.png' style='border:0' class='smiley' alt='(V)' title='(V)' /></span>&shy;<span onclick='mySmiley("{OK}")'><img src='/mercenarys/imgs/smile/thumb-up.png' style='border:0' class='smiley' alt='{OK}' title='{OK}' /></span>&shy;<span onclick='mySmiley("{NO}")'><img src='/mercenarys/imgs/smile/thumb-down.png' style='border:0' class='smiley' alt='{NO}' title='{NO}' /></span>&shy;<span onclick='mySmiley("{END}")'><img src='/mercenarys/imgs/smile/end.png' style='border:0' class='smiley' alt='{END}' title='{END}' /></span>&shy;<span onclick='mySmiley("{X}")'><img src='/mercenarys/imgs/smile/icon-error.png' style='border:0' class='smiley' alt='{X}' title='{X}' /></span>&shy;<span onclick='mySmiley("{*}")'><img src='/mercenarys/imgs/smile/star_on.png' style='border:0' class='smiley' alt='{*}' title='{*}' /></span>&shy;<span onclick='mySmiley("{o}")'><img src='/mercenarys/imgs/smile/star_off.png' style='border:0' class='smiley' alt='{o}' title='{o}' /></span>&shy;<span onclick='mySmiley("{i}")'><img src='/mercenarys/imgs/smile/icon-info.png' style='border:0' class='smiley' alt='{i}' title='{i}' /></span>&shy;<span onclick='mySmiley("{1}")'><img src='/mercenarys/imgs/smile/prio1.gif' style='border:0' class='smiley' alt='{1}' title='{1}' /></span>&shy;<span onclick='mySmiley("{2}")'><img src='/mercenarys/imgs/smile/prio2.gif' style='border:0' class='smiley' alt='{2}' title='{2}' /></span>&shy;<span onclick='mySmiley("{3}")'><img src='/mercenarys/imgs/smile/prio3.gif' style='border:0' class='smiley' alt='{3}' title='{3}' /></span>&shy;<span onclick='mySmiley("{br}")'><img src='/mercenarys/imgs/interwiki/br-16.png' style='border:0' class='smiley' alt='{br}' title='{br}' /></span>&shy;<span onclick='mySmiley("{da}")'><img src='/mercenarys/imgs/interwiki/da-16.png' style='border:0' class='smiley' alt='{da}' title='{da}' /></span>&shy;<span onclick='mySmiley("{de}")'><img src='/mercenarys/imgs/interwiki/de-16.png' style='border:0' class='smiley' alt='{de}' title='{de}' /></span>&shy;<span onclick='mySmiley("{en}")'><img src='/mercenarys/imgs/interwiki/en-16.png' style='border:0' class='smiley' alt='{en}' title='{en}' /></span>&shy;<span onclick='mySmiley("{es}")'><img src='/mercenarys/imgs/interwiki/es-16.png' style='border:0' class='smiley' alt='{es}' title='{es}' /></span>&shy;<span onclick='mySmiley("{fi}")'><img src='/mercenarys/imgs/interwiki/fi-16.png' style='border:0' class='smiley' alt='{fi}' title='{fi}' /></span>&shy;<span onclick='mySmiley("{fr}")'><img src='/mercenarys/imgs/interwiki/fr-16.png' style='border:0' class='smiley' alt='{fr}' title='{fr}' /></span>&shy;<span onclick='mySmiley("{gr}")'><img src='/mercenarys/imgs/interwiki/gr-16.png' style='border:0' class='smiley' alt='{gr}' title='{gr}' /></span>&shy;<span onclick='mySmiley("{il}")'><img src='/mercenarys/imgs/interwiki/il-16.png' style='border:0' class='smiley' alt='{il}' title='{il}' /></span>&shy;<span onclick='mySmiley("{it}")'><img src='/mercenarys/imgs/interwiki/it-16.png' style='border:0' class='smiley' alt='{it}' title='{it}' /></span>&shy;<span onclick='mySmiley("{ja}")'><img src='/mercenarys/imgs/interwiki/ja-16.png' style='border:0' class='smiley' alt='{ja}' title='{ja}' /></span>&shy;<span onclick='mySmiley("{ko}")'><img src='/mercenarys/imgs/interwiki/ko-16.png' style='border:0' class='smiley' alt='{ko}' title='{ko}' /></span>&shy;<span onclick='mySmiley("{nl}")'><img src='/mercenarys/imgs/interwiki/nl-16.png' style='border:0' class='smiley' alt='{nl}' title='{nl}' /></span>&shy;<span onclick='mySmiley("{pt}")'><img src='/mercenarys/imgs/interwiki/pt-16.png' style='border:0' class='smiley' alt='{pt}' title='{pt}' /></span>&shy;<span onclick='mySmiley("{sv}")'><img src='/mercenarys/imgs/interwiki/sv-16.png' style='border:0' class='smiley' alt='{sv}' title='{sv}' /></span>&shy;<span onclick='mySmiley("{us}")'><img src='/mercenarys/imgs/interwiki/us-16.png' style='border:0' class='smiley' alt='{us}' title='{us}' /></span>&shy;<span onclick='mySmiley("{zh}")'><img src='/mercenarys/imgs/interwiki/zh-16.png' style='border:0' class='smiley' alt='{zh}' title='{zh}' /></span>&shy;</div>
+<span class='line-anchor' id='line-4'></span><br />
+</div>
+<div class='separator'><hr /></div><span class='line-anchor' id='line-6'></span>
+<div id="aline-7"><div class="wikiHints">
+<p id='wikiHints_content' ><b>Emphasis:</b> '''<strong>bold</strong>''', ''<i>italics</i>''<br />
+<b>Headings:</b> ==<span class='space'> </span>Title 2<span class='space'> </span>==; ===<span class='space'> </span>Title 3<span class='space'> </span>===; ...<br />
+<b>Lists:</b> <span class='space'> </span>*<span class='space'> </span> space and one of * bullets; <span class='space'> </span>1.<span class='space'> </span>numbered items; <span class='space'> </span> space alone indents.<br />
+<b>Links:</b> [[double bracketed words]]; [bracketed words]; JoinCapitalizedWords; ["brackets and double quotes"];
+url; [url]; [url label].<br />
+<b>Tables</b>: || cell text |||| cell text spanning two columns ||;
+no trailing white space allowed after tables or titles.<br />
+</p></div>
+ <span class='line-anchor' id='line-7'></span><br />
+</div>

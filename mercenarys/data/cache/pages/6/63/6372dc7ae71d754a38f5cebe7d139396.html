@@ -1,0 +1,126 @@
+<!-- // Cache_Text 0.6 1613319628
+1613319628 
+-->
+<div id="aline-3">5천여개의 파일이 있을 경우 <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/FullSearch'>FullSearch</a>는 5~10초 정도 걸린다. <a class='externalLink'  href='http://wiki.kldp.org' >http://wiki.kldp.org</a> 의 경우 현재 2천3백여 페이지가 있는데 이 경우는 2~3초 걸렸다.<span class='line-anchor' id='line-3'></span><br />
+</div>
+<br />
+<div id="aline-5">위키에서는 검색이 매우 중요한데 이정도 시간이면 꽤 느린 것이다. 위키의 규모가 작을때는 큰 문제가 되지 않겠지만 위키가 1만여페이지 가까이 되는 경우는 얘기가 달라진다.<span class='line-anchor' id='line-5'></span><br />
+</div>
+<br />
+<div id="aline-7">현재 모니위키는 페이지를 fulltext indexing하지 않고 그냥 텍스트 서치에 의존하고 있다. 이것을 다음의 링크를 통해 발견할 수 있는 perl 스크립트를 적용하여 <a href='/mercenarys/wiki.php/FastSearchMacro'  class="current">FastSearchMacro</a>를 구현하였다.<span class='line-anchor' id='line-7'></span><br />
+</div>
+<br />
+<div id="aline-9"><a class='externalLink'  href='http://www.heddley.com/edd/php/search.html' >http://www.heddley.com/edd/php/search.html</a><span class='line-anchor' id='line-9'></span><br />
+</div>
+<br />
+<div id="aline-11">5000여개의 파일이 있을 때 <a href='/mercenarys/wiki.php/FastSearchMacro' title="FastSearchMacro"  class="current">FastSearch</a>는 약 0.5~2초 걸렸다.<span class='line-anchor' id='line-11'></span><br />
+</div>
+<div class='separator'><hr /></div><span class='line-anchor' id='line-12'></span>
+<div id="aline-13"><a href='/mercenarys/wiki.php/FastSearchMacro' title="FastSearchMacro"  class="current">FastSearch</a>를 사용하기 위해서는 wiki_indexer.pl은 하루에 한번정도 실행시켜야 하며, 5천여 페이지에서 약 5분여 동안의 시간이 걸린다. 이것을 php로 간단히 바꾸어 보니 약 7분여 소요.<span class='line-anchor' id='line-13'></span><br />
+</div>
+<br />
+<div id="aline-15"></div>
+<div class="section"><a id='sect-1'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/FastSearchMacro?action=edit&amp;section=1'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-15"><a id='s-1'></a>개발 노트 <a class='perma' href='#s-1'>¶</a></h2><div id="sc-1">
+<div id="aline-16"><code>wiki_indexer.pl</code>을 사용하지 않기 위해서는 페이지를 저장할때마다 fulltext 서치를 위한 인덱스를 생성시키면 될것이다. 단 하나의 페이지에 대한 인덱스를 업데이트하므로 속도 문제를 해결하게 된다.<span class='line-anchor' id='line-16'></span><br />
+</div>
+<br />
+<div id="aline-18"><ol><li>10만 페이지정도에서도 괜찮은 속도를 나오게 하려면 ?<span class='line-anchor' id='line-18'></span><br />
+<br />
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-2'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/FastSearchMacro?action=edit&amp;section=2'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-20"><a id='s-2'></a>테스트 <a class='perma' href='#s-2'>¶</a></h2><div id="sc-2">
+<div id="aline-21"><code class='wiki'>[[FastSearch(Moniwiki)]]</code><span class='line-anchor' id='line-21'></span><br />
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-3'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/FastSearchMacro?action=edit&amp;section=3'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h3 id="line-22"><a id='s-2.1'></a>인덱싱 속도 <a class='perma' href='#s-2.1'>¶</a></h3><div id="sc-3">
+<div id="aline-23"><ol><li>5천 페이지 인덱싱 : ~5분 - 검색속도 ~1초<span class='line-anchor' id='line-23'></span><br />
+</li>
+<li>2만 페이지 인덱싱 : ~20분 - 검색속도 ~5초<span class='line-anchor' id='line-24'></span><br />
+<br />
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-4'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/FastSearchMacro?action=edit&amp;section=4'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h3 id="line-26"><a id='s-2.2'></a>인덱싱 속도 개선 <a class='perma' href='#s-2.2'>¶</a></h3><div id="sc-4">
+<div id="aline-27">인덱싱할 때 <code>unpack</code>하고 <code>sort</code>하는 부분이 있다. 로직에서 이 부분이 크게 중요한 부분이 아닌데, 이 부분을 빼내면 5천페이지 7분 정도 걸리던 것이 2분 미만으로 단축된다. 또 인덱스 사이즈가 커질수록 느려지게 되는데, <code>unpack</code>과 <code>sort</code>를 제거하면 전체 페이지가 많아져서 인덱스 사이즈가 커지더라도 큰 속도 저하가 없다.<span class='line-anchor' id='line-27'></span><br />
+</div>
+<br />
+<div id="aline-29">인덱싱 속도를 개선하려면,<span class='line-anchor' id='line-29'></span><br />
+<ul><li>최초 인덱스를 생성할 때에 <code>sort</code>를 하지 않도록 한다.<span class='line-anchor' id='line-30'></span><br />
+</li>
+<li>최종적인 결과 출력을 할때에 출력 결과를 정렬하도록 한다.<span class='line-anchor' id='line-31'></span><br />
+</li>
+<li>페이지 ID는 정렬되어있지 않다. 따라서 미리 정렬하는 것은 출력 품질에 영향을 미치지 못한다.<span class='line-anchor' id='line-32'></span><br />
+<ul><li>인덱서에서 중복된 값을 제거하기 위해서 <code>unpack</code>후 <code>sort</code>하고 다시 <code>pack</code>하는 것.<span class='line-anchor' id='line-33'></span><br />
+</li>
+<li>중복된 값이 큰 문제가 되지 않으므로 아예 정렬/중복된 값을 무시하도록 한다.<span class='line-anchor' id='line-34'></span><br />
+<br />
+</li>
+</ul></li>
+</ul>
+<img src='/mercenarys/imgs/smile/attention.png' style='border:0' class='smiley' alt='&lt;!>' title='&lt;!>' /> 현재 5만 페이지를 인덱싱하는 속도가 ~1시간 정도 걸리고 있다.<span class='line-anchor' id='line-36'></span><br />
+</div>
+<br />
+<div id="aline-38"></div>
+</div>
+</div>
+<div class="section"><a id='sect-5'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/FastSearchMacro?action=edit&amp;section=5'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h3 id="line-38"><a id='s-2.3'></a><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/FullTextIndexer'>FullTextIndexer</a> <a class='perma' href='#s-2.3'>¶</a></h3><div id="sc-5">
+<div id="aline-39"></div>
+</div>
+</div>
+<div class="section"><a id='sect-6'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/FastSearchMacro?action=edit&amp;section=6'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h3 id="line-39"><a id='s-2.4'></a>Dokuwiki Indexer와 비교 <a class='perma' href='#s-2.4'>¶</a></h3><div id="sc-6">
+<div id="aline-40">Dokuwiki는 인덱서를 내장하고 있다.<span class='line-anchor' id='line-40'></span><br />
+<ol><li>Berkeley DB나 다른 DB엔진을 사용하지 않고 자체적인 인덱스방식을 사용한다.<span class='line-anchor' id='line-41'></span><br />
+</li>
+<li>한글 및 CJK 문자셋의 경우 단어를 모두 잘라내어서 한개의 문자로 분리해서 인덱싱. - 띄어쓰기가 없는 일본어/중국어의 경우 고려.<span class='line-anchor' id='line-42'></span><br />
+</li>
+<li>페이지를 생성할 때에 자동 인덱싱된다. 이와 별도로 <code>bin/indexer.php</code> (콘솔용), <code>lib/exe/indexer.php</code> (웹용) 인덱서가 따로 있다.<span class='line-anchor' id='line-43'></span><br />
+</li>
+<li>약 1천500 페이지를 가져와서 인덱싱해보니 ~10분 이상 걸린다. 자체적 구현의 인덱싱방식이 너무 느린듯.<span class='line-anchor' id='line-44'></span><br />
+<br />
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-7'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/FastSearchMacro?action=edit&amp;section=7'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-46"><a id='s-3'></a>TODO <a class='perma' href='#s-3'>¶</a></h2><div id="sc-7">
+<div id="aline-47"><ol><li>제목검색 인덱싱 방식 적용.<span class='line-anchor' id='line-47'></span><br />
+</li>
+<li>역링크검색 인덱싱 방식 적용.<span class='line-anchor' id='line-48'></span><br />
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-8'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/FastSearchMacro?action=edit&amp;section=8'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-49"><a id='s-4'></a><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/FasetSearchMacro'>FasetSearchMacro</a>를 기본 <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/FullSearch'>FullSearch</a> 매크로로 대치하기 <a class='perma' href='#s-4'>¶</a></h2><div id="sc-8">
+<div id="aline-50"><code>config.php</code>에 다음과 같은 설정을 넣으면 fullsearch가 fastsearch로 대치된다.<span class='line-anchor' id='line-50'></span><br />
+<pre class='wiki'>
+$myplugins=array('fullsearch'=>'FastSearch'); # 앞에는 소문자로, 뒤에는 플러그인 파일 이름에 맞게 FastSearch.php 파일을 찾게되므로 대소문자 구분.
+</pre><span class='line-anchor' id='line-53'></span>
+</div>
+<div class='separator'><hr /></div><span class='line-anchor' id='line-54'></span>
+<div id="aline-55"><form method='get' action='/mercenarys/wiki.php/FastSearchMacro'>
+   <input type='hidden' name='action' value='fastsearch' />
+   <input name='value' size='30' value="" />
+   <span class='button'><input type='submit' class='button' value='Fast search' /></span><br />
+   <input type='checkbox' name='context' value='20' />Display context of search results<br />
+   <input type='radio' name='arena' value='fullsearch' checked="checked" />Full text search
+   <input type='radio' name='arena' value='titlesearch'  />Title search
+   <input type='radio' name='arena' value='pagelinks'  />Link search<br />
+   </form><span class='line-anchor' id='line-55'></span><br />
+</div>
+</div>
+</div>

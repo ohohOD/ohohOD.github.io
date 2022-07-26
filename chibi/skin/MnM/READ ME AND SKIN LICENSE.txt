@@ -1,0 +1,489 @@
+﻿
+================================================================================================================
+						Chibi Tool BBS ver. 1.10.8.1 - MnM skin
+================================================================================================================
+
+※ 본 스킨은 ChibiBBS 1.10.8 이상의 버전(1.10.8.1, 1.10.8)이 아닌 1.10.7 버전에서 사용할 경우 멤버 가입/멤버 프로필 수정 기능이 정상 작동하지 않습니다.
+- 1.10.8로 업데이트 해주시거나 상단 메뉴 - 멤버 가입/멤버 프로필 수정 기능을 끄고 사용하시면 별도의 수정/업데이트 없이 사용하실 수 있습니다.
+
+
+※ 스킨 폴더명을 바꿀 시 정상작동하지 않습니다.
+
+
+※ 본 스킨은 수정/재배포 모두를 허용하나 수정 배포 시에는 개인적인 연락을 주시면 감사하겠습니다:D 
+- 스킨 공식 배포 페이지 :: http://rammenta.ncity.net/wordpress/?p=17
+- 버그 신고 및 개조/수정 문의, 질문 게시판 ::  http://rammenta.ncity.net/bbs/zboard.php?id=skinqna
+- 스킨 테스트 페이지 :: http://rammenta.ncity.net/chibibbs1.10/index.php?cid=release
+- 간단한 이미지 설명서는 스킨 설정 페이지 :: http://rammenta.ncity.net/wordpress/?p=271
+
+
+※ 문의 게시판 외에서의 문의 및 질문은 정중히 사양합니다!
+- 스킨의 과도한 수정 및 개조로 발생하는 오류에 대해 책임지지 않습니다.
+
+
+※ 스킨에 사용 된 오픈 소스들
+- Colorbox 1.6.0 :: http://www.jacklmoore.com/colorbox = MIT LICENSE
+- colpick Color Picker :: http://colpick.com/plugin = GNU GENERAL PUBLIC LICENSE
+- Bootstrap :: http://getbootstrap.com/
+
+
+※ 아이디어 차용 1 - hattMade 스킨의 원고 로그 축소 기능
+- Hatti님께서 배포하시는 hattMade 스킨 배포 페이지 :: http://hattmade.dothome.co.kr/
+- Hatti님께서 제작하신 hattMade 스킨의 원고 로그 축소 기능은 여러모로 유용하게 사용하고 있어서/사용하고 계신 분들이 많은 것 같아 해당 기능을 그대로 사용했습니다.
+흔쾌히 허락해주신, 그리고 좋은 기능을 가진 어메이징한 스킨 만들어주신 Hatti님 정말 감사합니다!
+
+
+※ 아이디어 차용 2 - ChibiBBS 1.09버전 MnM 스킨
+- 기타 이것 저것 훔쳐왔습니다! 과거의 나 고마워!
+
+
+※ 4년 만에 새로운 스킨이네요. 1.10으로 업데이트되면서 스킨 제작 자체가 용이해져서 이번 버전은 정말 쉽게 제작한 것 같습니다!
+늘 좋은 툴을 제작해주시는 칸토님께 이 파일을 빌어 심심한 감사 인사를 전합니다. 
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+							스킨 설치법
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+0. Chibi Tool BBS ver 1.10.8.1을 다운받습니다. (http://canto.btool.kr/index.php?mid=chibi&category=131&document_srl=40936)
+
+1. Chibi Tool BBS 폴더의 skin 폴더 내에 해당 스킨 폴더(MnM)를 넣어줍니다.
+
+2. 게시판 설정에서 스킨 설정 -> MnM
+
+3. 끝!
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+							주의 사항
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* 스킨이 들어있는 폴더, 즉 스킨 명이 MnM이 아닐 시 정상 작동하지 않습니다.
+
+* 본 스킨은 크롬, 엔시티 utf-8 계정에서만 테스트 되었습니다.
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+							업데이트 내역
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 2015.09.23 업데이트
+ - 비공개 게시판 디자인 변경 기능 추가
+ - (크롬 전용) 스크롤바 관련 디자인 변경 기능 추가
+ - 이전 업데이트(2015.05.22)로 인해 게시판 아이디가 free일 경우 SCM 플레이어가 자동 설치되던 현상 수정
+ - 스킨 폴더 명 변경 시 스킨 설정 페이지가 이전 스킨으로 링크 되던 현상 수정
+ - 이전 업데이트로 누락되었던 READ ME 파일 추가
+
+
+# 2015.05.22 업데이트
+ - 리플 작성창 입력란 폰트 색상이 적용되지 않는 현상 수정
+
+
+# 2015.04.22 업데이트
+ - 멤버 기능이 정상 작동하지 않던 현상 수정
+ - 비밀 로그를 새 창으로 버튼을 이용해 볼 수 있던 현상 수정
+ - 스킨 업데이트 내역 표시 기능 추가
+
+
+# 2015.03.30 업데이트
+- 상단 페이지바 미 사용 시 하단 페이지바도 출력되지 않던 버그 수정
+
+
+＃ 2015.03.23 업데이트
+
+- 원고 로그 축소 기능 및 원고 로그 축소 너비 추가(Hatti님께서 제작하신 hattMade 스킨의 기능 사용)
+- 스킨 메인 색상 간편 변환 기능 추가
+- 치비툴 사용 ON/OFF 추가
+- 멤버 기능 사용 ON/OFF 추가
+- 로그 업로드/리플/리리플 사용 권한 제어 기능 추가
+- 로그 자동 접기 기능 추가
+- 하단 정렬 시 이미지 추가 리사이징 기능 추가
+- 멤버 기능 사용 ON/OFF 추가
+- 게시판 너비 변수 추가
+- 게시판 배경 시작 위치 변수 추가
+- 링크 마우스오버 관련 변수 추가
+- 링크/입력란 변환 딜레이 ON/OFF 기능 추가
+- 공지사항 관련 디자인 변수 및 정렬 기능 추가
+- 상단 메뉴 ON/OFF 추가
+- 상단 메뉴 관련 디자인 변수 추가
+- 현재 페이지바 색상/배경색 변수 추가
+- 상단 메뉴 입력란 관련 변수 추가
+- 테이블 외곽선 곡률 변수 추가
+- 각종 기능 표시 관련 색상 변수 추가
+- 로그 번호 디자인 변수 추가
+- 로그 정렬(일반 로그/텍스트 로그) 기능 추가
+- 로그 옵션 레이어/입력란 디자인 변수 추가
+- 리플 간 줄 간격 변수 추가
+- 리플 작성자 정보에 작성자 IP ON/OFF 추가
+- 리플 작성자명 디자인 변수 추가
+- 리플 작성 시간 변수 및 디자인 변수 추가
+- 코멘트 주사위 출력 위치 변환 기능 추가
+- 코멘트 IP 디자인 변수 추가
+- 리리플 좌측 여백 변수 및 디자인 변수 추가
+- 코멘트 메모 출력 위치 변환 기능 및 디자인 변수 추가
+- 리플 작성창/입력란 디자인 변수 추가
+- 해당 로그 새 창으로 열기 기능 추가
+- 원본 사이즈로 보기 창의 닫기 버튼 이동(우측 상단)
+- 원본 사이즈로 보기 창을 ESC로 닫기 기능 추가
+- 리플 수정/리리플에 리셋 버튼 추가
+- 리플 작성창 위에 이모티콘 리스트 추가
+- 메모/링크/접기 연동 기능 추가
+- 멤버 비공개 로그/리플 기능 추가
+- 코멘트 작성 접기 기능 추가
+- 주사위 위치 변경 기능 추가
+- 메모 표시 아이콘 추가
+- 축소 표시 아이콘 추가
+- 특정 로그 리플 전체 접기 기능 추가
+- 특정 로그 리플 하단 정렬 기능 추가
+- 작성한 비밀글 알림 표시 기능 추가
+- 리플 IP ON/OFF 추가
+- 작가글 글씨색 변환 기능 추가
+- 해당 페이지 로그/리플 전체 선택/선택 해제 기능 추가
+- 로그 선택 해제 기능 추가
+- 그 외 아이콘 변수 추가
+- 상단 메뉴 중 로드/치비툴 버튼을 텍스트로 변경
+- 상단의 게시판 설정 메뉴를 게시판 목록 ▶ 스킨 설정으로 수정
+- 관리자 로그인 시 멤버 비밀번호를 몰라도 게시판 접속이 되는 사항 수정
+- 권한이 없을 때 비밀글 URL 확인이 불가능하도록 변경
+- 관리자 로그인 시 비밀번호 입력 없이 리플 수정이 가능하도록 변경
+- 로그 옵션 수정 시 적용된 옵션이 제대로 출력되지 않는 사항 수정
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+					사용/추가된 변수(2015.09.23 업데이트 이후 추가된 변수는 추가되지 않음)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+※ 혹시 필요하신 분이 계실까하여 제작 시 메모했던 사용 변수 리스트를 동봉합니다. 빠진 변수, 정리되지 않은 변수가 존재 할 수도 있습니다!
+
+$변수명 // 사용된 위치 - 옵션 - 초기 값 (선택 가능한 옵션이 존재+초기 값 필요) 혹은
+$변수명 // 사용된 위치 - 초기 값  (초기 값 필요) 혹은
+$변수명 // 사용된 위치 (초기 값 필요 X)
+
+순으로 작성 되어 있습니다. 
+
+
+
+※ 변수 명/옵션 설명
+[ 테두리 종류 :: _border_type으로 끝나는 변수 ] - solid dotted dashed double groove ridge inset outset - 일반 선/점 선/ 대쉬 선 / 이중 선 / 홈 모양 선 / 돌출 선 / 내부 엠보싱 / 외부 엠보싱
+
+[ RGB 색+Alpha 값 :: background_~~로 시작하는 변수 ]
+background_color_R - 해당 배경색의 R(=Red) 값 
+background_color_G - 해당 배경색의 G(=Green) 값
+background_color_B - 해당 배경색의 B(=Blue) 값
+background_color_alpha - 해당 배경색의 투명도(=Alpha) 값
+
+[ 글씨 색 :: _color 로 끝나는 변수 ] - 해당 부분 글씨 색
+
+[ 글씨체 :: _font 로 끝나는 변수 ] - 해당 부분 글씨 체
+
+[ 글씨 크기 :: _size 로 끝나는 변수 ] - 해당 부분 글씨 크기 
+
+[ 글씨 굵기 :: _weight 로 끝나는 변수 ] - none, underline, overline, overline underline, line-through - 없음 / 밑줄 / 윗줄 / 밑줄+윗줄 / 취소선
+
+[ 줄 표시 :: _deco 로 끝나는 변수 ] - normal, bold, 100, 900 - 일반 / 굵게 / 얇게 / 매우 굵게 
+
+[ 그림자 효과 ::_shadow 로 끝나는 변수 ] - 해당 부분 그림자 효과
+
+
+
+
+
+※ 사용 변수들
+- $skin->op-> onop_chib // 치비툴 사용 여부 - on - on
+- $skin->op-> onop_mem // 멤버 기능 사용 여부 - on - on
+
+- $skin->op-> onop_upright // 업로드 권한 all/admin/member - all
+- $skin->op-> onop_reright // 리플 권한 all/admin/member/both/author - all
+- $skin->op-> onop_rreright // 리리플 권한 all/admin/member/both/author - all
+
+- $skin->op->resize // 로그 리사이즈 너비 - 600
+- $skin->op->autoheight // 자동 접기 높이 - 9999
+- $skin->op->table_down // 하단 정렬 너비 - 1000
+- $skin->op->vertical_imagew // 하단 정렬 축소 너비 - 800
+- $skin->op->autowidth // 원고로그 축소 너비 - 100
+
+- $skin->op->background_width // 게시판 너비
+
+
+링크 디자인 관련 변수
+- $skin->op->link_color // 링크 글씨색 - ffa89e
+- $skin->op->link_font // 링크 글씨체 - tahoma,돋움
+- $skin->op->link_size // 링크 글씨 크기 - 8pt
+- $skin->op->link_shadow // 링크 글씨 그림자
+- $skin->op->link_weight // 링크 글씨 굵기
+- $skin->op->link_deco // 링크 글씨 줄 표시
+
+- $skin->op->hover_color // 마우스오버 시 링크 글씨 색 -  ffcbbf
+- $skin->op->hover_shadow // 마우스오버 시 링크 글씨 그림자
+- $skin->op->hover_weight // 마우스오버 시 링크 글씨 굵기
+- $skin->op->hover_deco // 마우스오버 시 링크 글씨 줄 표시
+
+- $skin->op->onop_lintrans // 링크, 입력란 변환 딜레이 - on - on
+- $skin->op->onop_inputrans // 입력란 투명 효과 on - on
+
+
+공지사항 관련 변수
+- $skin->op->notice_width // 공지사항 너비
+- $skin->op->notice_align // 공지사항 위치 - left center right - center
+- $skin->op->notice_textalign // 공지사항 내부 정렬 - left center right - center
+- $skin->op->notice_border_color // 공지사항 선 색 굵기
+- $skin->op->notice_border_type // 공지사항 선 종류
+- $skin->op->notice_background_color // 공지사항 테이블 배경색 - transparent
+- $skin->op->notice_background_color_R // 공지사항 테이블 배경색 R 값
+- $skin->op->notice_background_color_G // 공지사항 테이블 배경색 G 값
+- $skin->op->notice_background_color_B // 공지사항 테이블 배경색 B 값
+- $skin->op->notice_background_alpha // 공지사항 테이블 배경색 투명도
+- $skin->op->noticetext_color // 공지사항 글씨색 - black
+- $skin->op->noticetext_font // 공지사항 글씨체 - verdana,돋움
+- $skin->op->noticetext_size // 공지사항 글씨 크기 - 8pt
+- $skin->op->noticetext_shadow // 공지사항 글씨 그림자
+- $skin->op->noticetext_deco // 공지사항 글씨 줄 표시
+- $skin->op->noticetext_weight // 공지사항 글씨 굵기
+
+
+상단 메뉴 관련 변수
+- $skin->op->topm_bt_font_color // 치비/로드 버튼 글씨 white
+- $skin->op->topm_bt_weight // bold
+- $skin->op->topm_bt_background_color // ffcbbf
+- $skin->op->topm_bt_background_color_R
+- $skin->op->topm_bt_background_color_G
+- $skin->op->topm_bt_background_color_B
+- $skin->op->topm_bt_background_alpha
+
+- $skin->op->topm_top // 1페이지 show
+- $skin->op->topm_refre// 새로고침 show
+- $skin->op->topm_member// 1회용 멤로
+- $skin->op->topm_join// 가입
+- $skin->op->topm_pm// 프로필
+- $skin->op->topm_emoti// 이모티콘
+- $skin->op->topm_pb// 페이지바 show
+
+- $skin->op->topm_color // 상단 메뉴 색 #ff59a1 or #666666
+- $skin->op->topm_font // 상단 메뉴 폰트 종류 tahoma,돋움
+- $skin->op->topm_size // 상단 메뉴 폰트 크기 8pt
+- $skin->op->point_color3 // 현재 페이지 색 #ffcbbf
+- $skin->op->point_color5 // 현재 페이지 배경색 transparent
+- $skin->op->topm_border_color // #dddddd 1px
+- $skin->op->topm_border_type // solid
+- $skin->op->topm_ip_font_color // #666666
+- $skin->op->topm_ip_background_color 
+- $skin->op->topm_ip_background_color_R // 255
+- $skin->op->topm_ip_background_color_G // 255
+- $skin->op->topm_ip_background_color_B // 255
+- $skin->op->topm_ip_background_alpha // 0.8
+
+
+게시판 전체 디자인 관련 변수
+- $skin->op->table_border_radius // 테이블 외곽 둥글기 6px
+- $skin->op->table_border_size // 테이블 선 색상  ffe6d9
+- $skin->op->table_border_type // 테이블 선 굵기 2px
+- $skin->op->table_border_type // 종류 solid
+- $skin->op->table_inner_border_color // 내부 선 색 fff5f0
+- $skin->op->table_inner_border_size // 내부 선 굵기 2px
+- $skin->op->table_inner_border_type // 내부 선 종류 solid
+
+- $skin->op->point_color1 // 비밀글 알림색 ff59a1
+- $skin->op->point_color4 // 작성한 비밀글 알림색 28c5ff
+- $skin->op->point_color2 // 접기 알림색 666666
+
+
+로그 정보 관련 변수
+- $skin->op->table_background_color // 로그 정보 배경색 ffcbbf
+- $skin->op->table_background_alpha // 로그 정보 배경 투명도
+- $skin->op->table_background_color_R
+- $skin->op->table_background_color_G
+- $skin->op->table_background_color_B
+
+- $skin->op->lognum_color // 로그 번호 색/폰트/크기 black
+- $skin->op->lognum_font // verdana
+- $skin->op->lognum_size // 7pt
+- $skin->op->lognum_shadow // 0 0 1px rgba(0,0,0,0.3)
+- $skin->op->lognum_deco
+- $skin->op->lognum_weight // bold
+
+- $skin->op->loginfo_color // 로그 정보 색/폰트/크기 666666
+- $skin->op->loginfo_font // tahoma
+- $skin->op->loginfo_size // 7pt
+- $skin->op->loginfo_shadow
+- $skin->op->loginfo_deco
+- $skin->op->loginfo_weight
+
+- $skin->op->tool // 작성 툴 show
+- $skin->op->size // 원본사이즈/리사이징 정보 show
+- $skin->op->logip // 아이피
+- $skin->op->time // 시간 show
+- $skin->op->logurl // 고유주소
+
+- $skin->op->logurl_link // 로그 링크 연결 - none/original/pic - none
+- $skin->op->logurl_new // 새 창으로 열기 기능 - none/original/pic - original
+- $skin->op->logurl_url // 로그 링크 연결 주소 original/mix - mix
+ - $skin->op->time_type // 로그 시간 표시 방법 y.m.d H:i
+
+
+로그 테이블 관련 변수
+- $skin->op->pic_background_color // white
+- $skin->op->pic_background_color_R
+- $skin->op->pic_background_color_G
+- $skin->op->pic_background_color_B
+- $skin->op->pic_background_alpha
+- $skin->op->log_align // 로그 정렬 align - left/center/right - center
+- $skin->op->logtext_align // 텍스트 로그 정렬 - left/center/right - left
+- $skin->op->logtext_color // 텍스트 로그 색 #666666
+- $skin->op->logtext_font // verdana,돋움
+- $skin->op->logtext_size // 8pt
+- $skin->op->logtext_shadow 
+- $skin->op->logtext_deco
+- $skin->op->logtext_weight
+
+
+로그 옵션 선택 관련 변수
+- $skin->op->logop_border_color // 로그 옵션 레이어 설정 1px #999999 
+- $skin->op->logop_border_type // solid
+- $skin->op->logop_background_color // white 
+- $skin->op->logop_background_color_R
+- $skin->op->logop_background_color_G
+- $skin->op->logop_background_color_B
+- $skin->op->logop_background_alpha
+
+- $skin->op->logopinp_border_color // 로그 옵션 입력창 설정 #dddddd 1px
+- $skin->op->logopinp_border_type // solid
+- $skin->op->logopinp_font_color // #666666
+- $skin->op->logopinp_background_color // white
+- $skin->op->logopinp_background_color_R
+- $skin->op->logopinp_background_color_G
+- $skin->op->logopinp_background_color_B
+- $skin->op->logopinp_background_alpha
+
+
+리플 테이블 관련 변수
+- $skin->op->reply_bmargin // 리플 사이 줄 간격 10px
+- $skin->op->reply_background_color // 코멘트 배경 색 #ffffff
+- $skin->op->reply_background_color_R
+- $skin->op->reply_background_color_G
+- $skin->op->reply_background_color_B
+- $skin->op->reply_background_alpha
+
+- $skin->op->reply_oponoff // 코멘트 작성자명 show
+- $skin->op->reply_dataoff // 코멘트 작성 날짜 show
+- $skin->op->reply_ipoff // 코멘트 작성자 IP
+
+
+작성자명 관련 변수
+- $skin->op->rename_color // 작성자명 색상 333333
+- $skin->op->rename_font // 작성자명 글씨체 verdana,돋움
+- $skin->op->rename_size // 작성자명 크기 8pt
+- $skin->op->rename_shadow 
+- $skin->op->rename_deco
+- $skin->op->rename_weight // bold
+- $skin->op->renamewr_color // 작가글 색상 ff59a1
+
+
+리플 작성 시간 관련 변수
+- $skin->op->time_type_reply // 코멘트 시간 y/m/d(D) H:i:s
+- $skin->op->retime_color // aaaaaa
+- $skin->op->retime_font // tahoma
+- $skin->op->retime_size // 7pt
+
+
+리플 텍스트 관련 변수
+- $skin->op->reply_text_color // 코멘트 #666666
+- $skin->op->reply_text_font // verdana,돋움
+- $skin->op->reply_text_size // 8pt
+- $skin->op->reply_text_shadow
+- $skin->op->reply_text_deco
+- $skin->op->reply_text_weight
+
+- $skin->op->dice_position // 주사위 위치 base/front - front
+
+
+작성자 IP 관련 변수
+- $skin->op->replyip_color // 코멘트 아이피 #dddddd
+- $skin->op->replyip_font // tahoma
+- $skin->op->replyip_size // 7pt
+
+
+리리플 표시 관련 변수
+- $skin->op->rereply_mleft // 리리플 좌측여백 0
+- $skin->op->rereply_bar_width // 리리플 구분 바 두께 3px 
+- $skin->op->rereply_bar_color // 리리플 구분 바 색 ffe6d9
+
+
+메모 관련 변수
+- $skin->op->memo_background_color // 메모 배경색 ffcbbf
+- $skin->op->memo_background_color_R
+- $skin->op->memo_background_color_G
+- $skin->op->memo_background_color_B
+- $skin->op->memo_background_alpha
+- $skin->op->memo_color // white
+- $skin->op->memo_font // tahoma,돋움
+- $skin->op->memo_size // 8pt
+- $skin->op->memo_shadow
+- $skin->op->memo_deco
+- $skin->op->memo_weight // bold
+- $skin->op->memo_posit // 메모 출력 위치 top bottom - top
+- $skin->op->melinmore // 메모 링크 연동 none linkfirst morefirst link more - none
+
+- $skin->op->comf_rreset // 리플 리셋 버튼 show
+- $skin->op->comf_emo // 이모티콘 버튼 show
+- $skin->op->comf_more // 작성창 접기 on - none
+- $skin->op->comf_tline // 이름/비밀번호 단락 내리기 on - none
+
+- $skin->op->comf_color // 이모티콘 코멘트 표시 알림 색 #ff59a1
+- $skin->op->comf_font // tahoma
+- $skin->op->comf_size // 8pt
+- $skin->op->comf_shadow
+- $skin->op->comf_deco
+- $skin->op->comf_weight
+
+- $skin->op->comfinp_border_color // 리플 작성 입력란 #dddddd 1px
+- $skin->op->comfinp_border_type // solid
+- $skin->op->comfinp_font_color // #dddddd
+- $skin->op->comfinp_background_color 
+- $skin->op->comfinp_background_color_R // 200
+- $skin->op->comfinp_background_color_G // 200
+- $skin->op->comfinp_background_color_B // 200
+- $skin->op->comfinp_background_alpha // 0.1
+
+아이콘 변수
+- $skin->op->chibi_icon // 치비툴 - CHIBI
+- $skin->op->load_icon // 로드 - LOAD
+
+- $skin->op->topmtop_icon // 1페이지로 - TOP
+- $skin->op->reflash_icon // 새로고침 - REFRESH
+- $skin->op->login_icon // 로그인 - LOGIN
+- $skin->op->logout_icon // 로그아웃 - LOGOUT
+- $skin->op->admin_icon // 게시판 관리 - SETUP
+- $skin->op->icon // 멤버 로그인 - MEMBER
+- $skin->op->emoticon_icon // 이모티콘 리스트 - EMOTICON
+- $skin->op->topmjoin_icon // 멤버 가입 - JOIN
+- $skin->op->topmpm_icon // 프로필 수정 - PROFILE
+
+- $skin->op->more_icon // 접기 - MORE ▼
+- $skin->op->secret_icon // 비공개 - SECRET
+
+- $skin->op->msecret_icon // 멤버공개 - MEMBER SECRET
+- $skin->op->secret_icon_self // 비밀글 표시 - YOUR SECRET
+
+- $skin->op->lognum_icon // 로그 번호 - NO #
+- $skin->op->op_icon // 그림 옵션 - OP
+- $skin->op->continue_icon // 이어그리기 - CONTINUE
+- $skin->op->expand_icon // 축소 표시 - <img src="skin/MnM/images/expand.png">
+- $skin->op->logwin_icon // 새 창으로 열기 - <font color=black size=2>◆</font>
+
+- $skin->op->logmore_icon // RB 접기 표시 - REPLY MORE ▼
+
+- $skin->op->write_icon // 글쓰기 - WRITE
+
+- $skin->op->comf_more_icon // 작성창 - COMMENT ▼
+- $skin->op->comf_emo_icon // 작성창 이모티콘 리스트 - EMOTICON
+
+- $skin->op->reply_icon // 리리플 - R
+- $skin->op->modify_icon // 수정 - O
+- $skin->op->del_icon // 삭제 - X 
+
+- $skin->op->painter_icon // 작가글 - ★
+- $skin->op->hp_icon // 링크- URL
+- $skin->op->memo_icon // 메모 - MEMO ::
+- $skin->op->replyip_icon // 코멘트 IP - IP :

@@ -1,0 +1,137 @@
+<!-- // Cache_Text 0.6 1613322005
+1613322005 
+-->
+<div id="aline-1"></div>
+<div class="section"><a id='sect-1'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/HelpOnGitInstallation?action=edit&amp;section=1'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-1"><a id='s-1'></a>github로 받기 <a class='perma' href='#s-1'>¶</a></h2><div id="sc-1">
+<pre class='wiki'>
+git clone https://github.com/wkpark/moniwiki.git
+</pre><div id="aline-4"><span class='line-anchor' id='line-4'></span>
+<br />
+<div id="aline-6"></div>
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-2'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/HelpOnGitInstallation?action=edit&amp;section=2'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-6"><a id='s-2'></a>번역 메시지 초기화 <a class='perma' href='#s-2'>¶</a></h2><div id="sc-2">
+<div id="aline-7">다운로드 받은 후에 그대로 설치를 하면 모든 메시지가 영문으로 보이게 됩니다.<span class='line-anchor' id='line-7'></span><br />
+</div>
+<br />
+<div id="aline-9">한글 메시지로 보려면 다음의 절차를 통해서 번역 메시지를 초기화 시켜야 합니다.<span class='line-anchor' id='line-9'></span><br />
+</div>
+<div class='separator'><hr /></div><span class='line-anchor' id='line-10'></span>
+<div id="aline-11">번역 메시지 초기화는 두가지 방식을 지원합니다.<span class='line-anchor' id='line-11'></span><br />
+<ol><li>리눅스 gmake(make)+xgettext를 이용한 po 메시지 파일을 mo파일로 변환<span class='line-anchor' id='line-12'></span><br />
+</li>
+<li>혹은 config.php에서 <code class='wiki'>$use_local_translation=1;</code> 옵션을 추가하면 내장된 <code class='wiki'>TGetText.php</code>를 이용해서 po를 mo파일로 변환<span class='line-anchor' id='line-13'></span><br />
+</li>
+</ol>
+윈도위에서는 2번 방식을 쓸 수 있습니다.<span class='line-anchor' id='line-14'></span><br />
+</div>
+<br />
+<div id="aline-16">2번 방식은 <code class='wiki'>TGetText.php</code>의 일부 버그가 발견되어서 기본값으로 내정되어있지 않은 상태이나, 향후 기본값으로 내정되고 모니위키의 i18n에 사용되게 될 것입니다.<span class='line-anchor' id='line-16'></span><br />
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-3'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/HelpOnGitInstallation?action=edit&amp;section=3'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h3 id="line-17"><a id='s-2.1'></a><code><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24use_local_translation'>$use_local_translation</a>=1;</code> 옵션 사용 <a class='perma' href='#s-2.1'>¶</a></h3><div id="sc-3">
+<div id="aline-18"><ol><li><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/config.php'>config.php</a>를 열어서 <code><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/%24use_local_translation'>$use_local_translation</a>=1;</code>을 추가하고<span class='line-anchor' id='line-18'></span><br />
+</li>
+<li><code>data/cache/locale</code> 디렉토리 아래의 모든 내용을 삭제한 후에<span class='line-anchor' id='line-19'></span><br />
+</li>
+<li>임의의 위키 문서를 열어봅니다.<span class='line-anchor' id='line-20'></span><br />
+</li>
+</ol>
+이렇게 하면 자동으로 <code>locale/po/*.po</code> 파일을 변환하에 메시지 파일이 얻어지며, 얻어진 메시지 파일이 gettext에 의해 사용됩니다.<span class='line-anchor' id='line-21'></span><br />
+</div>
+<br />
+<div id="aline-23"><img src='/mercenarys/imgs/smile/alert.png' style='border:0' class='smiley' alt='/!\' title='/!\' /> gettext를 지원하지 않더라도 같이 변환된 <code>*.php</code> 파일을 이용해서 메시지가 번역되게 됩니다.<span class='line-anchor' id='line-23'></span><br />
+</div>
+<br />
+<div id="aline-25"></div>
+</div>
+</div>
+<div class="section"><a id='sect-4'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/HelpOnGitInstallation?action=edit&amp;section=4'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h3 id="line-25"><a id='s-2.2'></a>make/xgettext를 사용한 메시지 변환 <a class='perma' href='#s-2.2'>¶</a></h3><div id="sc-4">
+<div id="aline-26"><ul><li><img src='/mercenarys/imgs/smile/alert.png' style='border:0' class='smiley' alt='/!\' title='/!\' /> 이 단계에서는 <code>make</code> 혹은 <code>gmake</code>가 필요합니다. 리눅스 서버 호스팅의 경우 간혹 <code>make</code> 혹은 <code>gmake</code>를 쓸 수 없는 경우가 있습니다.<span class='line-anchor' id='line-26'></span><br />
+</li>
+<li>이 과정을 건너뛰는 경우에는 한글 메시지가 나오지 않습니다.<span class='line-anchor' id='line-27'></span><br />
+<br />
+</li>
+</ul>
+모니위키 본체 프로그램에 대한 번역 메시지.<span class='line-anchor' id='line-29'></span><br />
+<pre class='wiki'>
+cd moniwiki/locale
+sh update-makefile.sh
+make
+...
+...
+</pre><span class='line-anchor' id='line-36'></span>
+</div>
+<div class='separator'><hr /></div><span class='line-anchor' id='line-37'></span>
+<div id="aline-38">자바스크립트에 대한 번역 메시지.<span class='line-anchor' id='line-38'></span><br />
+<pre class='wiki'>
+cd moniwiki/local/js/locale # 디렉토리 명칭에 유의하세요.
+sh update-makefile.sh
+make
+...
+...
+</pre><span class='line-anchor' id='line-45'></span>
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-5'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/HelpOnGitInstallation?action=edit&amp;section=5'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h3 id="line-46"><a id='s-2.3'></a>모니위키 초기화 및 초기설정 변경 팁 <a class='perma' href='#s-2.3'>¶</a></h3><div id="sc-5">
+<div id="aline-47">이후의 설치방법은 <a href='/mercenarys/wiki.php/HelpOnInstallation' >HelpOnInstallation</a> 페이지를 참고하세요.<span class='line-anchor' id='line-47'></span><br />
+</div>
+<br />
+<div id="aline-49"></div>
+</div>
+</div>
+<div class="section"><a id='sect-6'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/HelpOnGitInstallation?action=edit&amp;section=6'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-49"><a id='s-3'></a>github에서 업데이트 받기 <a class='perma' href='#s-3'>¶</a></h2><div id="sc-6">
+<div id="aline-50">받고 난 뒤에 변경사항이 있다면 아래 명령으로 갱신된 내용을 받을 수 있습니다.<span class='line-anchor' id='line-50'></span><br />
+</div>
+<br />
+<div id="aline-52">git clone 명령으로 받아 생성된 moniwiki 디렉토리로 이동해서 아래 명령 실행(.git 디렉토리 있어야 실행 가능합니다).<span class='line-anchor' id='line-52'></span><br />
+<pre class='wiki'>
+git pull
+</pre><span class='line-anchor' id='line-55'></span>
+</div>
+<br />
+<div id="aline-57">예를 들어서<span class='line-anchor' id='line-57'></span><br />
+<pre class='wiki'>
+$ git pull
+remote: Counting objects: 67, done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 49 (delta 38), reused 47 (delta 36)
+Unpacking objects: 100% (49/49), done.
+From https://github.com/wkpark/moniwiki
+   6b15773..812193b  master     -> origin/master
+Updating 6b15773..812193b
+Fast-forward
+ config.php.default        |    1 -
+ lib/HTTPClient.php        |  148 +++++++++++++++++++++++++-------------------
+ lib/PageIndex.php         |    2 +-
+ lib/titleindexer.text.php |    2 +-
+ local/moniwyg.js          |    6 ++-
+ plugin/Diff.php           |    6 +--
+ plugin/FullSearch.php     |    2 +-
+ plugin/Info.php           |    6 +-
+ plugin/LikePages.php      |   17 -----
+ plugin/rcsexport.php      |    4 +-
+ plugin/rcsimport.php      |    4 +-
+ plugin/revert.php         |    3 +-
+ wiki.php                  |  109 +++++++--------------------------
+ wikilib.php               |   95 ++++++++++++++++-------------
+ 14 files changed, 174 insertions(+), 231 deletions(-)
+</pre><span class='line-anchor' id='line-83'></span>
+</div>
+<br />
+<div id="aline-85">이렇게 하면 자동으로 업데이트되며, 자신이 고쳐서 쓰고있는 부분은 대게 잘 보존됩니다.<span class='line-anchor' id='line-85'></span><br />
+</div>
+<div class='separator'><hr /></div><span class='line-anchor' id='line-86'></span>
+<div id="aline-87">&laquo; <a href='/mercenarys/wiki.php/HelpOnCvsInstallation'  accesskey="," >HelpOnCvsInstallation</a> | <a href='/mercenarys/wiki.php/HelpOnAdministration' >HelpOnAdministration</a> | <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/MoniWikiBackup'>MoniWikiBackup</a> &raquo;<span class='line-anchor' id='line-87'></span><br />
+</div>
+</div>
+</div>

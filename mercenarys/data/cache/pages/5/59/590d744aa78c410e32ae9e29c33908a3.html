@@ -1,0 +1,99 @@
+<!-- // Cache_Text 0.6 1613320467
+1613320467 
+-->
+<script type="text/javascript" src="/mercenarys/local/toctoggle.js"></script><div id="aline-1">
+<div class='wikiToc' id='toc1'><div class='toctitle'>
+<h2 style='display:inline'><span class="i18n" title="Contents">Contents</span></h2>
+</div><a name='toc' ></a><dl><dd><dl>
+<dt><a id='toc-1' href='#s-1'><span class='num'>1<span class="dot">.</span></span> 수동 업데이트 </a></dt>
+<dd><dl>
+<dt><a id='toc-1.1' href='#s-1.1'><span class='num'>1.1<span class="dot">.</span></span> 업그레이드 하기 </a></dt>
+<dt><a id='toc-1.2' href='#s-1.2'><span class='num'>1.2<span class="dot">.</span></span> 설정 업데이트 </a></dt>
+<dt><a id='toc-1.3' href='#s-1.3'><span class='num'>1.3<span class="dot">.</span></span> 기타 문제 해결 </a></dt>
+</dl></dd>
+</dl></dd></dl>
+</div>
+<script type="text/javascript">
+/*<![CDATA[*/
+ if (window.showTocToggle) { showTocToggle('toc1', '<img src="/mercenarys/imgs/plugin/arrdown.png" width="10px" border="0" alt="[+]" title="[+]" />','<img src="/mercenarys/imgs/plugin/arrup.png" width="10px" border="0" alt="[-]" title="[-]" />'); } 
+/*]]>*/
+</script><span class='line-anchor' id='line-1'></span><br />
+</div>
+<br />
+<div id="aline-3"><img src='/mercenarys/imgs/smile/alert.png' style='border:0' class='smiley' alt='/!\' title='/!\' /> <strong>위키를 업그레이드 하기 전에 꼭 백업하세요!</strong> 특별한 경우가 아니라면 기존의 데이타를 잃게 되거나 하지는 않으나, 아주 사소한 실수로 예전의 데이타를 잃을 가능성도 있습니다. <img src='/mercenarys/imgs/smile/@-).png' style='border:0' class='smiley' alt='@)' title='@)' /><span class='line-anchor' id='line-3'></span><br />
+</div>
+<br />
+<div id="aline-5">이 문서는 모니위키를 업그레이드 하거나 다른 웹 호스팅 사이트로 이전하고자 할 때 필요한 것에 대해 설명하고 있습니다.<span class='line-anchor' id='line-5'></span><br />
+</div>
+<br />
+<div id="aline-7"><a href='/mercenarys/wiki.php/MoniWiki'>MoniWiki</a><tt class='sister'><a id='rsister1'></a><a href='#sister1'>&#x203a;1</a></tt>는 기본적으로 backup과 restore 액션을 지원하므로 다른 사이트로 이전하는 것을 쉽게 할 수 있으며, rcs를 설치하지 않은 위키에 대해서도 정기적인 backup만으로 자신의 위키 데이타를 비교적 안전하게 보존할 방법을 제공합니다.<span class='line-anchor' id='line-7'></span><br />
+</div>
+<br />
+<div id="aline-9"></div>
+<div class="section"><a id='sect-1'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/HelpOnUpdating?action=edit&amp;section=1'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h2 id="line-9"><a id='s-1'></a><span class='tocnumber'><a href='#toc'>1<span class='dot'>.</span></a> </span>수동 업데이트 <a class='perma' href='#s-1'>¶</a></h2><div id="sc-1">
+<div id="aline-10">모니위키 1.0.8 버전 이전에는 간단한 업그레이드를 위한 자동화 스크립트를 제공하지 않으며, 1.0.9버전 이후에는 간단한 업그레이드 스크립트(<a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/UpgradeScript'>UpgradeScript</a>)를 제공합니다 (upgrade.sh)<span class='line-anchor' id='line-10'></span><br />
+</div>
+<br />
+<div id="aline-12"><a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/UpgradeScript'>UpgradeScript</a>가 하는 일은, 위키 엔진(*.php)을 업데이트하고, 기존의 위키엔진을 사용자가 변경하거나 해서 사용하고 있던 *.php는 없는지 검사하고 사용자가 변경한 *.php파일이 있다면 백업해줍니다.<span class='line-anchor' id='line-12'></span><br />
+</div>
+<br />
+<div id="aline-14">아래는 <code>upgrade.sh</code>를 사용하지 않고 수동으로 직접 업그레이드 하는 방법을 설명합니다.<span class='line-anchor' id='line-14'></span><br />
+</div>
+</div>
+</div>
+<div class="section"><a id='sect-2'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/HelpOnUpdating?action=edit&amp;section=2'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h3 id="line-15"><a id='s-1.1'></a><span class='tocnumber'><a href='#toc'>1.1<span class='dot'>.</span></a> </span>업그레이드 하기 <a class='perma' href='#s-1.1'>¶</a></h3><div id="sc-2">
+<div id="aline-16">모니위키를 설치한 후에 <code>config/*</code> 및 <code>config.php</code>를 제외한 특별히 다른 아무 소스파일도 변경된 것이 없다면, 새로 다운로드 받은 압축파일을 단순히 덮어 쓰는 것 만으로도 업그레이드가 완료됩니다.<span class='line-anchor' id='line-16'></span><br />
+</div>
+<br />
+<div id="aline-18">그렇지 않고 일부 파일을 변경한 경우에는 조금 더 세심한 주의가 필요할 것입니다.<span class='line-anchor' id='line-18'></span><br />
+</div>
+<br />
+<div id="aline-20"><code>wiki.php</code>, <code>wikilib.php</code>는 가장 중요한 위키엔진입니다. 대부분 사용자가 직접 변경해서 사용하는 경우는 아마 이 두개의 파일일 것입니다.<span class='line-anchor' id='line-20'></span><br />
+기존의 것을 잘 보존한 후에 새로운 파일로 교체해 줍니다.<span class='line-anchor' id='line-21'></span><br />
+이것과 함께 <code>wikismiley.php</code> <code>lib/*.php</code> <code>plugin</code> 아래의 모든 파일을 새것으로 교체합니다.<span class='line-anchor' id='line-22'></span><br />
+</div>
+<br />
+<div id="aline-24">다음은 <code>css/*.css</code> <code>imgs/*</code> <code>theme/*</code> <code>local/*</code> 등등의 파일을 업데이트합니다. 기존에 사용자가 변경한 파일이 있다면 반드시 백업하시기 바랍니다.<span class='line-anchor' id='line-24'></span><br />
+또한 <code>data/intermap.txt</code> 파일 등이 새롭게 갱신되어 있을 수 있으므로 이것도 업그레이드 해주어야 합니다.<span class='line-anchor' id='line-25'></span><br />
+</div>
+<br />
+<div id="aline-27">(이런 복잡한 작업을 <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/UpgradeScript'>UpgradeScript</a>를 통해 보다 손쉽게 하실 수 있습니다)<span class='line-anchor' id='line-27'></span><br />
+</div>
+<br />
+<div id="aline-29"></div>
+</div>
+</div>
+<div class="section"><a id='sect-3'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/HelpOnUpdating?action=edit&amp;section=3'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h3 id="line-29"><a id='s-1.2'></a><span class='tocnumber'><a href='#toc'>1.2<span class='dot'>.</span></a> </span>설정 업데이트 <a class='perma' href='#s-1.2'>¶</a></h3><div id="sc-3">
+<div id="aline-30">위의 단계를 통해 기본적인 업그레이드가 완료됩니다. 그 다음에는 모니위키가 설치되어 있는 디렉토리에 위치한 예전의 <code>config.php</code>는 새 버전의 <code>config.php.default</code>를 참고해서 바뀐 점이 없는지 혹은 새로운 기능이 첨가된 것은 없는지 점검합니다.<span class='line-anchor' id='line-30'></span><br />
+</div>
+<br />
+<div id="aline-32">가장 쉽게 설정하는 방법은, 기존의 <code>config.php</code> 파일을 다른 이름으로 바꾼 후에 (예를 들어 <code>config.php.my</code>) <code>monisetup.php</code>를 브라우저를 통해 열어서 <code>config.php</code>를 다시 만드는 것입니다. (이 때 <code>chmod 2777 . data</code> 명령으로 미리 퍼미션을 조정해 두어야 합니다)<span class='line-anchor' id='line-32'></span><br />
+</div>
+<br />
+<br />
+<div id="aline-35">이런 절차가 필요한 이유는 새로운 버전에서는 새로운 기능을 지원할 수 있고, 그것에 대한 설정을 추가해 주어야 제대로 작동하기 때문입니다.<span class='line-anchor' id='line-35'></span><br />
+새로 추가된 옵션은 <code>config.php.default</code> 파일에 담겨 있으므로 이 파일을 열어서 확인해 보실 수 있습니다.<span class='line-anchor' id='line-36'></span><br />
+</div>
+<br />
+<div id="aline-38"></div>
+</div>
+</div>
+<div class="section"><a id='sect-4'></a><div class='sectionEdit' style='float:right;'><span class='sep'>[</span><span><a href='/mercenarys/wiki.php/HelpOnUpdating?action=edit&amp;section=4'><span>edit</span></a></span><span class='sep'>]</span></div>
+<h3 id="line-38"><a id='s-1.3'></a><span class='tocnumber'><a href='#toc'>1.3<span class='dot'>.</span></a> </span>기타 문제 해결 <a class='perma' href='#s-1.3'>¶</a></h3><div id="sc-4">
+<div id="aline-39">업데이트중에 발생한 문제점은 <a class='externalLink'  href='http://dev.naver.com/projects/moniwiki' >http://dev.naver.com/projects/moniwiki</a> 를 통해 문의해보시기 바랍니다.<span class='line-anchor' id='line-39'></span><br />
+</div>
+<br />
+<div id="aline-41">업그레이드 혹은 이전(호스팅 서버 옮김)에 대한 내용은 <a class='nonexistent' rel='nofollow' href='/mercenarys/wiki.php/BackupScripts'>BackupScripts</a>를 참고하세요.<span class='line-anchor' id='line-41'></span><br />
+</div>
+<div class='separator'><hr /></div><span class='line-anchor' id='line-42'></span>
+<div id="aline-43">&laquo; <a href='/mercenarys/wiki.php/HelpOnConfiguration'  accesskey="," >HelpOnConfiguration</a> | <a href='/mercenarys/wiki.php/HelpOnAdministration' >HelpOnAdministration</a> | <a href='/mercenarys/wiki.php/HelpOnCvsInstallation'  accesskey="." >HelpOnCvsInstallation</a> &raquo;<span class='line-anchor' id='line-43'></span><br />
+</div>
+</div>
+</div>
+<div id='wikiSister'>
+<div class='separator'><tt class='foot'>----</tt></div>
+Sister Sites Index<br />
+<ul><li><tt class='foot'><a id='sister1'></a><a href='#rsister1'>1&#x203a;</a></tt> <a class="interwiki" href='http://moniwiki.kldp.net/wiki.php/MoniWiki' ><img class="interwiki" alt="MoniWiki:" src='/mercenarys/imgs//interwiki/moniwiki-16.png' style='border:0' height='16' width='16' title='MoniWiki:' /></a><a href='http://moniwiki.kldp.net/wiki.php/MoniWiki'  title='MoniWiki:MoniWiki'>MoniWiki</a> </li></ul></div>
