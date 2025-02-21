@@ -1,15 +1,481 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-	<meta charset="utf-8">
-	<title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>소개 이미지 생성</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <style>
+    @font-face {
+        font-family: 'NanumSquareRound';
+        src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    body {
+      font-family: 'NanumSquareRound', sans-serif;
+      background-color: #1e1e1e;
+      color: white;
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    #app {
+      display:flex;
+      flex-direction: column;
+      width: 80%;
+      max-width: 800px;
+      background: #2c2c2c;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    input:not([type='color']):not([type='checkbox']), select, textarea {
+     font-family: 'NanumSquareRound', sans-serif;
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+      background: #3a3a3a;
+      color: white;
+      box-sizing: border-box;
+    }
+    h3 {
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+      margin-top: 20px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #007BFF;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    canvas {
+      display: block;
+      width: 100%;
+      max-width: 800px;
+      border: 2px solid white;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-	<br>
-	<font face="나눔고딕, NanumGothic, 돋움"><span style="color:#F4C0AF;"style="font-weight:bold;"style="font-size: 10pt;">▶ Chibi Paint Tool 바로가기</span></font>
-	<font face="나눔고딕, NanumGothic, 돋움"><a href="http://bydarti.dothome.co.kr/loginCheck/Login.html"><span style="font-size: 10pt;">클릭</span></a></font>
-	<br>
-	<font face="나눔고딕, NanumGothic, 돋움"><span style="color:#F4C0AF;"style="font-weight:bold;"style="font-size: 10pt;">▶ Mercenary's Wiki 바로가기</span></font>
-	<font face="나눔고딕, NanumGothic, 돋움"><a href="http://bydarti.dothome.co.kr/mercenarys"><span style="font-size: 10pt;">클릭</span></a></font>
+  <div id="app">
+    <h2>소개 이미지 생성</h2>
+
+    <div>
+        <label>프로필 이미지 업로드</label>
+        <input type="file" @change="handleImageUpload"><br>
+        
+        <label>배경 이미지 업로드 (배경 이미지를 사용하지 않는 경우 선택)</label><input type="color" v-model="profile.backgroundColor"><br>
+        <input type="file" @change="handleBgImageUpload"><br>
+    </div>
+    
+
+    <!-- 기본 정보 입력 -->
+    <div>
+        <label for="nickname">닉네임</label>
+        <input v-model="profile.nickname" id="nickname" placeholder="닉네임" />
+      </div>
+      <div>
+        <label for="race">종족</label>
+        <select v-model="profile.race" id="race" >
+            <option value="인간" selected>인간</option>
+            <option value="엘프">엘프</option>
+            <option value="자이언트">자이언트</option>
+        </select>
+      </div>
+      <div>
+        <label for="playtime">주 접속 시간대</label>
+        <input v-model="profile.playtime" id="playtime" placeholder="주 접속 시간대" />
+      </div>
+      <div>
+        <label for="comment">한마디</label>
+        <textarea v-model="profile.comment" id="comment" placeholder="한마디"></textarea>
+      </div>
+  
+      <hr />
+  
+      <!-- 던전 선호도 -->
+      <h3>선호 던전</h3>
+      <div v-for="(dungeon, key) in profile.dungeons" :key="key">
+        <input type="checkbox" :id="key" v-model="dungeon.enabled"><label :for="key">{{ key }}</label>
+        <template v-if="dungeon.enabled == true">
+            <div>
+                <label for="difficulty">난이도</label>
+                <input v-model="dungeon.difficulty" id="difficulty" placeholder="난이도" />
+            </div>
+            <div>
+                <label for="skillLevel">미숙/반숙/완숙</label>
+                <select v-model="dungeon.skillLevel">
+                    <option value="미숙" selected>미숙</option>
+                    <option value="반숙">반숙</option>
+                    <option value="완숙">완숙</option>
+                </select>
+            </div>
+            <div>
+                <label for="comment">코멘트</label>
+                <input v-model="dungeon.comment" id="comment" placeholder="코멘트" />
+            </div>
+        </template>
+      </div>
+  
+      <hr />
+  
+      <!-- 스펙 기재란 -->
+      <h3>스펙 기재란</h3>
+      <div v-for="(spec, key) in profile.specs" :key="key">
+        <input type="checkbox" :id="key" v-model="spec.enabled"><label :for="key">{{ key }}</label><br>
+        <template v-if="spec.enabled == true">
+            <div>
+                <template v-if="key == '세인트바드'">
+                    <label for="specWeapon">전장</label>
+                    <input v-model="spec.weapon">
+                </template>
+                <template v-else>
+                    <label for="specWeapon">주무기</label>
+                    <select v-model="spec.weapon" id="specWeapon" >
+                        <option value="나이트브링어">나이트브링어</option>
+                        <option value="페러시우스">페러시우스</option>
+                        <option value="켈틱">켈틱</option>
+                        <option value="무기 없음" selected>무기 없음</option>
+                    </select>
+                </template>
+            </div>
+            <div>
+                <template v-if="key == '세인트바드'">
+                    <label for="specErg">비바체</label>
+                    <input v-model="spec.erg">
+                </template>
+                <template v-else>
+                    <label for="specErg">에르그</label>
+                    <select v-model="spec.erg" id="specErg" >
+                        <option value="S50">S50</option>
+                        <option value="S45">S45</option>
+                        <option value="S40">S40</option>
+                        <option value="S35">S35</option>
+                        <option value="A50">A50</option>
+                        <option value="에르그 없음" selected>에르그 없음</option>
+                    </select>
+                </template>
+            </div>
+            <div>
+                <template v-if="key == '세인트바드'">
+                    <label for="specAttack">행진곡</label>
+                    <input v-model="spec.attack">
+                </template>
+                <template v-else>
+                    <label for="specAttack">노도핑 {{ key == "다크메이지" ? '마공' : '물공'}}</label>
+                    <input v-model="spec.attack" id="specAttack"/>
+                </template>
+            </div>
+            <div>
+                <template v-if="key != '세인트바드'">
+                    <label for="specPiercing">피어싱 {{ key == "다크메이지" ? '(피어스 포함)' : ''}}</label>
+                    <input v-model="spec.piercing" id="specPiercing" placeholder="피어싱" />
+                </template>
+            </div>
+            <div>
+                <label for="specComment">코멘트</label>
+                <input v-model="spec.comment" id="specComment" placeholder="코멘트" />
+            </div>
+        </template>
+      </div>
+  
+      <hr />
+    
+    <button @click="generateImage">이미지 생성</button>
+    <canvas ref="canvas" width="1600" height="900"></canvas>
+    <div v-if="dataUrl != null" id="downloadBtn">이미지를 우클릭하여 저장하세요. (모바일: 길게 누르기)</div>
+  </div>
+
+  <script>
+    Vue.createApp({
+      data() {
+        return {
+          profile: {
+            nickname: "",
+            race: "인간",
+            playtime: "",
+            fixedParty: "",
+            comment: "",
+            comment2: "",
+            dungeons: {
+            "하시딤": { enabled: false, difficulty: "패턴/부거믿", preference: "선호", skillLevel: "미숙", comment: "" },
+            "기르가쉬": { enabled: false, difficulty: "보통", preference: "선호", skillLevel: "미숙", comment: "" },
+            "크롬 바스": { enabled: false, difficulty: "30", preference: "선호", skillLevel: "미숙", comment: "" },
+            "글렌 베르나": { enabled: false, difficulty: "쉬움", preference: "선호", skillLevel: "미숙", comment: "" },
+            "브리 레흐": { enabled: false, difficulty: "1관", preference: "선호", skillLevel: "미숙", comment: "" },
+            },
+            specs: {
+            "엘레멘탈나이트": { icon: "🗡️", enabled: false, weapon: "무기 없음", erg: "에르그 없음", attack: "0", piercing: "0" },
+            "세인트바드": { icon: "🎶", enabled: false, weapon: "전장", erg: "비바체", attack: "행진곡", piercing: "" },
+            "알케믹스팅어": { icon: "🏹", enabled: false, weapon: "무기 없음", erg: "에르그 없음", attack: "0", piercing: "0" },
+            "다크메이지": { icon: "🔮", enabled: false, weapon: "무기 없음", erg: "에르그 없음", attack: "0", piercing: "0" },
+            "세이크리드가드": { icon: "🛡️", enabled: false, weapon: "무기 없음", erg: "에르그 없음", attack: "0", piercing: "0" },
+            "블래스트랜서": { icon: "🔱", enabled: false, weapon: "무기 없음", erg: "에르그 없음", attack: "0", piercing: "0" }
+            },
+            backgroundColor: "#555555",
+          },
+          uploadedImage: null,
+          uploadedBgImage: null,
+          dataUrl: null
+        };
+      },
+      methods: {
+        downloadImg(e) {
+            // 캔버스 데이터를 DataURL로 변환
+            const dataURL = this.dataUrl;
+            
+            // 임시 앵커 태그 생성
+            const a = document.createElement('a');
+            a.href = dataURL;
+            a.download = 'canvas_image.png'; // 다운로드할 파일 이름 설정
+            a.target = '_blank'; // 새 창에서 열리도록 설정
+            document.body.appendChild(a); // DOM에 추가
+            a.click(); // 클릭 이벤트 트리거
+            document.body.removeChild(a); // 임시 앵커 태그 제거
+        },
+        handleImageUpload(event) {
+          const file = event.target.files[0];
+          if (file) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+              this.uploadedImage = e.target.result;
+            };
+            reader.readAsDataURL(file);
+          }
+        },
+        handleBgImageUpload(event) {
+          const file = event.target.files[0];
+          if (file) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+              this.uploadedBgImage = e.target.result;
+            };
+            reader.readAsDataURL(file);
+          }
+        },
+
+        hexToRGBA(hex, alpha) {
+        let r = parseInt(hex.slice(1, 3), 16);
+        let g = parseInt(hex.slice(3, 5), 16);
+        let b = parseInt(hex.slice(5, 7), 16);
+        return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+        },
+        drawRoundedRect(ctx, x, y, width, height, radius) {
+        ctx.beginPath();
+        ctx.moveTo(x + radius, y);
+        ctx.lineTo(x + width - radius, y);
+        ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+        ctx.lineTo(x + width, y + height - radius);
+        ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+        ctx.lineTo(x + radius, y + height);
+        ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+        ctx.lineTo(x, y + radius);
+        ctx.quadraticCurveTo(x, y, x + radius, y);
+        ctx.closePath();
+        },
+        generateImage(e) {
+            const canvas = this.$refs.canvas;
+            const ctx = canvas.getContext("2d");
+
+            if (!this.uploadedImage) {
+                alert("이미지를 먼저 업로드하세요.");
+                return;
+            }
+
+            const bgImg = new Image();
+            bgImg.src = this.uploadedBgImage;
+
+            const img = new Image();
+            img.src = this.uploadedImage;
+            img.onload = () => {
+                // 캔버스 크기 설정 (16:9 비율)
+                const canvasWidth = 1600;
+                const canvasHeight = 900;
+                canvas.width = canvasWidth;
+                canvas.height = canvasHeight;
+
+                // 1️⃣ 배경 이미지 설정 (블러 + 16:9 비율로 잘라서 채우기)
+                ctx.filter = "blur(10px)";
+
+                if(this.uploadedBgImage == null) {
+                    const backgroundColor = this.profile.backgroundColor || "#ffffff"; // 입력된 색상 또는 기본값으로 흰색
+                    ctx.fillStyle = backgroundColor; // 배경 색 설정
+                    ctx.fillRect(0, 0, canvasWidth, canvasHeight); // 배경 색으로 채우기
+                } else {
+                    const bgWidth = bgImg.width; // 원본 가로
+                    const bgHeight = bgImg.width * (9 / 16); // 16:9 비율에 맞게 확대
+                    const cropY = (bgImg.height - bgHeight) / 2; // 중앙 크롭
+
+                    ctx.drawImage(bgImg, 0, cropY, bgWidth, bgHeight, 0, 0, canvasWidth, canvasHeight);
+                }
+
+                
+                ctx.filter = "none"; // 블러 해제
+
+                // 프레임 (라운드 처리된 박스)
+                ctx.fillStyle = "rgba(0, 0, 0, 0.5)";
+                ctx.fillRect(0, 0, canvasWidth, canvasHeight); // 배경 색으로 채우기
+
+                // 프레임 (라운드 처리된 박스)
+                ctx.fillStyle = this.hexToRGBA(this.profile.backgroundColor, 0.5);
+                ctx.fillRect(0, 0, canvasWidth, canvasHeight); // 배경 색으로 채우기
+
+
+                // 2️⃣ 프로필 이미지를 왼쪽 상단에 고정된 크기로 그리기 (350x500 크기)
+                if (this.uploadedImage) {
+                    const profileImg = new Image();
+                    profileImg.src = this.uploadedImage;
+                    profileImg.onload = () => {
+                    const profileWidth = 350; // 프로필 이미지의 가로 크기
+                    const profileHeight = 500; // 프로필 이미지의 세로 크기
+
+                    // 이미지 비율 계산
+                    const imageAspectRatio = profileImg.width / profileImg.height;
+                    const targetAspectRatio = profileWidth / profileHeight;
+
+                    let cropX = 0, cropY = 0, cropWidth = profileImg.width, cropHeight = profileImg.height;
+
+                    if (imageAspectRatio > targetAspectRatio) {
+                        // 이미지가 가로가 더 긴 경우 (세로 크기에 맞춰 축소)
+                        cropWidth = profileImg.height * targetAspectRatio; // 비율에 맞춰 가로 크기 조정
+                        cropX = (profileImg.width - cropWidth) / 2; // 가로 중앙 크롭
+                    } else {
+                        // 이미지가 세로가 더 긴 경우 (가로 크기에 맞춰 축소)
+                        cropHeight = profileImg.width / targetAspectRatio; // 비율에 맞춰 세로 크기 조정
+                        cropY = (profileImg.height - cropHeight) / 2; // 세로 중앙 크롭
+                    }
+
+                    // 조정된 이미지 크기와 크롭된 부분을 사용하여 그리기
+                    ctx.drawImage(profileImg, cropX, cropY, cropWidth, cropHeight, 50, 50, profileWidth, profileHeight); // 왼쪽 상단에 고정
+                    };
+
+                }
+                // 4️⃣ 기본 정보 (프로필 이미지 아래에 배치)
+                ctx.fillStyle = "#fff";
+                ctx.font = "30px 'NanumSquareRound'";
+                let y = 70 + 500 + 20; // 프로필 사진 바로 아래에 기본 정보 배치
+
+                if(this.profile.nickname) {
+                    ctx.fillText(`닉네임 ▶ ${this.profile.nickname}`, 50, y);
+                    y += 50;
+                }
+                if(this.profile.race) {
+                    ctx.fillText(`종족　 ▶ ${this.profile.race}`, 50, y);
+                    y += 50;
+                }
+                if(this.profile.playtime) {
+                    ctx.fillText(`시간대 ▶ ${this.profile.playtime}`, 50, y);
+                    y += 50;
+                }
+
+                // 던전 선호도, 스펙, 버프 등을 오른쪽으로 배치
+                let startX = 450; // 오른쪽으로 배치할 X 좌표
+                let startY = 70;
+
+                const textStyle = {
+                    lineHeight: 70, // 줄 간격
+                };
+
+                // 3.1 던전 데이터 그리기
+                if(Object.values(this.profile.dungeons).map((row => row.enabled == true)).length > 0) {
+                    ctx.fillStyle = "#fff";
+                    ctx.font='700 30px NanumSquareRound';
+                    ctx.fillText("⚔️ 던전", startX, startY);
+                    ctx.font='300 30px NanumSquareRound';
+                    ctx.fillStyle = "#efefef";
+                    startY += textStyle.lineHeight; // 던전 제목 아래로 이동
+                    
+                    let index = 0;
+                    let lineY = startY;
+                    for (const dungeon in this.profile.dungeons) {
+                        if (this.profile.dungeons[dungeon].enabled) {
+                            if(index % 2 == 0) {
+                                ctx.fillText(`${dungeon} → ${this.profile.dungeons[dungeon].difficulty} | ${this.profile.dungeons[dungeon].skillLevel}`, startX, lineY);
+                                lineY += textStyle.lineHeight;
+                            } else {
+                                ctx.fillText(`${dungeon} → ${this.profile.dungeons[dungeon].difficulty} | ${this.profile.dungeons[dungeon].skillLevel}`, startX + 500, startY);
+                                startY += textStyle.lineHeight;
+                            }
+                            if(this.profile.dungeons[dungeon].comment) {
+                                if(index % 2 == 0) {
+                                    ctx.fillText(`┖💬${this.profile.dungeons[dungeon].comment}`, startX, lineY);
+                                    lineY += textStyle.lineHeight;
+                                } else {
+                                    ctx.fillText(`┖💬${this.profile.dungeons[dungeon].comment}`, startX + 500, startY);
+                                    startY += textStyle.lineHeight;
+                                }
+                            }
+                        }
+                        index ++;
+                    }
+                    startY += textStyle.lineHeight * 2
+                }
+
+
+                // 선 스타일 설정
+                ctx.strokeStyle = "#fff"; // 선 색상
+                ctx.lineWidth = 1; // 선 두께
+
+                // 선 그리기
+                ctx.beginPath();
+                ctx.moveTo(startX, startY - textStyle.lineHeight); // 선의 시작점 (x, y)
+                ctx.lineTo(1500, startY - textStyle.lineHeight); // 선의 끝점 (x, y)
+                ctx.stroke(); // 선을 실제로 그리기
+                    
+                // 3.2 스펙 데이터 그리기
+                if(Object.values(this.profile.specs).map((row => row.enabled == true)).length > 0) {
+                    ctx.fillStyle = "#fff";
+                    ctx.font='700 30px NanumSquareRound';
+                    ctx.fillText("⚔️ 아르카나", startX, startY);
+                    ctx.font='300 30px NanumSquareRound';
+                    ctx.fillStyle = "#efefef";
+                    startY += textStyle.lineHeight; // 스펙 제목 아래로 이동
+
+                    for (const spec in this.profile.specs) {
+                        if (this.profile.specs[spec].enabled) {
+                            if(spec == "세인트바드") {
+                                ctx.fillText(`${spec} ${this.profile.specs[spec].icon} 전장 ${this.profile.specs[spec].weapon} | 비바 ${this.profile.specs[spec].erg} | 행진 ${this.profile.specs[spec].attack}`, startX, startY);
+                            } else {
+                                ctx.fillText(`${spec} ${this.profile.specs[spec].icon} ${this.profile.specs[spec].weapon} | ${this.profile.specs[spec].erg} | 노도핑 ${this.profile.specs[spec].attack} | 피어싱 ${this.profile.specs[spec].piercing}`, startX, startY);
+                            }
+                            startY += textStyle.lineHeight;
+                            if(this.profile.specs[spec].comment) {
+                                ctx.fillText(`┖💬${this.profile.specs[spec].comment}`, startX, startY);
+                                startY += textStyle.lineHeight;
+                            }
+                        }
+                    }
+                }
+                
+                if(this.profile.comment) {
+                    this.profile.comment.split('\n').forEach((line, index)=> {
+                        ctx.fillText(`${(index == 0 ? '💬 ':'　 ')} ${line}`, 50, y);
+                        y += 50;
+                    })
+                }
+                
+            };
+            this.dataUrl = canvas.toDataURL('image/png');
+            e.preventDefault();
+        }
+      }
+    }).mount("#app");
+  </script>
 </body>
 </html>
