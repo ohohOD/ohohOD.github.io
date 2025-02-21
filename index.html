@@ -91,6 +91,15 @@
         <input v-model="profile.nickname" id="nickname" placeholder="닉네임" />
       </div>
       <div>
+        <label for="server">서버</label>
+        <select v-model="profile.server" id="server" >
+            <option value="류트" selected>류트</option>
+            <option value="하프">하프</option>
+            <option value="만돌린">만돌린</option>
+            <option value="울프">울프</option>
+        </select>
+      </div>
+      <div>
         <label for="race">종족</label>
         <select v-model="profile.race" id="race" >
             <option value="인간" selected>인간</option>
@@ -209,6 +218,7 @@
           profile: {
             nickname: "",
             race: "인간",
+            server: "류트",
             playtime: "",
             fixedParty: "",
             comment: "",
@@ -373,6 +383,10 @@
 
                 if(this.profile.nickname) {
                     ctx.fillText(`닉네임 ▶ ${this.profile.nickname}`, 50, y);
+                    y += 50;
+                }
+                if(this.profile.server) {
+                    ctx.fillText(`서버　 ▶ ${this.profile.server}`, 50, y);
                     y += 50;
                 }
                 if(this.profile.race) {
