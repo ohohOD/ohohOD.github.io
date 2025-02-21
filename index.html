@@ -77,7 +77,7 @@
     <h2>소개 이미지 생성</h2>
 
     <div>
-        <label>프로필 이미지 업로드</label>
+        <label>프로필 이미지 업로드(7:10)</label>
         <input type="file" @change="handleImageUpload"><br>
         
         <label>배경 이미지 업로드 (배경 이미지를 사용하지 않는 경우 선택)</label><input type="color" v-model="profile.backgroundColor"><br>
@@ -123,22 +123,34 @@
       <div v-for="(dungeon, key) in profile.dungeons" :key="key">
         <input type="checkbox" :id="key" v-model="dungeon.enabled"><label :for="key">{{ key }}</label>
         <template v-if="dungeon.enabled == true">
-            <div>
-                <label for="difficulty">난이도</label>
-                <input v-model="dungeon.difficulty" id="difficulty" placeholder="난이도" />
-            </div>
-            <div>
+            <template v-if="key != '기타'">
+                <div>
+                    <label for="difficulty">난이도</label>
+                    <input v-model="dungeon.difficulty" id="difficulty" placeholder="난이도" />
+                </div>
+                <div>
                 <label for="skillLevel">미숙/반숙/완숙</label>
                 <select v-model="dungeon.skillLevel">
                     <option value="미숙" selected>미숙</option>
                     <option value="반숙">반숙</option>
                     <option value="완숙">완숙</option>
                 </select>
-            </div>
-            <div>
-                <label for="comment">코멘트</label>
-                <input v-model="dungeon.comment" id="comment" placeholder="코멘트" />
-            </div>
+                </div>
+                <div>
+                    <label for="comment">코멘트</label>
+                    <input v-model="dungeon.comment" id="comment" placeholder="코멘트" />
+                </div>
+            </template>
+            <template v-else>
+                <div>
+                    <label for="difficulty">던전명</label>
+                    <input v-model="dungeon.difficulty" id="difficulty" placeholder="던전명" />
+                </div>
+                <div>
+                    <label for="comment">코멘트</label>
+                    <input v-model="dungeon.comment" id="comment" placeholder="코멘트" />
+                </div>
+            </template>
         </template>
       </div>
   
@@ -157,6 +169,7 @@
                 <template v-else>
                     <label for="specWeapon">주무기</label>
                     <select v-model="spec.weapon" id="specWeapon" >
+                        <option value="소울 리버레이트">소울 리버레이트</option>
                         <option value="나이트브링어">나이트브링어</option>
                         <option value="페러시우스">페러시우스</option>
                         <option value="켈틱">켈틱</option>
@@ -229,6 +242,7 @@
             "크롬 바스": { enabled: false, difficulty: "30", preference: "선호", skillLevel: "미숙", comment: "" },
             "글렌 베르나": { enabled: false, difficulty: "쉬움", preference: "선호", skillLevel: "미숙", comment: "" },
             "브리 레흐": { enabled: false, difficulty: "1관", preference: "선호", skillLevel: "미숙", comment: "" },
+            "기타": { enabled: false, difficulty: "던전명", comment: "" },
             },
             specs: {
             "엘레멘탈나이트": { icon: "🗡️", enabled: false, weapon: "무기 없음", erg: "에르그 없음", attack: "0", piercing: "0" },
@@ -420,10 +434,18 @@
                     for (const dungeon in this.profile.dungeons) {
                         if (this.profile.dungeons[dungeon].enabled) {
                             if(index % 2 == 0) {
-                                ctx.fillText(`${dungeon} → ${this.profile.dungeons[dungeon].difficulty} | ${this.profile.dungeons[dungeon].skillLevel}`, startX, lineY);
+                                if(dungeon == "기타") {
+                                    ctx.fillText(`${this.profile.dungeons[dungeon].difficulty}`, startX, lineY);
+                                } else {
+                                    ctx.fillText(`${dungeon} → ${this.profile.dungeons[dungeon].difficulty} | ${this.profile.dungeons[dungeon].skillLevel}`, startX, lineY);
+                                }
                                 lineY += textStyle.lineHeight;
                             } else {
-                                ctx.fillText(`${dungeon} → ${this.profile.dungeons[dungeon].difficulty} | ${this.profile.dungeons[dungeon].skillLevel}`, startX + 500, startY);
+                                if(dungeon == "기타") {
+                                    ctx.fillText(`${this.profile.dungeons[dungeon].difficulty}`, startX + 500, startY);
+                                } else {
+                                    ctx.fillText(`${dungeon} → ${this.profile.dungeons[dungeon].difficulty} | ${this.profile.dungeons[dungeon].skillLevel}`, startX + 500, startY);
+                                }
                                 startY += textStyle.lineHeight;
                             }
                             if(this.profile.dungeons[dungeon].comment) {
@@ -435,8 +457,8 @@
                                     startY += textStyle.lineHeight;
                                 }
                             }
+                            index ++;
                         }
-                        index ++;
                     }
                     startY += textStyle.lineHeight * 2
                 }
@@ -448,8 +470,8 @@
 
                 // 선 그리기
                 ctx.beginPath();
-                ctx.moveTo(startX, startY - textStyle.lineHeight); // 선의 시작점 (x, y)
-                ctx.lineTo(1500, startY - textStyle.lineHeight); // 선의 끝점 (x, y)
+                ctx.moveTo(startX, startY - textStyle.lineHeight / 3 * 2); // 선의 시작점 (x, y)
+                ctx.lineTo(1500, startY - textStyle.lineHeight / 3 * 2); // 선의 끝점 (x, y)
                 ctx.stroke(); // 선을 실제로 그리기
                     
                 // 3.2 스펙 데이터 그리기
