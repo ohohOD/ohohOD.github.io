@@ -199,6 +199,10 @@
                     <label for="specAttack">행진곡</label>
                     <input v-model="spec.attack">
                 </template>
+                <template v-else-if="key == '세이크리드가드'">
+                    <label for="specAttack">노도핑 보호</label>
+                    <input v-model="spec.attack" id="specAttack"/>
+                </template>
                 <template v-else>
                     <label for="specAttack">노도핑 {{ key == "다크메이지" ? '마공' : '물공'}}</label>
                     <input v-model="spec.attack" id="specAttack"/>
@@ -487,6 +491,8 @@
                         if (this.profile.specs[spec].enabled) {
                             if(spec == "세인트바드") {
                                 ctx.fillText(`${spec} ${this.profile.specs[spec].icon} 전장 ${this.profile.specs[spec].weapon} | 비바 ${this.profile.specs[spec].erg} | 행진 ${this.profile.specs[spec].attack}`, startX, startY);
+                            } else if(spec == "세이크리드가드") {
+                                ctx.fillText(`${spec} ${this.profile.specs[spec].icon} ${this.profile.specs[spec].weapon} | ${this.profile.specs[spec].erg} | 노도핑 보호 ${this.profile.specs[spec].attack} | 피어싱 ${this.profile.specs[spec].piercing}`, startX, startY);
                             } else {
                                 ctx.fillText(`${spec} ${this.profile.specs[spec].icon} ${this.profile.specs[spec].weapon} | ${this.profile.specs[spec].erg} | 노도핑 ${this.profile.specs[spec].attack} | 피어싱 ${this.profile.specs[spec].piercing}`, startX, startY);
                             }
