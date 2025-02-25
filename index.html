@@ -75,7 +75,7 @@
 <body>
   <div id="app">
     <h2>소개 이미지 생성</h2>
-마지막 업데이트: 2025.02.25 09:49
+마지막 업데이트: 2025.02.25 10:01
     <div>
         <label>프로필 이미지 업로드(7:10)</label>
         <input type="file" @change="handleImageUpload"><br>
@@ -225,7 +225,7 @@
     
     <button @click="generateImage">이미지 생성</button>
     <canvas ref="canvas" width="1600" height="900"></canvas>
-    <div v-if="dataUrl != null" id="downloadBtn"><a href="dataUrl" download="sheet.png">이미지 저장</a></div>
+    <div v-if="dataUrl != null" id="downloadBtn"><a :href="dataUrl" download="sheet.png">이미지 저장</a></div>
   </div>
 
   <script>
