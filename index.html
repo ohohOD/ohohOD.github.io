@@ -75,7 +75,7 @@
 <body>
   <div id="app">
     <h2>소개 이미지 생성</h2>
-마지막 업데이트: 2025.02.25 10:07
+마지막 업데이트: 2025.02.25 10:14
     <div>
         <label>프로필 이미지 업로드(7:10)</label>
         <input type="file" @change="handleImageUpload"><br>
@@ -225,7 +225,7 @@
     
     <button @click="generateImage">이미지 생성</button>
     <canvas ref="canvas" width="1600" height="900"></canvas>
-    <div v-if="dataUrl != null" id="downloadBtn"><a :href="dataUrl" download="sheet.png">이미지 저장</a></div>
+    <div v-if="dataUrl != null" id="downloadBtn"><button @click="downloadImg">이미지 저장</button> 이미지 다운로드가 안될 경우 이미지를 우클릭해주세요(PC)</div>
   </div>
 
   <script>
@@ -265,17 +265,19 @@
       },
       methods: {
         downloadImg(e) {
-            // 캔버스 데이터를 DataURL로 변환
-            const dataURL = this.dataUrl;
-            
-            // 임시 앵커 태그 생성
-            const a = document.createElement('a');
-            a.href = dataURL;
-            a.download = 'sheet.png'; // 다운로드할 파일 이름 설정
-            a.target = '_blank'; // 새 창에서 열리도록 설정
-            document.body.appendChild(a); // DOM에 추가
-            a.click(); // 클릭 이벤트 트리거
-            document.body.removeChild(a); // 임시 앵커 태그 제거
+          const canvas = this.$refs.canvas;
+
+      // 📌 Blob을 사용하여 다운로드 (iOS Safari 대응)
+      canvas.toBlob((blob) => {
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = "profile.png"; // 다운로드 파일 이름 설정
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url); // 메모리 해제
+      }, "image/png");
         },
         handleImageUpload(event) {
           const file = event.target.files[0];
