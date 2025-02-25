@@ -75,7 +75,7 @@
 <body>
   <div id="app">
     <h2>소개 이미지 생성</h2>
-
+마지막 업데이트: 2025.02.25 09:31
     <div>
         <label>프로필 이미지 업로드(7:10)</label>
         <input type="file" @change="handleImageUpload"><br>
@@ -397,7 +397,7 @@
                 // 4️⃣ 기본 정보 (프로필 이미지 아래에 배치)
                 ctx.fillStyle = "#fff";
                 ctx.font = "24px 'NanumSquareRound'";
-                let y = 70 + 500 + 20; // 프로필 사진 바로 아래에 기본 정보 배치
+                let y = 70 + 500 + 30; // 프로필 사진 바로 아래에 기본 정보 배치
 
                 if(this.profile.nickname) {
                     ctx.fillText(`닉네임 ▶ ${this.profile.nickname}`, 50, y);
@@ -427,9 +427,9 @@
                 // 3.1 던전 데이터 그리기
                 if(Object.values(this.profile.dungeons).map((row => row.enabled == true)).length > 0) {
                     ctx.fillStyle = "#fff";
-                    ctx.font='700 30px NanumSquareRound';
+                    ctx.font='700 24px NanumSquareRound';
                     ctx.fillText("⚔️ 던전", startX, startY);
-                    ctx.font='300 30px NanumSquareRound';
+                    ctx.font='300 24px NanumSquareRound';
                     ctx.fillStyle = "#efefef";
                     startY += textStyle.lineHeight; // 던전 제목 아래로 이동
                     
@@ -481,9 +481,9 @@
                 // 3.2 스펙 데이터 그리기
                 if(Object.values(this.profile.specs).map((row => row.enabled == true)).length > 0) {
                     ctx.fillStyle = "#fff";
-                    ctx.font='700 30px NanumSquareRound';
+                    ctx.font='700 24px NanumSquareRound';
                     ctx.fillText("⚔️ 아르카나", startX, startY);
-                    ctx.font='300 30px NanumSquareRound';
+                    ctx.font='300 24px NanumSquareRound';
                     ctx.fillStyle = "#efefef";
                     startY += textStyle.lineHeight; // 스펙 제목 아래로 이동
 
