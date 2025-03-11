@@ -89,7 +89,7 @@
 <body>
   <div id="app">
     <h2>소개 이미지 생성</h2>
-    <span>마지막 업데이트: 2025.03.11 18:00</span>
+    <span>마지막 업데이트: 2025.03.12 01:00</span>
     <div>
         <label>프로필 이미지 업로드(7:10)</label>
         <input type="file" @change="handleImageUpload"><br>
@@ -127,8 +127,8 @@
         <input v-model="profile.playtime" id="playtime" placeholder="주 접속 시간대" />
       </div>
       <div>
-        <label for="comment">한마디</label>
-        <textarea v-model="profile.comment" id="comment" placeholder="한마디"></textarea>
+        <label for="comment">짧은 한마디</label>
+        <textarea v-model="profile.comment" id="comment" placeholder="짧은 한마디"></textarea>
       </div>
   
       <hr />
@@ -236,8 +236,8 @@
         </template>
       </div>
       <div>
-        <label for="comment2">한마디2</label>
-        <textarea v-model="profile.comment2" id="comment2" placeholder="한마디2"></textarea>
+        <label for="comment2">메모</label>
+        <textarea v-model="profile.comment2" id="comment2" placeholder="메모"></textarea>
       </div>
   
       <hr />
@@ -485,6 +485,8 @@
                     let lineY = startY;
                     for (const dungeon in this.profile.dungeons) {
                         if (this.profile.dungeons[dungeon].enabled) {
+                          
+                            ctx.font='300 26px NanumSquareRound';
                             if(index % 2 == 0) {
                                 if(dungeon == "기타") {
                                     ctx.fillText(`${this.profile.dungeons[dungeon].difficulty}`, startX, lineY);
@@ -494,34 +496,35 @@
                                 lineY += textStyle.lineHeight;
                             } else {
                                 if(dungeon == "기타") {
-                                    ctx.fillText(`${this.profile.dungeons[dungeon].difficulty}`, startX + 500, startY);
+                                    ctx.fillText(`${this.profile.dungeons[dungeon].difficulty}`, startX + 600, startY);
                                 } else {
-                                    ctx.fillText(`${dungeon} → ${this.profile.dungeons[dungeon].difficulty} | ${this.profile.dungeons[dungeon].skillLevel}`, startX + 500, startY);
+                                    ctx.fillText(`${dungeon} → ${this.profile.dungeons[dungeon].difficulty} | ${this.profile.dungeons[dungeon].skillLevel}`, startX + 600, startY);
                                 }
                                 startY += textStyle.lineHeight;
                             }
+                            
+                            ctx.font='300 22px NanumSquareRound';
                             if(this.profile.dungeons[dungeon].comment) {
                               if(index % 2 == 0) {
                                 ctx.fillText(`┖ ${this.profile.dungeons[dungeon].comment}`, startX, lineY);
-                                lineY += textStyle.lineHeight;
                               } else {
-                                ctx.fillText(`┖ ${this.profile.dungeons[dungeon].comment}`, startX + 500, startY);
-                                startY += textStyle.lineHeight;
+                                ctx.fillText(`┖ ${this.profile.dungeons[dungeon].comment}`, startX + 600, startY);
                               }
+                            }
+                            
+                            if(index % 2 == 0) {
+                              lineY += textStyle.lineHeight;
+                            } else {
+                              startY += textStyle.lineHeight;
                             }
 
                             if(index >= Object.values(this.profile.dungeons).filter(row => row.enabled == true).length - 1) {
                               startY += textStyle.lineHeight;
-                            }
-
-                            if(index >= Object.values(this.profile.dungeons).filter(row => row.enabled == true).length - 1
-                              && this.profile.dungeons[dungeon].comment.length > 0) {
                               startY += textStyle.lineHeight;
                             }
 
                             if(index >= Object.values(this.profile.dungeons).filter(row => row.enabled == true).length - 1
-                            && this.profile.dungeons[dungeon].comment.length > 0
-                            && index % 2 == 1) {
+                                && index % 2 == 1) {
                               startY -= textStyle.lineHeight;
                               startY -= textStyle.lineHeight;
                             }
@@ -575,6 +578,7 @@
                               ctx.drawImage(image, imgX, imgY - imgHeight / 2, imgWidth, imgHeight);
                             }
 
+                            ctx.font='300 26px NanumSquareRound';
                             if(spec == "세인트바드") {
                                 ctx.fillText(`${spec} → 전장 ${this.profile.specs[spec].weapon} | 비바 ${this.profile.specs[spec].erg} | 행진 ${this.profile.specs[spec].attack}`, startX + imgWidth + 10, startY);
                             } else if(spec == "세이크리드가드") {
@@ -582,6 +586,8 @@
                             } else {
                                 ctx.fillText(`${spec} → ${this.profile.specs[spec].weapon} | ${this.profile.specs[spec].erg} | 노도핑 ${this.profile.specs[spec].attack} | 피어싱 ${this.profile.specs[spec].piercing}`, startX + imgWidth + 10, startY);
                             }
+                            
+                            ctx.font='300 22px NanumSquareRound';
                             startY += textStyle.lineHeight;
                             if(this.profile.specs[spec].comment) {
                                 ctx.fillText(`┖ ${this.profile.specs[spec].comment}`, startX, startY);
