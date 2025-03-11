@@ -30,7 +30,17 @@
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      gap: 8px;
     }
+
+    div * {
+      margin: 4px 0px;
+    }
+
+    div input {
+      margin: 0px 4px;
+    }
+
     input:not([type='color']):not([type='checkbox']), select, textarea {
      font-family: 'NanumSquareRound', sans-serif;
       width: 100%;
@@ -70,20 +80,25 @@
       border-radius: 10px;
       margin-top: 20px;
     }
+
+    hr {
+        border: none;
+    }
   </style>
 </head>
 <body>
   <div id="app">
     <h2>소개 이미지 생성</h2>
-마지막 업데이트: 2025.02.25 10:14
+    <span>마지막 업데이트: 2025.03.11 15:29</span>
     <div>
         <label>프로필 이미지 업로드(7:10)</label>
         <input type="file" @change="handleImageUpload"><br>
         
-        <label>배경 이미지 업로드 (배경 이미지를 사용하지 않는 경우 선택)</label><input type="color" v-model="profile.backgroundColor"><br>
+        <label>배경 이미지 업로드</label>
         <input type="file" @change="handleBgImageUpload"><br>
+
+        <label><input type="color" v-model="profile.backgroundColor"> 배경 이미지를 사용하지 않는 경우 선택</label>
     </div>
-    
 
     <!-- 기본 정보 입력 -->
     <div>
@@ -220,6 +235,10 @@
             </div>
         </template>
       </div>
+      <div>
+        <label for="comment2">한마디2</label>
+        <textarea v-model="profile.comment2" id="comment2" placeholder="한마디2"></textarea>
+      </div>
   
       <hr />
     
@@ -249,12 +268,12 @@
             "기타": { enabled: false, difficulty: "던전명", comment: "" },
             },
             specs: {
-            "엘레멘탈나이트": { icon: "🗡️", enabled: false, weapon: "무기 없음", erg: "에르그 없음", attack: "0", piercing: "0" },
-            "세인트바드": { icon: "🎶", enabled: false, weapon: "전장", erg: "비바체", attack: "행진곡", piercing: "" },
-            "알케믹스팅어": { icon: "🏹", enabled: false, weapon: "무기 없음", erg: "에르그 없음", attack: "0", piercing: "0" },
-            "다크메이지": { icon: "🔮", enabled: false, weapon: "무기 없음", erg: "에르그 없음", attack: "0", piercing: "0" },
-            "세이크리드가드": { icon: "🛡️", enabled: false, weapon: "무기 없음", erg: "에르그 없음", attack: "0", piercing: "0" },
-            "블래스트랜서": { icon: "🔱", enabled: false, weapon: "무기 없음", erg: "에르그 없음", attack: "0", piercing: "0" }
+            "엘레멘탈나이트": {image:"sword.svg", icon: "🗡️", enabled: false, weapon: "무기 없음", erg: "에르그 없음", attack: "0", piercing: "0", comment: "" },
+            "세인트바드": {image:"music.svg",  icon: "🎶", enabled: false, weapon: "전장", erg: "비바체", attack: "행진곡", piercing: "", comment: "" },
+            "알케믹스팅어": {image:"bow.svg",  icon: "🏹", enabled: false, weapon: "무기 없음", erg: "에르그 없음", attack: "0", piercing: "0", comment: "" },
+            "다크메이지": {image:"magic.svg",  icon: "🔮", enabled: false, weapon: "무기 없음", erg: "에르그 없음", attack: "0", piercing: "0", comment: "" },
+            "세이크리드가드": {image:"shield.svg",  icon: "🛡️", enabled: false, weapon: "무기 없음", erg: "에르그 없음", attack: "0", piercing: "0", comment: "" },
+            "블래스트랜서": {image:"spear.svg",  icon: "🔱", enabled: false, weapon: "무기 없음", erg: "에르그 없음", attack: "0", piercing: "0", comment: "" }
             },
             backgroundColor: "#555555",
           },
@@ -306,18 +325,19 @@
         let b = parseInt(hex.slice(5, 7), 16);
         return `rgba(${r}, ${g}, ${b}, ${alpha})`;
         },
+
         drawRoundedRect(ctx, x, y, width, height, radius) {
-        ctx.beginPath();
-        ctx.moveTo(x + radius, y);
-        ctx.lineTo(x + width - radius, y);
-        ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
-        ctx.lineTo(x + width, y + height - radius);
-        ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
-        ctx.lineTo(x + radius, y + height);
-        ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
-        ctx.lineTo(x, y + radius);
-        ctx.quadraticCurveTo(x, y, x + radius, y);
-        ctx.closePath();
+          ctx.beginPath();
+          ctx.moveTo(x + radius, y);
+          ctx.lineTo(x + width - radius, y);
+          ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+          ctx.lineTo(x + width, y + height - radius);
+          ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+          ctx.lineTo(x + radius, y + height);
+          ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+          ctx.lineTo(x, y + radius);
+          ctx.quadraticCurveTo(x, y, x + radius, y);
+          ctx.closePath();
         },
         generateImage(e) {
             const canvas = this.$refs.canvas;
@@ -398,7 +418,7 @@
                 }
                 // 4️⃣ 기본 정보 (프로필 이미지 아래에 배치)
                 ctx.fillStyle = "#fff";
-                ctx.font = "24px 'NanumSquareRound'";
+                ctx.font = "32px 'NanumSquareRound'";
                 let y = 70 + 500 + 30; // 프로필 사진 바로 아래에 기본 정보 배치
 
                 if(this.profile.nickname) {
@@ -417,6 +437,23 @@
                     ctx.fillText(`시간대 ▶ ${this.profile.playtime}`, 50, y);
                     y += 50;
                 }
+                
+                if(this.profile.comment) {
+                  
+                  let image = new Image();
+                  image.src = "comment.svg";
+                  let imgWidth = 50, imgHeight = 50;
+                  let imgX = 30, imgY = y;
+                  image.onload = function() {
+                    ctx.drawImage(image, imgX, imgY - imgHeight / 2, imgWidth, imgHeight);
+                  }
+
+                  this.profile.comment.split('\n').forEach((line, index)=> {
+
+                    ctx.fillText(`${line}`, imgX + imgWidth + 10, y + 10);
+                    y += 50;
+                  })
+                }
 
                 // 던전 선호도, 스펙, 버프 등을 오른쪽으로 배치
                 let startX = 450; // 오른쪽으로 배치할 X 좌표
@@ -429,11 +466,20 @@
                 // 3.1 던전 데이터 그리기
                 if(Object.values(this.profile.dungeons).map((row => row.enabled == true)).length > 0) {
                     ctx.fillStyle = "#fff";
-                    ctx.font='700 24px NanumSquareRound';
-                    ctx.fillText("⚔️ 던전", startX, startY);
-                    ctx.font='300 24px NanumSquareRound';
+                    ctx.font='700 32px NanumSquareRound';
+                  
+                    let image = new Image();
+                    image.src = "dungeon.svg";
+                    let imgWidth = 50, imgHeight = 50;
+                    let imgX = startX, imgY = startY;
+                    image.onload = function() {
+                      ctx.drawImage(image, imgX, imgY - imgHeight / 2, imgWidth, imgHeight);
+                    }
+
+                    ctx.fillText(" 던전", startX + imgWidth + 10, startY + 10);
+                    ctx.font='300 26px NanumSquareRound';
                     ctx.fillStyle = "#efefef";
-                    startY += textStyle.lineHeight; // 던전 제목 아래로 이동
+                    startY += textStyle.lineHeight + 10; // 던전 제목 아래로 이동
                     
                     let index = 0;
                     let lineY = startY;
@@ -455,20 +501,37 @@
                                 startY += textStyle.lineHeight;
                             }
                             if(this.profile.dungeons[dungeon].comment) {
-                                if(index % 2 == 0) {
-                                    ctx.fillText(`┖💬${this.profile.dungeons[dungeon].comment}`, startX, lineY);
-                                    lineY += textStyle.lineHeight;
-                                } else {
-                                    ctx.fillText(`┖💬${this.profile.dungeons[dungeon].comment}`, startX + 500, startY);
-                                    startY += textStyle.lineHeight;
-                                }
+                              if(index % 2 == 0) {
+                                ctx.fillText(`┖ ${this.profile.dungeons[dungeon].comment}`, startX, lineY);
+                                lineY += textStyle.lineHeight;
+                              } else {
+                                ctx.fillText(`┖ ${this.profile.dungeons[dungeon].comment}`, startX + 500, startY);
+                                startY += textStyle.lineHeight;
+                              }
                             }
-                            index ++;
-                        }
-                    }
-                    startY += textStyle.lineHeight * 2
-                }
 
+                            if(index >= Object.values(this.profile.dungeons).filter(row => row.enabled == true).length - 1) {
+                              startY += textStyle.lineHeight;
+                            }
+
+                            if(index >= Object.values(this.profile.dungeons).filter(row => row.enabled == true).length - 1
+                              && this.profile.dungeons[dungeon].comment.length > 0) {
+                              startY += textStyle.lineHeight;
+                            }
+
+                            if(index >= Object.values(this.profile.dungeons).filter(row => row.enabled == true).length - 1
+                            && this.profile.dungeons[dungeon].comment.length > 0
+                            && index % 2 == 1) {
+                              startY -= textStyle.lineHeight;
+                              startY -= textStyle.lineHeight;
+                            }
+
+                            index ++;
+                          }
+                    }
+                    startY += textStyle.lineHeight
+                }
+                
 
                 // 선 스타일 설정
                 ctx.strokeStyle = "#fff"; // 선 색상
@@ -476,41 +539,86 @@
 
                 // 선 그리기
                 ctx.beginPath();
-                ctx.moveTo(startX, startY - textStyle.lineHeight / 3 * 2); // 선의 시작점 (x, y)
-                ctx.lineTo(1500, startY - textStyle.lineHeight / 3 * 2); // 선의 끝점 (x, y)
+                ctx.moveTo(startX, startY - textStyle.lineHeight / 3 * 4); // 선의 시작점 (x, y)
+                ctx.lineTo(1500, startY - textStyle.lineHeight / 3 * 4); // 선의 끝점 (x, y)
                 ctx.stroke(); // 선을 실제로 그리기
                     
                 // 3.2 스펙 데이터 그리기
                 if(Object.values(this.profile.specs).map((row => row.enabled == true)).length > 0) {
                     ctx.fillStyle = "#fff";
-                    ctx.font='700 24px NanumSquareRound';
-                    ctx.fillText("⚔️ 아르카나", startX, startY);
-                    ctx.font='300 24px NanumSquareRound';
+                    ctx.font='700 32px NanumSquareRound';
+                    
+                  
+                    let image = new Image();
+                    image.src = "fire.svg";
+                    let imgWidth = 50, imgHeight = 50;
+                    let imgX = startX, imgY = startY - 20;
+
+                    image.onload = function() {
+                      ctx.drawImage(image, imgX, imgY - imgHeight / 2, imgWidth, imgHeight);
+                    }
+
+                    ctx.fillText(" 아르카나", startX + imgWidth + 10, startY - 10);
+                    ctx.font='300 26px NanumSquareRound';
                     ctx.fillStyle = "#efefef";
-                    startY += textStyle.lineHeight; // 스펙 제목 아래로 이동
+                    startY += textStyle.lineHeight + 10; // 스펙 제목   아래로 이동
 
                     for (const spec in this.profile.specs) {
                         if (this.profile.specs[spec].enabled) {
+                          
+                            let image = new Image();
+                            image.src = this.profile.specs[spec].image;
+                            let imgWidth = 40, imgHeight = 40;
+                            let imgX = startX, imgY = startY - 10;
+
+                            image.onload = function() {
+                              ctx.drawImage(image, imgX, imgY - imgHeight / 2, imgWidth, imgHeight);
+                            }
+
                             if(spec == "세인트바드") {
-                                ctx.fillText(`${spec} ${this.profile.specs[spec].icon} 전장 ${this.profile.specs[spec].weapon} | 비바 ${this.profile.specs[spec].erg} | 행진 ${this.profile.specs[spec].attack}`, startX, startY);
+                                ctx.fillText(`${spec} → 전장 ${this.profile.specs[spec].weapon} | 비바 ${this.profile.specs[spec].erg} | 행진 ${this.profile.specs[spec].attack}`, startX + imgWidth + 10, startY);
                             } else if(spec == "세이크리드가드") {
-                                ctx.fillText(`${spec} ${this.profile.specs[spec].icon} ${this.profile.specs[spec].weapon} | ${this.profile.specs[spec].erg} | 노도핑 보호 ${this.profile.specs[spec].attack} | 피어싱 ${this.profile.specs[spec].piercing}`, startX, startY);
+                                ctx.fillText(`${spec} → ${this.profile.specs[spec].weapon} | ${this.profile.specs[spec].erg} | 노도핑 보호 ${this.profile.specs[spec].attack} | 피어싱 ${this.profile.specs[spec].piercing}`, startX + imgWidth + 10, startY);
                             } else {
-                                ctx.fillText(`${spec} ${this.profile.specs[spec].icon} ${this.profile.specs[spec].weapon} | ${this.profile.specs[spec].erg} | 노도핑 ${this.profile.specs[spec].attack} | 피어싱 ${this.profile.specs[spec].piercing}`, startX, startY);
+                                ctx.fillText(`${spec} → ${this.profile.specs[spec].weapon} | ${this.profile.specs[spec].erg} | 노도핑 ${this.profile.specs[spec].attack} | 피어싱 ${this.profile.specs[spec].piercing}`, startX + imgWidth + 10, startY);
                             }
                             startY += textStyle.lineHeight;
                             if(this.profile.specs[spec].comment) {
-                                ctx.fillText(`┖💬${this.profile.specs[spec].comment}`, startX, startY);
+                                ctx.fillText(`┖ ${this.profile.specs[spec].comment}`, startX, startY);
                                 startY += textStyle.lineHeight;
                             }
                         }
                     }
                 }
-                
-                if(this.profile.comment) {
-                    this.profile.comment.split('\n').forEach((line, index)=> {
-                        ctx.fillText(`${(index == 0 ? '💬 ':'　 ')} ${line}`, 50, y);
-                        y += 50;
+
+                if(this.profile.comment2 && startY < canvasHeight - 50) {
+                    ctx.fillStyle = "rgba(0, 0, 0, 0.5)";
+                    ctx.fillRect(startX, startY, canvasWidth - startX - 100, canvasHeight - startY - 50); // 배경 색으로 채우기
+                    startX += 25;
+                    startY += 50;
+                    
+                    ctx.fillStyle = "#fff";
+                    ctx.font='700 32px NanumSquareRound';
+                    
+
+                          
+                    let image = new Image();
+                    image.src = "comment.svg";
+                    let imgWidth = 50, imgHeight = 50;
+                    let imgX = startX, imgY = startY - 10;
+
+                    image.onload = function() {
+                      ctx.drawImage(image, imgX, imgY - imgHeight / 2, imgWidth, imgHeight);
+                    }
+
+                    ctx.fillText("한마디", startX + imgWidth + 10, startY);
+                    startY += textStyle.lineHeight + 10;
+                    ctx.font='300 26px NanumSquareRound';
+                    ctx.fillStyle = "#efefef";
+
+                    this.profile.comment2.split('\n').forEach((line, index)=> {
+                        ctx.fillText(`${line}`, startX, startY);
+                        startY += 50;
                     })
                 }
                 
