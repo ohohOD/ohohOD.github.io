@@ -89,7 +89,7 @@
 <body>
   <div id="app">
     <h2>소개 이미지 생성</h2>
-    <span>마지막 업데이트: 2025.03.12 01:00</span>
+    <span>마지막 업데이트: 2025.03.13 17:14</span>
     <div>
         <label>프로필 이미지 업로드(7:10)</label>
         <input type="file" @change="handleImageUpload"><br>
@@ -128,7 +128,7 @@
       </div>
       <div>
         <label for="comment">짧은 한마디</label>
-        <textarea v-model="profile.comment" id="comment" placeholder="짧은 한마디"></textarea>
+        <textarea v-model="profile.comment" id="comment" placeholder="짧은 한마디(Enter로 줄바꿈이 가능합니다.)"></textarea>
       </div>
   
       <hr />
@@ -153,7 +153,7 @@
                 </div>
                 <div>
                     <label for="comment">코멘트</label>
-                    <input v-model="dungeon.comment" id="comment" placeholder="코멘트" />
+                    <input v-model="dungeon.comment" id="comment" placeholder="코멘트(Enter로 줄바꿈이 가능합니다.)" />
                 </div>
             </template>
             <template v-else>
@@ -434,8 +434,33 @@
                     y += 50;
                 }
                 if(this.profile.playtime) {
-                    ctx.fillText(`시간대 ▶ ${this.profile.playtime}`, 50, y);
-                    y += 50;
+                  
+                  let text = "시간대 ▶ " + this.profile.playtime;
+                  let maxWidth = 350; // 최대 너비
+                  let lineHeight = 50; // 줄 간격
+
+                  let words = text;
+                  let line = '';
+                  let lines = [];
+
+                  for (let i = 0; i < words.length; i++) {
+                      let testLine = line + words[i];
+                      let testWidth = ctx.measureText(testLine).width;
+
+                      if (testWidth > maxWidth && i > 0) {
+                          lines.push(line);
+                          line = words[i];
+                      } else {
+                          line = testLine;
+                      }
+                  }
+                  lines.push(line);
+
+                  for (let i = 0; i < lines.length; i++) {
+                      ctx.fillText(lines[i], 50, y + i * lineHeight);
+                  }
+                    // ctx.fillText(`시간대 ▶ ${this.profile.playtime}`, 50, y);
+                  y += 50;
                 }
                 
                 if(this.profile.comment) {
@@ -449,7 +474,6 @@
                   }
 
                   this.profile.comment.split('\n').forEach((line, index)=> {
-
                     ctx.fillText(`${line}`, imgX + imgWidth + 10, y + 10);
                     y += 50;
                   })
@@ -616,15 +640,15 @@
                     image.onload = function() {
                       ctx.drawImage(image, imgX, imgY - imgHeight / 2, imgWidth, imgHeight);
                     }
-
-                    ctx.fillText("한마디", startX + imgWidth + 10, startY);
+                    ctx.font='300 24px NanumSquareRound';
+                    ctx.fillText("MEMO", startX + imgWidth + 10, startY);
                     startY += textStyle.lineHeight + 10;
-                    ctx.font='300 26px NanumSquareRound';
+                    ctx.font='300 24px NanumSquareRound';
                     ctx.fillStyle = "#efefef";
 
                     this.profile.comment2.split('\n').forEach((line, index)=> {
                         ctx.fillText(`${line}`, startX, startY);
-                        startY += 50;
+                        startY += 40;
                     })
                 }
                 
