@@ -89,7 +89,7 @@
 <body>
   <div id="app">
     <h2>소개 이미지 생성</h2>
-    <span>마지막 업데이트: 2025.03.13 17:15</span>
+    <span>마지막 업데이트: 2025.03.13 17:16</span>
     <div>
         <label>프로필 이미지 업로드(7:10)</label>
         <input type="file" @change="handleImageUpload"><br>
@@ -457,7 +457,8 @@
                   lines.push(line);
 
                   for (let i = 0; i < lines.length; i++) {
-                      ctx.fillText(lines[i], 50, y + i * lineHeight);
+                      y += i * lineHeight
+                      ctx.fillText(lines[i], 50, y);
                   }
                     // ctx.fillText(`시간대 ▶ ${this.profile.playtime}`, 50, y);
                   y += 50;
