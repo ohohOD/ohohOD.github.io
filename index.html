@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>소개 이미지 생성</title>
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
   <style>
     @font-face {
         font-family: 'NanumSquareRound';
@@ -13,24 +14,56 @@
         font-style: normal;
     }
 
+    body.dark {
+      --background-color: #1e1e1e;
+      --panel-color: #2c2c2c;
+      --font-color: white;
+      --ctrl-bg-color: #3a3a3a;
+    }
+
+    body.light {
+      --background-color: #aaa;
+      --panel-color: #eee;
+      --font-color: #1e1e1e;
+      --ctrl-bg-color: #ccc;
+    }
+
     body {
       font-family: 'NanumSquareRound', sans-serif;
-      background-color: #1e1e1e;
-      color: white;
+      background-color: var(--background-color);
+      color: var(--font-color);
       margin: 20px;
       display: flex;
       justify-content: center;
     }
+    
     #app {
       display:flex;
       flex-direction: column;
-      width: 80%;
-      max-width: 800px;
-      background: #2c2c2c;
+      width: 100%;
+      background: var(--panel-color);
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
       gap: 8px;
+    }
+
+    section {
+      display:flex;
+      flex-direction:row;
+      align-items: start;
+      justify-content: center;
+      gap: 32px;
+    }
+
+    section article {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .result-article {
+      max-width: 800px;
     }
 
     div * {
@@ -38,22 +71,71 @@
     }
 
     div input {
+      margin: 0px;
+    }
+
+    div input[type="checkbox"] {
       margin: 0px 4px;
+    }
+    
+    div.overlay {
+      display:flex;
+      gap:8px;
+      align-items: center;
+    }
+    div.overlay input {
+      max-width:50%;
+    }
+
+    div.form-control {
+      display: flex;
+      align-items: center;
+      gap:8px;
+    }
+
+    div.form-control label {
+      width:50%;
+    }
+
+    div.btn-mode {
+      text-align: right;
+      
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    span.line-update {
+      text-align: center;
+      font-size: 14px;
+      margin: 0px 0px 4px 0px;
     }
 
     input:not([type='color']):not([type='checkbox']), select, textarea {
-     font-family: 'NanumSquareRound', sans-serif;
+    font-family: 'NanumSquareRound', sans-serif;
       width: 100%;
       padding: 8px;
       margin-top: 5px;
       border: none;
       border-radius: 5px;
-      background: #3a3a3a;
-      color: white;
+      background: var(--ctrl-bg-color);
+      color: var(--font-color);
       box-sizing: border-box;
     }
+
+    input[type='color'] {
+      width: 100%;
+      padding: 0px 8px;
+      border: none;
+      border-radius: 5px;
+      background: var(--ctrl-bg-color);
+      color: var(--font-color);
+      box-sizing: border-box;
+    }
+
     h3 {
-      border-bottom: 2px solid #444;
+      border-bottom: 2px solid var(--font-color);
       padding-bottom: 5px;
       margin-top: 20px;
     }
@@ -75,8 +157,7 @@
     canvas {
       display: block;
       width: 100%;
-      max-width: 800px;
-      border: 2px solid white;
+      border: 2px solid var(--font-color);
       border-radius: 10px;
       margin-top: 20px;
     }
@@ -84,173 +165,250 @@
     hr {
         border: none;
     }
+    
+    .scroll-top {
+      position: fixed;
+      bottom: 60px;
+      right: 60px;
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+      background: var(--panel-color);
+      color: var(--font-color);
+      border: 1px solid var(--background-color);
+      border-radius: 50%;
+      font-size: 15px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    
+
+@media screen and (max-width: 1200px) {
+  #app {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .form-article {
+    display:flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+  .form-article aside {
+    width: 100%;
+    max-width: 800px;
+  }
+
+  section {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    gap:8px;
+  }
+
+  div.form-control {
+    display: flex;
+    align-items: start;
+    gap: 0px;
+    flex-direction: column;
+  }
+}
   </style>
 </head>
-<body>
+<body class="dark">
   <div id="app">
-    <h2>소개 이미지 생성</h2>
-    <span>마지막 업데이트: 2025.03.13 17:16</span>
-    <div>
-        <label>프로필 이미지 업로드(7:10)</label>
-        <input type="file" @change="handleImageUpload"><br>
-        
-        <label>배경 이미지 업로드(16:9)</label>
-        <input type="file" @change="handleBgImageUpload"><br>
-
-        <label><input type="color" v-model="profile.backgroundColor"> 배경 이미지를 사용하지 않는 경우 선택</label>
+    <button v-show="showButton" class="scroll-top" @click="scrollToTop">
+      ↑
+    </button>
+    <div class="btn-mode">
+      <label for="light">밝게 보기</label>
+      <input type="checkbox" v-model="lightMode" id="light">
     </div>
+    <h2>소개 이미지 생성</h2>
+    <span class="line-update">마지막 업데이트: 2025.03.14 16:18</span>
 
-    <!-- 기본 정보 입력 -->
-    <div>
-        <label for="nickname">닉네임</label>
-        <input v-model="profile.nickname" id="nickname" placeholder="닉네임" />
-      </div>
-      <div>
-        <label for="server">서버</label>
-        <select v-model="profile.server" id="server" >
-            <option value="류트" selected>류트</option>
-            <option value="하프">하프</option>
-            <option value="만돌린">만돌린</option>
-            <option value="울프">울프</option>
-        </select>
-      </div>
-      <div>
-        <label for="race">종족</label>
-        <select v-model="profile.race" id="race" >
-            <option value="인간" selected>인간</option>
-            <option value="엘프">엘프</option>
-            <option value="자이언트">자이언트</option>
-        </select>
-      </div>
-      <div>
-        <label for="playtime">주 접속 시간대</label>
-        <input v-model="profile.playtime" id="playtime" placeholder="주 접속 시간대" />
-      </div>
-      <div>
-        <label for="comment">짧은 한마디</label>
-        <textarea v-model="profile.comment" id="comment" placeholder="짧은 한마디(Enter로 줄바꿈이 가능합니다.)"></textarea>
-      </div>
-  
-      <hr />
-  
-      <!-- 던전 선호도 -->
-      <h3>선호 던전</h3>
-      <div v-for="(dungeon, key) in profile.dungeons" :key="key">
-        <input type="checkbox" :id="key" v-model="dungeon.enabled"><label :for="key">{{ key }}</label>
-        <template v-if="dungeon.enabled == true">
-            <template v-if="key != '기타'">
+    <section>
+      <article class="form-article">
+        <aside>
+          <!-- 기본 정보 -->
+          <h3>기본 정보</h3>
+          <div>
+            <div class="form-control">
+              <label>프로필 이미지 (7:10)</label>
+              <input type="file" @change="handleImageUpload">
+            </div>
+              
+            <div class="form-control">
+              <label>배경 이미지 (16:9)</label>
+              <input type="file" @change="handleBgImageUpload">
+            </div>
+            <div class="form-control">
+              <label>배경 색상</label>
+              <input type="color" v-model="profile.backgroundColor">
+            </div>
+          </div>
+
+          <!-- 기본 정보 입력 -->
+          <div class="form-control">
+              <label for="nickname">닉네임</label>
+              <input v-model="profile.nickname" id="nickname" placeholder="닉네임" />
+          </div>
+          <div class="form-control">
+            <label for="server">서버</label>
+            <select v-model="profile.server" id="server" >
+                <option value="류트" selected>류트</option>
+                <option value="하프">하프</option>
+                <option value="만돌린">만돌린</option>
+                <option value="울프">울프</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <label for="race">종족</label>
+            <select v-model="profile.race" id="race" >
+                <option value="인간" selected>인간</option>
+                <option value="엘프">엘프</option>
+                <option value="자이언트">자이언트</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <label for="playtime">주 접속 시간대</label>
+            <input v-model="profile.playtime" id="playtime" placeholder="주 접속 시간대" />
+          </div>
+          <div>
+            <label for="comment">짧은 한마디</label>
+            <textarea v-model="profile.comment" id="comment" placeholder="짧은 한마디(Enter로 줄바꿈이 가능합니다.)"></textarea>
+          </div>
+        </aside>
+
+        <aside>
+          <!-- 던전 선호도 -->
+          <h3>선호 던전</h3>
+          <div v-for="(dungeon, key) in profile.dungeons" :key="key">
+            <input type="checkbox" :id="key" v-model="dungeon.enabled"><label :for="key">{{ key }}</label>
+            <template v-if="dungeon.enabled == true">
+                <template v-if="key != '기타'">
+                    <div>
+                        <label for="difficulty">난이도</label>
+                        <input v-model="dungeon.difficulty" id="difficulty" placeholder="난이도" />
+                    </div>
+                    <div>
+                    <label for="skillLevel">미숙/반숙/완숙</label>
+                    <select v-model="dungeon.skillLevel">
+                        <option value="미숙" selected>미숙</option>
+                        <option value="반숙">반숙</option>
+                        <option value="완숙">완숙</option>
+                    </select>
+                    </div>
+                    <div>
+                        <label for="comment">코멘트</label>
+                        <input v-model="dungeon.comment" id="comment" placeholder="코멘트" />
+                    </div>
+                </template>
+                <template v-else>
+                    <div>
+                        <label for="difficulty">던전명</label>
+                        <input v-model="dungeon.difficulty" id="difficulty" placeholder="던전명" />
+                    </div>
+                    <div>
+                        <label for="comment">코멘트</label>
+                        <input v-model="dungeon.comment" id="comment" placeholder="코멘트" />
+                    </div>
+                </template>
+            </template>
+          </div>
+
+
+          <!-- 스펙 기재란 -->
+          <h3>스펙 기재란</h3>
+          <div v-for="(spec, key) in profile.specs" :key="key">
+            <input type="checkbox" :id="key" v-model="spec.enabled"><label :for="key">{{ key }}</label><br>
+            <template v-if="spec.enabled == true">
                 <div>
-                    <label for="difficulty">난이도</label>
-                    <input v-model="dungeon.difficulty" id="difficulty" placeholder="난이도" />
+                    <template v-if="key == '세인트바드'">
+                        <label for="specWeapon">전장</label>
+                        <input v-model="spec.weapon">
+                    </template>
+                    <template v-else>
+                        <label for="specWeapon">주무기</label>
+                        <select v-model="spec.weapon" id="specWeapon" >
+                            <option value="소울 리버레이트">소울 리버레이트</option>
+                            <option value="나이트브링어">나이트브링어</option>
+                            <option value="페러시우스">페러시우스</option>
+                            <option value="켈틱">켈틱</option>
+                            <option value="무기 없음" selected>무기 없음</option>
+                        </select>
+                    </template>
                 </div>
                 <div>
-                <label for="skillLevel">미숙/반숙/완숙</label>
-                <select v-model="dungeon.skillLevel">
-                    <option value="미숙" selected>미숙</option>
-                    <option value="반숙">반숙</option>
-                    <option value="완숙">완숙</option>
-                </select>
+                    <template v-if="key == '세인트바드'">
+                        <label for="specErg">비바체</label>
+                        <input v-model="spec.erg">
+                    </template>
+                    <template v-else>
+                        <label for="specErg">에르그</label>
+                        <select v-model="spec.erg" id="specErg" >
+                            <option value="S50">S50</option>
+                            <option value="S45">S45</option>
+                            <option value="S40">S40</option>
+                            <option value="S35">S35</option>
+                            <option value="A50">A50</option>
+                            <option value="에르그 없음" selected>에르그 없음</option>
+                        </select>
+                    </template>
                 </div>
                 <div>
-                    <label for="comment">코멘트</label>
-                    <input v-model="dungeon.comment" id="comment" placeholder="코멘트" />
+                    <template v-if="key == '세인트바드'">
+                        <label for="specAttack">행진곡</label>
+                        <input v-model="spec.attack">
+                    </template>
+                    <template v-else-if="key == '세이크리드가드'">
+                        <label for="specAttack">노도핑 보호</label>
+                        <input v-model="spec.attack" id="specAttack"/>
+                    </template>
+                    <template v-else>
+                        <label for="specAttack">노도핑 {{ key == "다크메이지" ? '마공' : '물공'}}</label>
+                        <input v-model="spec.attack" id="specAttack"/>
+                    </template>
+                </div>
+                <div>
+                    <template v-if="key != '세인트바드'">
+                        <label for="specPiercing">피어싱 {{ key == "다크메이지" ? '(피어스 포함)' : ''}}</label>
+                        <input v-model="spec.piercing" id="specPiercing" placeholder="피어싱" />
+                    </template>
+                </div>
+                <div>
+                    <label for="specComment">코멘트</label>
+                    <input v-model="spec.comment" id="specComment" placeholder="코멘트" />
                 </div>
             </template>
-            <template v-else>
-                <div>
-                    <label for="difficulty">던전명</label>
-                    <input v-model="dungeon.difficulty" id="difficulty" placeholder="던전명" />
-                </div>
-                <div>
-                    <label for="comment">코멘트</label>
-                    <input v-model="dungeon.comment" id="comment" placeholder="코멘트" />
-                </div>
-            </template>
-        </template>
-      </div>
-  
-      <hr />
-  
-      <!-- 스펙 기재란 -->
-      <h3>스펙 기재란</h3>
-      <div v-for="(spec, key) in profile.specs" :key="key">
-        <input type="checkbox" :id="key" v-model="spec.enabled"><label :for="key">{{ key }}</label><br>
-        <template v-if="spec.enabled == true">
-            <div>
-                <template v-if="key == '세인트바드'">
-                    <label for="specWeapon">전장</label>
-                    <input v-model="spec.weapon">
-                </template>
-                <template v-else>
-                    <label for="specWeapon">주무기</label>
-                    <select v-model="spec.weapon" id="specWeapon" >
-                        <option value="소울 리버레이트">소울 리버레이트</option>
-                        <option value="나이트브링어">나이트브링어</option>
-                        <option value="페러시우스">페러시우스</option>
-                        <option value="켈틱">켈틱</option>
-                        <option value="무기 없음" selected>무기 없음</option>
-                    </select>
-                </template>
-            </div>
-            <div>
-                <template v-if="key == '세인트바드'">
-                    <label for="specErg">비바체</label>
-                    <input v-model="spec.erg">
-                </template>
-                <template v-else>
-                    <label for="specErg">에르그</label>
-                    <select v-model="spec.erg" id="specErg" >
-                        <option value="S50">S50</option>
-                        <option value="S45">S45</option>
-                        <option value="S40">S40</option>
-                        <option value="S35">S35</option>
-                        <option value="A50">A50</option>
-                        <option value="에르그 없음" selected>에르그 없음</option>
-                    </select>
-                </template>
-            </div>
-            <div>
-                <template v-if="key == '세인트바드'">
-                    <label for="specAttack">행진곡</label>
-                    <input v-model="spec.attack">
-                </template>
-                <template v-else-if="key == '세이크리드가드'">
-                    <label for="specAttack">노도핑 보호</label>
-                    <input v-model="spec.attack" id="specAttack"/>
-                </template>
-                <template v-else>
-                    <label for="specAttack">노도핑 {{ key == "다크메이지" ? '마공' : '물공'}}</label>
-                    <input v-model="spec.attack" id="specAttack"/>
-                </template>
-            </div>
-            <div>
-                <template v-if="key != '세인트바드'">
-                    <label for="specPiercing">피어싱 {{ key == "다크메이지" ? '(피어스 포함)' : ''}}</label>
-                    <input v-model="spec.piercing" id="specPiercing" placeholder="피어싱" />
-                </template>
-            </div>
-            <div>
-                <label for="specComment">코멘트</label>
-                <input v-model="spec.comment" id="specComment" placeholder="코멘트" />
-            </div>
-        </template>
-      </div>
-      <div>
-        <label for="comment2">메모</label>
-        <textarea v-model="profile.comment2" id="comment2" placeholder="메모"></textarea>
-      </div>
-  
-      <hr />
-    
-    <button @click="generateImage">이미지 생성</button>
-    <canvas ref="canvas" width="1600" height="900"></canvas>
-    <div v-if="dataUrl != null" id="downloadBtn"><button @click="downloadImg">이미지 저장</button> 이미지 다운로드가 안될 경우 이미지를 우클릭해주세요(PC)</div>
+          </div>
+          <div>
+            <label for="comment2">메모</label>
+            <textarea v-model="profile.comment2" id="comment2" placeholder="메모"></textarea>
+          </div>
+        </aside>
+        
+      </article>
+
+      <article class="result-article">
+        <!-- 기본 정보 -->
+        <h3>결과 이미지</h3>
+        <canvas ref="canvas" width="1600" height="900"></canvas>
+        <div v-if="dataUrl != null" id="downloadBtn"><button @click="downloadImg">이미지 저장</button> 이미지 다운로드가 안될 경우 이미지를 우클릭해주세요(PC)</div>
+      </article>
+    </section>
   </div>
 
   <script>
     Vue.createApp({
       data() {
         return {
+          showButton: false,
+          lightMode: false,
           profile: {
             nickname: "",
             race: "인간",
@@ -282,10 +440,53 @@
           dataUrl: null
         };
       },
+      watch: {
+        lightMode(val) {
+          if(val == true) {
+            document.querySelector("body").className = "light"
+          } else {
+            document.querySelector("body").className = "dark"
+          }
+          localStorage.setItem("lightMode", val);
+        },
+        profile: {
+          deep: true,
+          handler: _.debounce(function() {
+            this.generateImage();
+          }, 500)
+        }
+      },
+      mounted() {
+        window.addEventListener("scroll", this.handleScroll);
+        if(localStorage.getItem("lightMode") != undefined) {
+          this.lightMode = String(localStorage.getItem("lightMode")) == "true";
+          if(this.lightMode == true) {
+            document.querySelector("body").className = "light"
+          } else {
+            document.querySelector("body").className = "dark"
+          }
+        } else {
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          this.lightMode = isDarkMode == false;
+          if (isDarkMode) {
+            document.querySelector("body").className = "dark"
+          } else {
+            document.querySelector("body").className = "light"
+          }
+        }
+      },
+      beforeUnmount() {
+        window.removeEventListener("scroll", this.handleScroll);
+      },
       methods: {
+        handleScroll() {
+          this.showButton = window.scrollY > 200;
+        },
+        scrollToTop() {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        },
         downloadImg(e) {
           const canvas = this.$refs.canvas;
-
       // 📌 Blob을 사용하여 다운로드 (iOS Safari 대응)
       canvas.toBlob((blob) => {
         const url = URL.createObjectURL(blob);
@@ -304,6 +505,7 @@
             const reader = new FileReader();
             reader.onload = (e) => {
               this.uploadedImage = e.target.result;
+              this.generateImage();
             };
             reader.readAsDataURL(file);
           }
@@ -314,6 +516,7 @@
             const reader = new FileReader();
             reader.onload = (e) => {
               this.uploadedBgImage = e.target.result;
+              this.generateImage();
             };
             reader.readAsDataURL(file);
           }
@@ -339,17 +542,18 @@
           ctx.quadraticCurveTo(x, y, x + radius, y);
           ctx.closePath();
         },
-        generateImage(e) {
+        generateImage() {
             const canvas = this.$refs.canvas;
             const ctx = canvas.getContext("2d");
 
             if (!this.uploadedImage) {
-                alert("이미지를 먼저 업로드하세요.");
                 return;
             }
 
             const bgImg = new Image();
-            bgImg.src = this.uploadedBgImage;
+            if(this.uploadedBgImage) {
+              bgImg.src = this.uploadedBgImage;
+            }
 
             const img = new Image();
             img.src = this.uploadedImage;
@@ -655,7 +859,6 @@
                 
             };
             this.dataUrl = this.$refs.canvas.toDataURL('image/png');
-            e.preventDefault();
         }
       }
     }).mount("#app");
