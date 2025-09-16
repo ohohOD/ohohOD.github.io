@@ -1,0 +1,65 @@
+{
+  "name": "정사각형 테스트",
+  "codename": "1:1 비율 샘플",
+  "catchphrase": "\"정사각형 레이아웃\"",
+  "imageUrl": "",
+  "description": "1:1 정사각형 비율 테스트입니다.\n\n균형잡힌 정사각형 형태의\n레이아웃을 확인할 수 있습니다.\n\n폰트 조합도 다르게 설정되어 있습니다.",
+  "fontFamily": "Sunflower",
+  "aspectRatio": "1:1",
+  "customFields": [
+    {
+      "id": 1,
+      "label": "항목1",
+      "value": "내용1"
+    },
+    {
+      "id": 2,
+      "label": "항목2",
+      "value": "내용2"
+    },
+    {
+      "id": 3,
+      "label": "항목3",
+      "value": "내용3"
+    }
+  ],
+  "fontSettings": {
+    "name": "Sunflower",
+    "codename": "Gowun Dodum",
+    "catchphrase": "Cute Font",
+    "description": "Sunflower",
+    "fieldLabel": "Gowun Dodum",
+    "fieldValue": "Sunflower"
+  },
+  "imageOffset": {
+    "x": -10,
+    "y": "51",
+    "scale": "217"
+  },
+  "nameOffset": {
+    "x": 0,
+    "y": 0,
+    "scale": "105"
+  },
+  "backgroundOffset": {
+    "x": 0,
+    "y": 0,
+    "scale": "88"
+  },
+  "infoPanelOffset": {
+    "x": -50,
+    "y": 50,
+    "scale": 90
+  },
+  "catchphraseOffset": {
+    "x": 0,
+    "y": -350,
+    "scale": "110"
+  },
+  "descriptionOffset": {
+    "x": 50,
+    "y": 180,
+    "scale": 100,
+    "width": 300
+  }
+}

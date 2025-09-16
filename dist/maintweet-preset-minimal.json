@@ -1,0 +1,74 @@
+{
+  "title": "프리셋 제목 (더미)",
+  "keyword": "#키워드 #더미 #설명",
+  "backgroundUrl": "",
+  "fontFamily": "Pretendard",
+  "aspectRatio": "1:1",
+  "characterNotes": [
+    {
+      "id": 1,
+      "text": "캐릭터 설명 더미 텍스트"
+    },
+    {
+      "id": 2,
+      "text": "캐릭터 노트 예시"
+    },
+    {
+      "id": 3,
+      "text": "여기에 캐릭터 관련 설명"
+    }
+  ],
+  "ownerNotes": [
+    {
+      "id": 4,
+      "text": "오너 설명 더미 텍스트"
+    },
+    {
+      "id": 5,
+      "text": "오너 노트 예시"
+    },
+    {
+      "id": 6,
+      "text": "여기에 오너 관련 설명"
+    }
+  ],
+  "backgroundOffset": {
+    "x": 0,
+    "y": 0,
+    "scale": 100
+  },
+  "titleOffset": {
+    "x": 0,
+    "y": -60,
+    "scale": 115
+  },
+  "keywordOffset": {
+    "x": 0,
+    "y": 30,
+    "scale": 90
+  },
+  "characterOffset": {
+    "x": 40,
+    "y": -20,
+    "scale": 95,
+    "width": 100
+  },
+  "ownerOffset": {
+    "x": -40,
+    "y": -20,
+    "scale": 95,
+    "width": 100
+  },
+  "fontSize": {
+    "title": 135,
+    "keyword": 85,
+    "panel": 95,
+    "bullet": 80
+  },
+  "fontSettings": {
+    "title": "Pretendard",
+    "keyword": "Pretendard",
+    "panel": "Black Han Sans",
+    "bullet": "Pretendard"
+  }
+}
