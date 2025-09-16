@@ -1,0 +1,90 @@
+{
+  "title": "프리셋 제목 (더미)",
+  "keyword": "#키워드 #더미 #설명",
+  "backgroundUrl": "",
+  "fontFamily": "Dummy Font",
+  "aspectRatio": "4:6",
+  "characterNotes": [
+    {
+      "id": 1,
+      "text": "캐릭터 설명 더미 텍스트"
+    },
+    {
+      "id": 2,
+      "text": "의미 없는 텍스트"
+    },
+    {
+      "id": 3,
+      "text": "샘플 데이터"
+    },
+    {
+      "id": 4,
+      "text": "설명용 더미"
+    },
+    {
+      "id": 5,
+      "text": "테스트용 텍스트"
+    }
+  ],
+  "ownerNotes": [
+    {
+      "id": 6,
+      "text": "소유자 설명 더미"
+    },
+    {
+      "id": 7,
+      "text": "임시 텍스트"
+    },
+    {
+      "id": 8,
+      "text": "용도 설명"
+    },
+    {
+      "id": 9,
+      "text": "더미 데이터"
+    },
+    {
+      "id": 10,
+      "text": "설명 텍스트"
+    }
+  ],
+  "backgroundOffset": {
+    "x": 0,
+    "y": 0,
+    "scale": 100
+  },
+  "titleOffset": {
+    "x": 0,
+    "y": -25,
+    "scale": 105
+  },
+  "keywordOffset": {
+    "x": 0,
+    "y": -15,
+    "scale": 100
+  },
+  "characterOffset": {
+    "x": 20,
+    "y": -35,
+    "scale": 100,
+    "width": 100
+  },
+  "ownerOffset": {
+    "x": -20,
+    "y": -35,
+    "scale": 100,
+    "width": 100
+  },
+  "fontSize": {
+    "title": 125,
+    "keyword": 95,
+    "panel": 105,
+    "bullet": 90
+  },
+  "fontSettings": {
+    "title": "Nanum Myeongjo",
+    "keyword": "Noto Sans KR",
+    "panel": "Nanum Myeongjo",
+    "bullet": "Noto Sans KR"
+  }
+}
