@@ -1,37 +1,80 @@
 {
-  "title": "프리셋 제목 (더미)",
-  "keyword": "#키워드 #더미 #설명",
+  "title": "미니멀 모던형 프리셋",
+  "keyword": "#미니멀 #모던 #심플",
   "backgroundUrl": "",
   "fontFamily": "Pretendard",
   "aspectRatio": "1:1",
+  "fontSize": {
+    "title": 135,
+    "keyword": 85,
+    "panel": 95,
+    "bullet": 80
+  },
+  "fontSettings": {
+    "title": "Pretendard",
+    "keyword": "Pretendard",
+    "panel": "Black Han Sans",
+    "bullet": "Pretendard"
+  },
+  "colorSettings": {
+    "title": null,
+    "keyword": null,
+    "panel": null,
+    "bullet": null
+  },
+  "panelSettings": {
+    "character": {
+      "backgroundColor": null,
+      "backgroundOpacity": 0.1,
+      "borderColor": null,
+      "borderWidth": 0,
+      "borderRadius": 20,
+      "borderStyle": "solid",
+      "boxShadow": "soft"
+    },
+    "owner": {
+      "backgroundColor": null,
+      "backgroundOpacity": 0.1,
+      "borderColor": null,
+      "borderWidth": 0,
+      "borderRadius": 20,
+      "borderStyle": "solid",
+      "boxShadow": "soft"
+    }
+  },
+  "panelVisibility": {
+    "character": true,
+    "owner": true
+  },
   "characterNotes": [
     {
       "id": 1,
-      "text": "캐릭터 설명 더미 텍스트"
+      "text": "핵심 성격"
     },
     {
       "id": 2,
-      "text": "캐릭터 노트 예시"
+      "text": "외모 특징"
     },
     {
       "id": 3,
-      "text": "여기에 캐릭터 관련 설명"
+      "text": "배경 설정"
     }
   ],
   "ownerNotes": [
     {
       "id": 4,
-      "text": "오너 설명 더미 텍스트"
+      "text": "플레이 스타일"
     },
     {
       "id": 5,
-      "text": "오너 노트 예시"
+      "text": "선호 장르"
     },
     {
       "id": 6,
-      "text": "여기에 오너 관련 설명"
+      "text": "연락 방법"
     }
   ],
+  "customPanels": [],
   "backgroundOffset": {
     "x": 0,
     "y": 0,
@@ -59,16 +102,27 @@
     "scale": 95,
     "width": 100
   },
-  "fontSize": {
-    "title": 135,
-    "keyword": 85,
-    "panel": 95,
-    "bullet": 80
-  },
-  "fontSettings": {
-    "title": "Pretendard",
-    "keyword": "Pretendard",
-    "panel": "Black Han Sans",
-    "bullet": "Pretendard"
-  }
+  "customImages": [],
+  "customTexts": [
+    {
+      "id": 1,
+      "content": "심플한 추가 정보",
+      "x": 50,
+      "y": 300,
+      "width": 250,
+      "height": 60,
+      "fontSize": 18,
+      "fontFamily": "Pretendard",
+      "color": "#555555",
+      "textAlign": "center",
+      "rotation": 0,
+      "visible": true,
+      "textShadowX": 1,
+      "textShadowY": 1,
+      "textShadowBlur": 2,
+      "textShadowColor": "#000000",
+      "textShadowOpacity": 0.2,
+      "order": 2
+    }
+  ]
 }

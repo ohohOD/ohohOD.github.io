@@ -1,51 +1,123 @@
 {
-  "title": "프리셋 제목 (더미)",
-  "keyword": "#키워드 #더미 #설명",
+  "title": "프로페셔널형 프리셋",
+  "keyword": "#프로페셔널 #고급 #세련됨",
   "backgroundUrl": "",
-  "fontFamily": "Dummy Font",
+  "fontFamily": "Nanum Myeongjo",
   "aspectRatio": "4:6",
+  "fontSize": {
+    "title": 125,
+    "keyword": 95,
+    "panel": 105,
+    "bullet": 90
+  },
+  "fontSettings": {
+    "title": "Nanum Myeongjo",
+    "keyword": "Noto Sans KR",
+    "panel": "Nanum Myeongjo",
+    "bullet": "Noto Sans KR"
+  },
+  "colorSettings": {
+    "title": null,
+    "keyword": null,
+    "panel": null,
+    "bullet": null
+  },
+  "panelSettings": {
+    "character": {
+      "backgroundColor": null,
+      "backgroundOpacity": 0.2,
+      "borderColor": null,
+      "borderWidth": 2,
+      "borderRadius": 10,
+      "borderStyle": "solid",
+      "boxShadow": "strong"
+    },
+    "owner": {
+      "backgroundColor": null,
+      "backgroundOpacity": 0.2,
+      "borderColor": null,
+      "borderWidth": 2,
+      "borderRadius": 10,
+      "borderStyle": "solid",
+      "boxShadow": "strong"
+    }
+  },
+  "panelVisibility": {
+    "character": true,
+    "owner": true
+  },
   "characterNotes": [
     {
       "id": 1,
-      "text": "캐릭터 설명 더미 텍스트"
+      "text": "캐릭터의 전문적 배경"
     },
     {
       "id": 2,
-      "text": "의미 없는 텍스트"
+      "text": "세부적인 성격 묘사"
     },
     {
       "id": 3,
-      "text": "샘플 데이터"
+      "text": "사회적 지위와 역할"
     },
     {
       "id": 4,
-      "text": "설명용 더미"
+      "text": "개인적 목표와 동기"
     },
     {
       "id": 5,
-      "text": "테스트용 텍스트"
+      "text": "중요한 인간관계"
     }
   ],
   "ownerNotes": [
     {
       "id": 6,
-      "text": "소유자 설명 더미"
+      "text": "상세한 플레이 가이드라인"
     },
     {
       "id": 7,
-      "text": "임시 텍스트"
+      "text": "세션 진행 방식 선호도"
     },
     {
       "id": 8,
-      "text": "용도 설명"
+      "text": "캐릭터 개발 방향성"
     },
     {
       "id": 9,
-      "text": "더미 데이터"
+      "text": "협업 스타일과 소통법"
     },
     {
       "id": 10,
-      "text": "설명 텍스트"
+      "text": "특별 요구사항 및 한계"
+    }
+  ],
+  "customPanels": [
+    {
+      "id": 1,
+      "title": "전문 정보",
+      "notes": [
+        {
+          "id": 11,
+          "text": "전문적인 추가 정보"
+        }
+      ],
+      "x": 50,
+      "y": 400,
+      "width": 300,
+      "height": 120,
+      "backgroundColor": "rgba(255, 255, 255, 0.2)",
+      "backgroundOpacity": 1,
+      "borderColor": "rgba(255, 255, 255, 0.3)",
+      "borderWidth": 2,
+      "borderRadius": 10,
+      "borderStyle": "solid",
+      "boxShadow": "strong",
+      "fontFamily": "Nanum Myeongjo",
+      "fontColor": "#ffffff",
+      "titleFontSize": 20,
+      "contentFontSize": 14,
+      "textAlign": "center",
+      "visible": true,
+      "order": 1
     }
   ],
   "backgroundOffset": {
@@ -75,16 +147,27 @@
     "scale": 100,
     "width": 100
   },
-  "fontSize": {
-    "title": 125,
-    "keyword": 95,
-    "panel": 105,
-    "bullet": 90
-  },
-  "fontSettings": {
-    "title": "Nanum Myeongjo",
-    "keyword": "Noto Sans KR",
-    "panel": "Nanum Myeongjo",
-    "bullet": "Noto Sans KR"
-  }
+  "customImages": [],
+  "customTexts": [
+    {
+      "id": 1,
+      "content": "전문적인 상세 설명\n고품질 정보 제공",
+      "x": 80,
+      "y": 350,
+      "width": 350,
+      "height": 100,
+      "fontSize": 22,
+      "fontFamily": "Nanum Myeongjo",
+      "color": "#2c2c2c",
+      "textAlign": "center",
+      "rotation": 0,
+      "visible": true,
+      "textShadowX": 2,
+      "textShadowY": 2,
+      "textShadowBlur": 5,
+      "textShadowColor": "#000000",
+      "textShadowOpacity": 0.4,
+      "order": 3
+    }
+  ]
 }

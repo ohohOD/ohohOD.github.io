@@ -1,45 +1,88 @@
 {
-  "title": "프리셋 제목 (더미)",
-  "keyword": "#키워드 #더미 #설명",
+  "title": "클래식 정돈형 프리셋",
+  "keyword": "#클래식 #정돈형 #깔끔함",
   "backgroundUrl": "",
   "fontFamily": "Noto Sans KR",
   "aspectRatio": "6:4",
+  "fontSize": {
+    "title": 115,
+    "keyword": 90,
+    "panel": 100,
+    "bullet": 85
+  },
+  "fontSettings": {
+    "title": "Noto Sans KR",
+    "keyword": "Noto Sans KR",
+    "panel": "Noto Sans KR",
+    "bullet": "Noto Sans KR"
+  },
+  "colorSettings": {
+    "title": null,
+    "keyword": null,
+    "panel": null,
+    "bullet": null
+  },
+  "panelSettings": {
+    "character": {
+      "backgroundColor": null,
+      "backgroundOpacity": 0.15,
+      "borderColor": null,
+      "borderWidth": 1,
+      "borderRadius": 15,
+      "borderStyle": "solid",
+      "boxShadow": "default"
+    },
+    "owner": {
+      "backgroundColor": null,
+      "backgroundOpacity": 0.15,
+      "borderColor": null,
+      "borderWidth": 1,
+      "borderRadius": 15,
+      "borderStyle": "solid",
+      "boxShadow": "default"
+    }
+  },
+  "panelVisibility": {
+    "character": true,
+    "owner": true
+  },
   "characterNotes": [
     {
       "id": 1,
-      "text": "캐릭터 노트 더미 텍스트 1"
+      "text": "캐릭터의 기본 성격과 외모"
     },
     {
       "id": 2,
-      "text": "캐릭터 노트 더미 텍스트 2"
+      "text": "중요한 특징이나 버릇"
     },
     {
       "id": 3,
-      "text": "캐릭터 노트 더미 텍스트 3"
+      "text": "배경 스토리나 과거사"
     },
     {
       "id": 4,
-      "text": "캐릭터 노트 더미 텍스트 4"
+      "text": "다른 캐릭터와의 관계"
     }
   ],
   "ownerNotes": [
     {
       "id": 5,
-      "text": "오너 노트 더미 텍스트 1"
+      "text": "오너의 플레이 스타일"
     },
     {
       "id": 6,
-      "text": "오너 노트 더미 텍스트 2"
+      "text": "선호하는 장르나 설정"
     },
     {
       "id": 7,
-      "text": "오너 노트 더미 텍스트 3"
+      "text": "연락 가능한 시간대"
     },
     {
       "id": 8,
-      "text": "오너 노트 더미 텍스트 4"
+      "text": "특별한 요청사항이나 금기"
     }
   ],
+  "customPanels": [],
   "backgroundOffset": {
     "x": 0,
     "y": 0,
@@ -67,16 +110,27 @@
     "scale": 100,
     "width": 100
   },
-  "fontSize": {
-    "title": 115,
-    "keyword": 90,
-    "panel": 100,
-    "bullet": 85
-  },
-  "fontSettings": {
-    "title": "Noto Sans KR",
-    "keyword": "Noto Sans KR",
-    "panel": "Noto Sans KR",
-    "bullet": "Noto Sans KR"
-  }
+  "customImages": [],
+  "customTexts": [
+    {
+      "id": 1,
+      "content": "클래식한 분위기의\n추가 텍스트",
+      "x": 100,
+      "y": 100,
+      "width": 300,
+      "height": 80,
+      "fontSize": 24,
+      "fontFamily": "Noto Sans KR",
+      "color": "#333333",
+      "textAlign": "center",
+      "rotation": 0,
+      "visible": true,
+      "textShadowX": 2,
+      "textShadowY": 2,
+      "textShadowBlur": 4,
+      "textShadowColor": "#000000",
+      "textShadowOpacity": 0.3,
+      "order": 2
+    }
+  ]
 }
