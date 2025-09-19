@@ -31,6 +31,14 @@
     "fieldLabel": "Gowun Batang",
     "fieldValue": "Noto Sans KR"
   },
+  "colorSettings": {
+    "name": null,
+    "codename": null,
+    "catchphrase": null,
+    "description": null,
+    "fieldLabel": null,
+    "fieldValue": null
+  },
   "imageOffset": {
     "x": "-19",
     "y": "6",
@@ -61,5 +69,12 @@
     "y": "283",
     "scale": 100,
     "width": 350
+  },
+  "customImages": [],
+  "customTexts": [],
+  "customPanels": [],
+  "panelVisibility": {
+    "character": true,
+    "owner": true
   }
 }

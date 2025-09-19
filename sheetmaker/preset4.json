@@ -31,6 +31,14 @@
     "fieldLabel": "Gowun Dodum",
     "fieldValue": "Sunflower"
   },
+  "colorSettings": {
+    "name": null,
+    "codename": null,
+    "catchphrase": null,
+    "description": null,
+    "fieldLabel": null,
+    "fieldValue": null
+  },
   "imageOffset": {
     "x": -10,
     "y": "51",
@@ -61,5 +69,12 @@
     "y": 180,
     "scale": 100,
     "width": 300
+  },
+  "customImages": [],
+  "customTexts": [],
+  "customPanels": [],
+  "panelVisibility": {
+    "character": true,
+    "owner": true
   }
 }

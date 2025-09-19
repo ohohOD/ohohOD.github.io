@@ -26,6 +26,14 @@
     "fieldLabel": "Pretendard",
     "fieldValue": "Pretendard"
   },
+  "colorSettings": {
+    "name": null,
+    "codename": null,
+    "catchphrase": null,
+    "description": null,
+    "fieldLabel": null,
+    "fieldValue": null
+  },
   "imageOffset": {
     "x": "-91",
     "y": "9",
@@ -56,5 +64,12 @@
     "y": "290",
     "scale": "102",
     "width": "410"
+  },
+  "customImages": [],
+  "customTexts": [],
+  "customPanels": [],
+  "panelVisibility": {
+    "character": true,
+    "owner": true
   }
 }

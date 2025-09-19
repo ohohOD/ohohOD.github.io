@@ -36,6 +36,14 @@
     "fieldLabel": "Cute Font",
     "fieldValue": "Jua"
   },
+  "colorSettings": {
+    "name": null,
+    "codename": null,
+    "catchphrase": null,
+    "description": null,
+    "fieldLabel": null,
+    "fieldValue": null
+  },
   "imageOffset": {
     "x": "-37",
     "y": "0",
@@ -66,5 +74,12 @@
     "y": 150,
     "scale": 95,
     "width": 320
+  },
+  "customImages": [],
+  "customTexts": [],
+  "customPanels": [],
+  "panelVisibility": {
+    "character": true,
+    "owner": true
   }
 }

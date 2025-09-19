@@ -36,6 +36,14 @@
     "fieldLabel": "Black Han Sans",
     "fieldValue": "Pretendard"
   },
+  "colorSettings": {
+    "name": null,
+    "codename": null,
+    "catchphrase": null,
+    "description": null,
+    "fieldLabel": null,
+    "fieldValue": null
+  },
   "imageOffset": {
     "x": "-2",
     "y": "44",
@@ -66,5 +74,12 @@
     "y": "97",
     "scale": 105,
     "width": 380
+  },
+  "customImages": [],
+  "customTexts": [],
+  "customPanels": [],
+  "panelVisibility": {
+    "character": true,
+    "owner": true
   }
 }
