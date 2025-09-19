@@ -77,7 +77,41 @@
   },
   "customImages": [],
   "customTexts": [],
-  "customPanels": [],
+  "customPanels": [
+    {
+      "id": 1,
+      "title": "더미 패널",
+      "notes": [
+        {
+          "id": 1,
+          "text": "Lorem ipsum dolor sit",
+          "style": {}
+        },
+        {
+          "id": 2,
+          "text": "amet consectetur elit",
+          "style": {}
+        },
+        {
+          "id": 3,
+          "text": "sed do eiusmod tempor",
+          "style": {}
+        }
+      ],
+      "position": { "x": 50, "y": 400 },
+      "size": { "width": 280, "height": 100 },
+      "style": {
+        "backgroundColor": "rgba(254, 226, 226, 0.9)",
+        "borderColor": "#f87171",
+        "borderWidth": 2,
+        "borderRadius": 10,
+        "fontSize": 14,
+        "fontFamily": "Jua",
+        "color": "#7f1d1d"
+      },
+      "visible": true
+    }
+  ],
   "panelVisibility": {
     "character": true,
     "owner": true

@@ -93,11 +93,19 @@
   "customPanels": [
     {
       "id": 1,
-      "title": "전문 정보",
+      "title": "프로 정보 박스",
       "notes": [
         {
           "id": 11,
-          "text": "전문적인 추가 정보"
+          "text": "Lorem ipsum dolor sit"
+        },
+        {
+          "id": 12,
+          "text": "amet consectetur elit"
+        },
+        {
+          "id": 13,
+          "text": "sed do eiusmod tempor"
         }
       ],
       "x": 50,
@@ -112,11 +120,12 @@
       "borderStyle": "solid",
       "boxShadow": "strong",
       "fontFamily": "Nanum Myeongjo",
-      "fontColor": "#ffffff",
+      "fontColor": "#2c2c2c",
       "titleFontSize": 20,
       "contentFontSize": 14,
       "textAlign": "center",
       "visible": true,
+      "zIndex": 10,
       "order": 1
     }
   ],
@@ -151,7 +160,7 @@
   "customTexts": [
     {
       "id": 1,
-      "content": "전문적인 상세 설명\n고품질 정보 제공",
+      "content": "Professional dummy text\nHigh quality sample content",
       "x": 80,
       "y": 350,
       "width": 350,
@@ -167,7 +176,8 @@
       "textShadowBlur": 5,
       "textShadowColor": "#000000",
       "textShadowOpacity": 0.4,
-      "order": 3
+      "zIndex": 11,
+      "order": 2
     }
   ]
 }

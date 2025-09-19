@@ -72,7 +72,69 @@
   },
   "customImages": [],
   "customTexts": [],
-  "customPanels": [],
+  "customPanels": [
+    {
+      "id": 1,
+      "title": "박스 A",
+      "notes": [
+        {
+          "id": 1,
+          "text": "Placeholder text here",
+          "style": {}
+        },
+        {
+          "id": 2,
+          "text": "Another dummy line",
+          "style": {}
+        }
+      ],
+      "position": { "x": 250, "y": 300 },
+      "size": { "width": 200, "height": 80 },
+      "style": {
+        "backgroundColor": "rgba(236, 254, 255, 0.9)",
+        "borderColor": "#06b6d4",
+        "borderWidth": 2,
+        "borderRadius": 8,
+        "fontSize": 14,
+        "fontFamily": "Sunflower",
+        "color": "#0e7490"
+      },
+      "visible": true
+    },
+    {
+      "id": 2,
+      "title": "박스 B",
+      "notes": [
+        {
+          "id": 1,
+          "text": "테스트 항목 1",
+          "style": {}
+        },
+        {
+          "id": 2,
+          "text": "테스트 항목 2",
+          "style": {}
+        },
+        {
+          "id": 3,
+          "text": "테스트 항목 3",
+          "style": {}
+        }
+      ],
+      "position": { "x": 50, "y": 350 },
+      "size": { "width": 180, "height": 100 },
+      "style": {
+        "backgroundColor": "rgba(240, 253, 244, 0.9)",
+        "borderColor": "#22c55e",
+        "borderWidth": 1,
+        "borderRadius": 6,
+        "fontSize": 13,
+        "fontFamily": "Gowun Dodum",
+        "color": "#14532d"
+      },
+      "visible": true
+    }
+  ],
   "panelVisibility": {
     "character": true,
     "owner": true

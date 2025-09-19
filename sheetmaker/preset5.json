@@ -77,7 +77,74 @@
   },
   "customImages": [],
   "customTexts": [],
-  "customPanels": [],
+  "customPanels": [
+    {
+      "id": 1,
+      "title": "Sample Box",
+      "notes": [
+        {
+          "id": 1,
+          "text": "Dummy content line 1",
+          "style": {}
+        },
+        {
+          "id": 2,
+          "text": "Dummy content line 2",
+          "style": {}
+        },
+        {
+          "id": 3,
+          "text": "Dummy content line 3",
+          "style": {}
+        }
+      ],
+      "position": { "x": 450, "y": 200 },
+      "size": { "width": 220, "height": 120 },
+      "style": {
+        "backgroundColor": "rgba(31, 41, 55, 0.95)",
+        "borderColor": "#fbbf24",
+        "borderWidth": 3,
+        "borderRadius": 10,
+        "fontSize": 15,
+        "fontFamily": "Black Han Sans",
+        "color": "#fbbf24"
+      },
+      "visible": true
+    },
+    {
+      "id": 2,
+      "title": "Example Panel",
+      "notes": [
+        {
+          "id": 1,
+          "text": "예시 텍스트 A",
+          "style": {}
+        },
+        {
+          "id": 2,
+          "text": "예시 텍스트 B",
+          "style": {}
+        },
+        {
+          "id": 3,
+          "text": "예시 텍스트 C",
+          "style": {}
+        }
+      ],
+      "position": { "x": 450, "y": 350 },
+      "size": { "width": 220, "height": 100 },
+      "style": {
+        "backgroundColor": "rgba(249, 250, 251, 0.95)",
+        "borderColor": "#374151",
+        "borderWidth": 2,
+        "borderRadius": 8,
+        "fontSize": 14,
+        "fontFamily": "Pretendard",
+        "color": "#374151"
+      },
+      "visible": true
+    }
+  ],
   "panelVisibility": {
     "character": true,
     "owner": true

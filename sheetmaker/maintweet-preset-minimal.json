@@ -74,7 +74,41 @@
       "text": "연락 방법"
     }
   ],
-  "customPanels": [],
+  "customPanels": [
+    {
+      "id": 1,
+      "title": "미니멀 박스",
+      "notes": [
+        {
+          "id": 1,
+          "text": "Simple dummy text"
+        },
+        {
+          "id": 2,
+          "text": "Another line here"
+        }
+      ],
+      "x": 60,
+      "y": 200,
+      "width": 250,
+      "height": 80,
+      "backgroundColor": "rgba(255, 255, 255, 0.1)",
+      "backgroundOpacity": 1,
+      "borderColor": "rgba(0, 0, 0, 0.1)",
+      "borderWidth": 0,
+      "borderRadius": 20,
+      "borderStyle": "solid",
+      "boxShadow": "soft",
+      "fontFamily": "Black Han Sans",
+      "fontColor": "#555555",
+      "titleFontSize": 16,
+      "contentFontSize": 12,
+      "textAlign": "center",
+      "visible": true,
+      "zIndex": 10,
+      "order": 1
+    }
+  ],
   "backgroundOffset": {
     "x": 0,
     "y": 0,
@@ -106,7 +140,7 @@
   "customTexts": [
     {
       "id": 1,
-      "content": "심플한 추가 정보",
+      "content": "Simple placeholder text",
       "x": 50,
       "y": 300,
       "width": 250,
@@ -122,6 +156,7 @@
       "textShadowBlur": 2,
       "textShadowColor": "#000000",
       "textShadowOpacity": 0.2,
+      "zIndex": 11,
       "order": 2
     }
   ]

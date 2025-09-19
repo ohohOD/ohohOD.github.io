@@ -82,7 +82,45 @@
       "text": "특별한 요청사항이나 금기"
     }
   ],
-  "customPanels": [],
+  "customPanels": [
+    {
+      "id": 1,
+      "title": "클래식 정보",
+      "notes": [
+        {
+          "id": 1,
+          "text": "더미 텍스트 첫 번째 줄"
+        },
+        {
+          "id": 2,
+          "text": "더미 텍스트 두 번째 줄"
+        },
+        {
+          "id": 3,
+          "text": "더미 텍스트 세 번째 줄"
+        }
+      ],
+      "x": 80,
+      "y": 250,
+      "width": 280,
+      "height": 100,
+      "backgroundColor": "rgba(255, 255, 255, 0.15)",
+      "backgroundOpacity": 1,
+      "borderColor": "rgba(0, 0, 0, 0.3)",
+      "borderWidth": 1,
+      "borderRadius": 15,
+      "borderStyle": "solid",
+      "boxShadow": "default",
+      "fontFamily": "Noto Sans KR",
+      "fontColor": "#333333",
+      "titleFontSize": 18,
+      "contentFontSize": 14,
+      "textAlign": "left",
+      "visible": true,
+      "zIndex": 10,
+      "order": 1
+    }
+  ],
   "backgroundOffset": {
     "x": 0,
     "y": 0,
@@ -114,7 +152,7 @@
   "customTexts": [
     {
       "id": 1,
-      "content": "클래식한 분위기의\n추가 텍스트",
+      "content": "클래식한 분위기의\n더미 텍스트 샘플",
       "x": 100,
       "y": 100,
       "width": 300,
@@ -130,6 +168,7 @@
       "textShadowBlur": 4,
       "textShadowColor": "#000000",
       "textShadowOpacity": 0.3,
+      "zIndex": 11,
       "order": 2
     }
   ]
