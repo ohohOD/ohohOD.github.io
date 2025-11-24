@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VNLog 임베디드 - 실제 동작 예제</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      color: white;
+      margin-bottom: 40px;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 12px;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.95;
+    }
+
+    .demo-section {
+      background: white;
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 32px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .demo-section h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: #333;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .demo-section p {
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .demo-container {
+      margin-top: 24px;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    }
+
+    .btn-secondary {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    }
+
+    footer {
+      text-align: center;
+      color: white;
+      margin-top: 60px;
+      padding: 20px;
+      opacity: 0.9;
+    }
+
+    .info-box {
+      background: #f0f9ff;
+      border-left: 4px solid #0284c7;
+      padding: 16px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .info-box strong {
+      display: block;
+      color: #0369a1;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎮 VNLog 임베디드 컴포넌트</h1>
+      <p>실제로 동작하는 플레이어 & 에디터 데모</p>
+    </header>
+
+    <!-- 플레이어 데모 -->
+    <div class="demo-section">
+      <h2>▶️ 플레이어 모드</h2>
+      <p>이미 파싱된 JSON 데이터를 비주얼 노벨 형식으로 재생합니다.</p>
+      
+      <div class="info-box">
+        <strong>💡 기능:</strong>
+        자동재생, 타이핑 효과, 이전/다음 스텝 네비게이션, 진행률 표시
+      </div>
+
+      <div class="button-group">
+        <button class="btn" onclick="loadSampleData()">📄 샘플 데이터 로드</button>
+        <button class="btn btn-secondary" onclick="clearPlayer()">🗑️ 초기화</button>
+      </div>
+
+      <div class="demo-container">
+        <div id="player-demo"></div>
+      </div>
+    </div>
+
+    <!-- 에디터 데모 -->
+    <div class="demo-section">
+      <h2>✏️ 에디터 모드</h2>
+      <p>파일을 불러와서 편집하고, 미리보기하고, JSON으로 내보낼 수 있습니다.</p>
+      
+      <div class="info-box">
+        <strong>💡 기능:</strong>
+        HTML/JSON 파일 불러오기, 스텝 목록 확인, 씬/캐릭터 정보, 플레이어 미리보기, JSON 내보내기
+      </div>
+
+      <div class="demo-container">
+        <div id="editor-demo"></div>
+      </div>
+    </div>
+
+    <footer>
+      <p><strong>VNLog Player v0.7</strong> - Embedded Components</p>
+      <p>© 2025 VNLog Project | MIT License</p>
+    </footer>
+  </div>
+
+  <!-- Vue 3 CDN -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+
+  <script type="module">
+    import { VNLogEmbedPlayer, VNLogEmbedEditor } from './dist/embed/vnlog-embed.es.js'
+
+    const { createApp } = Vue
+
+    // 샘플 VN 데이터
+    const sampleVnData = {
+      title: "샘플 TRPG 로그",
+      scenes: [
+        {
+          id: "scene1",
+          name: "프롤로그",
+          steps: [
+            {
+              id: "step1",
+              character: {
+                name: "GM",
+                color: "#888888",
+                avatarUrl: ""
+              },
+              text: "어느 조용한 마을에 모험가들이 모였습니다.",
+              effects: {}
+            },
+            {
+              id: "step2",
+              character: {
+                name: "전사",
+                color: "#ff6b6b",
+                avatarUrl: ""
+              },
+              text: "안녕하십니까. 저는 전사입니다. 힘으로 모든 것을 해결하죠!",
+              effects: {}
+            },
+            {
+              id: "step3",
+              character: {
+                name: "마법사",
+                color: "#4ecdc4",
+                avatarUrl: ""
+              },
+              text: "마법이야말로 최고의 힘이지. 반갑네, 전사.",
+              effects: {}
+            },
+            {
+              id: "step4",
+              character: {
+                name: "도적",
+                color: "#ffd93d",
+                avatarUrl: ""
+              },
+              text: "호호, 그럼 나는 그림자 속에서 여러분을 도와드리죠~",
+              effects: {}
+            },
+            {
+              id: "step5",
+              character: {
+                name: "GM",
+                color: "#888888",
+                avatarUrl: ""
+              },
+              text: "세 모험가는 마을 광장에서 의뢰서를 확인했습니다...",
+              effects: {}
+            }
+          ]
+        }
+      ],
+      characters: {
+        "gm": { name: "GM", color: "#888888" },
+        "warrior": { name: "전사", color: "#ff6b6b" },
+        "mage": { name: "마법사", color: "#4ecdc4" },
+        "rogue": { name: "도적", color: "#ffd93d" }
+      },
+      handouts: []
+    }
+
+    // 플레이어 앱
+    let playerApp = null
+
+    window.loadSampleData = function() {
+      if (playerApp) {
+        playerApp.unmount()
+      }
+
+      playerApp = createApp({
+        template: '<VNLogEmbedPlayer :vn-data="vnData" />',
+        data() {
+          return {
+            vnData: sampleVnData
+          }
+        }
+      })
+
+      playerApp.component('VNLogEmbedPlayer', VNLogEmbedPlayer)
+      playerApp.mount('#player-demo')
+    }
+
+    window.clearPlayer = function() {
+      if (playerApp) {
+        playerApp.unmount()
+        playerApp = null
+        document.getElementById('player-demo').innerHTML = ''
+      }
+    }
+
+    // 에디터 앱 (자동 마운트)
+    const editorApp = createApp({
+      template: '<VNLogEmbedEditor />'
+    })
+
+    editorApp.component('VNLogEmbedEditor', VNLogEmbedEditor)
+    editorApp.mount('#editor-demo')
+
+    // 페이지 로드 시 플레이어 자동 로드
+    window.addEventListener('load', () => {
+      loadSampleData()
+    })
+  </script>
+
+  <script>
+    // 빌드된 파일이 없는 경우 폴백
+    window.addEventListener('error', (e) => {
+      if (e.message.includes('Failed to fetch')) {
+        document.getElementById('player-demo').innerHTML = 
+          '<div style="padding: 40px; text-align: center; background: #fee; border: 2px solid #f88; border-radius: 8px;">' +
+          '<p style="color: #c00; font-weight: 600; margin-bottom: 8px;">⚠️ 빌드된 파일을 찾을 수 없습니다</p>' +
+          '<p style="color: #666; font-size: 14px;">먼저 <code>npm run build:embed</code>를 실행하세요.</p>' +
+          '</div>'
+        
+        document.getElementById('editor-demo').innerHTML = 
+          '<div style="padding: 40px; text-align: center; background: #fee; border: 2px solid #f88; border-radius: 8px;">' +
+          '<p style="color: #c00; font-weight: 600; margin-bottom: 8px;">⚠️ 빌드된 파일을 찾을 수 없습니다</p>' +
+          '<p style="color: #666; font-size: 14px;">먼저 <code>npm run build:embed</code>를 실행하세요.</p>' +
+          '</div>'
+      }
+    }, true)
+  </script>
+</body>
+</html>

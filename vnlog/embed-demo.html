@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VNLog 임베디드 플레이어 - 사용 예제</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      color: white;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .section {
+      background: white;
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 32px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .section h2 {
+      font-size: 24px;
+      margin-bottom: 16px;
+      color: #333;
+      border-bottom: 3px solid #667eea;
+      padding-bottom: 12px;
+    }
+
+    .section p {
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .code-block {
+      background: #f4f4f4;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 16px;
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+      overflow-x: auto;
+      margin-bottom: 16px;
+    }
+
+    .embed-demo {
+      margin: 24px 0;
+      padding: 20px;
+      background: #f9fafb;
+      border-radius: 12px;
+      border: 2px dashed #667eea;
+    }
+
+    .demo-label {
+      display: inline-block;
+      background: #667eea;
+      color: white;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    footer {
+      text-align: center;
+      color: white;
+      opacity: 0.8;
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .warning-box {
+      background: #fef3c7;
+      border: 2px solid #f59e0b;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 16px 0;
+    }
+
+    .warning-box strong {
+      color: #92400e;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .feature-list li {
+      padding: 8px 0;
+      padding-left: 24px;
+      position: relative;
+    }
+
+    .feature-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #667eea;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📖 VNLog 임베디드 컴포넌트</h1>
+      <p>HTML 페이지에 간편하게 삽입할 수 있는 비주얼 노벨 플레이어 & 에디터</p>
+    </header>
+
+    <!-- 소개 섹션 -->
+    <div class="section">
+      <h2>🎯 소개</h2>
+      <p>
+        VNLog 임베디드 컴포넌트는 TRPG 로그를 비주얼 노벨 형식으로 재생하거나 편집할 수 있는 
+        독립적인 웹 컴포넌트입니다. 외부 CSS 영향을 받지 않으며, 어떤 웹페이지에도 삽입 가능합니다.
+      </p>
+      
+      <ul class="feature-list">
+        <li><strong>플레이어 모드:</strong> 파싱된 JSON 데이터를 재생</li>
+        <li><strong>에디터 모드:</strong> 파일 불러오기, 편집, JSON 내보내기</li>
+        <li><strong>스타일 격리:</strong> scoped 스타일로 외부 CSS 간섭 방지</li>
+        <li><strong>반응형 디자인:</strong> 모바일/태블릿/데스크탑 모두 지원</li>
+      </ul>
+    </div>
+
+    <!-- 플레이어 사용 예제 -->
+    <div class="section">
+      <h2>▶ 플레이어 모드 사용법</h2>
+      <p>이미 파싱된 JSON 데이터를 재생만 하는 경우 플레이어 컴포넌트를 사용하세요.</p>
+      
+      <div class="code-block">
+&lt;!-- HTML에 삽입 --&gt;
+&lt;div id="vnlog-player"&gt;&lt;/div&gt;
+
+&lt;script&gt;
+// Vue 앱 초기화
+const app = Vue.createApp({
+  template: '&lt;VNLogEmbedPlayer :vn-data="vnData" /&gt;',
+  data() {
+    return {
+      vnData: {
+        title: "TRPG 로그 제목",
+        scenes: [
+          {
+            id: "scene1",
+            name: "씬 1",
+            steps: [
+              {
+                id: "step1",
+                character: { name: "캐릭터A", color: "#ff6b6b", avatarUrl: "" },
+                text: "안녕하세요!",
+                effects: {}
+              }
+            ]
+          }
+        ],
+        characters: {},
+        handouts: []
+      }
+    }
+  }
+})
+
+app.component('VNLogEmbedPlayer', VNLogEmbedPlayer)
+app.mount('#vnlog-player')
+&lt;/script&gt;
+      </div>
+
+      <div class="warning-box">
+        <strong>⚠️ 주의사항</strong>
+        플레이어 모드는 vnData props로 JSON 데이터를 전달받아야 합니다.
+      </div>
+
+      <div class="embed-demo">
+        <span class="demo-label">데모 (플레이어)</span>
+        <div id="vnlog-player-demo"></div>
+      </div>
+    </div>
+
+    <!-- 에디터 사용 예제 -->
+    <div class="section">
+      <h2>✏️ 에디터 모드 사용법</h2>
+      <p>파일을 불러와서 편집하고 테스트할 수 있는 풀 기능 에디터입니다.</p>
+      
+      <div class="code-block">
+&lt;!-- HTML에 삽입 --&gt;
+&lt;div id="vnlog-editor"&gt;&lt;/div&gt;
+
+&lt;script&gt;
+// Vue 앱 초기화
+const app = Vue.createApp({
+  template: '&lt;VNLogEmbedEditor /&gt;'
+})
+
+app.component('VNLogEmbedEditor', VNLogEmbedEditor)
+app.mount('#vnlog-editor')
+&lt;/script&gt;
+      </div>
+
+      <div class="warning-box">
+        <strong>⚠️ 주의사항</strong>
+        에디터 모드는 LogParserService를 포함해야 하며, HTML/JSON 파일 파싱 기능이 필요합니다.
+      </div>
+
+      <div class="embed-demo">
+        <span class="demo-label">데모 (에디터)</span>
+        <div id="vnlog-editor-demo"></div>
+      </div>
+    </div>
+
+    <!-- 빌드 및 배포 -->
+    <div class="section">
+      <h2>🚀 빌드 및 배포</h2>
+      <p>프로젝트를 빌드하여 단일 JS 파일로 만들 수 있습니다.</p>
+      
+      <div class="code-block">
+# Vite 빌드 (라이브러리 모드)
+npm run build:embed
+
+# 생성된 파일
+dist/vnlog-embed.js
+dist/vnlog-embed.css
+      </div>
+
+      <p>빌드된 파일을 외부 웹사이트에 포함:</p>
+      
+      <div class="code-block">
+&lt;link rel="stylesheet" href="https://your-cdn.com/vnlog-embed.css"&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/vue@3"&gt;&lt;/script&gt;
+&lt;script src="https://your-cdn.com/vnlog-embed.js"&gt;&lt;/script&gt;
+      </div>
+    </div>
+
+    <!-- API 문서 -->
+    <div class="section">
+      <h2>📚 API 문서</h2>
+      
+      <h3 style="margin-top: 20px; color: #667eea;">VNLogEmbedPlayer</h3>
+      <div class="code-block">
+Props:
+  vnData: Object (required)
+    - title: string
+    - scenes: Array
+    - characters: Object
+    - handouts: Array
+
+Events: 없음
+      </div>
+
+      <h3 style="margin-top: 20px; color: #667eea;">VNLogEmbedEditor</h3>
+      <div class="code-block">
+Props: 없음
+
+기능:
+  - 파일 불러오기 (HTML, JSON)
+  - 스텝 목록 보기
+  - 정보 탭 (씬, 캐릭터)
+  - 플레이어 미리보기
+  - JSON 내보내기
+      </div>
+    </div>
+
+    <footer>
+      <p>VNLog Player v0.7 - Embedded Components</p>
+      <p>2025 © VNLog Project</p>
+    </footer>
+  </div>
+
+  <!-- Vue 3 CDN -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  
+  <!-- 실제 사용 시 여기에 빌드된 컴포넌트 JS를 import -->
+  <script>
+    // 샘플 데이터
+    const sampleVnData = {
+      title: "데모 로그",
+      scenes: [
+        {
+          id: "scene1",
+          name: "오프닝",
+          steps: [
+            {
+              id: "step1",
+              character: { name: "나레이터", color: "#888888", avatarUrl: "" },
+              text: "이것은 VNLog 임베디드 플레이어의 데모입니다.",
+              effects: {}
+            },
+            {
+              id: "step2",
+              character: { name: "캐릭터A", color: "#ff6b6b", avatarUrl: "" },
+              text: "안녕하세요! 반갑습니다.",
+              effects: {}
+            },
+            {
+              id: "step3",
+              character: { name: "캐릭터B", color: "#4ecdc4", avatarUrl: "" },
+              text: "저도 인사드립니다!",
+              effects: {}
+            }
+          ]
+        }
+      ],
+      characters: {
+        "char1": { name: "캐릭터A", color: "#ff6b6b", avatarUrl: "" },
+        "char2": { name: "캐릭터B", color: "#4ecdc4", avatarUrl: "" }
+      },
+      handouts: []
+    }
+
+    // 컴포넌트 임포트 (실제로는 빌드된 파일에서 가져옴)
+    // 여기서는 데모 목적으로 placeholder 표시
+    document.getElementById('vnlog-player-demo').innerHTML = 
+      '<div style="padding: 40px; text-align: center; background: #f0f0f0; border-radius: 8px;">' +
+      '<p style="color: #666;">플레이어 컴포넌트가 여기에 표시됩니다.</p>' +
+      '<p style="color: #999; font-size: 14px; margin-top: 8px;">실제 빌드 후에는 정상 작동합니다.</p>' +
+      '</div>'
+
+    document.getElementById('vnlog-editor-demo').innerHTML = 
+      '<div style="padding: 40px; text-align: center; background: #f0f0f0; border-radius: 8px;">' +
+      '<p style="color: #666;">에디터 컴포넌트가 여기에 표시됩니다.</p>' +
+      '<p style="color: #999; font-size: 14px; margin-top: 8px;">실제 빌드 후에는 정상 작동합니다.</p>' +
+      '</div>'
+  </script>
+</body>
+</html>
