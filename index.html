@@ -8,15 +8,27 @@
     <!-- GitHub Pages SPA fallback script -->
     <script>
       (function() {
-        // 쿼리 파라미터에서 경로 정보 복원
-        var searchParams = new URLSearchParams(window.location.search);
-        var path = searchParams.get('p');
+        var search = window.location.search;
         
-        if (path) {
-          // ~and~를 &로 디코딩
-          var decodedPath = path.replace(/~and~/g, '&');
-          var newUrl = window.location.pathname + '#' + decodedPath;
-          history.replaceState(null, null, newUrl);
+        // ?/path 형식 또는 ?p=/path 형식 모두 처리
+        if (search) {
+          var path = null;
+          
+          // ?/path 형식 체크
+          if (search.startsWith('?/')) {
+            path = search.substring(1); // ? 제거
+          } else {
+            // ?p=/path 형식 체크
+            var searchParams = new URLSearchParams(search);
+            path = searchParams.get('p');
+          }
+          
+          if (path) {
+            // ~and~를 &로 디코딩
+            var decodedPath = path.replace(/~and~/g, '&');
+            var newUrl = window.location.pathname + '#' + decodedPath;
+            history.replaceState(null, null, newUrl);
+          }
         }
       })();
     </script>
