@@ -9,6 +9,13 @@
         var l = window.location;
         var path = l.pathname;
         
+        // mabisheet -> sheetmaker 리다이렉트
+        if (path === '/mabisheet' || path.startsWith('/mabisheet/')) {
+          l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + 
+            '/sheetmaker' + path.slice(10) + l.search + l.hash);
+          return;
+        }
+        
         // 서브디렉토리 앱들 (sheetmaker, vnlog 등)
         if (path.startsWith('/sheetmaker') || path.startsWith('/vnlog')) {
           // 서브디렉토리의 index.html로 리다이렉트하고 경로 정보를 쿼리로 전달
