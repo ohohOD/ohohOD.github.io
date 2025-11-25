@@ -8,10 +8,15 @@
     <!-- GitHub Pages SPA fallback script -->
     <script>
       (function() {
-        var redirect = sessionStorage.redirect;
-        delete sessionStorage.redirect;
-        if (redirect && redirect !== location.href) {
-          history.replaceState(null, null, redirect);
+        // 쿼리 파라미터에서 경로 정보 복원
+        var searchParams = new URLSearchParams(window.location.search);
+        var path = searchParams.get('p');
+        
+        if (path) {
+          // ~and~를 &로 디코딩
+          var decodedPath = path.replace(/~and~/g, '&');
+          var newUrl = window.location.pathname + '#' + decodedPath;
+          history.replaceState(null, null, newUrl);
         }
       })();
     </script>

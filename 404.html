@@ -2,18 +2,34 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Sheetmaker</title>
+    <title>Redirecting...</title>
     <script type="text/javascript">
-      // GitHub Pages에서 SPA 라우팅을 위한 리다이렉트
-      var pathSegmentsToKeep = 1;
-      var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
+      // GitHub Pages SPA 라우팅을 위한 404 핸들러
+      (function(){
+        var l = window.location;
+        var path = l.pathname;
+        
+        // 서브디렉토리 앱들 (sheetmaker, vnlog 등)
+        if (path.startsWith('/sheetmaker') || path.startsWith('/vnlog')) {
+          // 서브디렉토리의 index.html로 리다이렉트하고 경로 정보를 쿼리로 전달
+          var segments = path.split('/').filter(function(s) { return s; });
+          if (segments.length > 1) {
+            var base = '/' + segments[0];
+            var rest = '/' + segments.slice(1).join('/');
+            sessionStorage.redirect = l.href;
+            l.replace(base + '/?/' + rest.slice(1).replace(/&/g, '~and~') + 
+              (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') + l.hash);
+          } else {
+            l.replace('/' + segments[0] + '/');
+          }
+        } else {
+          // 루트 앱의 라우팅 (기존 로직 유지)
+          sessionStorage.redirect = l.href;
+          l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + 
+            '/?/' + path.slice(1).replace(/&/g, '~and~') + 
+            (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') + l.hash);
+        }
+      })();
     </script>
   </head>
   <body>
