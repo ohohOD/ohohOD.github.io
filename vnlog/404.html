@@ -4,13 +4,22 @@
     <meta charset="utf-8">
     <title>VNLog Player - Redirecting...</title>
     <script>
-      // GitHub Pages SPA fallback
-      // 현재 경로를 sessionStorage에 저장하고 index.html로 리다이렉트
+      // GitHub Pages SPA fallback with base path support
       sessionStorage.redirect = location.href;
-      location.replace(
-        location.pathname.split('/').slice(0, -1).join('/') + '/?redirect=' + 
-        encodeURIComponent(location.pathname + location.search + location.hash)
-      );
+      
+      // /vnlog/ base path를 고려한 리다이렉트
+      var basePath = '/vnlog/';
+      var currentPath = location.pathname;
+      
+      // 이미 basePath로 시작하는지 확인
+      if (currentPath.startsWith(basePath)) {
+        location.replace(basePath + '?redirect=' + 
+          encodeURIComponent(currentPath.substring(basePath.length) + location.search + location.hash)
+        );
+      } else {
+        // basePath가 없으면 루트로 리다이렉트
+        location.replace(basePath);
+      }
     </script>
   </head>
   <body>
