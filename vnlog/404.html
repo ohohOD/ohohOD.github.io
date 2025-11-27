@@ -2,19 +2,18 @@
 <html lang="ko">
   <head>
     <meta charset="utf-8">
-    <title>VNLog Player</title>
+    <title>VNLog Player - Redirecting...</title>
     <script>
       // GitHub Pages SPA fallback
-      // 404 페이지를 index.html로 리다이렉트하면서 경로 정보 유지
-      (function() {
-        var redirect = sessionStorage.redirect;
-        delete sessionStorage.redirect;
-        if (redirect && redirect !== location.href) {
-          history.replaceState(null, null, redirect);
-        }
-      })();
+      // 현재 경로를 sessionStorage에 저장하고 index.html로 리다이렉트
+      sessionStorage.redirect = location.href;
+      location.replace(
+        location.pathname.split('/').slice(0, -1).join('/') + '/?redirect=' + 
+        encodeURIComponent(location.pathname + location.search + location.hash)
+      );
     </script>
   </head>
   <body>
+    <p>Redirecting...</p>
   </body>
 </html>
