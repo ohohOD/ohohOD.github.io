@@ -136,7 +136,7 @@
         'JSON URL이 제공되지 않았습니다. ?json=[URL] 파라미터가 필요합니다.';
     } else {
       // Vue 앱 로드
-      import('/src/main.js').then(() => {
+      import('./src/main.js').then(() => {
         // 로딩 화면 숨김
         setTimeout(() => {
           document.getElementById('loading').classList.add('hidden');
