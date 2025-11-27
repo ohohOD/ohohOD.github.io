@@ -1,0 +1,182 @@
+{
+  "title": "[cocolog2]新しい部屋[main] (2)",
+  "scenes": [
+    {
+      "id": "scene_0",
+      "name": "메인",
+      "description": null,
+      "steps": [
+        {
+          "id": "step_0_0",
+          "type": "dialogue",
+          "character": {
+            "name": "나는야",
+            "color": "#888888",
+            "avatarUrl": null
+          },
+          "text": "사람",
+          "rawText": "사람",
+          "diceRolls": [],
+          "hasDice": false,
+          "ougis": [],
+          "hasOugi": false,
+          "shinobigamis": [],
+          "hasShinobigami": false,
+          "statusChanges": [],
+          "hasStatusChange": false,
+          "dxCombos": [],
+          "hasDXCombo": false,
+          "effects": {
+            "sfx": null,
+            "bgm": null,
+            "background": null,
+            "backgroundOpacity": 0.3
+          }
+        },
+        {
+          "id": "step_0_1",
+          "type": "dialogue",
+          "character": {
+            "name": "사람",
+            "color": "#888888",
+            "avatarUrl": null
+          },
+          "text": "헉",
+          "rawText": "헉",
+          "diceRolls": [],
+          "hasDice": false,
+          "ougis": [],
+          "hasOugi": false,
+          "shinobigamis": [],
+          "hasShinobigami": false,
+          "statusChanges": [],
+          "hasStatusChange": false,
+          "dxCombos": [],
+          "hasDXCombo": false,
+          "effects": {
+            "sfx": null,
+            "bgm": null,
+            "background": null,
+            "backgroundOpacity": 0.3
+          }
+        },
+        {
+          "id": "step_0_2",
+          "type": "dialogue",
+          "character": {
+            "name": "사람",
+            "color": "#888888",
+            "avatarUrl": null
+          },
+          "text": "* 다이스",
+          "rawText": "1D100  (1D100) ＞ 91",
+          "diceRolls": [
+            {
+              "type": "normal",
+              "formula": "1D100",
+              "result": 91
+            }
+          ],
+          "hasDice": true,
+          "ougis": [],
+          "hasOugi": false,
+          "shinobigamis": [],
+          "hasShinobigami": false,
+          "statusChanges": [],
+          "hasStatusChange": false,
+          "dxCombos": [],
+          "hasDXCombo": false,
+          "effects": {
+            "sfx": null,
+            "bgm": null,
+            "background": null,
+            "backgroundOpacity": 0.3
+          }
+        },
+        {
+          "id": "step_0_3",
+          "type": "dialogue",
+          "character": {
+            "name": "사람",
+            "color": "#888888",
+            "avatarUrl": null
+          },
+          "text": "* 다이스",
+          "rawText": "1D20  (1D20) ＞ 15",
+          "diceRolls": [
+            {
+              "type": "normal",
+              "formula": "1D20",
+              "result": 15
+            }
+          ],
+          "hasDice": true,
+          "ougis": [],
+          "hasOugi": false,
+          "shinobigamis": [],
+          "hasShinobigami": false,
+          "statusChanges": [],
+          "hasStatusChange": false,
+          "dxCombos": [],
+          "hasDXCombo": false,
+          "effects": {
+            "sfx": null,
+            "bgm": null,
+            "background": null,
+            "backgroundOpacity": 0.3
+          }
+        },
+        {
+          "id": "step_0_4",
+          "type": "dialogue",
+          "character": {
+            "name": "사람",
+            "color": "#888888",
+            "avatarUrl": null
+          },
+          "text": "...",
+          "rawText": "...",
+          "diceRolls": [],
+          "hasDice": false,
+          "ougis": [],
+          "hasOugi": false,
+          "shinobigamis": [],
+          "hasShinobigami": false,
+          "statusChanges": [],
+          "hasStatusChange": false,
+          "dxCombos": [],
+          "hasDXCombo": false,
+          "effects": {
+            "sfx": null,
+            "bgm": null,
+            "background": null,
+            "backgroundOpacity": 0.3
+          }
+        }
+      ]
+    }
+  ],
+  "characters": {
+    "나는야": {
+      "id": "char_0",
+      "name": "나는야",
+      "color": "#888888",
+      "avatarUrl": null,
+      "emotions": {
+        "default": null
+      }
+    },
+    "사람": {
+      "id": "char_1",
+      "name": "사람",
+      "color": "#888888",
+      "avatarUrl": null,
+      "emotions": {
+        "default": null
+      }
+    }
+  },
+  "handouts": [],
+  "fileCode": "file_nwpf04_4078",
+  "fileName": "[cocolog2]新しい部屋[main] (2).html"
+}
