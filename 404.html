@@ -1,37 +1,61 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="ko">
   <head>
-    <meta charset="utf-8">
-    <title>Redirecting...</title>
-    <script type="text/javascript">
-      // GitHub Pages SPA 라우팅을 위한 404 핸들러
-      (function(){
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>페이지를 찾을 수 없어요 — ohohOD</title>
+    <script>
+      // GitHub Pages는 루트 404.html만 사용하므로, 각 SPA의 딥링크 복원을 여기서 처리
+      (function () {
         var l = window.location;
         var path = l.pathname;
-        
-        // 서브디렉토리 앱들 (sheetmaker, vnlog 등)
-        if (path.startsWith('/sheetmaker') || path.startsWith('/vnlog')) {
-          // 서브디렉토리의 index.html로 리다이렉트하고 경로 정보를 쿼리로 전달
-          var segments = path.split('/').filter(function(s) { return s; });
-          if (segments.length > 1) {
-            var base = '/' + segments[0];
-            var rest = '/' + segments.slice(1).join('/');
-            sessionStorage.redirect = l.href;
-            l.replace(base + '/?/' + rest.slice(1).replace(/&/g, '~and~') + 
-              (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') + l.hash);
-          } else {
-            l.replace('/' + segments[0] + '/');
-          }
-        } else {
-          // 루트 앱의 라우팅 (기존 로직 유지)
+
+        if (path.indexOf("/vnlog/") === 0) {
+          // VNLog Player: ?redirect= 방식 복원
           sessionStorage.redirect = l.href;
-          l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + 
-            '/?/' + path.slice(1).replace(/&/g, '~and~') + 
-            (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') + l.hash);
+          l.replace(
+            "/vnlog/?redirect=" +
+              encodeURIComponent(path.substring("/vnlog/".length) + l.search + l.hash)
+          );
+        } else if (path.indexOf("/sheetmaker/") === 0) {
+          // 시트메이커: ?/경로 방식 복원
+          l.replace(
+            "/sheetmaker/?/" +
+              path.slice(1).split("/").slice(1).join("/").replace(/&/g, "~and~") +
+              (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
+              l.hash
+          );
         }
+        // 그 외 경로는 아래 404 안내를 그대로 표시
       })();
     </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+    <style>
+      :root { --bg: #0f1117; --text: #e8eaf2; --dim: #9aa1b5; --accent: #8b7cf6; }
+      @media (prefers-color-scheme: light) {
+        :root { --bg: #f6f7fa; --text: #23263a; --dim: #6d7488; }
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        font-family: "Pretendard", system-ui, sans-serif;
+        background: var(--bg); color: var(--text);
+        min-height: 100vh; display: flex; align-items: center; justify-content: center;
+        text-align: center; padding: 20px;
+      }
+      h1 { font-size: 4rem; font-weight: 800; color: var(--accent); }
+      p { color: var(--dim); margin: 10px 0 24px; }
+      a {
+        color: var(--accent); text-decoration: none; font-weight: 600;
+        border: 1px solid var(--accent); border-radius: 999px; padding: 8px 22px;
+        display: inline-block;
+      }
+    </style>
   </head>
   <body>
+    <div>
+      <h1>404</h1>
+      <p>요청하신 페이지를 찾을 수 없어요.</p>
+      <a href="/">홈으로 돌아가기</a>
+    </div>
   </body>
 </html>
