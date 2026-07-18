@@ -1,28 +1,39 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/sheetmaker/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content" />
-    <title>시트메이커</title>
-    
-    <!-- Pretendard Font from CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
-    <!-- GitHub Pages SPA 라우팅 지원 -->
-    <script type="text/javascript">
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mabi SheetMaker</title>
+    <!-- GitHub Pages SPA fallback script -->
+    <script>
+      (function() {
+        var search = window.location.search;
+        
+        // ?/path 형식 또는 ?p=/path 형식 모두 처리
+        if (search) {
+          var path = null;
+          
+          // ?/path 형식 체크
+          if (search.startsWith('?/')) {
+            path = search.substring(1); // ? 제거
+          } else {
+            // ?p=/path 형식 체크
+            var searchParams = new URLSearchParams(search);
+            path = searchParams.get('p');
+          }
+          
+          if (path) {
+            // ~and~를 &로 디코딩
+            var decodedPath = path.replace(/~and~/g, '&');
+            var newUrl = window.location.pathname + '#' + decodedPath;
+            history.replaceState(null, null, newUrl);
+          }
         }
-      }(window.location))
+      })();
     </script>
-    <script type="module" crossorigin src="/sheetmaker/assets/main-C_8joPnx.js"></script>
-    <link rel="stylesheet" crossorigin href="/sheetmaker/assets/main-fPBzN-UP.css">
+    <script type="module" crossorigin src="/sheetmaker/assets/index-DHphKoZn.js"></script>
+    <link rel="stylesheet" crossorigin href="/sheetmaker/assets/index-p4H9APiO.css">
   </head>
   <body>
     <div id="app"></div>
