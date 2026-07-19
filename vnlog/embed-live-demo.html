@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VNLog 임베디드 - 실제 동작 예제</title>
+  <!-- 임베드 플레이어 스타일 (라이브러리 빌드는 CSS를 별도 파일로 내보냄) -->
+  <link rel="stylesheet" href="./dist/embed/vnlog-embed.css">
   <style>
     * {
       margin: 0;
@@ -122,7 +124,7 @@
   <div class="container">
     <header>
       <h1>🎮 VNLog 임베디드 컴포넌트</h1>
-      <p>실제로 동작하는 플레이어 & 에디터 데모</p>
+      <p>실제로 동작하는 플레이어 데모</p>
     </header>
 
     <!-- 플레이어 데모 -->
@@ -145,34 +147,25 @@
       </div>
     </div>
 
-    <!-- 에디터 데모 -->
-    <div class="demo-section">
-      <h2>✏️ 에디터 모드</h2>
-      <p>파일을 불러와서 편집하고, 미리보기하고, JSON으로 내보낼 수 있습니다.</p>
-      
-      <div class="info-box">
-        <strong>💡 기능:</strong>
-        HTML/JSON 파일 불러오기, 스텝 목록 확인, 씬/캐릭터 정보, 플레이어 미리보기, JSON 내보내기
-      </div>
-
-      <div class="demo-container">
-        <div id="editor-demo"></div>
-      </div>
-    </div>
-
     <footer>
       <p><strong>VNLog Player v0.7</strong> - Embedded Components</p>
       <p>© 2025 VNLog Project | MIT License</p>
     </footer>
   </div>
 
-  <!-- Vue 3 CDN -->
-  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <!-- es 번들이 bare specifier "vue"를 import하므로 importmap으로 CDN(ESM)에 매핑 -->
+  <!-- 데모 앱이 template 문자열을 쓰므로 컴파일러 포함 빌드(esm-browser) 사용 -->
+  <script type="importmap">
+    {
+      "imports": {
+        "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.prod.js"
+      }
+    }
+  </script>
 
   <script type="module">
-    import { VNLogEmbedPlayer, VNLogEmbedEditor } from './dist/embed/vnlog-embed.es.js'
-
-    const { createApp } = Vue
+    import { createApp } from 'vue'
+    import { VNLogEmbedPlayer } from './dist/embed/vnlog-embed.es.js'
 
     // 샘플 VN 데이터
     const sampleVnData = {
@@ -273,14 +266,6 @@
       }
     }
 
-    // 에디터 앱 (자동 마운트)
-    const editorApp = createApp({
-      template: '<VNLogEmbedEditor />'
-    })
-
-    editorApp.component('VNLogEmbedEditor', VNLogEmbedEditor)
-    editorApp.mount('#editor-demo')
-
     // 페이지 로드 시 플레이어 자동 로드
     window.addEventListener('load', () => {
       loadSampleData()
@@ -291,13 +276,7 @@
     // 빌드된 파일이 없는 경우 폴백
     window.addEventListener('error', (e) => {
       if (e.message.includes('Failed to fetch')) {
-        document.getElementById('player-demo').innerHTML = 
-          '<div style="padding: 40px; text-align: center; background: #fee; border: 2px solid #f88; border-radius: 8px;">' +
-          '<p style="color: #c00; font-weight: 600; margin-bottom: 8px;">⚠️ 빌드된 파일을 찾을 수 없습니다</p>' +
-          '<p style="color: #666; font-size: 14px;">먼저 <code>npm run build:embed</code>를 실행하세요.</p>' +
-          '</div>'
-        
-        document.getElementById('editor-demo').innerHTML = 
+        document.getElementById('player-demo').innerHTML =
           '<div style="padding: 40px; text-align: center; background: #fee; border: 2px solid #f88; border-radius: 8px;">' +
           '<p style="color: #c00; font-weight: 600; margin-bottom: 8px;">⚠️ 빌드된 파일을 찾을 수 없습니다</p>' +
           '<p style="color: #666; font-size: 14px;">먼저 <code>npm run build:embed</code>를 실행하세요.</p>' +

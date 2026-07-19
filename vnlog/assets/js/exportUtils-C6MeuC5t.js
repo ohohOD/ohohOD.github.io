@@ -1,0 +1,1 @@
+function i(r,n="export"){return String(r??"").replace(/[\\/:*?"<>|\u0000-\u001f]/g,"").trim()||n}function t(r){return!Number.isFinite(r)||r<=0?"0 B":r<1024?`${Math.round(r)} B`:r<1024*1024?`${(r/1024).toFixed(1)} KB`:`${(r/(1024*1024)).toFixed(1)} MB`}export{t as f,i as s};
