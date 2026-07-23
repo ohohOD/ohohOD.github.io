@@ -443,7 +443,9 @@ body[data-recap-theme="duotone"] .story-hero .bar i { background: #ffffff; }
 .story-overlay[data-theme="pixel"] .story-big span { letter-spacing: 0.04em; }
 
 /* ── 리캡 테마 선택 칩 (대시보드) ── */
-.theme-pick { display: flex; gap: 8px; justify-content: center; margin-top: 14px; flex-wrap: wrap; }
+.theme-pick { display: flex; gap: 8px; justify-content: center; margin-top: 16px; flex-wrap: wrap; }
+/* 메인 인트로 화면 — 드롭존과 테마 칩 사이 숨통 (8px 그리드 리듬) */
+.drop + .theme-pick { margin-top: 24px; margin-bottom: 8px; }
 .theme-pick button {
   font: inherit; font-size: 13px; font-weight: 600; cursor: pointer;
   color: var(--text-2); background: var(--inner);
