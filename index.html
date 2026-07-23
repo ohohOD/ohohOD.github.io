@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ohohOD — 창작 도구 모음</title>
-    <meta name="description" content="ohohOD의 웹 도구 모음 — 코코포리아 로그를 비주얼 노벨로 재생하는 VNLog Player, 마비노기 캐릭터 프로필을 만드는 시트메이커, TRPG 세션 로그를 결산 스토리로 만드는 rp-recap" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌙</text></svg>" />
+    <title>ohohOD · 창작 도구 모음</title>
+    <meta name="description" content="ohohOD의 웹 도구 모음. 코코포리아 로그를 비주얼 노벨로 재생하는 VNLog Player, 마비노기 캐릭터 프로필을 만드는 시트메이커, TRPG 세션 로그를 결산 스토리로 만드는 rp-recap" />
+    <meta name="theme-color" content="#f7efe3" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d64b7f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3a6.36 6.36 0 0 0 9 9 9 9 0 1 1-9-9Z'/></svg>" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
     <script>
       // 구버전 루트 시트메이커 앱으로 공유된 해시/쿼리 링크를 새 경로로 안내
@@ -19,22 +20,28 @@
       })();
     </script>
     <style>
-      /* ── STYLESEED.md 락: 다크 tonal-ramp · 앰버 단일 액센트 · soft 라운드 · 8px 그리드 ── */
+      /* ── STYLESEED.md 락: 라이트 스크랩북 · 화이트-베이지-핑크 · 핑크 단일 액센트 · soft 라운드 · 8px 그리드 ── */
       :root {
-        --page: #0f1113;
-        --card: #16181d;
-        --inner: #1c1f26;
-        --hairline: #262a33;
-        --text-primary: #eceef2;
-        --text-secondary: #b6bcc8;
-        --text-tertiary: #868d9c;
-        --accent: #e39a4c;
-        --accent-tint: rgba(227, 154, 76, 0.12);
+        --page: #f7efe3;
+        --card: #fffdf8;
+        --inner: #f2e8d8;
+        --hairline: #e6d8c6;
+        --ink-border: rgba(43, 36, 32, 0.12);
+        --text-primary: #2b2420;
+        --text-secondary: #5c4f42;
+        --text-tertiary: #8a7866;
+        --accent: #d64b7f;
+        --accent-tint: rgba(214, 75, 127, 0.10);
+        --paper-shadow: 0 1px 2px rgba(60, 45, 30, 0.06), 0 4px 14px rgba(60, 45, 30, 0.08);
+        --paper-shadow-hover: 0 2px 4px rgba(60, 45, 30, 0.07), 0 8px 22px rgba(60, 45, 30, 0.11);
       }
       * { margin: 0; padding: 0; box-sizing: border-box; }
       body {
         font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
         background: var(--page);
+        /* 다이어리 도트 괘지 */
+        background-image: radial-gradient(rgba(43, 36, 32, 0.05) 1px, transparent 1px);
+        background-size: 22px 22px;
         color: var(--text-primary);
         line-height: 1.6;
         letter-spacing: 0;
@@ -67,20 +74,46 @@
         color: var(--text-tertiary);
       }
 
-      .cards { display: flex; flex-direction: column; gap: 16px; }
+      .cards { display: flex; flex-direction: column; gap: 24px; }
       .card {
+        position: relative;
         display: flex;
         align-items: flex-start;
         gap: 16px;
         text-decoration: none;
         color: inherit;
         background: var(--card);
-        border: 1px solid var(--hairline);
+        border: 1px solid var(--ink-border);
         border-radius: 16px;
         padding: 24px;
-        transition: background 0.18s ease, border-color 0.18s ease;
+        box-shadow: var(--paper-shadow);
+        transition: transform 0.18s ease, box-shadow 0.18s ease;
       }
-      .card:hover { background: var(--inner); border-color: #333947; }
+      /* 다이어리에 비스듬히 붙인 종이 */
+      .cards .card:nth-child(odd) { transform: rotate(-0.4deg); }
+      .cards .card:nth-child(even) { transform: rotate(0.4deg); }
+      /* 마스킹 테이프 — 홀수는 핑크, 짝수는 베이지 */
+      .card::before {
+        content: "";
+        position: absolute;
+        top: -11px;
+        left: 26px;
+        width: 66px;
+        height: 22px;
+        border-radius: 3px;
+        background: rgba(214, 75, 127, 0.30);
+        transform: rotate(-3deg);
+      }
+      .cards .card:nth-child(even)::before {
+        left: auto;
+        right: 26px;
+        background: rgba(166, 138, 100, 0.30);
+        transform: rotate(2.5deg);
+      }
+      .card:hover {
+        transform: rotate(0deg) translateY(-2px);
+        box-shadow: var(--paper-shadow-hover);
+      }
       .card .icon {
         flex-shrink: 0;
         width: 44px; height: 44px;
@@ -132,6 +165,11 @@
       @media (max-width: 480px) {
         .card { flex-wrap: wrap; }
         .card .text { flex: 1 1 70%; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .card { transition: none; }
+        .card:hover { transform: none; }
       }
     </style>
   </head>
