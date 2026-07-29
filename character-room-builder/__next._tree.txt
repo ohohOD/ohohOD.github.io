@@ -1,2 +1,2 @@
-:HL["/character-room-builder/_next/static/chunks/0had~bsa1sofy.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"aXHOBeY8e4O1siHt-91nR"}
+:HL["/character-room-builder/_next/static/chunks/0.ex6.guj8zq0.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"TdHuNtHTPcf-LJe6LKvuz"}
