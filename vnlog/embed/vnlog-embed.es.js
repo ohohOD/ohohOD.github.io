@@ -4319,7 +4319,7 @@ class El {
     return h.forEach((l) => {
       const f = this.parseStep(l, t, n);
       f && f.length > 0 && f.forEach((m) => {
-        r.steps.push(m), n++;
+        m.channel = o, m.channelType = e.classList.contains("ccl_main") ? "main" : "other", r.steps.push(m), n++;
       });
     }), r;
   }
@@ -5352,6 +5352,9 @@ class El {
     return oe.startsWith(":") && (oe = oe.substring(1).trim(), ge = ge.replace(/^:\s*/, "")), oe && oe !== P && (P = ge || oe), !P && g.length === 0 ? null : (e.querySelector("em") && (P = P), {
       id: `step_0_${t}`,
       type: r,
+      sourceMessageType: o.contains("desc") ? "desc" : o.contains("emote") ? "emote" : "general",
+      isContinuation: l,
+      isOwnMessage: o.contains("you"),
       character: {
         name: n || "알 수 없음",
         color: "var(--text-color)",
