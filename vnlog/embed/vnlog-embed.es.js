@@ -335,7 +335,7 @@ function oo(s, e) {
     l("path", {
       "stroke-linecap": "round",
       "stroke-linejoin": "round",
-      d: "M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.373-.03.748-.057 1.123-.08M15.75 18H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08M15.75 18.75v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5A3.375 3.375 0 0 0 6.375 7.5H5.25m11.9-3.664A2.251 2.251 0 0 0 15 2.25h-1.5a2.251 2.251 0 0 0-2.15 1.586m5.8 0c.065.21.1.433.1.664v.75h-6V4.5c0-.231.035-.454.1-.664M6.75 7.5H4.875c-.621 0-1.125.504-1.125 1.125v12c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V16.5a9 9 0 0 0-9-9Z"
+      d: "m4.5 15.75 7.5-7.5 7.5 7.5"
     })
   ]);
 }
@@ -352,11 +352,28 @@ function no(s, e) {
     l("path", {
       "stroke-linecap": "round",
       "stroke-linejoin": "round",
-      d: "M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+      d: "M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.373-.03.748-.057 1.123-.08M15.75 18H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08M15.75 18.75v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5A3.375 3.375 0 0 0 6.375 7.5H5.25m11.9-3.664A2.251 2.251 0 0 0 15 2.25h-1.5a2.251 2.251 0 0 0-2.15 1.586m5.8 0c.065.21.1.433.1.664v.75h-6V4.5c0-.231.035-.454.1-.664M6.75 7.5H4.875c-.621 0-1.125.504-1.125 1.125v12c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V16.5a9 9 0 0 0-9-9Z"
     })
   ]);
 }
 function ro(s, e) {
+  return u(), d("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    fill: "none",
+    viewBox: "0 0 24 24",
+    "stroke-width": "1.5",
+    stroke: "currentColor",
+    "aria-hidden": "true",
+    "data-slot": "icon"
+  }, [
+    l("path", {
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round",
+      d: "M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+    })
+  ]);
+}
+function ao(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -378,7 +395,7 @@ function ro(s, e) {
     })
   ]);
 }
-function ao(s, e) {
+function io(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -395,7 +412,7 @@ function ao(s, e) {
     })
   ]);
 }
-function io(s, e) {
+function lo(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -412,7 +429,7 @@ function io(s, e) {
     })
   ]);
 }
-function lo(s, e) {
+function co(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -429,7 +446,7 @@ function lo(s, e) {
     })
   ]);
 }
-function co(s, e) {
+function uo(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -446,7 +463,7 @@ function co(s, e) {
     })
   ]);
 }
-function uo(s, e) {
+function ho(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -463,7 +480,7 @@ function uo(s, e) {
     })
   ]);
 }
-function ho(s, e) {
+function po(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -480,7 +497,7 @@ function ho(s, e) {
     })
   ]);
 }
-function po(s, e) {
+function mo(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -502,7 +519,7 @@ function po(s, e) {
     })
   ]);
 }
-function mo(s, e) {
+function fo(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -519,7 +536,7 @@ function mo(s, e) {
     })
   ]);
 }
-function fo(s, e) {
+function go(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -536,7 +553,7 @@ function fo(s, e) {
     })
   ]);
 }
-function go(s, e) {
+function yo(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -553,7 +570,7 @@ function go(s, e) {
     })
   ]);
 }
-function yo(s, e) {
+function bo(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -570,7 +587,7 @@ function yo(s, e) {
     })
   ]);
 }
-function bo(s, e) {
+function vo(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -587,7 +604,7 @@ function bo(s, e) {
     })
   ]);
 }
-function vo(s, e) {
+function _o(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -604,7 +621,7 @@ function vo(s, e) {
     })
   ]);
 }
-function _o(s, e) {
+function wo(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -621,7 +638,7 @@ function _o(s, e) {
     })
   ]);
 }
-function wo(s, e) {
+function xo(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -638,7 +655,7 @@ function wo(s, e) {
     })
   ]);
 }
-function xo(s, e) {
+function To(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -655,7 +672,7 @@ function xo(s, e) {
     })
   ]);
 }
-function To(s, e) {
+function ko(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -672,7 +689,7 @@ function To(s, e) {
     })
   ]);
 }
-function ko(s, e) {
+function Co(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -689,7 +706,7 @@ function ko(s, e) {
     })
   ]);
 }
-function Co(s, e) {
+function Ao(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -706,7 +723,7 @@ function Co(s, e) {
     })
   ]);
 }
-function Ao(s, e) {
+function So(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -723,7 +740,7 @@ function Ao(s, e) {
     })
   ]);
 }
-function So(s, e) {
+function Po(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -740,7 +757,7 @@ function So(s, e) {
     })
   ]);
 }
-function Po(s, e) {
+function Eo(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -757,7 +774,7 @@ function Po(s, e) {
     })
   ]);
 }
-function Eo(s, e) {
+function Do(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -774,7 +791,7 @@ function Eo(s, e) {
     })
   ]);
 }
-function Do(s, e) {
+function Mo(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -791,7 +808,7 @@ function Do(s, e) {
     })
   ]);
 }
-function Mo(s, e) {
+function Ro(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -808,7 +825,7 @@ function Mo(s, e) {
     })
   ]);
 }
-function Ro(s, e) {
+function Bo(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -825,7 +842,7 @@ function Ro(s, e) {
     })
   ]);
 }
-function Bo(s, e) {
+function Io(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -842,7 +859,7 @@ function Bo(s, e) {
     })
   ]);
 }
-function Io(s, e) {
+function Oo(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -859,7 +876,7 @@ function Io(s, e) {
     })
   ]);
 }
-function Oo(s, e) {
+function No(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -876,7 +893,7 @@ function Oo(s, e) {
     })
   ]);
 }
-function No(s, e) {
+function Lo(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -893,7 +910,7 @@ function No(s, e) {
     })
   ]);
 }
-function Lo(s, e) {
+function $o(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -910,7 +927,7 @@ function Lo(s, e) {
     })
   ]);
 }
-function $o(s, e) {
+function Ho(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -927,7 +944,7 @@ function $o(s, e) {
     })
   ]);
 }
-function Ho(s, e) {
+function Fo(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -949,7 +966,7 @@ function Ho(s, e) {
     })
   ]);
 }
-function Fo(s, e) {
+function Uo(s, e) {
   return u(), d("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -971,14 +988,14 @@ const de = (s, e) => {
   for (const [i, o] of e)
     t[i] = o;
   return t;
-}, Uo = { undo: Vs, redo: Gs, previous: to, next: so, minus: xo, book: Xs, film: mo, home: bo, play: So, pause: ko, clipboard: oo, edit: Co, document: uo, close: Fo, archive: Hs, info: vo, palette: Oo, photo: Ao, square: Io, text: Ws, folder: fo, drop: Zs, adjust: $s, music: To, link: _o, check: Qs, volume: Mo, mute: Ro, refresh: Us, save: Fs, upload: zs, warning: ho, sparkles: Do, eye: po, trash: No, pointer: io, user: Lo, arrow: js, plus: Po, cube: ao, chart: Ks, star: Bo, bolt: Ys, users: $o, search: wo, back: qs, down: eo, target: lo, scale: Eo, wrench: Ho, settings: ro, clock: no, globe: go, heart: yo, chat: Js, device: co }, jo = {
+}, jo = { up: oo, undo: Vs, redo: Gs, previous: to, next: so, minus: To, book: Xs, film: fo, home: vo, play: Po, pause: Co, clipboard: no, edit: Ao, document: ho, close: Uo, archive: Hs, info: _o, palette: No, photo: So, square: Oo, text: Ws, folder: go, drop: Zs, adjust: $s, music: ko, link: wo, check: Qs, volume: Ro, mute: Bo, refresh: Us, save: Fs, upload: zs, warning: po, sparkles: Mo, eye: mo, trash: Lo, pointer: lo, user: $o, arrow: js, plus: Eo, cube: io, chart: Ks, star: Io, bolt: Ys, users: Ho, search: xo, back: qs, down: eo, target: co, scale: Do, wrench: Fo, settings: ao, clock: ro, globe: yo, heart: bo, chat: Js, device: uo }, zo = {
   name: "AppIcon",
   props: { name: { type: String, default: "info" }, size: { type: [Number, String], default: 20 } },
   setup() {
-    return { icons: Uo };
+    return { icons: jo };
   }
 };
-function zo(s, e, t, i, o, r) {
+function Vo(s, e, t, i, o, r) {
   return u(), pe(Is(i.icons[t.name] || i.icons.info), {
     width: t.size,
     height: t.size,
@@ -988,7 +1005,7 @@ function zo(s, e, t, i, o, r) {
     class: "app-icon"
   }, null, 8, ["width", "height", "style"]);
 }
-const _e = /* @__PURE__ */ de(jo, [["render", zo], ["__scopeId", "data-v-ac59d9f9"]]), Vo = {
+const _e = /* @__PURE__ */ de(zo, [["render", Vo], ["__scopeId", "data-v-99602c0f"]]), Go = {
   components: { AppIcon: _e },
   name: "PlaybackControls",
   data() {
@@ -1043,31 +1060,31 @@ const _e = /* @__PURE__ */ de(jo, [["render", zo], ["__scopeId", "data-v-ac59d9f
       return this.totalSteps === 0 ? 0 : this.currentStepNumber / this.totalSteps * 100;
     }
   }
-}, Go = { class: "playback-controls" }, qo = {
+}, qo = { class: "playback-controls" }, Wo = {
   key: 0,
   class: "progress-bar"
-}, Wo = { class: "progress-info" }, Zo = { class: "scene-name" }, Yo = { class: "step-counter" }, Xo = { class: "controls-buttons" }, Ko = ["disabled"], Jo = ["disabled"], Qo = ["aria-label", "aria-pressed"], en = { class: "control-label" }, tn = {
+}, Zo = { class: "progress-info" }, Yo = { class: "scene-name" }, Xo = { class: "step-counter" }, Ko = { class: "controls-buttons" }, Jo = ["disabled"], Qo = ["disabled"], en = ["aria-label", "aria-pressed"], tn = { class: "control-label" }, sn = {
   class: "speed-control",
   role: "group",
   "aria-label": "자동 재생 속도"
-}, sn = ["onClick", "title", "aria-label", "aria-pressed"], on = {
+}, on = ["onClick", "title", "aria-label", "aria-pressed"], nn = {
   key: 0,
   class: "step-counter"
 };
-function nn(s, e, t, i, o, r) {
+function rn(s, e, t, i, o, r) {
   const h = W("AppIcon");
-  return u(), d("div", Go, [
-    t.showProgressBar ? (u(), d("div", qo, [
+  return u(), d("div", qo, [
+    t.showProgressBar ? (u(), d("div", Wo, [
       l("div", {
         class: "progress-fill",
         style: be({ width: r.progressPercentage + "%" })
       }, null, 4),
-      l("div", Wo, [
-        l("span", Zo, _(t.currentSceneName), 1),
-        l("span", Yo, _(t.currentStepNumber) + " / " + _(t.totalSteps), 1)
+      l("div", Zo, [
+        l("span", Yo, _(t.currentSceneName), 1),
+        l("span", Xo, _(t.currentStepNumber) + " / " + _(t.totalSteps), 1)
       ])
     ])) : E("", !0),
-    l("div", Xo, [
+    l("div", Ko, [
       l("button", {
         class: "control-button",
         onClick: e[0] || (e[0] = (n) => s.$emit("previous")),
@@ -1079,7 +1096,7 @@ function nn(s, e, t, i, o, r) {
           name: "previous",
           size: 20
         })
-      ], 8, Ko),
+      ], 8, Jo),
       l("button", {
         class: "control-button primary",
         onClick: e[1] || (e[1] = (n) => s.$emit("next")),
@@ -1091,7 +1108,7 @@ function nn(s, e, t, i, o, r) {
           name: "next",
           size: 24
         })
-      ], 8, Jo),
+      ], 8, Qo),
       l("button", {
         class: ve(["control-button autoplay-button", { "is-active": t.autoPlayEnabled }]),
         onClick: e[2] || (e[2] = (n) => s.$emit("toggle-autoplay")),
@@ -1103,9 +1120,9 @@ function nn(s, e, t, i, o, r) {
           name: t.autoPlayEnabled ? "pause" : "play",
           size: 20
         }, null, 8, ["name"]),
-        l("span", en, _(t.autoPlayEnabled ? "자동 재생 중" : "자동 재생"), 1)
-      ], 10, Qo),
-      l("div", tn, [
+        l("span", tn, _(t.autoPlayEnabled ? "자동 재생 중" : "자동 재생"), 1)
+      ], 10, en),
+      l("div", sn, [
         (u(!0), d(ae, null, Ce(o.speedOptions, (n) => (u(), d("button", {
           key: n,
           class: ve(["speed-button", { "is-active": t.autoPlaySpeed === n }]),
@@ -1113,13 +1130,13 @@ function nn(s, e, t, i, o, r) {
           title: n + "배속",
           "aria-label": n + "배속",
           "aria-pressed": t.autoPlaySpeed === n
-        }, _(n) + "x ", 11, sn))), 128))
+        }, _(n) + "x ", 11, on))), 128))
       ]),
-      t.showProgressBar ? E("", !0) : (u(), d("div", on, _(t.currentStepNumber) + " / " + _(t.totalSteps), 1))
+      t.showProgressBar ? E("", !0) : (u(), d("div", nn, _(t.currentStepNumber) + " / " + _(t.totalSteps), 1))
     ])
   ]);
 }
-const rn = /* @__PURE__ */ de(Vo, [["render", nn], ["__scopeId", "data-v-9204b3e0"]]), an = [
+const an = /* @__PURE__ */ de(Go, [["render", rn], ["__scopeId", "data-v-9204b3e0"]]), ln = [
   "a[href]",
   "button:not([disabled])",
   "input:not([disabled])",
@@ -1129,7 +1146,7 @@ const rn = /* @__PURE__ */ de(Vo, [["render", nn], ["__scopeId", "data-v-9204b3e
 ].join(","), bs = {
   methods: {
     _getFocusable(s) {
-      return s ? Array.from(s.querySelectorAll(an)).filter(
+      return s ? Array.from(s.querySelectorAll(ln)).filter(
         (e) => e.offsetParent !== null && !e.hasAttribute("aria-hidden")
       ) : [];
     },
@@ -1156,7 +1173,7 @@ const rn = /* @__PURE__ */ de(Vo, [["render", nn], ["__scopeId", "data-v-9204b3e
   beforeUnmount() {
     this._trapHandler && (document.removeEventListener("keydown", this._trapHandler, !0), this._trapHandler = null);
   }
-}, ln = {
+}, cn = {
   components: { AppIcon: _e },
   name: "SceneSelectorModal",
   mixins: [bs],
@@ -1240,17 +1257,17 @@ const rn = /* @__PURE__ */ de(Vo, [["render", nn], ["__scopeId", "data-v-9204b3e
   beforeUnmount() {
     window.removeEventListener("keydown", this.handleKeyPress), document.body.style.overflow = "";
   }
-}, cn = { class: "modal-header" }, un = {
+}, un = { class: "modal-header" }, dn = {
   class: "modal-title",
   id: "scene-modal-title"
-}, dn = { class: "modal-content" }, hn = ["aria-expanded", "onClick", "onKeydown"], pn = { class: "scene-info" }, mn = { class: "scene-number" }, fn = { class: "scene-name" }, gn = { class: "scene-meta" }, yn = { class: "step-count" }, bn = {
+}, hn = { class: "modal-content" }, pn = ["aria-expanded", "onClick", "onKeydown"], mn = { class: "scene-info" }, fn = { class: "scene-number" }, gn = { class: "scene-name" }, yn = { class: "scene-meta" }, bn = { class: "step-count" }, vn = {
   key: 0,
   class: "steps-list"
-}, vn = ["onClick", "onKeydown"], _n = { class: "step-number" }, wn = { class: "step-preview" }, xn = { class: "step-text" }, Tn = {
+}, _n = ["onClick", "onKeydown"], wn = { class: "step-number" }, xn = { class: "step-preview" }, Tn = { class: "step-text" }, kn = {
   key: 0,
   class: "empty-state"
-}, kn = { class: "modal-footer" }, Cn = { class: "footer-info" };
-function An(s, e, t, i, o, r) {
+}, Cn = { class: "modal-footer" }, An = { class: "footer-info" };
+function Sn(s, e, t, i, o, r) {
   const h = W("AppIcon");
   return u(), pe(ue, { name: "modal-overlay" }, {
     default: le(() => [
@@ -1269,8 +1286,8 @@ function An(s, e, t, i, o, r) {
           "aria-modal": "true",
           "aria-labelledby": "scene-modal-title"
         }, [
-          l("div", cn, [
-            l("h2", un, [
+          l("div", un, [
+            l("h2", dn, [
               I(h, {
                 name: "text",
                 size: 20
@@ -1289,7 +1306,7 @@ function An(s, e, t, i, o, r) {
               })
             ])
           ]),
-          l("div", dn, [
+          l("div", hn, [
             (u(!0), d(ae, null, Ce(t.scenes, (n, c) => (u(), d("div", {
               key: `scene-${c}`,
               class: ve(["scene-item", { "is-current": c === t.currentSceneIndex }])
@@ -1305,22 +1322,22 @@ function An(s, e, t, i, o, r) {
                   it(Ee((f) => r.toggleScene(c), ["prevent"]), ["space"])
                 ]
               }, [
-                l("div", pn, [
-                  l("span", mn, "씬 " + _(c + 1), 1),
-                  l("h3", fn, _(n.name || "제목 없음"), 1)
+                l("div", mn, [
+                  l("span", fn, "씬 " + _(c + 1), 1),
+                  l("h3", gn, _(n.name || "제목 없음"), 1)
                 ]),
-                l("div", gn, [
-                  l("span", yn, _(n.steps.length) + "개 스텝", 1),
+                l("div", yn, [
+                  l("span", bn, _(n.steps.length) + "개 스텝", 1),
                   I(h, {
                     name: o.expandedScenes.has(c) ? "down" : "play",
                     size: 16,
                     class: "expand-icon"
                   }, null, 8, ["name"])
                 ])
-              ], 40, hn),
+              ], 40, pn),
               I(ue, { name: "steps-expand" }, {
                 default: le(() => [
-                  o.expandedScenes.has(c) ? (u(), d("div", bn, [
+                  o.expandedScenes.has(c) ? (u(), d("div", vn, [
                     (u(!0), d(ae, null, Ce(n.steps, (f, m) => {
                       var g;
                       return u(), d("div", {
@@ -1338,14 +1355,14 @@ function An(s, e, t, i, o, r) {
                           it(Ee((y) => r.goToStep(c, m), ["prevent"]), ["space"])
                         ]
                       }, [
-                        l("span", _n, _(m + 1), 1),
-                        l("div", wn, [
+                        l("span", wn, _(m + 1), 1),
+                        l("div", xn, [
                           (g = f.character) != null && g.name ? (u(), d("span", {
                             key: 0,
                             class: "step-character",
                             style: be({ color: f.character.color || "#ffffff" })
                           }, _(f.character.name) + ": ", 5)) : E("", !0),
-                          l("span", xn, _(r.getStepPreview(f.text)), 1)
+                          l("span", Tn, _(r.getStepPreview(f.text)), 1)
                         ]),
                         c === t.currentSceneIndex && m === t.currentStepIndex ? (u(), pe(h, {
                           key: 0,
@@ -1353,14 +1370,14 @@ function An(s, e, t, i, o, r) {
                           size: 14,
                           class: "current-indicator"
                         })) : E("", !0)
-                      ], 42, vn);
+                      ], 42, _n);
                     }), 128))
                   ])) : E("", !0)
                 ]),
                 _: 2
               }, 1024)
             ], 2))), 128)),
-            t.scenes.length === 0 ? (u(), d("div", Tn, [
+            t.scenes.length === 0 ? (u(), d("div", kn, [
               I(h, {
                 name: "archive",
                 size: 48
@@ -1368,8 +1385,8 @@ function An(s, e, t, i, o, r) {
               e[5] || (e[5] = l("p", null, "씬이 없습니다", -1))
             ])) : E("", !0)
           ]),
-          l("div", kn, [
-            l("div", Cn, [
+          l("div", Cn, [
+            l("div", An, [
               I(h, {
                 name: "info",
                 size: 14
@@ -1387,7 +1404,7 @@ function An(s, e, t, i, o, r) {
     _: 1
   });
 }
-const Sn = /* @__PURE__ */ de(ln, [["render", An], ["__scopeId", "data-v-bcf4cfd6"]]), Pn = {
+const Pn = /* @__PURE__ */ de(cn, [["render", Sn], ["__scopeId", "data-v-bcf4cfd6"]]), En = {
   components: { AppIcon: _e },
   name: "BGMPlayer",
   props: {
@@ -1681,21 +1698,21 @@ const Sn = /* @__PURE__ */ de(ln, [["render", An], ["__scopeId", "data-v-bcf4cfd
   beforeUnmount() {
     this.stopPlayer(), this.disarmUserGestureResume(), this.youtubePlayer && (this.youtubePlayer.destroy(), this.youtubePlayer = null);
   }
-}, En = {
-  key: 0,
-  class: "bgm-player"
 }, Dn = {
   key: 0,
+  class: "bgm-player"
+}, Mn = {
+  key: 0,
   class: "youtube-container"
-}, Mn = { ref: "youtubeIframe" }, Rn = ["src", "autoplay"], Bn = {
+}, Rn = { ref: "youtubeIframe" }, Bn = ["src", "autoplay"], In = {
   key: 2,
   class: "bgm-controls"
-}, In = ["title", "aria-label", "aria-pressed"], On = { class: "bgm-info" }, Nn = { class: "bgm-status" }, Ln = { class: "volume-control" }, $n = ["title", "aria-label", "aria-pressed"];
-function Hn(s, e, t, i, o, r) {
+}, On = ["title", "aria-label", "aria-pressed"], Nn = { class: "bgm-info" }, Ln = { class: "bgm-status" }, $n = { class: "volume-control" }, Hn = ["title", "aria-label", "aria-pressed"];
+function Fn(s, e, t, i, o, r) {
   const h = W("AppIcon");
-  return t.bgmUrl ? (u(), d("div", En, [
-    t.bgmType === "youtube" && r.youtubeVideoId ? (u(), d("div", Dn, [
-      l("div", Mn, null, 512)
+  return t.bgmUrl ? (u(), d("div", Dn, [
+    t.bgmType === "youtube" && r.youtubeVideoId ? (u(), d("div", Mn, [
+      l("div", Rn, null, 512)
     ])) : t.bgmType === "audio" ? (u(), d("audio", {
       key: 1,
       ref: "audioPlayer",
@@ -1703,8 +1720,8 @@ function Hn(s, e, t, i, o, r) {
       autoplay: t.autoPlay,
       loop: "",
       onError: e[0] || (e[0] = (...n) => r.handleAudioError && r.handleAudioError(...n))
-    }, null, 40, Rn)) : E("", !0),
-    t.showControls ? (u(), d("div", Bn, [
+    }, null, 40, Bn)) : E("", !0),
+    t.showControls ? (u(), d("div", In, [
       l("button", {
         onClick: e[1] || (e[1] = (...n) => r.togglePlay && r.togglePlay(...n)),
         class: "bgm-button",
@@ -1716,12 +1733,12 @@ function Hn(s, e, t, i, o, r) {
           name: o.isPlaying ? "pause" : "play",
           size: 16
         }, null, 8, ["name"])
-      ], 8, In),
-      l("div", On, [
+      ], 8, On),
+      l("div", Nn, [
         e[5] || (e[5] = l("span", { class: "bgm-label" }, "BGM", -1)),
-        l("span", Nn, _(o.isPlaying ? "재생 중" : o.isPaused ? "일시정지" : "정지"), 1)
+        l("span", Ln, _(o.isPlaying ? "재생 중" : o.isPaused ? "일시정지" : "정지"), 1)
       ]),
-      l("div", Ln, [
+      l("div", $n, [
         l("button", {
           onClick: e[2] || (e[2] = (...n) => r.toggleMute && r.toggleMute(...n)),
           class: "volume-button",
@@ -1733,7 +1750,7 @@ function Hn(s, e, t, i, o, r) {
             name: o.isMuted ? "mute" : "volume",
             size: 14
           }, null, 8, ["name"])
-        ], 8, $n),
+        ], 8, Hn),
         Os(l("input", {
           "onUpdate:modelValue": e[3] || (e[3] = (n) => o.currentVolume = n),
           type: "range",
@@ -1755,17 +1772,17 @@ function Hn(s, e, t, i, o, r) {
     ])) : E("", !0)
   ])) : E("", !0);
 }
-const Fn = /* @__PURE__ */ de(Pn, [["render", Hn], ["__scopeId", "data-v-9e56580b"]]);
+const Un = /* @__PURE__ */ de(En, [["render", Fn], ["__scopeId", "data-v-9e56580b"]]);
 /*! @license DOMPurify 3.4.8 | (c) Cure53 and other contributors | Released under the Apache license 2.0 and Mozilla Public License 2.0 | github.com/cure53/DOMPurify/blob/3.4.8/LICENSE */
 function ns(s, e) {
   (e == null || e > s.length) && (e = s.length);
   for (var t = 0, i = Array(e); t < e; t++) i[t] = s[t];
   return i;
 }
-function Un(s) {
+function jn(s) {
   if (Array.isArray(s)) return s;
 }
-function jn(s, e) {
+function zn(s, e) {
   var t = s == null ? null : typeof Symbol < "u" && s[Symbol.iterator] || s["@@iterator"];
   if (t != null) {
     var i, o, r, h, n = [], c = !0, f = !1;
@@ -1783,21 +1800,21 @@ function jn(s, e) {
     return n;
   }
 }
-function zn() {
+function Vn() {
   throw new TypeError(`Invalid attempt to destructure non-iterable instance.
 In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`);
 }
-function Vn(s, e) {
-  return Un(s) || jn(s, e) || Gn(s, e) || zn();
-}
 function Gn(s, e) {
+  return jn(s) || zn(s, e) || qn(s, e) || Vn();
+}
+function qn(s, e) {
   if (s) {
     if (typeof s == "string") return ns(s, e);
     var t = {}.toString.call(s).slice(8, -1);
     return t === "Object" && s.constructor && (t = s.constructor.name), t === "Map" || t === "Set" ? Array.from(s) : t === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? ns(s, e) : void 0;
   }
 }
-const vs = Object.entries, rs = Object.setPrototypeOf, qn = Object.isFrozen, Wn = Object.getPrototypeOf, Zn = Object.getOwnPropertyDescriptor;
+const vs = Object.entries, rs = Object.setPrototypeOf, Wn = Object.isFrozen, Zn = Object.getPrototypeOf, Yn = Object.getOwnPropertyDescriptor;
 let ce = Object.freeze, me = Object.seal, ze = Object.create, _s = typeof Reflect < "u" && Reflect, Mt = _s.apply, Rt = _s.construct;
 ce || (ce = function(e) {
   return e;
@@ -1815,7 +1832,7 @@ Rt || (Rt = function(e) {
     i[o - 1] = arguments[o];
   return new e(...i);
 });
-const Be = Q(Array.prototype.forEach), Yn = Q(Array.prototype.lastIndexOf), as = Q(Array.prototype.pop), Fe = Q(Array.prototype.push), Xn = Q(Array.prototype.splice), ie = Array.isArray, Xe = Q(String.prototype.toLowerCase), At = Q(String.prototype.toString), is = Q(String.prototype.match), Ue = Q(String.prototype.replace), ls = Q(String.prototype.indexOf), Kn = Q(String.prototype.trim), Jn = Q(Number.prototype.toString), Qn = Q(Boolean.prototype.toString), cs = typeof BigInt > "u" ? null : Q(BigInt.prototype.toString), us = typeof Symbol > "u" ? null : Q(Symbol.prototype.toString), q = Q(Object.prototype.hasOwnProperty), Ye = Q(Object.prototype.toString), se = Q(RegExp.prototype.test), je = er(TypeError);
+const Be = Q(Array.prototype.forEach), Xn = Q(Array.prototype.lastIndexOf), as = Q(Array.prototype.pop), Fe = Q(Array.prototype.push), Kn = Q(Array.prototype.splice), ie = Array.isArray, Xe = Q(String.prototype.toLowerCase), At = Q(String.prototype.toString), is = Q(String.prototype.match), Ue = Q(String.prototype.replace), ls = Q(String.prototype.indexOf), Jn = Q(String.prototype.trim), Qn = Q(Number.prototype.toString), er = Q(Boolean.prototype.toString), cs = typeof BigInt > "u" ? null : Q(BigInt.prototype.toString), us = typeof Symbol > "u" ? null : Q(Symbol.prototype.toString), q = Q(Object.prototype.hasOwnProperty), Ye = Q(Object.prototype.toString), se = Q(RegExp.prototype.test), je = tr(TypeError);
 function Q(s) {
   return function(e) {
     e instanceof RegExp && (e.lastIndex = 0);
@@ -1824,7 +1841,7 @@ function Q(s) {
     return Mt(s, e, i);
   };
 }
-function er(s) {
+function tr(s) {
   return function() {
     for (var e = arguments.length, t = new Array(e), i = 0; i < e; i++)
       t[i] = arguments[i];
@@ -1840,13 +1857,13 @@ function O(s, e) {
     let o = e[i];
     if (typeof o == "string") {
       const r = t(o);
-      r !== o && (qn(e) || (e[i] = r), o = r);
+      r !== o && (Wn(e) || (e[i] = r), o = r);
     }
     s[o] = !0;
   }
   return s;
 }
-function tr(s) {
+function sr(s) {
   for (let e = 0; e < s.length; e++)
     q(s, e) || (s[e] = null);
   return s;
@@ -1854,20 +1871,20 @@ function tr(s) {
 function re(s) {
   const e = ze(null);
   for (const i of vs(s)) {
-    var t = Vn(i, 2);
+    var t = Gn(i, 2);
     const o = t[0], r = t[1];
-    q(s, o) && (ie(r) ? e[o] = tr(r) : r && typeof r == "object" && r.constructor === Object ? e[o] = re(r) : e[o] = r);
+    q(s, o) && (ie(r) ? e[o] = sr(r) : r && typeof r == "object" && r.constructor === Object ? e[o] = re(r) : e[o] = r);
   }
   return e;
 }
-function sr(s) {
+function or(s) {
   switch (typeof s) {
     case "string":
       return s;
     case "number":
-      return Jn(s);
-    case "boolean":
       return Qn(s);
+    case "boolean":
+      return er(s);
     case "bigint":
       return cs ? cs(s) : "0";
     case "symbol":
@@ -1891,34 +1908,34 @@ function sr(s) {
 }
 function ke(s, e) {
   for (; s !== null; ) {
-    const i = Zn(s, e);
+    const i = Yn(s, e);
     if (i) {
       if (i.get)
         return Q(i.get);
       if (typeof i.value == "function")
         return Q(i.value);
     }
-    s = Wn(s);
+    s = Zn(s);
   }
   function t() {
     return null;
   }
   return t;
 }
-function or(s) {
+function nr(s) {
   try {
     return se(s, ""), !0;
   } catch {
     return !1;
   }
 }
-const ds = ce(["a", "abbr", "acronym", "address", "area", "article", "aside", "audio", "b", "bdi", "bdo", "big", "blink", "blockquote", "body", "br", "button", "canvas", "caption", "center", "cite", "code", "col", "colgroup", "content", "data", "datalist", "dd", "decorator", "del", "details", "dfn", "dialog", "dir", "div", "dl", "dt", "element", "em", "fieldset", "figcaption", "figure", "font", "footer", "form", "h1", "h2", "h3", "h4", "h5", "h6", "head", "header", "hgroup", "hr", "html", "i", "img", "input", "ins", "kbd", "label", "legend", "li", "main", "map", "mark", "marquee", "menu", "menuitem", "meter", "nav", "nobr", "ol", "optgroup", "option", "output", "p", "picture", "pre", "progress", "q", "rp", "rt", "ruby", "s", "samp", "search", "section", "select", "shadow", "slot", "small", "source", "spacer", "span", "strike", "strong", "style", "sub", "summary", "sup", "table", "tbody", "td", "template", "textarea", "tfoot", "th", "thead", "time", "tr", "track", "tt", "u", "ul", "var", "video", "wbr"]), St = ce(["svg", "a", "altglyph", "altglyphdef", "altglyphitem", "animatecolor", "animatemotion", "animatetransform", "circle", "clippath", "defs", "desc", "ellipse", "enterkeyhint", "exportparts", "filter", "font", "g", "glyph", "glyphref", "hkern", "image", "inputmode", "line", "lineargradient", "marker", "mask", "metadata", "mpath", "part", "path", "pattern", "polygon", "polyline", "radialgradient", "rect", "stop", "style", "switch", "symbol", "text", "textpath", "title", "tref", "tspan", "view", "vkern"]), Pt = ce(["feBlend", "feColorMatrix", "feComponentTransfer", "feComposite", "feConvolveMatrix", "feDiffuseLighting", "feDisplacementMap", "feDistantLight", "feDropShadow", "feFlood", "feFuncA", "feFuncB", "feFuncG", "feFuncR", "feGaussianBlur", "feImage", "feMerge", "feMergeNode", "feMorphology", "feOffset", "fePointLight", "feSpecularLighting", "feSpotLight", "feTile", "feTurbulence"]), nr = ce(["animate", "color-profile", "cursor", "discard", "font-face", "font-face-format", "font-face-name", "font-face-src", "font-face-uri", "foreignobject", "hatch", "hatchpath", "mesh", "meshgradient", "meshpatch", "meshrow", "missing-glyph", "script", "set", "solidcolor", "unknown", "use"]), Et = ce(["math", "menclose", "merror", "mfenced", "mfrac", "mglyph", "mi", "mlabeledtr", "mmultiscripts", "mn", "mo", "mover", "mpadded", "mphantom", "mroot", "mrow", "ms", "mspace", "msqrt", "mstyle", "msub", "msup", "msubsup", "mtable", "mtd", "mtext", "mtr", "munder", "munderover", "mprescripts"]), rr = ce(["maction", "maligngroup", "malignmark", "mlongdiv", "mscarries", "mscarry", "msgroup", "mstack", "msline", "msrow", "semantics", "annotation", "annotation-xml", "mprescripts", "none"]), hs = ce(["#text"]), ps = ce(["accept", "action", "align", "alt", "autocapitalize", "autocomplete", "autopictureinpicture", "autoplay", "background", "bgcolor", "border", "capture", "cellpadding", "cellspacing", "checked", "cite", "class", "clear", "color", "cols", "colspan", "command", "commandfor", "controls", "controlslist", "coords", "crossorigin", "datetime", "decoding", "default", "dir", "disabled", "disablepictureinpicture", "disableremoteplayback", "download", "draggable", "enctype", "enterkeyhint", "exportparts", "face", "for", "headers", "height", "hidden", "high", "href", "hreflang", "id", "inert", "inputmode", "integrity", "ismap", "kind", "label", "lang", "list", "loading", "loop", "low", "max", "maxlength", "media", "method", "min", "minlength", "multiple", "muted", "name", "nonce", "noshade", "novalidate", "nowrap", "open", "optimum", "part", "pattern", "placeholder", "playsinline", "popover", "popovertarget", "popovertargetaction", "poster", "preload", "pubdate", "radiogroup", "readonly", "rel", "required", "rev", "reversed", "role", "rows", "rowspan", "spellcheck", "scope", "selected", "shape", "size", "sizes", "slot", "span", "srclang", "start", "src", "srcset", "step", "style", "summary", "tabindex", "title", "translate", "type", "usemap", "valign", "value", "width", "wrap", "xmlns"]), Dt = ce(["accent-height", "accumulate", "additive", "alignment-baseline", "amplitude", "ascent", "attributename", "attributetype", "azimuth", "basefrequency", "baseline-shift", "begin", "bias", "by", "class", "clip", "clippathunits", "clip-path", "clip-rule", "color", "color-interpolation", "color-interpolation-filters", "color-profile", "color-rendering", "cx", "cy", "d", "dx", "dy", "diffuseconstant", "direction", "display", "divisor", "dur", "edgemode", "elevation", "end", "exponent", "fill", "fill-opacity", "fill-rule", "filter", "filterunits", "flood-color", "flood-opacity", "font-family", "font-size", "font-size-adjust", "font-stretch", "font-style", "font-variant", "font-weight", "fx", "fy", "g1", "g2", "glyph-name", "glyphref", "gradientunits", "gradienttransform", "height", "href", "id", "image-rendering", "in", "in2", "intercept", "k", "k1", "k2", "k3", "k4", "kerning", "keypoints", "keysplines", "keytimes", "lang", "lengthadjust", "letter-spacing", "kernelmatrix", "kernelunitlength", "lighting-color", "local", "marker-end", "marker-mid", "marker-start", "markerheight", "markerunits", "markerwidth", "maskcontentunits", "maskunits", "max", "mask", "mask-type", "media", "method", "mode", "min", "name", "numoctaves", "offset", "operator", "opacity", "order", "orient", "orientation", "origin", "overflow", "paint-order", "path", "pathlength", "patterncontentunits", "patterntransform", "patternunits", "points", "preservealpha", "preserveaspectratio", "primitiveunits", "r", "rx", "ry", "radius", "refx", "refy", "repeatcount", "repeatdur", "restart", "result", "rotate", "scale", "seed", "shape-rendering", "slope", "specularconstant", "specularexponent", "spreadmethod", "startoffset", "stddeviation", "stitchtiles", "stop-color", "stop-opacity", "stroke-dasharray", "stroke-dashoffset", "stroke-linecap", "stroke-linejoin", "stroke-miterlimit", "stroke-opacity", "stroke", "stroke-width", "style", "surfacescale", "systemlanguage", "tabindex", "tablevalues", "targetx", "targety", "transform", "transform-origin", "text-anchor", "text-decoration", "text-rendering", "textlength", "type", "u1", "u2", "unicode", "values", "viewbox", "visibility", "version", "vert-adv-y", "vert-origin-x", "vert-origin-y", "width", "word-spacing", "wrap", "writing-mode", "xchannelselector", "ychannelselector", "x", "x1", "x2", "xmlns", "y", "y1", "y2", "z", "zoomandpan"]), ms = ce(["accent", "accentunder", "align", "bevelled", "close", "columnalign", "columnlines", "columnspacing", "columnspan", "denomalign", "depth", "dir", "display", "displaystyle", "encoding", "fence", "frame", "height", "href", "id", "largeop", "length", "linethickness", "lquote", "lspace", "mathbackground", "mathcolor", "mathsize", "mathvariant", "maxsize", "minsize", "movablelimits", "notation", "numalign", "open", "rowalign", "rowlines", "rowspacing", "rowspan", "rspace", "rquote", "scriptlevel", "scriptminsize", "scriptsizemultiplier", "selection", "separator", "separators", "stretchy", "subscriptshift", "supscriptshift", "symmetric", "voffset", "width", "xmlns"]), lt = ce(["xlink:href", "xml:id", "xlink:title", "xml:space", "xmlns:xlink"]), ar = me(/{{[\w\W]*|^[\w\W]*}}/g), ir = me(/<%[\w\W]*|^[\w\W]*%>/g), lr = me(/\${[\w\W]*/g), cr = me(/^data-[\-\w.\u00B7-\uFFFF]+$/), ur = me(/^aria-[\-\w]+$/), fs = me(
+const ds = ce(["a", "abbr", "acronym", "address", "area", "article", "aside", "audio", "b", "bdi", "bdo", "big", "blink", "blockquote", "body", "br", "button", "canvas", "caption", "center", "cite", "code", "col", "colgroup", "content", "data", "datalist", "dd", "decorator", "del", "details", "dfn", "dialog", "dir", "div", "dl", "dt", "element", "em", "fieldset", "figcaption", "figure", "font", "footer", "form", "h1", "h2", "h3", "h4", "h5", "h6", "head", "header", "hgroup", "hr", "html", "i", "img", "input", "ins", "kbd", "label", "legend", "li", "main", "map", "mark", "marquee", "menu", "menuitem", "meter", "nav", "nobr", "ol", "optgroup", "option", "output", "p", "picture", "pre", "progress", "q", "rp", "rt", "ruby", "s", "samp", "search", "section", "select", "shadow", "slot", "small", "source", "spacer", "span", "strike", "strong", "style", "sub", "summary", "sup", "table", "tbody", "td", "template", "textarea", "tfoot", "th", "thead", "time", "tr", "track", "tt", "u", "ul", "var", "video", "wbr"]), St = ce(["svg", "a", "altglyph", "altglyphdef", "altglyphitem", "animatecolor", "animatemotion", "animatetransform", "circle", "clippath", "defs", "desc", "ellipse", "enterkeyhint", "exportparts", "filter", "font", "g", "glyph", "glyphref", "hkern", "image", "inputmode", "line", "lineargradient", "marker", "mask", "metadata", "mpath", "part", "path", "pattern", "polygon", "polyline", "radialgradient", "rect", "stop", "style", "switch", "symbol", "text", "textpath", "title", "tref", "tspan", "view", "vkern"]), Pt = ce(["feBlend", "feColorMatrix", "feComponentTransfer", "feComposite", "feConvolveMatrix", "feDiffuseLighting", "feDisplacementMap", "feDistantLight", "feDropShadow", "feFlood", "feFuncA", "feFuncB", "feFuncG", "feFuncR", "feGaussianBlur", "feImage", "feMerge", "feMergeNode", "feMorphology", "feOffset", "fePointLight", "feSpecularLighting", "feSpotLight", "feTile", "feTurbulence"]), rr = ce(["animate", "color-profile", "cursor", "discard", "font-face", "font-face-format", "font-face-name", "font-face-src", "font-face-uri", "foreignobject", "hatch", "hatchpath", "mesh", "meshgradient", "meshpatch", "meshrow", "missing-glyph", "script", "set", "solidcolor", "unknown", "use"]), Et = ce(["math", "menclose", "merror", "mfenced", "mfrac", "mglyph", "mi", "mlabeledtr", "mmultiscripts", "mn", "mo", "mover", "mpadded", "mphantom", "mroot", "mrow", "ms", "mspace", "msqrt", "mstyle", "msub", "msup", "msubsup", "mtable", "mtd", "mtext", "mtr", "munder", "munderover", "mprescripts"]), ar = ce(["maction", "maligngroup", "malignmark", "mlongdiv", "mscarries", "mscarry", "msgroup", "mstack", "msline", "msrow", "semantics", "annotation", "annotation-xml", "mprescripts", "none"]), hs = ce(["#text"]), ps = ce(["accept", "action", "align", "alt", "autocapitalize", "autocomplete", "autopictureinpicture", "autoplay", "background", "bgcolor", "border", "capture", "cellpadding", "cellspacing", "checked", "cite", "class", "clear", "color", "cols", "colspan", "command", "commandfor", "controls", "controlslist", "coords", "crossorigin", "datetime", "decoding", "default", "dir", "disabled", "disablepictureinpicture", "disableremoteplayback", "download", "draggable", "enctype", "enterkeyhint", "exportparts", "face", "for", "headers", "height", "hidden", "high", "href", "hreflang", "id", "inert", "inputmode", "integrity", "ismap", "kind", "label", "lang", "list", "loading", "loop", "low", "max", "maxlength", "media", "method", "min", "minlength", "multiple", "muted", "name", "nonce", "noshade", "novalidate", "nowrap", "open", "optimum", "part", "pattern", "placeholder", "playsinline", "popover", "popovertarget", "popovertargetaction", "poster", "preload", "pubdate", "radiogroup", "readonly", "rel", "required", "rev", "reversed", "role", "rows", "rowspan", "spellcheck", "scope", "selected", "shape", "size", "sizes", "slot", "span", "srclang", "start", "src", "srcset", "step", "style", "summary", "tabindex", "title", "translate", "type", "usemap", "valign", "value", "width", "wrap", "xmlns"]), Dt = ce(["accent-height", "accumulate", "additive", "alignment-baseline", "amplitude", "ascent", "attributename", "attributetype", "azimuth", "basefrequency", "baseline-shift", "begin", "bias", "by", "class", "clip", "clippathunits", "clip-path", "clip-rule", "color", "color-interpolation", "color-interpolation-filters", "color-profile", "color-rendering", "cx", "cy", "d", "dx", "dy", "diffuseconstant", "direction", "display", "divisor", "dur", "edgemode", "elevation", "end", "exponent", "fill", "fill-opacity", "fill-rule", "filter", "filterunits", "flood-color", "flood-opacity", "font-family", "font-size", "font-size-adjust", "font-stretch", "font-style", "font-variant", "font-weight", "fx", "fy", "g1", "g2", "glyph-name", "glyphref", "gradientunits", "gradienttransform", "height", "href", "id", "image-rendering", "in", "in2", "intercept", "k", "k1", "k2", "k3", "k4", "kerning", "keypoints", "keysplines", "keytimes", "lang", "lengthadjust", "letter-spacing", "kernelmatrix", "kernelunitlength", "lighting-color", "local", "marker-end", "marker-mid", "marker-start", "markerheight", "markerunits", "markerwidth", "maskcontentunits", "maskunits", "max", "mask", "mask-type", "media", "method", "mode", "min", "name", "numoctaves", "offset", "operator", "opacity", "order", "orient", "orientation", "origin", "overflow", "paint-order", "path", "pathlength", "patterncontentunits", "patterntransform", "patternunits", "points", "preservealpha", "preserveaspectratio", "primitiveunits", "r", "rx", "ry", "radius", "refx", "refy", "repeatcount", "repeatdur", "restart", "result", "rotate", "scale", "seed", "shape-rendering", "slope", "specularconstant", "specularexponent", "spreadmethod", "startoffset", "stddeviation", "stitchtiles", "stop-color", "stop-opacity", "stroke-dasharray", "stroke-dashoffset", "stroke-linecap", "stroke-linejoin", "stroke-miterlimit", "stroke-opacity", "stroke", "stroke-width", "style", "surfacescale", "systemlanguage", "tabindex", "tablevalues", "targetx", "targety", "transform", "transform-origin", "text-anchor", "text-decoration", "text-rendering", "textlength", "type", "u1", "u2", "unicode", "values", "viewbox", "visibility", "version", "vert-adv-y", "vert-origin-x", "vert-origin-y", "width", "word-spacing", "wrap", "writing-mode", "xchannelselector", "ychannelselector", "x", "x1", "x2", "xmlns", "y", "y1", "y2", "z", "zoomandpan"]), ms = ce(["accent", "accentunder", "align", "bevelled", "close", "columnalign", "columnlines", "columnspacing", "columnspan", "denomalign", "depth", "dir", "display", "displaystyle", "encoding", "fence", "frame", "height", "href", "id", "largeop", "length", "linethickness", "lquote", "lspace", "mathbackground", "mathcolor", "mathsize", "mathvariant", "maxsize", "minsize", "movablelimits", "notation", "numalign", "open", "rowalign", "rowlines", "rowspacing", "rowspan", "rspace", "rquote", "scriptlevel", "scriptminsize", "scriptsizemultiplier", "selection", "separator", "separators", "stretchy", "subscriptshift", "supscriptshift", "symmetric", "voffset", "width", "xmlns"]), lt = ce(["xlink:href", "xml:id", "xlink:title", "xml:space", "xmlns:xlink"]), ir = me(/{{[\w\W]*|^[\w\W]*}}/g), lr = me(/<%[\w\W]*|^[\w\W]*%>/g), cr = me(/\${[\w\W]*/g), ur = me(/^data-[\-\w.\u00B7-\uFFFF]+$/), dr = me(/^aria-[\-\w]+$/), fs = me(
   /^(?:(?:(?:f|ht)tps?|mailto|tel|callto|sms|cid|xmpp|matrix):|[^a-z]|[a-z+.\-]+(?:[^a-z+.\-:]|$))/i
   // eslint-disable-line no-useless-escape
-), dr = me(/^(?:\w+script|data):/i), hr = me(
+), hr = me(/^(?:\w+script|data):/i), pr = me(
   /[\u0000-\u0020\u00A0\u1680\u180E\u2000-\u2029\u205F\u3000]/g
   // eslint-disable-line no-control-regex
-), pr = me(/^html$/i), mr = me(/^[a-z][.\w]*(-[.\w]+)+$/i), Te = {
+), mr = me(/^html$/i), fr = me(/^[a-z][.\w]*(-[.\w]+)+$/i), Te = {
   element: 1,
   attribute: 2,
   text: 3,
@@ -1934,9 +1951,9 @@ const ds = ce(["a", "abbr", "acronym", "address", "area", "article", "aside", "a
   documentFragment: 11,
   notation: 12
   // Deprecated
-}, fr = function() {
+}, gr = function() {
   return typeof window > "u" ? null : window;
-}, gr = function(e, t) {
+}, yr = function(e, t) {
   if (typeof e != "object" || typeof e.createPolicy != "function")
     return null;
   let i = null;
@@ -1969,7 +1986,7 @@ const ds = ce(["a", "abbr", "acronym", "address", "area", "article", "aside", "a
   };
 };
 function ws() {
-  let s = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : fr();
+  let s = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : gr();
   const e = (M) => ws(M);
   if (e.version = "3.4.8", e.removed = [], !s || !s.document || s.document.nodeType !== Te.document || !s.Element)
     return e.isSupported = !1, e;
@@ -1996,7 +2013,7 @@ function ws() {
   }, F = t, z = F.implementation, $ = F.createNodeIterator, Z = F.createDocumentFragment, fe = F.getElementsByTagName, oe = i.importNode;
   let G = gs();
   e.isSupported = typeof vs == "function" && typeof x == "function" && z && z.createHTMLDocument !== void 0;
-  const Ve = ar, H = ir, V = lr, ne = cr, De = ur, Nt = dr, Je = hr, As = mr;
+  const Ve = ir, H = lr, V = cr, ne = ur, De = dr, Nt = hr, Je = pr, As = fr;
   let Lt = fs, Y = null;
   const dt = O({}, [...ds, ...St, ...Pt, ...Et, ...hs]);
   let J = null;
@@ -2057,7 +2074,7 @@ function ws() {
     if (Le && Le === a)
       return;
     (!a || typeof a != "object") && (a = {}), a = re(a), Ze = // eslint-disable-next-line unicorn/prefer-includes
-    Es.indexOf(a.PARSER_MEDIA_TYPE) === -1 ? Ds : a.PARSER_MEDIA_TYPE, K = Ze === "application/xhtml+xml" ? At : Xe, Y = q(a, "ALLOWED_TAGS") && ie(a.ALLOWED_TAGS) ? O({}, a.ALLOWED_TAGS, K) : dt, J = q(a, "ALLOWED_ATTR") && ie(a.ALLOWED_ATTR) ? O({}, a.ALLOWED_ATTR, K) : ht, _t = q(a, "ALLOWED_NAMESPACES") && ie(a.ALLOWED_NAMESPACES) ? O({}, a.ALLOWED_NAMESPACES, At) : Ss, bt = q(a, "ADD_URI_SAFE_ATTR") && ie(a.ADD_URI_SAFE_ATTR) ? O(re(qt), a.ADD_URI_SAFE_ATTR, K) : qt, Vt = q(a, "ADD_DATA_URI_TAGS") && ie(a.ADD_DATA_URI_TAGS) ? O(re(Gt), a.ADD_DATA_URI_TAGS, K) : Gt, we = q(a, "FORBID_CONTENTS") && ie(a.FORBID_CONTENTS) ? O({}, a.FORBID_CONTENTS, K) : yt, Ge = q(a, "FORBID_TAGS") && ie(a.FORBID_TAGS) ? O({}, a.FORBID_TAGS, K) : re({}), Qe = q(a, "FORBID_ATTR") && ie(a.FORBID_ATTR) ? O({}, a.FORBID_ATTR, K) : re({}), Oe = q(a, "USE_PROFILES") ? a.USE_PROFILES && typeof a.USE_PROFILES == "object" ? re(a.USE_PROFILES) : a.USE_PROFILES : !1, $t = a.ALLOW_ARIA_ATTR !== !1, pt = a.ALLOW_DATA_ATTR !== !1, Ht = a.ALLOW_UNKNOWN_PROTOCOLS || !1, Ft = a.ALLOW_SELF_CLOSE_IN_ATTR !== !1, Pe = a.SAFE_FOR_TEMPLATES || !1, qe = a.SAFE_FOR_XML !== !1, Me = a.WHOLE_DOCUMENT || !1, Ie = a.RETURN_DOM || !1, et = a.RETURN_DOM_FRAGMENT || !1, tt = a.RETURN_TRUSTED_TYPE || !1, ft = a.FORCE_BODY || !1, Ut = a.SANITIZE_DOM !== !1, jt = a.SANITIZE_NAMED_PROPS || !1, gt = a.KEEP_CONTENT !== !1, We = a.IN_PLACE || !1, Lt = or(a.ALLOWED_URI_REGEXP) ? a.ALLOWED_URI_REGEXP : fs, Ne = typeof a.NAMESPACE == "string" ? a.NAMESPACE : xe, wt = q(a, "MATHML_TEXT_INTEGRATION_POINTS") && a.MATHML_TEXT_INTEGRATION_POINTS && typeof a.MATHML_TEXT_INTEGRATION_POINTS == "object" ? re(a.MATHML_TEXT_INTEGRATION_POINTS) : O({}, ["mi", "mo", "mn", "ms", "mtext"]), xt = q(a, "HTML_INTEGRATION_POINTS") && a.HTML_INTEGRATION_POINTS && typeof a.HTML_INTEGRATION_POINTS == "object" ? re(a.HTML_INTEGRATION_POINTS) : O({}, ["annotation-xml"]);
+    Es.indexOf(a.PARSER_MEDIA_TYPE) === -1 ? Ds : a.PARSER_MEDIA_TYPE, K = Ze === "application/xhtml+xml" ? At : Xe, Y = q(a, "ALLOWED_TAGS") && ie(a.ALLOWED_TAGS) ? O({}, a.ALLOWED_TAGS, K) : dt, J = q(a, "ALLOWED_ATTR") && ie(a.ALLOWED_ATTR) ? O({}, a.ALLOWED_ATTR, K) : ht, _t = q(a, "ALLOWED_NAMESPACES") && ie(a.ALLOWED_NAMESPACES) ? O({}, a.ALLOWED_NAMESPACES, At) : Ss, bt = q(a, "ADD_URI_SAFE_ATTR") && ie(a.ADD_URI_SAFE_ATTR) ? O(re(qt), a.ADD_URI_SAFE_ATTR, K) : qt, Vt = q(a, "ADD_DATA_URI_TAGS") && ie(a.ADD_DATA_URI_TAGS) ? O(re(Gt), a.ADD_DATA_URI_TAGS, K) : Gt, we = q(a, "FORBID_CONTENTS") && ie(a.FORBID_CONTENTS) ? O({}, a.FORBID_CONTENTS, K) : yt, Ge = q(a, "FORBID_TAGS") && ie(a.FORBID_TAGS) ? O({}, a.FORBID_TAGS, K) : re({}), Qe = q(a, "FORBID_ATTR") && ie(a.FORBID_ATTR) ? O({}, a.FORBID_ATTR, K) : re({}), Oe = q(a, "USE_PROFILES") ? a.USE_PROFILES && typeof a.USE_PROFILES == "object" ? re(a.USE_PROFILES) : a.USE_PROFILES : !1, $t = a.ALLOW_ARIA_ATTR !== !1, pt = a.ALLOW_DATA_ATTR !== !1, Ht = a.ALLOW_UNKNOWN_PROTOCOLS || !1, Ft = a.ALLOW_SELF_CLOSE_IN_ATTR !== !1, Pe = a.SAFE_FOR_TEMPLATES || !1, qe = a.SAFE_FOR_XML !== !1, Me = a.WHOLE_DOCUMENT || !1, Ie = a.RETURN_DOM || !1, et = a.RETURN_DOM_FRAGMENT || !1, tt = a.RETURN_TRUSTED_TYPE || !1, ft = a.FORCE_BODY || !1, Ut = a.SANITIZE_DOM !== !1, jt = a.SANITIZE_NAMED_PROPS || !1, gt = a.KEEP_CONTENT !== !1, We = a.IN_PLACE || !1, Lt = nr(a.ALLOWED_URI_REGEXP) ? a.ALLOWED_URI_REGEXP : fs, Ne = typeof a.NAMESPACE == "string" ? a.NAMESPACE : xe, wt = q(a, "MATHML_TEXT_INTEGRATION_POINTS") && a.MATHML_TEXT_INTEGRATION_POINTS && typeof a.MATHML_TEXT_INTEGRATION_POINTS == "object" ? re(a.MATHML_TEXT_INTEGRATION_POINTS) : O({}, ["mi", "mo", "mn", "ms", "mtext"]), xt = q(a, "HTML_INTEGRATION_POINTS") && a.HTML_INTEGRATION_POINTS && typeof a.HTML_INTEGRATION_POINTS == "object" ? re(a.HTML_INTEGRATION_POINTS) : O({}, ["annotation-xml"]);
     const p = q(a, "CUSTOM_ELEMENT_HANDLING") && a.CUSTOM_ELEMENT_HANDLING && typeof a.CUSTOM_ELEMENT_HANDLING == "object" ? re(a.CUSTOM_ELEMENT_HANDLING) : ze(null);
     if (X = ze(null), q(p, "tagNameCheck") && Wt(p.tagNameCheck) && (X.tagNameCheck = p.tagNameCheck), q(p, "attributeNameCheck") && Wt(p.attributeNameCheck) && (X.attributeNameCheck = p.attributeNameCheck), q(p, "allowCustomizedBuiltInElements") && typeof p.allowCustomizedBuiltInElements == "boolean" && (X.allowCustomizedBuiltInElements = p.allowCustomizedBuiltInElements), Pe && (pt = !1), et && (Ie = !0), Oe && (Y = O({}, hs), J = ze(null), Oe.html === !0 && (O(Y, ds), O(J, ps)), Oe.svg === !0 && (O(Y, St), O(J, Dt), O(J, lt)), Oe.svgFilters === !0 && (O(Y, Pt), O(J, Dt), O(J, lt)), Oe.mathMl === !0 && (O(Y, Et), O(J, ms), O(J, lt))), Se.tagCheck = null, Se.attributeCheck = null, q(a, "ADD_TAGS") && (typeof a.ADD_TAGS == "function" ? Se.tagCheck = a.ADD_TAGS : ie(a.ADD_TAGS) && (Y === dt && (Y = re(Y)), O(Y, a.ADD_TAGS, K))), q(a, "ADD_ATTR") && (typeof a.ADD_ATTR == "function" ? Se.attributeCheck = a.ADD_ATTR : ie(a.ADD_ATTR) && (J === ht && (J = re(J)), O(J, a.ADD_ATTR, K))), q(a, "ADD_URI_SAFE_ATTR") && ie(a.ADD_URI_SAFE_ATTR) && O(bt, a.ADD_URI_SAFE_ATTR, K), q(a, "FORBID_CONTENTS") && ie(a.FORBID_CONTENTS) && (we === yt && (we = re(we)), O(we, a.FORBID_CONTENTS, K)), q(a, "ADD_FORBID_CONTENTS") && ie(a.ADD_FORBID_CONTENTS) && (we === yt && (we = re(we)), O(we, a.ADD_FORBID_CONTENTS, K)), gt && (Y["#text"] = !0), Me && O(Y, ["html", "head", "body"]), Y.table && (O(Y, ["tbody"]), delete Ge.tbody), a.TRUSTED_TYPES_POLICY) {
       if (typeof a.TRUSTED_TYPES_POLICY.createHTML != "function")
@@ -2072,9 +2089,9 @@ function ws() {
         throw b = A, U;
       }
     } else
-      b === void 0 && a.TRUSTED_TYPES_POLICY !== null && (b = gr(g, o)), b && typeof T == "string" && (T = B(""));
+      b === void 0 && a.TRUSTED_TYPES_POLICY !== null && (b = yr(g, o)), b && typeof T == "string" && (T = B(""));
     (G.uponSanitizeElement.length > 0 || G.uponSanitizeAttribute.length > 0) && Y === dt && (Y = re(Y)), G.uponSanitizeAttribute.length > 0 && J === ht && (J = re(J)), ce && ce(a), Le = a;
-  }, Zt = O({}, [...St, ...Pt, ...nr]), Yt = O({}, [...Et, ...rr]), Rs = function(a) {
+  }, Zt = O({}, [...St, ...Pt, ...rr]), Yt = O({}, [...Et, ...ar]), Rs = function(a) {
     let p = x(a);
     (!p || !p.tagName) && (p = {
       namespaceURI: Ne,
@@ -2290,7 +2307,7 @@ function ws() {
     let U = p.length;
     for (; U--; ) {
       const L = p[U], j = L.name, ee = L.namespaceURI, he = L.value, ye = K(j), Ct = he;
-      let te = j === "value" ? Ct : Kn(Ct);
+      let te = j === "value" ? Ct : Jn(Ct);
       if (A.attrName = ye, A.attrValue = te, A.keepAttr = !0, A.forceKeepAttr = void 0, Ae(G.uponSanitizeAttribute, a, A), te = A.attrValue, jt && (ye === "id" || ye === "name") && ls(te, zt) !== 0 && (Re(j, a), te = zt + te), qe && se(/((--!?|])>)|<\/(style|script|title|xmp|textarea|noscript|iframe|noembed|noframes)/i, te)) {
         Re(j, a);
         continue;
@@ -2370,7 +2387,7 @@ function ws() {
   };
   return e.sanitize = function(M) {
     let a = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {}, p = null, A = null, U = null, L = null;
-    if (vt = !M, vt && (M = "<!-->"), typeof M != "string" && !rt(M) && (M = sr(M), typeof M != "string"))
+    if (vt = !M, vt && (M = "<!-->"), typeof M != "string" && !rt(M) && (M = or(M), typeof M != "string"))
       throw je("dirty is not a string, aborting");
     if (!e.isSupported)
       return M;
@@ -2408,7 +2425,7 @@ function ws() {
       return (J.shadowroot || J.shadowrootmode) && (L = oe.call(i, L, !0)), L;
     }
     let ee = Me ? p.outerHTML : p.innerHTML;
-    return Me && Y["!doctype"] && p.ownerDocument && p.ownerDocument.doctype && p.ownerDocument.doctype.name && se(pr, p.ownerDocument.doctype.name) && (ee = "<!DOCTYPE " + p.ownerDocument.doctype.name + `>
+    return Me && Y["!doctype"] && p.ownerDocument && p.ownerDocument.doctype && p.ownerDocument.doctype.name && se(mr, p.ownerDocument.doctype.name) && (ee = "<!DOCTYPE " + p.ownerDocument.doctype.name + `>
 ` + ee), Pe && Be([Ve, H, V], (he) => {
       ee = Ue(ee, he, " ");
     }), b && tt ? B(ee) : ee;
@@ -2425,8 +2442,8 @@ function ws() {
     typeof a == "function" && Fe(G[M], a);
   }, e.removeHook = function(M, a) {
     if (a !== void 0) {
-      const p = Yn(G[M], a);
-      return p === -1 ? void 0 : Xn(G[M], p, 1)[0];
+      const p = Xn(G[M], a);
+      return p === -1 ? void 0 : Kn(G[M], p, 1)[0];
     }
     return as(G[M]);
   }, e.removeHooks = function(M) {
@@ -2435,15 +2452,15 @@ function ws() {
     G = gs();
   }, e;
 }
-var yr = ws();
+var br = ws();
 function ct(s) {
-  return s == null ? "" : (typeof s != "string" && (s = String(s)), yr.sanitize(s, {
+  return s == null ? "" : (typeof s != "string" && (s = String(s)), br.sanitize(s, {
     FORBID_TAGS: ["style", "iframe", "object", "embed", "form", "input", "textarea", "svg", "math", "link", "base"],
     FORBID_ATTR: ["srcset", "formaction", "xlink:href"],
     ALLOW_DATA_ATTR: !1
   }));
 }
-const br = ["http:", "https:", "blob:"];
+const vr = ["http:", "https:", "blob:"];
 function Ke(s) {
   if (!s || typeof s != "string") return "";
   const e = s.trim();
@@ -2452,26 +2469,26 @@ function Ke(s) {
     return /^data:image\/(png|jpe?g|gif|webp|avif|bmp|svg\+xml)[;,]/i.test(e) ? e : "";
   try {
     const t = typeof window < "u" ? window.location.href : "http://localhost/", i = new URL(e, t);
-    return br.includes(i.protocol) ? e : "";
+    return vr.includes(i.protocol) ? e : "";
   } catch {
     return "";
   }
 }
-const vr = /https?:\/\/(fonts\.googleapis\.com|fonts\.gstatic\.com|cdn\.jsdelivr\.net|fastly\.jsdelivr\.net)\//i;
-function _r(s) {
-  return !s || typeof s != "string" ? "" : s.replace(/@import[^;]*;?/gi, (e) => vr.test(e) ? e : "").replace(/expression\s*\(/gi, "expr​(").replace(/<\/?\s*style/gi, "").replace(/(javascript|vbscript)\s*:/gi, "blocked:");
-}
+const _r = /https?:\/\/(fonts\.googleapis\.com|fonts\.gstatic\.com|cdn\.jsdelivr\.net|fastly\.jsdelivr\.net)\//i;
 function wr(s) {
-  return s == null ? "" : String(s).replace(/[;{}<>@]/g, "").replace(/url\s*\(/gi, "").replace(/expression\s*\(/gi, "").replace(/(javascript|vbscript)\s*:/gi, "").trim();
+  return !s || typeof s != "string" ? "" : s.replace(/@import[^;]*;?/gi, (e) => _r.test(e) ? e : "").replace(/expression\s*\(/gi, "expr​(").replace(/<\/?\s*style/gi, "").replace(/(javascript|vbscript)\s*:/gi, "blocked:");
 }
 function xr(s) {
+  return s == null ? "" : String(s).replace(/[;{}<>@]/g, "").replace(/url\s*\(/gi, "").replace(/expression\s*\(/gi, "").replace(/(javascript|vbscript)\s*:/gi, "").trim();
+}
+function Tr(s) {
   if (!s || typeof s != "object") return s;
   const e = {};
   for (const [t, i] of Object.entries(s))
-    e[t] = typeof i == "string" ? wr(i) : i;
+    e[t] = typeof i == "string" ? xr(i) : i;
   return e;
 }
-const Tr = {
+const kr = {
   components: { AppIcon: _e },
   name: "HandoutDisplay",
   mixins: [bs],
@@ -2530,17 +2547,17 @@ const Tr = {
   beforeUnmount() {
     window.removeEventListener("keydown", this.handleKeyPress), document.body.style.overflow = "";
   }
-}, kr = {
+}, Cr = {
   key: 0,
   class: "handout-header"
-}, Cr = { class: "handout-title" }, Ar = { class: "handout-content" }, Sr = ["src", "alt"], Pr = {
+}, Ar = { class: "handout-title" }, Sr = { class: "handout-content" }, Pr = ["src", "alt"], Er = {
   key: 1,
   class: "handout-placeholder"
-}, Er = {
+}, Dr = {
   key: 2,
   class: "handout-description"
 };
-function Dr(s, e, t, i, o, r) {
+function Mr(s, e, t, i, o, r) {
   const h = W("AppIcon");
   return u(), pe(ue, { name: "handout-overlay" }, {
     default: le(() => [
@@ -2570,24 +2587,24 @@ function Dr(s, e, t, i, o, r) {
               size: 24
             })
           ]),
-          t.handout.title ? (u(), d("div", kr, [
-            l("h2", Cr, _(t.handout.title), 1)
+          t.handout.title ? (u(), d("div", Cr, [
+            l("h2", Ar, _(t.handout.title), 1)
           ])) : E("", !0),
-          l("div", Ar, [
+          l("div", Sr, [
             t.handout.imageUrl ? (u(), d("img", {
               key: 0,
               src: r.safeSrc(t.handout.imageUrl),
               alt: t.handout.title || "핸드아웃",
               class: "handout-image",
               onError: e[1] || (e[1] = (...n) => r.handleImageError && r.handleImageError(...n))
-            }, null, 40, Sr)) : (u(), d("div", Pr, [
+            }, null, 40, Pr)) : (u(), d("div", Er, [
               I(h, {
                 name: "photo",
                 size: 64
               }),
               e[4] || (e[4] = l("p", null, "이미지를 불러올 수 없습니다", -1))
             ])),
-            t.handout.description ? (u(), d("div", Er, [
+            t.handout.description ? (u(), d("div", Dr, [
               l("p", null, _(t.handout.description), 1)
             ])) : E("", !0)
           ])
@@ -2597,14 +2614,14 @@ function Dr(s, e, t, i, o, r) {
     _: 1
   });
 }
-const Mr = /* @__PURE__ */ de(Tr, [["render", Dr], ["__scopeId", "data-v-03517b6a"]]);
-function Rr(s, e, t = []) {
+const Rr = /* @__PURE__ */ de(kr, [["render", Mr], ["__scopeId", "data-v-03517b6a"]]);
+function Br(s, e, t = []) {
   const i = (Array.isArray(e) ? e : [e]).filter(Boolean);
   if (!s || typeof s != "string" || i.length === 0) return "";
   const o = s.replace(/\/\*[\s\S]*?\*\//g, "");
   return xs(o, i, t).trim();
 }
-const Br = /^@(media|supports|container|layer)\b/i, Ir = /^(:root|html|body)$/i, Or = /^(:root|html|body)[\s>]+(.+)$/i;
+const Ir = /^@(media|supports|container|layer)\b/i, Or = /^(:root|html|body)$/i, Nr = /^(:root|html|body)[\s>]+(.+)$/i;
 function xs(s, e, t) {
   const i = [];
   let o = 0;
@@ -2621,16 +2638,16 @@ function xs(s, e, t) {
       o = c + 1;
       continue;
     }
-    const m = s.slice(o, c).trim(), g = Nr(s, c), y = s.slice(c + 1, g);
+    const m = s.slice(o, c).trim(), g = Lr(s, c), y = s.slice(c + 1, g);
     if (m.startsWith("@"))
-      if (Br.test(m)) {
+      if (Ir.test(m)) {
         const P = xs(y, e, t);
         P && i.push(`${m} {
 ${P}
 }`);
       } else
         i.push(`${m} {${y}}`);
-    else m && i.push(`${Hr(m, e, t)} {${y}}`);
+    else m && i.push(`${Fr(m, e, t)} {${y}}`);
     o = g + 1;
   }
   return i.join(`
@@ -2656,7 +2673,7 @@ function Ot(s, e, t = 0) {
   }
   return -1;
 }
-function Nr(s, e) {
+function Lr(s, e) {
   let t = 1, i = e + 1;
   for (; i < s.length; ) {
     const o = Ot(s, "{}", i);
@@ -2666,7 +2683,7 @@ function Nr(s, e) {
   }
   return s.length;
 }
-function Lr(s) {
+function $r(s) {
   const e = [];
   let t = 0;
   for (; t < s.length; ) {
@@ -2679,27 +2696,27 @@ function Lr(s) {
   }
   return e;
 }
-function $r(s, e) {
+function Hr(s, e) {
   return s === e || s.startsWith(e + " ") || s.startsWith(e + ".") || s.startsWith(e + ":") || s.startsWith(e + ">") || s.startsWith(e + "[");
 }
-function Hr(s, e, t) {
-  const i = Lr(s).map((r) => r.trim().replace(/\s+/g, " ")).filter(Boolean), o = [];
+function Fr(s, e, t) {
+  const i = $r(s).map((r) => r.trim().replace(/\s+/g, " ")).filter(Boolean), o = [];
   for (let r of i) {
     const h = t.find((c) => r === c || r.startsWith(c + " ") || r.startsWith(c + ":") || r.startsWith(c + ".") || r.startsWith(c + "[") || r.startsWith(c + ">") || r.startsWith(c + "+") || r.startsWith(c + "~"));
     if (h) {
       e.forEach((c) => o.push(c + r.slice(h.length)));
       continue;
     }
-    if (Ir.test(r)) {
+    if (Or.test(r)) {
       e.forEach((c) => o.push(c));
       continue;
     }
-    const n = r.match(Or);
+    const n = r.match(Nr);
     if (n) {
       e.forEach((c) => o.push(`${c} ${n[2]}`));
       continue;
     }
-    if (e.some((c) => $r(r, c))) {
+    if (e.some((c) => Hr(r, c))) {
       o.push(r);
       continue;
     }
@@ -2709,14 +2726,14 @@ function Hr(s, e, t) {
 `);
 }
 function Ts(s = {}) {
-  const e = xr(s) || {}, t = s.globalBackgroundImage;
+  const e = Tr(s) || {}, t = s.globalBackgroundImage;
   if (t && t !== "none") {
     const i = String(t).match(/^url\(\s*["']?(.*?)["']?\s*\)$/i), o = i && Ke(i[1]);
     e.globalBackgroundImage = o ? `url(${JSON.stringify(o)})` : "";
   }
   return e;
 }
-function Fr(s = {}) {
+function Ur(s = {}) {
   s = Ts(s);
   const e = [
     "/* VNLog Custom CSS - EmbedPlayerView */",
@@ -2725,7 +2742,7 @@ function Fr(s = {}) {
   return s.dialogBackground && e.push(`  --custom-dialog-bg: ${s.dialogBackground};`), s.dialogBorderColor && e.push(`  --custom-dialog-border: ${s.dialogBorderColor};`), s.dialogBorderWidth && e.push(`  --custom-dialog-border-width: ${s.dialogBorderWidth};`), s.dialogTextColor && e.push(`  --custom-dialog-text: ${s.dialogTextColor};`), s.dialogNameFontSize && e.push(`  --custom-dialog-name-size: ${s.dialogNameFontSize};`), s.dialogTextFontSize && e.push(`  --custom-dialog-text-size: ${s.dialogTextFontSize};`), s.dialogPadding && e.push(`  --custom-dialog-padding: ${s.dialogPadding};`), s.dialogBorderRadius && e.push(`  --custom-dialog-radius: ${s.dialogBorderRadius};`), s.dialogMinHeight && e.push(`  --custom-dialog-min-height: ${s.dialogMinHeight};`), s.dialogLineHeight && e.push(`  --custom-dialog-line-height: ${s.dialogLineHeight};`), s.characterMaxHeight && e.push(`  --custom-character-max-height: ${s.characterMaxHeight};`), s.characterMaxWidth && e.push(`  --custom-character-max-width: ${s.characterMaxWidth};`), s.characterInactiveOpacity && e.push(`  --custom-character-inactive-opacity: ${s.characterInactiveOpacity};`), s.characterBorderRadius && e.push(`  --custom-character-border-radius: ${s.characterBorderRadius};`), s.characterBorderWidth && e.push(`  --custom-character-border-width: ${s.characterBorderWidth};`), s.characterTransition && e.push(`  --custom-character-transition: ${s.characterTransition};`), s.controlsBackground && e.push(`  --custom-controls-bg: ${s.controlsBackground};`), s.controlsBorderColor && e.push(`  --custom-controls-border: ${s.controlsBorderColor};`), s.controlsButtonColor && e.push(`  --custom-controls-button: ${s.controlsButtonColor};`), s.controlsButtonHoverColor && e.push(`  --custom-controls-button-hover: ${s.controlsButtonHoverColor};`), s.controlsButtonBg && e.push(`  --custom-controls-button-bg: ${s.controlsButtonBg};`), s.controlsButtonHoverBg && e.push(`  --custom-controls-button-hover-bg: ${s.controlsButtonHoverBg};`), s.controlsProgressColor && e.push(`  --custom-controls-progress: ${s.controlsProgressColor};`), s.controlsProgressBg && e.push(`  --custom-controls-progress-bg: ${s.controlsProgressBg};`), s.controlsButtonSize && e.push(`  --custom-controls-button-size: ${s.controlsButtonSize};`), s.controlsPrimaryButtonSize && e.push(`  --custom-controls-primary-button-size: ${s.controlsPrimaryButtonSize};`), s.controlsBorderRadius && e.push(`  --custom-controls-border-radius: ${s.controlsBorderRadius};`), s.overlayBackground && e.push(`  --custom-overlay-bg: ${s.overlayBackground};`), s.overlayBlur && e.push(`  --custom-overlay-blur: ${s.overlayBlur};`), s.overlayContentBackground && e.push(`  --custom-overlay-content-bg: ${s.overlayContentBackground};`), s.overlayTextColor && e.push(`  --custom-overlay-text: ${s.overlayTextColor};`), s.overlayBorderRadius && e.push(`  --custom-overlay-radius: ${s.overlayBorderRadius};`), s.overlayPadding && e.push(`  --custom-overlay-padding: ${s.overlayPadding};`), s.overlayMaxWidth && e.push(`  --custom-overlay-max-width: ${s.overlayMaxWidth};`), s.globalBackground && (e.push(`  --custom-global-bg: ${s.globalBackground};`), e.push(`  --bg-color: ${s.globalBackground};`)), s.globalTextColor && (e.push(`  --custom-global-text: ${s.globalTextColor};`), e.push(`  --text-color: ${s.globalTextColor};`)), s.globalFontFamily && (e.push(`  --custom-global-font: ${s.globalFontFamily};`), e.push(`  --font-pretendard: ${s.globalFontFamily};`)), s.globalLineHeight && e.push(`  --custom-global-line-height: ${s.globalLineHeight};`), s.globalBackgroundImage && (e.push(`  --bg-image: ${s.globalBackgroundImage};`), e.push(`  --custom-global-background-image: ${s.globalBackgroundImage};`)), s.globalBackgroundSize && (e.push(`  --bg-image-size: ${s.globalBackgroundSize};`), e.push(`  --custom-global-background-size: ${s.globalBackgroundSize};`)), e.push("}"), e.push(""), e.join(`
 `);
 }
-function Ur(s = {}) {
+function jr(s = {}) {
   const e = Ts(s), t = [
     "/* ========================================",
     "   VNLog Custom CSS - Direct Override",
@@ -2735,29 +2752,29 @@ function Ur(s = {}) {
   return e.dialogBackground && (t.push("/* Dialog Box Container - Background */"), t.push(".dialog-box {"), t.push(`  background-color: ${e.dialogBackground} !important;`), t.push("}"), t.push("")), e.dialogBorderColor && (t.push("/* Dialog Box Container - Border Color */"), t.push(".dialog-box {"), t.push(`  border-color: ${e.dialogBorderColor} !important;`), t.push("}"), t.push("")), e.dialogBorderWidth && (t.push("/* Dialog Box Container - Border Width */"), t.push(".dialog-box {"), t.push(`  border-width: ${e.dialogBorderWidth} !important;`), t.push("  border-style: solid !important;"), t.push("}"), t.push("")), e.dialogBorderRadius && (t.push("/* Dialog Box Container - Border Radius */"), t.push(".dialog-box {"), t.push(`  border-radius: ${e.dialogBorderRadius} !important;`), t.push("}"), t.push("")), e.dialogPadding && (t.push("/* Dialog Box Container - Padding */"), t.push(".dialog-box {"), t.push(`  padding: ${e.dialogPadding} !important;`), t.push("}"), t.push("")), e.dialogMinHeight && (t.push("/* Dialog Box Container - Min Height */"), t.push(".dialog-box {"), t.push(`  min-height: ${e.dialogMinHeight} !important;`), t.push("}"), t.push("")), e.dialogNameFontSize && (t.push("/* Dialog Character Name - Font Size */"), t.push(".dialog-box .character-name {"), t.push(`  font-size: ${e.dialogNameFontSize} !important;`), t.push("}"), t.push("")), e.dialogTextColor && (t.push("/* Dialog Text - Color */"), t.push(".dialog-box .dialog-text,"), t.push(".dialog-box .text-content {"), t.push(`  color: ${e.dialogTextColor} !important;`), t.push("}"), t.push("")), e.dialogTextFontSize && (t.push("/* Dialog Text - Font Size */"), t.push(".dialog-box .dialog-text,"), t.push(".dialog-box .text-content {"), t.push(`  font-size: ${e.dialogTextFontSize} !important;`), t.push("}"), t.push("")), e.dialogLineHeight && (t.push("/* Dialog Text - Line Height */"), t.push(".dialog-box .dialog-text,"), t.push(".dialog-box .text-content {"), t.push(`  line-height: ${e.dialogLineHeight} !important;`), t.push("}"), t.push("")), e.characterMaxWidth && (t.push("/* Character Image - Max Width */"), t.push(".character-display .character-avatar img {"), t.push(`  max-width: ${e.characterMaxWidth} !important;`), t.push("}"), t.push("")), e.characterMaxHeight && (t.push("/* Character Image - Max Height */"), t.push(".character-display .character-avatar img {"), t.push(`  max-height: ${e.characterMaxHeight} !important;`), t.push("}"), t.push("")), e.characterBorderRadius && (t.push("/* Character Image - Border Radius */"), t.push(".character-display .character-avatar img {"), t.push(`  border-radius: ${e.characterBorderRadius} !important;`), t.push("}"), t.push("")), e.characterBorderWidth && (t.push("/* Character Image - Border */"), t.push(".character-display .character-avatar img {"), t.push(`  border: ${e.characterBorderWidth} solid rgba(255, 255, 255, 0.3) !important;`), t.push("}"), t.push("")), e.characterTransition && (t.push("/* Character Image - Transition */"), t.push(".character-display .character-avatar img {"), t.push(`  transition: ${e.characterTransition} !important;`), t.push("}"), t.push("")), e.characterInactiveOpacity && (t.push("/* Character Inactive - Opacity */"), t.push(".character-display .character-wrapper:not(.is-speaking) .character-avatar img {"), t.push(`  opacity: ${e.characterInactiveOpacity} !important;`), t.push("}"), t.push("")), e.controlsBackground && (t.push("/* Playback Controls Container - Background */"), t.push(".playback-controls {"), t.push(`  background: ${e.controlsBackground} !important;`), t.push("}"), t.push("")), e.controlsBorderColor && (t.push("/* Playback Controls Container - Border Color */"), t.push(".playback-controls {"), t.push(`  border-color: ${e.controlsBorderColor} !important;`), t.push("}"), t.push("")), e.controlsBorderRadius && (t.push("/* Playback Controls Container - Border Radius */"), t.push(".playback-controls {"), t.push(`  border-radius: 0 0 ${e.controlsBorderRadius} ${e.controlsBorderRadius} !important;`), t.push("}"), t.push("")), e.controlsProgressBg && (t.push("/* Progress Bar - Background */"), t.push(".playback-controls .progress-bar {"), t.push(`  background: ${e.controlsProgressBg} !important;`), t.push("}"), t.push("")), e.controlsProgressColor && (t.push("/* Progress Fill - Color */"), t.push(".playback-controls .progress-fill {"), t.push(`  background: ${e.controlsProgressColor} !important;`), t.push("}"), t.push("")), e.controlsButtonSize && (t.push("/* Control Button - Size */"), t.push(".playback-controls .control-button {"), t.push(`  width: ${e.controlsButtonSize} !important;`), t.push(`  height: ${e.controlsButtonSize} !important;`), t.push("}"), t.push("")), e.controlsButtonBg && (t.push("/* Control Button - Background */"), t.push(".playback-controls .control-button {"), t.push(`  background: ${e.controlsButtonBg} !important;`), t.push("}"), t.push("")), e.controlsButtonColor && (t.push("/* Control Button - Color */"), t.push(".playback-controls .control-button {"), t.push(`  color: ${e.controlsButtonColor} !important;`), t.push("}"), t.push("")), e.controlsBorderRadius && (t.push("/* Control Button - Border Radius */"), t.push(".playback-controls .control-button,"), t.push(".playback-controls .speed-button {"), t.push(`  border-radius: ${e.controlsBorderRadius} !important;`), t.push("}"), t.push("")), e.controlsButtonHoverBg && (t.push("/* Control Button Hover - Background */"), t.push(".playback-controls .control-button:hover:not(:disabled) {"), t.push(`  background: ${e.controlsButtonHoverBg} !important;`), t.push("}"), t.push("")), e.controlsButtonHoverColor && (t.push("/* Control Button Hover - Color */"), t.push(".playback-controls .control-button:hover:not(:disabled) {"), t.push(`  color: ${e.controlsButtonHoverColor} !important;`), t.push("}"), t.push("")), e.controlsPrimaryButtonSize && (t.push("/* Primary Control Button - Size */"), t.push(".playback-controls .control-button.primary {"), t.push(`  width: ${e.controlsPrimaryButtonSize} !important;`), t.push(`  height: ${e.controlsPrimaryButtonSize} !important;`), t.push("}"), t.push("")), e.overlayBackground && (t.push("/* Overlay Background - Color */"), t.push(".dice-overlay,"), t.push(".scene-description-overlay {"), t.push(`  background: ${e.overlayBackground} !important;`), t.push("}"), t.push("")), e.overlayBlur && (t.push("/* Overlay Background - Blur */"), t.push(".dice-overlay,"), t.push(".scene-description-overlay {"), t.push(`  backdrop-filter: blur(${e.overlayBlur}) !important;`), t.push("}"), t.push("")), e.overlayContentBackground && (t.push("/* Overlay Content Box - Background */"), t.push(".dice-overlay-content,"), t.push(".scene-description-content {"), t.push(`  background: ${e.overlayContentBackground} !important;`), t.push("}"), t.push("")), e.overlayTextColor && (t.push("/* Overlay Content Box - Text Color */"), t.push(".dice-overlay-content,"), t.push(".scene-description-content {"), t.push(`  color: ${e.overlayTextColor} !important;`), t.push("}"), t.push("")), e.overlayBorderRadius && (t.push("/* Overlay Content Box - Border Radius */"), t.push(".dice-overlay-content,"), t.push(".scene-description-content {"), t.push(`  border-radius: ${e.overlayBorderRadius} !important;`), t.push("}"), t.push("")), e.overlayPadding && (t.push("/* Overlay Content Box - Padding */"), t.push(".dice-overlay-content,"), t.push(".scene-description-content {"), t.push(`  padding: ${e.overlayPadding} !important;`), t.push("}"), t.push("")), e.overlayMaxWidth && (t.push("/* Overlay Content Box - Max Width */"), t.push(".dice-overlay-content,"), t.push(".scene-description-content {"), t.push(`  max-width: ${e.overlayMaxWidth} !important;`), t.push("}"), t.push("")), e.globalBackground && (t.push("/* Global Container - Background Color */"), t.push(".embed-player-view,"), t.push(".player-view {"), t.push(`  background-color: ${e.globalBackground} !important;`), t.push("}"), t.push("")), e.globalTextColor && (t.push("/* Global - Text Color (All Elements) */"), t.push(".embed-player-view,"), t.push(".player-view {"), t.push(`  color: ${e.globalTextColor} !important;`), t.push("}"), t.push("")), e.globalFontFamily && (t.push("/* Global - Font Family (All Elements) */"), t.push(".embed-player-view,"), t.push(".player-view {"), t.push(`  font-family: ${e.globalFontFamily} !important;`), t.push("}"), t.push("")), e.globalLineHeight && (t.push("/* Global - Line Height (All Elements) */"), t.push(".embed-player-view,"), t.push(".player-view {"), t.push(`  line-height: ${e.globalLineHeight} !important;`), t.push("}"), t.push("")), e.globalBackgroundImage && (t.push("/* Global Container - Background Image */"), t.push(".embed-player-view,"), t.push(".player-view {"), t.push(`  background-image: ${e.globalBackgroundImage} !important;`), e.globalBackgroundSize && t.push(`  background-size: ${e.globalBackgroundSize} !important;`), t.push("  background-position: center !important;"), t.push("  background-repeat: no-repeat !important;"), t.push("  background-attachment: scroll !important;"), t.push("}"), t.push("")), e.controlsBackground && (t.push("/* Player Header - Background */"), t.push(".player-view .player-header,"), t.push(".embed-player-view .player-header {"), t.push(`  background: ${e.controlsBackground} !important;`), t.push("}"), t.push("")), e.controlsBorderColor && (t.push("/* Player Header - Border Color */"), t.push(".player-view .player-header,"), t.push(".embed-player-view .player-header {"), t.push(`  border-bottom-color: ${e.controlsBorderColor} !important;`), t.push("}"), t.push("")), e.controlsButtonBg && (t.push("/* Header Back Button - Background */"), t.push(".player-view .player-header .back-button {"), t.push(`  background: ${e.controlsButtonBg} !important;`), t.push("}"), t.push("")), e.controlsButtonColor && (t.push("/* Header Back Button - Color */"), t.push(".player-view .player-header .back-button {"), t.push(`  color: ${e.controlsButtonColor} !important;`), t.push("}"), t.push("")), e.controlsBorderRadius && (t.push("/* Header Back Button - Border Radius */"), t.push(".player-view .player-header .back-button {"), t.push(`  border-radius: ${e.controlsBorderRadius} !important;`), t.push("}"), t.push("")), e.controlsButtonHoverBg && (t.push("/* Header Back Button Hover - Background */"), t.push(".player-view .player-header .back-button:hover {"), t.push(`  background: ${e.controlsButtonHoverBg} !important;`), t.push("}"), t.push("")), e.controlsButtonBg && (t.push("/* Header Buttons - Background */"), t.push(".player-view .player-header .header-button,"), t.push(".embed-player-view .player-header .header-button {"), t.push(`  background: ${e.controlsButtonBg} !important;`), t.push("}"), t.push("")), e.controlsButtonColor && (t.push("/* Header Buttons - Color */"), t.push(".player-view .player-header .header-button,"), t.push(".embed-player-view .player-header .header-button {"), t.push(`  color: ${e.controlsButtonColor} !important;`), t.push("}"), t.push("")), e.controlsBorderRadius && (t.push("/* Header Buttons - Border Radius */"), t.push(".player-view .player-header .header-button,"), t.push(".embed-player-view .player-header .header-button {"), t.push(`  border-radius: ${e.controlsBorderRadius} !important;`), t.push("}"), t.push("")), e.controlsButtonHoverBg && (t.push("/* Header Buttons Hover - Background */"), t.push(".player-view .player-header .header-button:hover,"), t.push(".embed-player-view .player-header .header-button:hover {"), t.push(`  background: ${e.controlsButtonHoverBg} !important;`), t.push("}"), t.push("")), e.controlsButtonHoverColor && (t.push("/* Header Buttons Hover - Color */"), t.push(".player-view .player-header .header-button:hover,"), t.push(".embed-player-view .player-header .header-button:hover {"), t.push(`  color: ${e.controlsButtonHoverColor} !important;`), t.push("}"), t.push("")), e.globalTextColor && (t.push("/* Header Title - Color */"), t.push(".player-view .player-header .log-title,"), t.push(".embed-player-view .player-header .embed-title {"), t.push(`  color: ${e.globalTextColor} !important;`), t.push("}"), t.push("")), t.join(`
 `);
 }
-function jr(s) {
+function zr(s) {
   if (!s || typeof s != "object") return "";
   const e = s.cssVars || s;
-  return [Fr(e), Ur(e), s.userCustomCSS || ""].join(`
+  return [Ur(e), jr(e), s.userCustomCSS || ""].join(`
 `);
 }
-let zr = 0;
+let Vr = 0;
 const Bt = /* @__PURE__ */ new WeakMap();
 function ks(s) {
   var e;
   s && ((e = Bt.get(s)) == null || e.remove(), Bt.delete(s), s.removeAttribute("data-vnlog-style"));
 }
-function Vr(s, e) {
+function Gr(s, e) {
   if (!(s != null && s.setAttribute) || (ks(s), !e)) return;
-  const t = `stage-${++zr}`;
+  const t = `stage-${++Vr}`;
   s.setAttribute("data-vnlog-style", t);
   const i = document.createElement("style");
-  i.dataset.vnlogStyle = t, i.textContent = _r(Rr(jr(e), `[data-vnlog-style="${t}"]`, [".player-view", ".embed-player-view", ".vnlog-embed-player"])), document.head.appendChild(i), Bt.set(s, i);
+  i.dataset.vnlogStyle = t, i.textContent = wr(Br(zr(e), `[data-vnlog-style="${t}"]`, [".player-view", ".embed-player-view", ".vnlog-embed-player"])), document.head.appendChild(i), Bt.set(s, i);
 }
-const Gr = { primaryColor: "--primary-color", textColor: "--text-color", bgColor: "--bg-color", bgSecondary: "--bg-secondary", borderColor: "--border-color", fontFamily: "--font-pretendard" };
-function qr(s, e = {}) {
+const qr = { primaryColor: "--primary-color", textColor: "--text-color", bgColor: "--bg-color", bgSecondary: "--bg-secondary", borderColor: "--border-color", fontFamily: "--font-pretendard" };
+function Wr(s, e = {}) {
   if (s != null && s.style) {
-    for (const [t, i] of Object.entries(Gr))
+    for (const [t, i] of Object.entries(qr))
       s.style.removeProperty(i), e[t] && s.style.setProperty(i, e[t]);
     s.style.removeProperty("--font-family"), s.style.removeProperty("font-family"), It(s, e.bgImageUrl, e.bgImageOpacity, e.bgImageSize);
   }
@@ -2776,7 +2793,7 @@ function ut(s) {
   const e = s.trim();
   return /^(?:var\(|inherit$|initial$|unset$|currentcolor$)/i.test(e) ? "" : e;
 }
-const Wr = {
+const Zr = {
   name: "CharacterDisplay",
   props: {
     // 현재 스텝 정보
@@ -2851,18 +2868,18 @@ const Wr = {
       immediate: !0
     }
   }
-}, Zr = {
+}, Yr = {
   key: 0,
   class: "character-display"
-}, Yr = { class: "character-container" }, Xr = { class: "character-avatar" }, Kr = ["src", "alt"], Jr = {
+}, Xr = { class: "character-container" }, Kr = { class: "character-avatar" }, Jr = ["src", "alt"], Qr = {
   key: 1,
   class: "image-fallback",
   role: "status"
 };
-function Qr(s, e, t, i, o, r) {
+function ea(s, e, t, i, o, r) {
   var h;
-  return (h = r.currentCharacter) != null && h.avatarUrl ? (u(), d("div", Zr, [
-    l("div", Yr, [
+  return (h = r.currentCharacter) != null && h.avatarUrl ? (u(), d("div", Yr, [
+    l("div", Xr, [
       I(ue, {
         name: "character-fade",
         mode: "out-in"
@@ -2877,14 +2894,14 @@ function Qr(s, e, t, i, o, r) {
               }]),
               style: be(r.getCharacterStyle(r.currentCharacter))
             }, [
-              l("div", Xr, [
+              l("div", Kr, [
                 l("img", {
                   src: r.safeSrc(r.currentCharacter.avatarUrl),
                   alt: r.currentCharacter.name,
                   onError: e[0] || (e[0] = (c) => r.handleImageError(r.currentCharacter))
-                }, null, 40, Kr)
+                }, null, 40, Jr)
               ])
-            ], 6)) : (n = r.currentCharacter) != null && n.avatarUrl ? (u(), d("p", Jr, "인물 이미지를 불러오지 못했어요.")) : E("", !0)
+            ], 6)) : (n = r.currentCharacter) != null && n.avatarUrl ? (u(), d("p", Qr, "인물 이미지를 불러오지 못했어요.")) : E("", !0)
           ];
         }),
         _: 1
@@ -2892,7 +2909,7 @@ function Qr(s, e, t, i, o, r) {
     ])
   ])) : E("", !0);
 }
-const ea = /* @__PURE__ */ de(Wr, [["render", Qr], ["__scopeId", "data-v-3aece845"]]), ta = {
+const ta = /* @__PURE__ */ de(Zr, [["render", ea], ["__scopeId", "data-v-3aece845"]]), sa = {
   components: { AppIcon: _e },
   name: "StatusChange",
   props: {
@@ -2907,39 +2924,39 @@ const ea = /* @__PURE__ */ de(Wr, [["render", Qr], ["__scopeId", "data-v-3aece84
       return e.includes("침식") ? "bolt" : e.includes("hp") || e.includes("생명") || e.includes("체력") || e.includes("mp") || e.includes("마나") || e.includes("마력") ? "heart" : e.includes("san") || e.includes("정신") || e.includes("이성") ? "sparkles" : "chart";
     }
   }
-}, sa = {
+}, oa = {
   key: 0,
   class: "status-change-container"
-}, oa = { class: "status-icon" }, na = { class: "status-info" }, ra = { class: "character-name" }, aa = { class: "status-name" }, ia = { class: "status-values" }, la = { class: "old-value" }, ca = { class: "new-value" }, ua = {
+}, na = { class: "status-icon" }, ra = { class: "status-info" }, aa = { class: "character-name" }, ia = { class: "status-name" }, la = { class: "status-values" }, ca = { class: "old-value" }, ua = { class: "new-value" }, da = {
   key: 1,
   class: "new-value"
-}, da = {
+}, ha = {
   key: 2,
   class: "old-value"
 };
-function ha(s, e, t, i, o, r) {
+function pa(s, e, t, i, o, r) {
   const h = W("AppIcon");
-  return t.statusChanges && t.statusChanges.length > 0 ? (u(), d("div", sa, [
+  return t.statusChanges && t.statusChanges.length > 0 ? (u(), d("div", oa, [
     (u(!0), d(ae, null, Ce(t.statusChanges, (n, c) => (u(), d("div", {
       key: c,
       class: ve(["status-change", { "is-positive": n.delta > 0, "is-negative": n.delta < 0 }])
     }, [
-      l("div", oa, [
+      l("div", na, [
         I(h, {
           name: r.getStatusIcon(n.statusName),
           size: 16
         }, null, 8, ["name"])
       ]),
-      l("div", na, [
-        l("span", ra, _(n.characterName), 1),
-        l("span", aa, _(n.statusName), 1)
+      l("div", ra, [
+        l("span", aa, _(n.characterName), 1),
+        l("span", ia, _(n.statusName), 1)
       ]),
-      l("div", ia, [
+      l("div", la, [
         n.oldValue !== null && n.newValue !== null ? (u(), d(ae, { key: 0 }, [
-          l("span", la, _(n.oldValue), 1),
+          l("span", ca, _(n.oldValue), 1),
           e[0] || (e[0] = l("span", { class: "arrow" }, "→", -1)),
-          l("span", ca, _(n.newValue), 1)
-        ], 64)) : n.oldValue === null && n.newValue !== null ? (u(), d("span", ua, _(n.newValue), 1)) : n.oldValue !== null && n.newValue === null ? (u(), d("span", da, _(n.oldValue), 1)) : E("", !0),
+          l("span", ua, _(n.newValue), 1)
+        ], 64)) : n.oldValue === null && n.newValue !== null ? (u(), d("span", da, _(n.newValue), 1)) : n.oldValue !== null && n.newValue === null ? (u(), d("span", ha, _(n.oldValue), 1)) : E("", !0),
         n.delta !== 0 ? (u(), d("span", {
           key: 3,
           class: ve(["delta", { "delta-positive": n.delta > 0, "delta-negative": n.delta < 0 }])
@@ -2948,7 +2965,7 @@ function ha(s, e, t, i, o, r) {
     ], 2))), 128))
   ])) : E("", !0);
 }
-const pa = /* @__PURE__ */ de(ta, [["render", ha], ["__scopeId", "data-v-ce1a3fab"]]), ma = {
+const ma = /* @__PURE__ */ de(sa, [["render", pa], ["__scopeId", "data-v-ce1a3fab"]]), fa = {
   components: { AppIcon: _e },
   name: "DXCombo",
   props: {
@@ -2967,136 +2984,136 @@ const pa = /* @__PURE__ */ de(ta, [["render", ha], ["__scopeId", "data-v-ce1a3fa
 `), t = t.replace(/\\t/g, "	"), t = t.replace(/\\r/g, "\r"), t;
     }
   }
-}, fa = {
+}, ga = {
   key: 0,
   class: "dx-combo-container"
-}, ga = { class: "combo-header" }, ya = { class: "combo-icon" }, ba = { class: "combo-label" }, va = {
+}, ya = { class: "combo-header" }, ba = { class: "combo-icon" }, va = { class: "combo-label" }, _a = {
   key: 0,
   class: "combo-name"
-}, _a = {
+}, wa = {
   key: 1,
   class: "erosion-cost"
-}, wa = { class: "combo-effects" }, xa = { class: "effect-name" }, Ta = { class: "effect-level" }, ka = {
+}, xa = { class: "combo-effects" }, Ta = { class: "effect-name" }, ka = { class: "effect-level" }, Ca = {
   key: 0,
   class: "combo-info-row"
-}, Ca = {
+}, Aa = {
   key: 0,
   class: "info-item"
-}, Aa = { class: "info-value" }, Sa = {
+}, Sa = { class: "info-value" }, Pa = {
   key: 1,
   class: "info-item"
-}, Pa = { class: "info-value" }, Ea = {
+}, Ea = { class: "info-value" }, Da = {
   key: 2,
   class: "info-item"
-}, Da = { class: "info-value" }, Ma = {
+}, Ma = { class: "info-value" }, Ra = {
   key: 3,
   class: "info-item"
-}, Ra = { class: "info-value" }, Ba = {
+}, Ba = { class: "info-value" }, Ia = {
   key: 1,
   class: "combo-stats-row"
-}, Ia = {
+}, Oa = {
   key: 0,
   class: "info-item"
-}, Oa = { class: "info-value" }, Na = {
+}, Na = { class: "info-value" }, La = {
   key: 1,
   class: "info-item"
-}, La = { class: "info-value" }, $a = {
+}, $a = { class: "info-value" }, Ha = {
   key: 2,
   class: "info-item"
-}, Ha = { class: "info-value" }, Fa = {
+}, Fa = { class: "info-value" }, Ua = {
   key: 3,
   class: "info-item"
-}, Ua = { class: "info-value" }, ja = {
+}, ja = { class: "info-value" }, za = {
   key: 2,
   class: "combo-description"
-}, za = {
+}, Va = {
   key: 3,
   class: "combo-dice-roll"
-}, Va = { class: "dice-roll-header" }, Ga = { class: "dice-roll-content" }, qa = { class: "dice-formula" }, Wa = { class: "dice-detail" }, Za = { class: "dice-result" };
-function Ya(s, e, t, i, o, r) {
+}, Ga = { class: "dice-roll-header" }, qa = { class: "dice-roll-content" }, Wa = { class: "dice-formula" }, Za = { class: "dice-detail" }, Ya = { class: "dice-result" };
+function Xa(s, e, t, i, o, r) {
   const h = W("AppIcon");
-  return t.dxCombos && t.dxCombos.length > 0 ? (u(), d("div", fa, [
+  return t.dxCombos && t.dxCombos.length > 0 ? (u(), d("div", ga, [
     (u(!0), d(ae, null, Ce(t.dxCombos, (n, c) => (u(), d("div", {
       key: c,
       class: "dx-combo"
     }, [
-      l("div", ga, [
-        l("div", ya, [
+      l("div", ya, [
+        l("div", ba, [
           I(h, {
             name: "bolt",
             size: 16
           })
         ]),
-        l("span", ba, _(n.isSingleEffect ? "이펙트" : "콤보"), 1),
-        n.comboName ? (u(), d("span", va, _(r.decodeHtml(n.comboName)), 1)) : E("", !0),
-        n.erosionCost ? (u(), d("span", _a, _(n.erosionCost) + "↑", 1)) : E("", !0)
+        l("span", va, _(n.isSingleEffect ? "이펙트" : "콤보"), 1),
+        n.comboName ? (u(), d("span", _a, _(r.decodeHtml(n.comboName)), 1)) : E("", !0),
+        n.erosionCost ? (u(), d("span", wa, _(n.erosionCost) + "↑", 1)) : E("", !0)
       ]),
-      l("div", wa, [
+      l("div", xa, [
         (u(!0), d(ae, null, Ce(n.effects, (f, m) => (u(), d("div", {
           key: m,
           class: "combo-effect"
         }, [
-          l("span", xa, _(r.decodeHtml(f.name)), 1),
-          l("span", Ta, "Lv." + _(f.level), 1)
+          l("span", Ta, _(r.decodeHtml(f.name)), 1),
+          l("span", ka, "Lv." + _(f.level), 1)
         ]))), 128))
       ]),
-      n.timing || n.difficulty || n.target || n.range ? (u(), d("div", ka, [
-        n.timing ? (u(), d("span", Ca, [
+      n.timing || n.difficulty || n.target || n.range ? (u(), d("div", Ca, [
+        n.timing ? (u(), d("span", Aa, [
           e[0] || (e[0] = l("span", { class: "info-label" }, "타이밍:", -1)),
-          l("span", Aa, _(r.decodeHtml(n.timing)), 1)
+          l("span", Sa, _(r.decodeHtml(n.timing)), 1)
         ])) : E("", !0),
-        n.difficulty ? (u(), d("span", Sa, [
+        n.difficulty ? (u(), d("span", Pa, [
           e[1] || (e[1] = l("span", { class: "info-label" }, "난이도:", -1)),
-          l("span", Pa, _(r.decodeHtml(n.difficulty)), 1)
+          l("span", Ea, _(r.decodeHtml(n.difficulty)), 1)
         ])) : E("", !0),
-        n.target ? (u(), d("span", Ea, [
+        n.target ? (u(), d("span", Da, [
           e[2] || (e[2] = l("span", { class: "info-label" }, "대상:", -1)),
-          l("span", Da, _(r.decodeHtml(n.target)), 1)
+          l("span", Ma, _(r.decodeHtml(n.target)), 1)
         ])) : E("", !0),
-        n.range ? (u(), d("span", Ma, [
+        n.range ? (u(), d("span", Ra, [
           e[3] || (e[3] = l("span", { class: "info-label" }, "사거리:", -1)),
-          l("span", Ra, _(r.decodeHtml(n.range)), 1)
+          l("span", Ba, _(r.decodeHtml(n.range)), 1)
         ])) : E("", !0)
       ])) : E("", !0),
-      n.dice || n.critical || n.attack || n.erosion ? (u(), d("div", Ba, [
-        n.dice ? (u(), d("span", Ia, [
+      n.dice || n.critical || n.attack || n.erosion ? (u(), d("div", Ia, [
+        n.dice ? (u(), d("span", Oa, [
           e[4] || (e[4] = l("span", { class: "info-label" }, "다이스:", -1)),
-          l("span", Oa, _(r.decodeHtml(n.dice)), 1)
+          l("span", Na, _(r.decodeHtml(n.dice)), 1)
         ])) : E("", !0),
-        n.critical ? (u(), d("span", Na, [
+        n.critical ? (u(), d("span", La, [
           e[5] || (e[5] = l("span", { class: "info-label" }, "크리치:", -1)),
-          l("span", La, _(r.decodeHtml(n.critical)), 1)
+          l("span", $a, _(r.decodeHtml(n.critical)), 1)
         ])) : E("", !0),
-        n.attack ? (u(), d("span", $a, [
+        n.attack ? (u(), d("span", Ha, [
           e[6] || (e[6] = l("span", { class: "info-label" }, "공격력:", -1)),
-          l("span", Ha, _(r.decodeHtml(n.attack)), 1)
+          l("span", Fa, _(r.decodeHtml(n.attack)), 1)
         ])) : E("", !0),
-        n.erosion ? (u(), d("span", Fa, [
+        n.erosion ? (u(), d("span", Ua, [
           e[7] || (e[7] = l("span", { class: "info-label" }, "침식:", -1)),
-          l("span", Ua, _(r.decodeHtml(n.erosion)), 1)
+          l("span", ja, _(r.decodeHtml(n.erosion)), 1)
         ])) : E("", !0)
       ])) : E("", !0),
-      n.description ? (u(), d("div", ja, _(r.decodeHtml(n.description)), 1)) : E("", !0),
-      n.diceRoll ? (u(), d("div", za, [
-        l("div", Va, [
+      n.description ? (u(), d("div", za, _(r.decodeHtml(n.description)), 1)) : E("", !0),
+      n.diceRoll ? (u(), d("div", Va, [
+        l("div", Ga, [
           I(h, {
             name: "cube",
             size: 14
           }),
           e[8] || (e[8] = l("span", { class: "dice-roll-label" }, "판정", -1))
         ]),
-        l("div", Ga, [
-          l("span", qa, _(n.diceRoll.formula), 1),
+        l("div", qa, [
+          l("span", Wa, _(n.diceRoll.formula), 1),
           e[9] || (e[9] = l("span", { class: "dice-separator" }, "→", -1)),
-          l("span", Wa, _(n.diceRoll.diceRolls), 1),
+          l("span", Za, _(n.diceRoll.diceRolls), 1),
           e[10] || (e[10] = l("span", { class: "dice-separator" }, "→", -1)),
-          l("span", Za, _(n.diceRoll.result), 1)
+          l("span", Ya, _(n.diceRoll.result), 1)
         ])
       ])) : E("", !0)
     ]))), 128))
   ])) : E("", !0);
 }
-const Cs = /* @__PURE__ */ de(ma, [["render", Ya], ["__scopeId", "data-v-74c73457"]]), Xa = {
+const Cs = /* @__PURE__ */ de(fa, [["render", Xa], ["__scopeId", "data-v-74c73457"]]), Ka = {
   name: "Illustration",
   props: {
     illustrations: {
@@ -3119,38 +3136,38 @@ const Cs = /* @__PURE__ */ de(ma, [["render", Ya], ["__scopeId", "data-v-74c7345
     handleImageLoad() {
     }
   }
-}, Ka = {
+}, Ja = {
   key: 0,
   class: "illustration-container"
-}, Ja = ["src", "alt", "onError"], Qa = {
+}, Qa = ["src", "alt", "onError"], ei = {
   key: 1,
   class: "image-fallback",
   role: "status"
 };
-function ei(s, e, t, i, o, r) {
-  return t.illustrations && t.illustrations.length > 0 ? (u(), d("div", Ka, [
+function ti(s, e, t, i, o, r) {
+  return t.illustrations && t.illustrations.length > 0 ? (u(), d("div", Ja, [
     (u(!0), d(ae, null, Ce(t.illustrations, (h, n) => (u(), d("div", {
       key: n + ":" + h.url,
       class: "illustration-item"
     }, [
-      o.failedImages.has(h.url) ? (u(), d("p", Qa, "이미지를 불러오지 못했어요." + _(h.alt ? " (" + h.alt + ")" : ""), 1)) : (u(), d("img", {
+      o.failedImages.has(h.url) ? (u(), d("p", ei, "이미지를 불러오지 못했어요." + _(h.alt ? " (" + h.alt + ")" : ""), 1)) : (u(), d("img", {
         key: 0,
         src: r.safeSrc(h.url),
         alt: h.alt || "삽화",
         class: "illustration-image",
         onError: (c) => r.handleImageError(h.url),
         onLoad: e[0] || (e[0] = (...c) => r.handleImageLoad && r.handleImageLoad(...c))
-      }, null, 40, Ja))
+      }, null, 40, Qa))
     ]))), 128))
   ])) : E("", !0);
 }
-const ti = /* @__PURE__ */ de(Xa, [["render", ei], ["__scopeId", "data-v-d4e59a7f"]]), si = {
+const si = /* @__PURE__ */ de(Ka, [["render", ti], ["__scopeId", "data-v-d4e59a7f"]]), oi = {
   name: "DialogBox",
   components: {
     AppIcon: _e,
-    StatusChange: pa,
+    StatusChange: ma,
     DXCombo: Cs,
-    Illustration: ti
+    Illustration: si
   },
   props: {
     stepKey: {
@@ -3366,14 +3383,14 @@ const ti = /* @__PURE__ */ de(Xa, [["render", ei], ["__scopeId", "data-v-d4e59a7
   beforeUnmount() {
     this.stopTyping(), this.stopAutoAdvance();
   }
-}, oi = ["innerHTML"], ni = {
+}, ni = ["innerHTML"], ri = {
   class: "sr-only",
   "aria-live": "polite"
-}, ri = {
+}, ai = {
   key: 0,
   class: "continue-indicator"
 };
-function ai(s, e, t, i, o, r) {
+function ii(s, e, t, i, o, r) {
   const h = W("AppIcon"), n = W("Illustration"), c = W("DXCombo"), f = W("StatusChange");
   return u(), d("div", {
     class: ve(["dialog-box", {
@@ -3397,9 +3414,9 @@ function ai(s, e, t, i, o, r) {
         class: "text-content",
         innerHTML: r.decodedText,
         "aria-hidden": "true"
-      }, null, 8, oi),
-      l("p", ni, _(r.srText), 1),
-      !o.isTyping && !o.isComplete ? (u(), d("div", ri, [
+      }, null, 8, ni),
+      l("p", ri, _(r.srText), 1),
+      !o.isTyping && !o.isComplete ? (u(), d("div", ai, [
         I(h, {
           name: "down",
           size: 12
@@ -3420,7 +3437,7 @@ function ai(s, e, t, i, o, r) {
     }, null, 8, ["statusChanges"])) : E("", !0)
   ], 6);
 }
-const ii = /* @__PURE__ */ de(si, [["render", ai], ["__scopeId", "data-v-f093e7df"]]), li = {
+const li = /* @__PURE__ */ de(oi, [["render", ii], ["__scopeId", "data-v-f093e7df"]]), ci = {
   components: { AppIcon: _e },
   name: "DiceRoll",
   props: {
@@ -3521,40 +3538,40 @@ const ii = /* @__PURE__ */ de(si, [["render", ai], ["__scopeId", "data-v-f093e7d
     this.clearAnimTimers(), this._animGen++, this.audioContext && this.audioContext.state !== "closed" && this.audioContext.close().catch(() => {
     });
   }
-}, ci = { class: "dice-roll-container" }, ui = { class: "dice-icon-wrapper" }, di = { class: "dice-result choice-result" }, hi = ["onClick", "title", "aria-label", "aria-expanded"], pi = {
+}, ui = { class: "dice-roll-container" }, di = { class: "dice-icon-wrapper" }, hi = { class: "dice-result choice-result" }, pi = ["onClick", "title", "aria-label", "aria-expanded"], mi = {
   key: 0,
   class: "dice-details choice-options"
-}, mi = {
+}, fi = {
   key: 1,
   class: "ougi-full-wrapper"
-}, fi = { class: "ougi-header" }, gi = { class: "dice-icon-wrapper" }, yi = { class: "ougi-info" }, bi = { class: "ougi-title-line" }, vi = { class: "ougi-name" }, _i = { class: "ougi-main-name" }, wi = { class: "ougi-info-table" }, xi = { key: 0 }, Ti = { key: 0 }, ki = { class: "ougi-presentation" }, Ci = { key: 1 }, Ai = { key: 2 }, Si = { class: "ougi-ninpou" }, Pi = { class: "shinobigami-full-wrapper" }, Ei = { class: "shinobigami-header" }, Di = { class: "dice-icon-wrapper" }, Mi = { class: "shinobigami-info" }, Ri = { class: "shinobigami-main" }, Bi = { class: "dice-formula" }, Ii = { class: "shinobigami-result-line" }, Oi = {
+}, gi = { class: "ougi-header" }, yi = { class: "dice-icon-wrapper" }, bi = { class: "ougi-info" }, vi = { class: "ougi-title-line" }, _i = { class: "ougi-name" }, wi = { class: "ougi-main-name" }, xi = { class: "ougi-info-table" }, Ti = { key: 0 }, ki = { key: 0 }, Ci = { class: "ougi-presentation" }, Ai = { key: 1 }, Si = { key: 2 }, Pi = { class: "ougi-ninpou" }, Ei = { class: "shinobigami-full-wrapper" }, Di = { class: "shinobigami-header" }, Mi = { class: "dice-icon-wrapper" }, Ri = { class: "shinobigami-info" }, Bi = { class: "shinobigami-main" }, Ii = { class: "dice-formula" }, Oi = { class: "shinobigami-result-line" }, Ni = {
   key: 1,
   class: "dice-placeholder"
-}, Ni = { class: "shinobigami-judgement" }, Li = {
+}, Li = { class: "shinobigami-judgement" }, $i = {
   key: 0,
   class: "shinobigami-info-table"
-}, $i = { key: 0 }, Hi = { key: 1 }, Fi = { key: 2 }, Ui = { key: 3 }, ji = { key: 4 }, zi = ["onClick", "title", "aria-label", "aria-expanded"], Vi = {
+}, Hi = { key: 0 }, Fi = { key: 1 }, Ui = { key: 2 }, ji = { key: 3 }, zi = { key: 4 }, Vi = ["onClick", "title", "aria-label", "aria-expanded"], Gi = {
   key: 0,
   class: "dice-details shinobigami-details"
-}, Gi = { class: "shinobigami-formula" }, qi = { class: "shinobigami-rolls" }, Wi = { key: 0 }, Zi = { key: 1 }, Yi = { class: "judgement-header" }, Xi = { class: "dice-icon-wrapper" }, Ki = { class: "judgement-info" }, Ji = { class: "judgement-main" }, Qi = { class: "dice-formula" }, el = { class: "judgement-result-line" }, tl = {
+}, qi = { class: "shinobigami-formula" }, Wi = { class: "shinobigami-rolls" }, Zi = { key: 0 }, Yi = { key: 1 }, Xi = { class: "judgement-header" }, Ki = { class: "dice-icon-wrapper" }, Ji = { class: "judgement-info" }, Qi = { class: "judgement-main" }, el = { class: "dice-formula" }, tl = { class: "judgement-result-line" }, sl = {
   key: 1,
   class: "dice-placeholder"
-}, sl = { class: "judgement-text" }, ol = ["onClick", "title", "aria-label", "aria-expanded"], nl = {
+}, ol = { class: "judgement-text" }, nl = ["onClick", "title", "aria-label", "aria-expanded"], rl = {
   key: 0,
   class: "dice-details"
-}, rl = { class: "dice-formula" }, al = {
+}, al = { class: "dice-formula" }, il = {
   key: 1,
   class: "dice-placeholder"
-}, il = {
+}, ll = {
   key: 0,
   class: "dice-details-wrapper"
-}, ll = ["onClick", "title"], cl = {
+}, cl = ["onClick", "title"], ul = {
   key: 0,
   class: "dice-details"
 };
-function ul(s, e, t, i, o, r) {
+function dl(s, e, t, i, o, r) {
   const h = W("AppIcon");
-  return u(), d("div", ci, [
+  return u(), d("div", ui, [
     I(Ls, {
       name: "dice-list",
       tag: "div",
@@ -3569,7 +3586,7 @@ function ul(s, e, t, i, o, r) {
           ]])
         }, [
           n.type === "choice" ? (u(), d(ae, { key: 0 }, [
-            l("div", ui, [
+            l("div", di, [
               I(h, {
                 name: "target",
                 size: 18,
@@ -3578,7 +3595,7 @@ function ul(s, e, t, i, o, r) {
             ]),
             e[0] || (e[0] = l("span", { class: "dice-formula" }, "선택", -1)),
             e[1] || (e[1] = l("span", { class: "dice-arrow" }, "→", -1)),
-            l("span", di, _(n.result), 1),
+            l("span", hi, _(n.result), 1),
             l("button", {
               class: "details-toggle",
               onClick: (f) => r.toggleDetails(c),
@@ -3590,10 +3607,10 @@ function ul(s, e, t, i, o, r) {
                 name: n.showDetails ? "down" : "play",
                 size: 12
               }, null, 8, ["name"])
-            ], 8, hi),
+            ], 8, pi),
             I(ue, { name: "details-expand" }, {
               default: le(() => [
-                n.showDetails ? (u(), d("div", pi, [
+                n.showDetails ? (u(), d("div", mi, [
                   (u(!0), d(ae, null, Ce(n.options, (f, m) => (u(), d("span", {
                     key: m,
                     class: "choice-option"
@@ -3602,25 +3619,25 @@ function ul(s, e, t, i, o, r) {
               ]),
               _: 2
             }, 1024)
-          ], 64)) : n.type === "ougi" ? (u(), d("div", mi, [
-            l("div", fi, [
-              l("div", gi, [
+          ], 64)) : n.type === "ougi" ? (u(), d("div", fi, [
+            l("div", gi, [
+              l("div", yi, [
                 I(h, {
                   name: "star",
                   size: 20,
                   class: "dice-icon"
                 })
               ]),
-              l("div", yi, [
-                l("div", bi, [
+              l("div", bi, [
+                l("div", vi, [
                   l("span", {
                     class: "ougi-character",
                     style: be({ color: t.characterColor })
                   }, _(t.characterName), 5),
-                  l("span", vi, "【奥義: " + _(n.ougiType) + "】", 1),
-                  l("span", _i, _(n.ougiName), 1)
+                  l("span", _i, "【奥義: " + _(n.ougiType) + "】", 1),
+                  l("span", wi, _(n.ougiName), 1)
                 ]),
-                l("table", wi, [
+                l("table", xi, [
                   l("tbody", null, [
                     l("tr", null, [
                       e[2] || (e[2] = l("th", null, "지정 특기", -1)),
@@ -3630,45 +3647,45 @@ function ul(s, e, t, i, o, r) {
                           class: "ougi-skill"
                         }, [
                           ys(" 《" + _(f) + "》", 1),
-                          m < n.skills.length - 1 ? (u(), d("span", xi, ", ")) : E("", !0)
+                          m < n.skills.length - 1 ? (u(), d("span", Ti, ", ")) : E("", !0)
                         ]))), 128))
                       ])
                     ]),
-                    n.presentation ? (u(), d("tr", Ti, [
+                    n.presentation ? (u(), d("tr", ki, [
                       e[3] || (e[3] = l("th", null, "연출", -1)),
-                      l("td", ki, _(n.presentation), 1)
+                      l("td", Ci, _(n.presentation), 1)
                     ])) : E("", !0),
-                    n.ougiEffect ? (u(), d("tr", Ci, [
+                    n.ougiEffect ? (u(), d("tr", Ai, [
                       e[4] || (e[4] = l("th", null, "효과", -1)),
                       l("td", null, _(n.ougiEffect), 1)
                     ])) : E("", !0),
-                    n.ninpouInfo ? (u(), d("tr", Ai, [
+                    n.ninpouInfo ? (u(), d("tr", Si, [
                       e[5] || (e[5] = l("th", null, "인법", -1)),
-                      l("td", Si, _(n.ninpouInfo), 1)
+                      l("td", Pi, _(n.ninpouInfo), 1)
                     ])) : E("", !0)
                   ])
                 ])
               ])
             ])
           ])) : n.type === "shinobigami" ? (u(), d(ae, { key: 2 }, [
-            l("div", Pi, [
-              l("div", Ei, [
-                l("div", Di, [
+            l("div", Ei, [
+              l("div", Di, [
+                l("div", Mi, [
                   I(h, {
                     name: "bolt",
                     size: 18,
                     class: "dice-icon"
                   })
                 ]),
-                l("div", Mi, [
-                  l("div", Ri, [
+                l("div", Ri, [
+                  l("div", Bi, [
                     l("span", {
                       class: "shinobigami-character",
                       style: be({ color: t.characterColor })
                     }, _(t.characterName), 5),
-                    l("span", Bi, "【" + _(n.checkName) + "】", 1)
+                    l("span", Ii, "【" + _(n.checkName) + "】", 1)
                   ]),
-                  l("div", Ii, [
+                  l("div", Oi, [
                     e[6] || (e[6] = l("span", { class: "dice-arrow" }, "→", -1)),
                     I(ue, {
                       name: "dice-result",
@@ -3678,31 +3695,31 @@ function ul(s, e, t, i, o, r) {
                         n.showResult ? (u(), d("span", {
                           key: n.result,
                           class: "dice-result"
-                        }, _(n.result), 1)) : (u(), d("span", Oi, "???"))
+                        }, _(n.result), 1)) : (u(), d("span", Ni, "???"))
                       ]),
                       _: 2
                     }, 1024),
-                    l("span", Ni, _(n.judgement), 1)
+                    l("span", Li, _(n.judgement), 1)
                   ]),
-                  n.additionalInfo ? (u(), d("table", Li, [
+                  n.additionalInfo ? (u(), d("table", $i, [
                     l("tbody", null, [
-                      n.additionalInfo.type ? (u(), d("tr", $i, [
+                      n.additionalInfo.type ? (u(), d("tr", Hi, [
                         e[7] || (e[7] = l("th", null, "타입", -1)),
                         l("td", null, _(n.additionalInfo.type), 1)
                       ])) : E("", !0),
-                      n.additionalInfo.range ? (u(), d("tr", Hi, [
+                      n.additionalInfo.range ? (u(), d("tr", Fi, [
                         e[8] || (e[8] = l("th", null, "간격", -1)),
                         l("td", null, _(n.additionalInfo.range.replace("간격:", "").trim()), 1)
                       ])) : E("", !0),
-                      n.additionalInfo.cost ? (u(), d("tr", Fi, [
+                      n.additionalInfo.cost ? (u(), d("tr", Ui, [
                         e[9] || (e[9] = l("th", null, "코스트", -1)),
                         l("td", null, _(n.additionalInfo.cost.replace("코스트:", "").trim()), 1)
                       ])) : E("", !0),
-                      n.additionalInfo.skill ? (u(), d("tr", Ui, [
+                      n.additionalInfo.skill ? (u(), d("tr", ji, [
                         e[10] || (e[10] = l("th", null, "특기", -1)),
                         l("td", null, _(n.additionalInfo.skill), 1)
                       ])) : E("", !0),
-                      n.additionalInfo.description ? (u(), d("tr", ji, [
+                      n.additionalInfo.description ? (u(), d("tr", zi, [
                         e[11] || (e[11] = l("th", null, "설명", -1)),
                         l("td", null, _(n.additionalInfo.description), 1)
                       ])) : E("", !0)
@@ -3722,36 +3739,36 @@ function ul(s, e, t, i, o, r) {
                 name: n.showDetails ? "down" : "play",
                 size: 12
               }, null, 8, ["name"])
-            ], 8, zi),
+            ], 8, Vi),
             I(ue, { name: "details-expand" }, {
               default: le(() => [
-                n.showDetails ? (u(), d("div", Vi, [
-                  l("div", Gi, _(n.command), 1),
-                  l("div", qi, [
-                    n.diceExpression ? (u(), d("span", Wi, "주사위: " + _(n.diceExpression), 1)) : (u(), d("span", Zi, "개별 주사위: " + _(n.diceRolls), 1))
+                n.showDetails ? (u(), d("div", Gi, [
+                  l("div", qi, _(n.command), 1),
+                  l("div", Wi, [
+                    n.diceExpression ? (u(), d("span", Zi, "주사위: " + _(n.diceExpression), 1)) : (u(), d("span", Yi, "개별 주사위: " + _(n.diceRolls), 1))
                   ])
                 ])) : E("", !0)
               ]),
               _: 2
             }, 1024)
           ], 64)) : n.type === "judgement" ? (u(), d(ae, { key: 3 }, [
-            l("div", Yi, [
-              l("div", Xi, [
+            l("div", Xi, [
+              l("div", Ki, [
                 I(h, {
                   name: "scale",
                   size: 18,
                   class: "dice-icon"
                 })
               ]),
-              l("div", Ki, [
-                l("div", Ji, [
+              l("div", Ji, [
+                l("div", Qi, [
                   l("span", {
                     class: "judgement-character",
                     style: be({ color: t.characterColor })
                   }, _(t.characterName), 5),
-                  l("span", Qi, _(n.checkName), 1)
+                  l("span", el, _(n.checkName), 1)
                 ]),
-                l("div", el, [
+                l("div", tl, [
                   e[12] || (e[12] = l("span", { class: "dice-arrow" }, "→", -1)),
                   I(ue, {
                     name: "dice-result",
@@ -3761,11 +3778,11 @@ function ul(s, e, t, i, o, r) {
                       n.showResult ? (u(), d("span", {
                         key: n.result,
                         class: "dice-result"
-                      }, _(n.result), 1)) : (u(), d("span", tl, "???"))
+                      }, _(n.result), 1)) : (u(), d("span", sl, "???"))
                     ]),
                     _: 2
                   }, 1024),
-                  l("span", sl, _(n.judgement), 1)
+                  l("span", ol, _(n.judgement), 1)
                 ])
               ])
             ]),
@@ -3780,10 +3797,10 @@ function ul(s, e, t, i, o, r) {
                 name: n.showDetails ? "down" : "play",
                 size: 12
               }, null, 8, ["name"])
-            ], 8, ol),
+            ], 8, nl),
             I(ue, { name: "details-expand" }, {
               default: le(() => [
-                n.showDetails ? (u(), d("div", nl, _(n.formula), 1)) : E("", !0)
+                n.showDetails ? (u(), d("div", rl, _(n.formula), 1)) : E("", !0)
               ]),
               _: 2
             }, 1024)
@@ -3797,7 +3814,7 @@ function ul(s, e, t, i, o, r) {
                 class: "dice-icon"
               })
             ], 2),
-            l("span", rl, _(n.formula), 1),
+            l("span", al, _(n.formula), 1),
             e[13] || (e[13] = l("span", { class: "dice-arrow" }, "→", -1)),
             I(ue, {
               name: "dice-result",
@@ -3807,11 +3824,11 @@ function ul(s, e, t, i, o, r) {
                 n.showResult ? (u(), d("span", {
                   key: n.result,
                   class: "dice-result"
-                }, _(n.result), 1)) : (u(), d("span", al, "???"))
+                }, _(n.result), 1)) : (u(), d("span", il, "???"))
               ]),
               _: 2
             }, 1024),
-            n.type === "dx3" && n.diceRolls ? (u(), d("div", il, [
+            n.type === "dx3" && n.diceRolls ? (u(), d("div", ll, [
               l("button", {
                 class: "details-toggle",
                 onClick: (f) => r.toggleDetails(c),
@@ -3821,10 +3838,10 @@ function ul(s, e, t, i, o, r) {
                   name: n.showDetails ? "down" : "play",
                   size: 12
                 }, null, 8, ["name"])
-              ], 8, ll),
+              ], 8, cl),
               I(ue, { name: "details-expand" }, {
                 default: le(() => [
-                  n.showDetails ? (u(), d("div", cl, _(n.diceRolls), 1)) : E("", !0)
+                  n.showDetails ? (u(), d("div", ul, _(n.diceRolls), 1)) : E("", !0)
                 ]),
                 _: 2
               }, 1024)
@@ -3836,9 +3853,9 @@ function ul(s, e, t, i, o, r) {
     })
   ]);
 }
-const dl = /* @__PURE__ */ de(li, [["render", ul], ["__scopeId", "data-v-2975c275"]]), hl = {
+const hl = /* @__PURE__ */ de(ci, [["render", dl], ["__scopeId", "data-v-2975c275"]]), pl = {
   name: "PlayerStage",
-  components: { AppIcon: _e, CharacterDisplay: ea, DialogBox: ii, DiceRoll: dl, DXCombo: Cs },
+  components: { AppIcon: _e, CharacterDisplay: ta, DialogBox: li, DiceRoll: hl, DXCombo: Cs },
   props: {
     currentStep: { type: Object, default: null },
     characters: { type: Object, default: () => ({}) },
@@ -3906,30 +3923,30 @@ const dl = /* @__PURE__ */ de(li, [["render", ul], ["__scopeId", "data-v-2975c27
       return s.type === "system" ? s.character.name || "시스템" : s.type === "narrator" ? "" : s.character.name;
     }
   }
-}, pl = {
+}, ml = {
   ref: "stage",
   class: "player-stage"
-}, ml = {
+}, fl = {
   key: 1,
   ref: "dialogRegion",
   class: "dialog-wrapper",
   tabindex: "0",
   role: "region",
   "aria-label": "대사"
-}, fl = {
+}, gl = {
   key: 1,
   class: "dialog-placeholder"
-}, gl = { class: "dice-overlay-hint" }, yl = { class: "combo-overlay-header" }, bl = { class: "combo-character-info" }, vl = { class: "dice-overlay-hint" }, _l = { class: "scene-description-content" }, wl = { class: "scene-description-header" }, xl = { class: "scene-number" }, Tl = { class: "scene-title" }, kl = {
+}, yl = { class: "dice-overlay-hint" }, bl = { class: "combo-overlay-header" }, vl = { class: "combo-character-info" }, _l = { class: "dice-overlay-hint" }, wl = { class: "scene-description-content" }, xl = { class: "scene-description-header" }, Tl = { class: "scene-number" }, kl = { class: "scene-title" }, Cl = {
   key: 0,
   class: "scene-pcs"
-}, Cl = { class: "scene-pcs-value" }, Al = {
+}, Al = { class: "scene-pcs-value" }, Sl = {
   key: 1,
   class: "scene-description-text"
 };
-function Sl(s, e, t, i, o, r) {
+function Pl(s, e, t, i, o, r) {
   const h = W("CharacterDisplay"), n = W("DialogBox"), c = W("DiceRoll"), f = W("AppIcon"), m = W("DXCombo");
   return u(), d(ae, null, [
-    l("div", pl, [
+    l("div", ml, [
       t.currentStep && !t.currentStep.isSceneDescription && t.characters ? (u(), pe(h, {
         key: 0,
         ref: "portrait",
@@ -3938,7 +3955,7 @@ function Sl(s, e, t, i, o, r) {
         characters: t.characters,
         layout: "single"
       }, null, 8, ["style", "current-step", "characters"])) : E("", !0),
-      !t.currentStep || t.currentStep.type !== "scene-description" ? (u(), d("div", ml, [
+      !t.currentStep || t.currentStep.type !== "scene-description" ? (u(), d("div", fl, [
         t.currentStep && t.currentStep.character ? (u(), pe(n, {
           key: 0,
           "step-key": t.dialogStepKey,
@@ -3954,7 +3971,7 @@ function Sl(s, e, t, i, o, r) {
           "has-overlay": t.hasActiveOverlay,
           onAdvance: e[0] || (e[0] = (g) => s.$emit("advance")),
           onTypingComplete: e[1] || (e[1] = (g) => s.$emit("typing-complete"))
-        }, null, 8, ["step-key", "step-type", "character-name", "character-color", "text", "status-changes", "illustrations", "typing-speed", "auto-play-speed", "auto-advance", "has-overlay"])) : (u(), d("div", fl, [
+        }, null, 8, ["step-key", "step-type", "character-name", "character-color", "text", "status-changes", "illustrations", "typing-speed", "auto-play-speed", "auto-advance", "has-overlay"])) : (u(), d("div", gl, [
           l("p", null, _(t.placeholderText), 1)
         ]))
       ], 512)) : E("", !0)
@@ -3978,7 +3995,7 @@ function Sl(s, e, t, i, o, r) {
               animated: !0,
               "play-sound-effect": !1
             }, null, 8, ["dice-rolls", "character-name", "character-color"]),
-            l("div", gl, [
+            l("div", yl, [
               I(f, {
                 name: "pointer",
                 size: 14
@@ -4002,8 +4019,8 @@ function Sl(s, e, t, i, o, r) {
             onClick: e[4] || (e[4] = Ee(() => {
             }, ["stop"]))
           }, [
-            l("div", yl, [
-              l("div", bl, [
+            l("div", bl, [
+              l("div", vl, [
                 l("div", {
                   class: "combo-character-name",
                   style: be({ color: r.characterColor(t.comboCharacterColor) })
@@ -4011,7 +4028,7 @@ function Sl(s, e, t, i, o, r) {
               ])
             ]),
             I(m, { dxCombos: t.currentDxCombos }, null, 8, ["dxCombos"]),
-            l("div", vl, [
+            l("div", _l, [
               I(f, {
                 name: "pointer",
                 size: 14
@@ -4030,16 +4047,16 @@ function Sl(s, e, t, i, o, r) {
           class: "scene-description-overlay",
           onClick: e[6] || (e[6] = (g) => s.$emit("close-scene-description"))
         }, [
-          l("div", _l, [
-            l("div", wl, [
-              l("span", xl, "씬 " + _(t.sceneDescriptionData.number), 1),
-              l("span", Tl, _(t.sceneDescriptionData.title), 1)
+          l("div", wl, [
+            l("div", xl, [
+              l("span", Tl, "씬 " + _(t.sceneDescriptionData.number), 1),
+              l("span", kl, _(t.sceneDescriptionData.title), 1)
             ]),
-            t.sceneDescriptionData.pcs ? (u(), d("div", kl, [
+            t.sceneDescriptionData.pcs ? (u(), d("div", Cl, [
               e[9] || (e[9] = l("span", { class: "scene-pcs-label" }, "PC:", -1)),
-              l("span", Cl, _(t.sceneDescriptionData.pcs), 1)
+              l("span", Al, _(t.sceneDescriptionData.pcs), 1)
             ])) : E("", !0),
-            t.sceneDescriptionData.description ? (u(), d("div", Al, _(t.sceneDescriptionData.description), 1)) : E("", !0),
+            t.sceneDescriptionData.description ? (u(), d("div", Sl, _(t.sceneDescriptionData.description), 1)) : E("", !0),
             e[10] || (e[10] = l("div", { class: "scene-description-hint" }, "클릭하여 닫기", -1))
           ])
         ])) : E("", !0)
@@ -4048,15 +4065,15 @@ function Sl(s, e, t, i, o, r) {
     })
   ], 64);
 }
-const Pl = /* @__PURE__ */ de(hl, [["render", Sl], ["__scopeId", "data-v-f79cf6e4"]]), El = {
+const El = /* @__PURE__ */ de(pl, [["render", Pl], ["__scopeId", "data-v-f79cf6e4"]]), Dl = {
   name: "VNLogEmbedPlayer",
   components: {
     AppIcon: _e,
-    PlaybackControls: rn,
-    SceneSelectorModal: Sn,
-    BGMPlayer: Fn,
-    HandoutDisplay: Mr,
-    PlayerStage: Pl
+    PlaybackControls: an,
+    SceneSelectorModal: Pn,
+    BGMPlayer: Un,
+    HandoutDisplay: Rr,
+    PlayerStage: El
   },
   props: {
     vnData: {
@@ -4164,9 +4181,9 @@ const Pl = /* @__PURE__ */ de(hl, [["render", Sl], ["__scopeId", "data-v-f79cf6e
       var t;
       const s = this.$refs.embedRoot;
       if (!s) return;
-      qr(s, { ...this.theme, bgImageUrl: this.theme.bgImageUrl || this.theme.bgImage });
+      Wr(s, { ...this.theme, bgImageUrl: this.theme.bgImageUrl || this.theme.bgImage });
       const e = (t = this.currentStepData) == null ? void 0 : t.effects;
-      e != null && e.background && It(s, e.background, e.backgroundOpacity), Vr(s, this.vnData.customCSS);
+      e != null && e.background && It(s, e.background, e.backgroundOpacity), Gr(s, this.vnData.customCSS);
     },
     handleAdvance() {
       this.nextStep();
@@ -4309,15 +4326,15 @@ const Pl = /* @__PURE__ */ de(hl, [["render", Sl], ["__scopeId", "data-v-f79cf6e
   beforeUnmount() {
     ks(this.$refs.embedRoot), this.stopAutoPlay(), this.sfxAudio && (this.sfxAudio.pause(), this.sfxAudio = null);
   }
-}, Dl = {
+}, Ml = {
   class: "vnlog-embed-player",
   ref: "embedRoot"
-}, Ml = { class: "player-container" }, Rl = { class: "player-header" }, Bl = { class: "log-title" }, Il = { class: "header-buttons" };
-function Ol(s, e, t, i, o, r) {
+}, Rl = { class: "player-container" }, Bl = { class: "player-header" }, Il = { class: "log-title" }, Ol = { class: "header-buttons" };
+function Nl(s, e, t, i, o, r) {
   const h = W("AppIcon"), n = W("PlayerStage"), c = W("HandoutDisplay"), f = W("PlaybackControls"), m = W("SceneSelectorModal"), g = W("BGMPlayer");
-  return u(), d("div", Dl, [
-    l("div", Ml, [
-      l("div", Rl, [
+  return u(), d("div", Ml, [
+    l("div", Rl, [
+      l("div", Bl, [
         t.homeUrl ? (u(), d("button", {
           key: 0,
           onClick: e[0] || (e[0] = (...y) => r.goHome && r.goHome(...y)),
@@ -4330,8 +4347,8 @@ function Ol(s, e, t, i, o, r) {
             size: 20
           })
         ])) : E("", !0),
-        l("h2", Bl, _(r.title), 1),
-        l("div", Il, [
+        l("h2", Il, _(r.title), 1),
+        l("div", Ol, [
           l("button", {
             onClick: e[1] || (e[1] = (...y) => r.openSceneSelector && r.openSceneSelector(...y)),
             class: "header-button",
@@ -4408,8 +4425,8 @@ function Ol(s, e, t, i, o, r) {
     }, null, 8, ["bgm-url", "bgm-type", "volume", "auto-play"])) : E("", !0)
   ], 512);
 }
-const Nl = /* @__PURE__ */ de(El, [["render", Ol], ["__scopeId", "data-v-2226bfaa"]]);
-class $l {
+const Ll = /* @__PURE__ */ de(Dl, [["render", Nl], ["__scopeId", "data-v-2226bfaa"]]);
+class Hl {
   /**
    * HTML 로그 파싱
    * @param {string} htmlContent - HTML 형식의 로그 내용
@@ -5759,11 +5776,11 @@ class $l {
     return "file_" + Math.abs(t).toString(36) + "_" + e.length;
   }
 }
-function Hl(s) {
-  s.component("AppIcon", _e), s.component("VNLogEmbedPlayer", Nl);
+function Fl(s) {
+  s.component("AppIcon", _e), s.component("VNLogEmbedPlayer", Ll);
 }
 export {
-  $l as LogParserService,
-  Nl as VNLogEmbedPlayer,
-  Hl as install
+  Hl as LogParserService,
+  Ll as VNLogEmbedPlayer,
+  Fl as install
 };
