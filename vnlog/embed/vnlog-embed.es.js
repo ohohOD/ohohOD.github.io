@@ -1,5 +1,5 @@
-import { openBlock as u, createElementBlock as h, createElementVNode as i, createBlock as ye, resolveDynamicComponent as go, normalizeStyle as be, resolveComponent as K, toDisplayString as w, createCommentVNode as P, createVNode as N, normalizeClass as ve, Fragment as re, renderList as Te, Transition as ce, withCtx as ie, withModifiers as Me, createTextVNode as Ls, withKeys as pt, withDirectives as yo, vModelText as bo, TransitionGroup as vo } from "vue";
-function _o(s, e) {
+import { openBlock as u, createElementBlock as h, createElementVNode as i, createBlock as ye, resolveDynamicComponent as gr, normalizeStyle as be, resolveComponent as K, toDisplayString as w, createCommentVNode as P, createVNode as N, normalizeClass as ve, Fragment as ne, renderList as Te, Transition as ce, withCtx as ie, withModifiers as Me, createTextVNode as Ls, withKeys as pt, withDirectives as yr, vModelText as br, TransitionGroup as vr } from "vue";
+function _r(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -16,7 +16,7 @@ function _o(s, e) {
     })
   ]);
 }
-function wo(s, e) {
+function wr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -33,7 +33,7 @@ function wo(s, e) {
     })
   ]);
 }
-function xo(s, e) {
+function xr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -50,7 +50,7 @@ function xo(s, e) {
     })
   ]);
 }
-function ko(s, e) {
+function kr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -67,7 +67,7 @@ function ko(s, e) {
     })
   ]);
 }
-function To(s, e) {
+function Tr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -84,7 +84,7 @@ function To(s, e) {
     })
   ]);
 }
-function Co(s, e) {
+function Cr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -101,7 +101,7 @@ function Co(s, e) {
     })
   ]);
 }
-function Ao(s, e) {
+function Ar(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -118,7 +118,7 @@ function Ao(s, e) {
     })
   ]);
 }
-function So(s, e) {
+function Sr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -135,7 +135,7 @@ function So(s, e) {
     })
   ]);
 }
-function Po(s, e) {
+function Pr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -152,7 +152,7 @@ function Po(s, e) {
     })
   ]);
 }
-function Eo(s, e) {
+function Er(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -169,7 +169,7 @@ function Eo(s, e) {
     })
   ]);
 }
-function Mo(s, e) {
+function Mr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -186,7 +186,7 @@ function Mo(s, e) {
     })
   ]);
 }
-function Do(s, e) {
+function Dr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -203,7 +203,7 @@ function Do(s, e) {
     })
   ]);
 }
-function Bo(s, e) {
+function Rr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -220,7 +220,7 @@ function Bo(s, e) {
     })
   ]);
 }
-function Ro(s, e) {
+function Br(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -237,7 +237,7 @@ function Ro(s, e) {
     })
   ]);
 }
-function Oo(s, e) {
+function Or(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -254,7 +254,7 @@ function Oo(s, e) {
     })
   ]);
 }
-function Io(s, e) {
+function Ir(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -271,7 +271,7 @@ function Io(s, e) {
     })
   ]);
 }
-function Lo(s, e) {
+function Lr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -288,7 +288,7 @@ function Lo(s, e) {
     })
   ]);
 }
-function No(s, e) {
+function Nr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -305,7 +305,7 @@ function No(s, e) {
     })
   ]);
 }
-function $o(s, e) {
+function $r(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -322,7 +322,7 @@ function $o(s, e) {
     })
   ]);
 }
-function Ho(s, e) {
+function Hr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -339,7 +339,7 @@ function Ho(s, e) {
     })
   ]);
 }
-function Uo(s, e) {
+function Fr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -356,7 +356,7 @@ function Uo(s, e) {
     })
   ]);
 }
-function Fo(s, e) {
+function Ur(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -373,7 +373,7 @@ function Fo(s, e) {
     })
   ]);
 }
-function zo(s, e) {
+function zr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -395,7 +395,7 @@ function zo(s, e) {
     })
   ]);
 }
-function jo(s, e) {
+function jr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -412,7 +412,7 @@ function jo(s, e) {
     })
   ]);
 }
-function Vo(s, e) {
+function Vr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -429,7 +429,7 @@ function Vo(s, e) {
     })
   ]);
 }
-function Go(s, e) {
+function Gr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -446,7 +446,7 @@ function Go(s, e) {
     })
   ]);
 }
-function qo(s, e) {
+function qr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -463,7 +463,7 @@ function qo(s, e) {
     })
   ]);
 }
-function Wo(s, e) {
+function Wr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -480,7 +480,7 @@ function Wo(s, e) {
     })
   ]);
 }
-function Yo(s, e) {
+function Yr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -497,7 +497,7 @@ function Yo(s, e) {
     })
   ]);
 }
-function Zo(s, e) {
+function Zr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -519,7 +519,7 @@ function Zo(s, e) {
     })
   ]);
 }
-function Xo(s, e) {
+function Xr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -536,7 +536,7 @@ function Xo(s, e) {
     })
   ]);
 }
-function Ko(s, e) {
+function Kr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -553,7 +553,7 @@ function Ko(s, e) {
     })
   ]);
 }
-function Jo(s, e) {
+function Jr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -570,7 +570,7 @@ function Jo(s, e) {
     })
   ]);
 }
-function Qo(s, e) {
+function Qr(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -587,7 +587,7 @@ function Qo(s, e) {
     })
   ]);
 }
-function en(s, e) {
+function eo(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -604,7 +604,7 @@ function en(s, e) {
     })
   ]);
 }
-function tn(s, e) {
+function to(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -621,7 +621,7 @@ function tn(s, e) {
     })
   ]);
 }
-function sn(s, e) {
+function so(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -638,7 +638,7 @@ function sn(s, e) {
     })
   ]);
 }
-function on(s, e) {
+function ro(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -655,7 +655,7 @@ function on(s, e) {
     })
   ]);
 }
-function nn(s, e) {
+function oo(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -672,7 +672,7 @@ function nn(s, e) {
     })
   ]);
 }
-function rn(s, e) {
+function no(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -689,7 +689,7 @@ function rn(s, e) {
     })
   ]);
 }
-function an(s, e) {
+function ao(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -706,7 +706,7 @@ function an(s, e) {
     })
   ]);
 }
-function ln(s, e) {
+function io(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -723,7 +723,7 @@ function ln(s, e) {
     })
   ]);
 }
-function cn(s, e) {
+function lo(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -740,7 +740,7 @@ function cn(s, e) {
     })
   ]);
 }
-function un(s, e) {
+function co(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -757,7 +757,7 @@ function un(s, e) {
     })
   ]);
 }
-function dn(s, e) {
+function uo(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -774,7 +774,7 @@ function dn(s, e) {
     })
   ]);
 }
-function hn(s, e) {
+function ho(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -791,7 +791,7 @@ function hn(s, e) {
     })
   ]);
 }
-function pn(s, e) {
+function po(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -808,7 +808,7 @@ function pn(s, e) {
     })
   ]);
 }
-function mn(s, e) {
+function mo(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -825,7 +825,7 @@ function mn(s, e) {
     })
   ]);
 }
-function fn(s, e) {
+function fo(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -842,7 +842,7 @@ function fn(s, e) {
     })
   ]);
 }
-function gn(s, e) {
+function go(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -859,7 +859,7 @@ function gn(s, e) {
     })
   ]);
 }
-function yn(s, e) {
+function yo(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -876,7 +876,7 @@ function yn(s, e) {
     })
   ]);
 }
-function bn(s, e) {
+function bo(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -893,7 +893,7 @@ function bn(s, e) {
     })
   ]);
 }
-function vn(s, e) {
+function vo(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -910,7 +910,7 @@ function vn(s, e) {
     })
   ]);
 }
-function _n(s, e) {
+function _o(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -927,7 +927,7 @@ function _n(s, e) {
     })
   ]);
 }
-function wn(s, e) {
+function wo(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -944,7 +944,7 @@ function wn(s, e) {
     })
   ]);
 }
-function xn(s, e) {
+function xo(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -966,7 +966,7 @@ function xn(s, e) {
     })
   ]);
 }
-function kn(s, e) {
+function ko(s, e) {
   return u(), h("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
@@ -985,18 +985,18 @@ function kn(s, e) {
 }
 const pe = (s, e) => {
   const t = s.__vccOpts || s;
-  for (const [l, o] of e)
-    t[l] = o;
+  for (const [l, r] of e)
+    t[l] = r;
   return t;
-}, Tn = { up: Ho, undo: Ao, redo: So, previous: No, next: $o, minus: nn, book: Bo, film: Xo, home: en, play: un, pause: an, clipboard: Uo, edit: ln, document: Wo, close: kn, archive: wo, info: tn, palette: bn, photo: cn, square: yn, text: Eo, folder: Ko, drop: Mo, adjust: _o, music: rn, link: sn, check: Io, volume: mn, mute: fn, refresh: ko, save: xo, upload: Co, warning: Yo, sparkles: pn, eye: Zo, trash: vn, pointer: Vo, user: _n, arrow: To, plus: dn, cube: jo, chart: Ro, star: gn, bolt: Do, users: wn, search: on, back: Po, down: Lo, target: Go, scale: hn, wrench: xn, settings: zo, clock: Fo, globe: Jo, heart: Qo, chat: Oo, device: qo }, Cn = {
+}, To = { up: Hr, undo: Ar, redo: Sr, previous: Nr, next: $r, minus: oo, book: Rr, film: Xr, home: eo, play: co, pause: ao, clipboard: Fr, edit: io, document: Wr, close: ko, archive: wr, info: to, palette: bo, photo: lo, square: yo, text: Er, folder: Kr, drop: Mr, adjust: _r, music: no, link: so, check: Ir, volume: mo, mute: fo, refresh: kr, save: xr, upload: Cr, warning: Yr, sparkles: po, eye: Zr, trash: vo, pointer: Vr, user: _o, arrow: Tr, plus: uo, cube: jr, chart: Br, star: go, bolt: Dr, users: wo, search: ro, back: Pr, down: Lr, target: Gr, scale: ho, wrench: xo, settings: zr, clock: Ur, globe: Jr, heart: Qr, chat: Or, device: qr }, Co = {
   name: "AppIcon",
   props: { name: { type: String, default: "info" }, size: { type: [Number, String], default: 20 } },
   setup() {
-    return { icons: Tn };
+    return { icons: To };
   }
 };
-function An(s, e, t, l, o, a) {
-  return u(), ye(go(l.icons[t.name] || l.icons.info), {
+function Ao(s, e, t, l, r, a) {
+  return u(), ye(gr(l.icons[t.name] || l.icons.info), {
     width: t.size,
     height: t.size,
     style: be({ width: `${t.size}px`, height: `${t.size}px` }),
@@ -1005,7 +1005,7 @@ function An(s, e, t, l, o, a) {
     class: "app-icon"
   }, null, 8, ["width", "height", "style"]);
 }
-const _e = /* @__PURE__ */ pe(Cn, [["render", An], ["__scopeId", "data-v-99602c0f"]]), Sn = {
+const _e = /* @__PURE__ */ pe(Co, [["render", Ao], ["__scopeId", "data-v-99602c0f"]]), So = {
   components: { AppIcon: _e },
   name: "PlaybackControls",
   data() {
@@ -1060,34 +1060,34 @@ const _e = /* @__PURE__ */ pe(Cn, [["render", An], ["__scopeId", "data-v-99602c0
       return this.totalSteps === 0 ? 0 : this.currentStepNumber / this.totalSteps * 100;
     }
   }
-}, Pn = { class: "playback-controls" }, En = {
+}, Po = { class: "playback-controls" }, Eo = {
   key: 0,
   class: "progress-bar"
-}, Mn = { class: "progress-info" }, Dn = { class: "scene-name" }, Bn = { class: "step-counter" }, Rn = { class: "controls-buttons" }, On = ["disabled"], In = ["disabled"], Ln = ["aria-label", "aria-pressed"], Nn = { class: "control-label" }, $n = {
+}, Mo = { class: "progress-info" }, Do = { class: "scene-name" }, Ro = { class: "step-counter" }, Bo = { class: "controls-buttons" }, Oo = ["disabled"], Io = ["disabled"], Lo = ["aria-label", "aria-pressed"], No = { class: "control-label" }, $o = {
   class: "speed-control",
   role: "group",
   "aria-label": "자동 재생 속도"
-}, Hn = ["onClick", "title", "aria-label", "aria-pressed"], Un = {
+}, Ho = ["onClick", "title", "aria-label", "aria-pressed"], Fo = {
   key: 0,
   class: "step-counter"
 };
-function Fn(s, e, t, l, o, a) {
+function Uo(s, e, t, l, r, a) {
   const p = K("AppIcon");
-  return u(), h("div", Pn, [
-    t.showProgressBar ? (u(), h("div", En, [
+  return u(), h("div", Po, [
+    t.showProgressBar ? (u(), h("div", Eo, [
       i("div", {
         class: "progress-fill",
         style: be({ width: a.progressPercentage + "%" })
       }, null, 4),
-      i("div", Mn, [
-        i("span", Dn, w(t.currentSceneName), 1),
-        i("span", Bn, w(t.currentStepNumber) + " / " + w(t.totalSteps), 1)
+      i("div", Mo, [
+        i("span", Do, w(t.currentSceneName), 1),
+        i("span", Ro, w(t.currentStepNumber) + " / " + w(t.totalSteps), 1)
       ])
     ])) : P("", !0),
-    i("div", Rn, [
+    i("div", Bo, [
       i("button", {
         class: "control-button",
-        onClick: e[0] || (e[0] = (n) => s.$emit("previous")),
+        onClick: e[0] || (e[0] = (o) => s.$emit("previous")),
         disabled: !t.hasPreviousStep,
         title: "이전 (←)",
         "aria-label": "이전 스텝"
@@ -1096,10 +1096,10 @@ function Fn(s, e, t, l, o, a) {
           name: "previous",
           size: 20
         })
-      ], 8, On),
+      ], 8, Oo),
       i("button", {
         class: "control-button primary",
-        onClick: e[1] || (e[1] = (n) => s.$emit("next")),
+        onClick: e[1] || (e[1] = (o) => s.$emit("next")),
         disabled: !t.hasNextStep,
         title: "다음 (→ / Space)",
         "aria-label": "다음 스텝"
@@ -1108,10 +1108,10 @@ function Fn(s, e, t, l, o, a) {
           name: "next",
           size: 24
         })
-      ], 8, In),
+      ], 8, Io),
       i("button", {
         class: ve(["control-button autoplay-button", { "is-active": t.autoPlayEnabled }]),
-        onClick: e[2] || (e[2] = (n) => s.$emit("toggle-autoplay")),
+        onClick: e[2] || (e[2] = (o) => s.$emit("toggle-autoplay")),
         title: "자동 재생",
         "aria-label": t.autoPlayEnabled ? "자동 재생 끄기" : "자동 재생 켜기",
         "aria-pressed": t.autoPlayEnabled
@@ -1120,23 +1120,23 @@ function Fn(s, e, t, l, o, a) {
           name: t.autoPlayEnabled ? "pause" : "play",
           size: 20
         }, null, 8, ["name"]),
-        i("span", Nn, w(t.autoPlayEnabled ? "자동 재생 중" : "자동 재생"), 1)
-      ], 10, Ln),
-      i("div", $n, [
-        (u(!0), h(re, null, Te(o.speedOptions, (n) => (u(), h("button", {
-          key: n,
-          class: ve(["speed-button", { "is-active": t.autoPlaySpeed === n }]),
-          onClick: (c) => s.$emit("change-speed", n),
-          title: n + "배속",
-          "aria-label": n + "배속",
-          "aria-pressed": t.autoPlaySpeed === n
-        }, w(n) + "x ", 11, Hn))), 128))
+        i("span", No, w(t.autoPlayEnabled ? "자동 재생 중" : "자동 재생"), 1)
+      ], 10, Lo),
+      i("div", $o, [
+        (u(!0), h(ne, null, Te(r.speedOptions, (o) => (u(), h("button", {
+          key: o,
+          class: ve(["speed-button", { "is-active": t.autoPlaySpeed === o }]),
+          onClick: (c) => s.$emit("change-speed", o),
+          title: o + "배속",
+          "aria-label": o + "배속",
+          "aria-pressed": t.autoPlaySpeed === o
+        }, w(o) + "x ", 11, Ho))), 128))
       ]),
-      t.showProgressBar ? P("", !0) : (u(), h("div", Un, w(t.currentStepNumber) + " / " + w(t.totalSteps), 1))
+      t.showProgressBar ? P("", !0) : (u(), h("div", Fo, w(t.currentStepNumber) + " / " + w(t.totalSteps), 1))
     ])
   ]);
 }
-const zn = /* @__PURE__ */ pe(Sn, [["render", Fn], ["__scopeId", "data-v-9204b3e0"]]), jn = [
+const zo = /* @__PURE__ */ pe(So, [["render", Uo], ["__scopeId", "data-v-480bcc4a"]]), jo = [
   "a[href]",
   "button:not([disabled])",
   "input:not([disabled])",
@@ -1146,7 +1146,7 @@ const zn = /* @__PURE__ */ pe(Sn, [["render", Fn], ["__scopeId", "data-v-9204b3e
 ].join(","), Ns = {
   methods: {
     _getFocusable(s) {
-      return s ? Array.from(s.querySelectorAll(jn)).filter(
+      return s ? Array.from(s.querySelectorAll(jo)).filter(
         (e) => e.offsetParent !== null && !e.hasAttribute("aria-hidden")
       ) : [];
     },
@@ -1156,13 +1156,13 @@ const zn = /* @__PURE__ */ pe(Sn, [["render", Fn], ["__scopeId", "data-v-9204b3e
         if (!e) return;
         this._trapContainer = e, (this._getFocusable(e)[0] || e).focus(), this._trapHandler = (l) => {
           if (l.key !== "Tab") return;
-          const o = this._getFocusable(this._trapContainer);
-          if (!o.length) {
+          const r = this._getFocusable(this._trapContainer);
+          if (!r.length) {
             l.preventDefault(), this._trapContainer.focus();
             return;
           }
-          const a = o[0], p = o[o.length - 1], n = document.activeElement;
-          l.shiftKey && (n === a || n === this._trapContainer) ? (l.preventDefault(), p.focus()) : !l.shiftKey && n === p && (l.preventDefault(), a.focus());
+          const a = r[0], p = r[r.length - 1], o = document.activeElement;
+          l.shiftKey && (o === a || o === this._trapContainer) ? (l.preventDefault(), p.focus()) : !l.shiftKey && o === p && (l.preventDefault(), a.focus());
         }, document.addEventListener("keydown", this._trapHandler, !0);
       });
     },
@@ -1173,7 +1173,7 @@ const zn = /* @__PURE__ */ pe(Sn, [["render", Fn], ["__scopeId", "data-v-9204b3e
   beforeUnmount() {
     this._trapHandler && (document.removeEventListener("keydown", this._trapHandler, !0), this._trapHandler = null);
   }
-}, Vn = {
+}, Vo = {
   components: { AppIcon: _e },
   name: "SceneSelectorModal",
   mixins: [Ns],
@@ -1257,24 +1257,24 @@ const zn = /* @__PURE__ */ pe(Sn, [["render", Fn], ["__scopeId", "data-v-9204b3e
   beforeUnmount() {
     window.removeEventListener("keydown", this.handleKeyPress), document.body.style.overflow = "";
   }
-}, Gn = { class: "modal-header" }, qn = {
+}, Go = { class: "modal-header" }, qo = {
   class: "modal-title",
   id: "scene-modal-title"
-}, Wn = { class: "modal-content" }, Yn = ["aria-expanded", "onClick", "onKeydown"], Zn = { class: "scene-info" }, Xn = { class: "scene-number" }, Kn = { class: "scene-name" }, Jn = { class: "scene-meta" }, Qn = { class: "step-count" }, er = {
+}, Wo = { class: "modal-content" }, Yo = ["aria-expanded", "onClick", "onKeydown"], Zo = { class: "scene-info" }, Xo = { class: "scene-number" }, Ko = { class: "scene-name" }, Jo = { class: "scene-meta" }, Qo = { class: "step-count" }, en = {
   key: 0,
   class: "steps-list"
-}, tr = ["onClick", "onKeydown"], sr = { class: "step-number" }, or = { class: "step-preview" }, nr = { class: "step-text" }, rr = {
+}, tn = ["onClick", "onKeydown"], sn = { class: "step-number" }, rn = { class: "step-preview" }, on = { class: "step-text" }, nn = {
   key: 0,
   class: "empty-state"
-}, ar = { class: "modal-footer" }, ir = { class: "footer-info" };
-function lr(s, e, t, l, o, a) {
+}, an = { class: "modal-footer" }, ln = { class: "footer-info" };
+function cn(s, e, t, l, r, a) {
   const p = K("AppIcon");
   return u(), ye(ce, { name: "modal-overlay" }, {
     default: ie(() => [
       t.isVisible ? (u(), h("div", {
         key: 0,
         class: "modal-overlay",
-        onClick: e[3] || (e[3] = (...n) => a.handleOverlayClick && a.handleOverlayClick(...n))
+        onClick: e[3] || (e[3] = (...o) => a.handleOverlayClick && a.handleOverlayClick(...o))
       }, [
         i("div", {
           class: "modal-container",
@@ -1286,8 +1286,8 @@ function lr(s, e, t, l, o, a) {
           "aria-modal": "true",
           "aria-labelledby": "scene-modal-title"
         }, [
-          i("div", Gn, [
-            i("h2", qn, [
+          i("div", Go, [
+            i("h2", qo, [
               N(p, {
                 name: "text",
                 size: 20
@@ -1296,7 +1296,7 @@ function lr(s, e, t, l, o, a) {
             ]),
             i("button", {
               class: "modal-close",
-              onClick: e[0] || (e[0] = (...n) => a.close && a.close(...n)),
+              onClick: e[0] || (e[0] = (...o) => a.close && a.close(...o)),
               title: "닫기 (ESC)",
               "aria-label": "닫기"
             }, [
@@ -1306,8 +1306,8 @@ function lr(s, e, t, l, o, a) {
               })
             ])
           ]),
-          i("div", Wn, [
-            (u(!0), h(re, null, Te(t.scenes, (n, c) => (u(), h("div", {
+          i("div", Wo, [
+            (u(!0), h(ne, null, Te(t.scenes, (o, c) => (u(), h("div", {
               key: `scene-${c}`,
               class: ve(["scene-item", { "is-current": c === t.currentSceneIndex }])
             }, [
@@ -1315,30 +1315,30 @@ function lr(s, e, t, l, o, a) {
                 class: "scene-header",
                 role: "button",
                 tabindex: "0",
-                "aria-expanded": o.expandedScenes.has(c),
+                "aria-expanded": r.expandedScenes.has(c),
                 onClick: (f) => a.toggleScene(c),
                 onKeydown: [
                   pt(Me((f) => a.toggleScene(c), ["prevent"]), ["enter"]),
                   pt(Me((f) => a.toggleScene(c), ["prevent"]), ["space"])
                 ]
               }, [
-                i("div", Zn, [
-                  i("span", Xn, "씬 " + w(c + 1), 1),
-                  i("h3", Kn, w(n.name || "제목 없음"), 1)
+                i("div", Zo, [
+                  i("span", Xo, "씬 " + w(c + 1), 1),
+                  i("h3", Ko, w(o.name || "제목 없음"), 1)
                 ]),
-                i("div", Jn, [
-                  i("span", Qn, w(n.steps.length) + "개 스텝", 1),
+                i("div", Jo, [
+                  i("span", Qo, w(o.steps.length) + "개 스텝", 1),
                   N(p, {
-                    name: o.expandedScenes.has(c) ? "down" : "play",
+                    name: r.expandedScenes.has(c) ? "down" : "play",
                     size: 16,
                     class: "expand-icon"
                   }, null, 8, ["name"])
                 ])
-              ], 40, Yn),
+              ], 40, Yo),
               N(ce, { name: "steps-expand" }, {
                 default: ie(() => [
-                  o.expandedScenes.has(c) ? (u(), h("div", er, [
-                    (u(!0), h(re, null, Te(n.steps, (f, m) => (u(), h("div", {
+                  r.expandedScenes.has(c) ? (u(), h("div", en, [
+                    (u(!0), h(ne, null, Te(o.steps, (f, m) => (u(), h("div", {
                       key: `step-${c}-${m}`,
                       ref_for: !0,
                       ref: c === t.currentSceneIndex && m === t.currentStepIndex ? "currentStep" : null,
@@ -1353,14 +1353,14 @@ function lr(s, e, t, l, o, a) {
                         pt(Me((_) => a.goToStep(c, m), ["prevent"]), ["space"])
                       ]
                     }, [
-                      i("span", sr, w(m + 1), 1),
-                      i("div", or, [
+                      i("span", sn, w(m + 1), 1),
+                      i("div", rn, [
                         f.character?.name ? (u(), h("span", {
                           key: 0,
                           class: "step-character",
                           style: be({ color: f.character.color || "#ffffff" })
                         }, w(f.character.name) + ": ", 5)) : P("", !0),
-                        i("span", nr, w(a.getStepPreview(f.text)), 1)
+                        i("span", on, w(a.getStepPreview(f.text)), 1)
                       ]),
                       c === t.currentSceneIndex && m === t.currentStepIndex ? (u(), ye(p, {
                         key: 0,
@@ -1368,13 +1368,13 @@ function lr(s, e, t, l, o, a) {
                         size: 14,
                         class: "current-indicator"
                       })) : P("", !0)
-                    ], 42, tr))), 128))
+                    ], 42, tn))), 128))
                   ])) : P("", !0)
                 ]),
                 _: 2
               }, 1024)
             ], 2))), 128)),
-            t.scenes.length === 0 ? (u(), h("div", rr, [
+            t.scenes.length === 0 ? (u(), h("div", nn, [
               N(p, {
                 name: "archive",
                 size: 48
@@ -1382,8 +1382,8 @@ function lr(s, e, t, l, o, a) {
               e[5] || (e[5] = i("p", null, "씬이 없습니다", -1))
             ])) : P("", !0)
           ]),
-          i("div", ar, [
-            i("div", ir, [
+          i("div", an, [
+            i("div", ln, [
               N(p, {
                 name: "info",
                 size: 14
@@ -1392,7 +1392,7 @@ function lr(s, e, t, l, o, a) {
             ]),
             i("button", {
               class: "btn btn-primary",
-              onClick: e[1] || (e[1] = (...n) => a.close && a.close(...n))
+              onClick: e[1] || (e[1] = (...o) => a.close && a.close(...o))
             }, " 닫기 ")
           ])
         ], 512)
@@ -1401,7 +1401,7 @@ function lr(s, e, t, l, o, a) {
     _: 1
   });
 }
-const cr = /* @__PURE__ */ pe(Vn, [["render", lr], ["__scopeId", "data-v-bcf4cfd6"]]), ur = {
+const un = /* @__PURE__ */ pe(Vo, [["render", cn], ["__scopeId", "data-v-bcf4cfd6"]]), dn = {
   components: { AppIcon: _e },
   name: "BGMPlayer",
   props: {
@@ -1695,72 +1695,72 @@ const cr = /* @__PURE__ */ pe(Vn, [["render", lr], ["__scopeId", "data-v-bcf4cfd
   beforeUnmount() {
     this.stopPlayer(), this.disarmUserGestureResume(), this.youtubePlayer && (this.youtubePlayer.destroy(), this.youtubePlayer = null);
   }
-}, dr = {
+}, hn = {
   key: 0,
   class: "bgm-player"
-}, hr = {
+}, pn = {
   key: 0,
   class: "youtube-container"
-}, pr = { ref: "youtubeIframe" }, mr = ["src", "autoplay"], fr = {
+}, mn = { ref: "youtubeIframe" }, fn = ["src", "autoplay"], gn = {
   key: 2,
   class: "bgm-controls"
-}, gr = ["title", "aria-label", "aria-pressed"], yr = { class: "bgm-info" }, br = { class: "bgm-status" }, vr = { class: "volume-control" }, _r = ["title", "aria-label", "aria-pressed"];
-function wr(s, e, t, l, o, a) {
+}, yn = ["title", "aria-label", "aria-pressed"], bn = { class: "bgm-info" }, vn = { class: "bgm-status" }, _n = { class: "volume-control" }, wn = ["title", "aria-label", "aria-pressed"];
+function xn(s, e, t, l, r, a) {
   const p = K("AppIcon");
-  return t.bgmUrl ? (u(), h("div", dr, [
-    t.bgmType === "youtube" && a.youtubeVideoId ? (u(), h("div", hr, [
-      i("div", pr, null, 512)
+  return t.bgmUrl ? (u(), h("div", hn, [
+    t.bgmType === "youtube" && a.youtubeVideoId ? (u(), h("div", pn, [
+      i("div", mn, null, 512)
     ])) : t.bgmType === "audio" ? (u(), h("audio", {
       key: 1,
       ref: "audioPlayer",
       src: t.bgmUrl,
       autoplay: t.autoPlay,
       loop: "",
-      onError: e[0] || (e[0] = (...n) => a.handleAudioError && a.handleAudioError(...n))
-    }, null, 40, mr)) : P("", !0),
-    t.showControls ? (u(), h("div", fr, [
+      onError: e[0] || (e[0] = (...o) => a.handleAudioError && a.handleAudioError(...o))
+    }, null, 40, fn)) : P("", !0),
+    t.showControls ? (u(), h("div", gn, [
       i("button", {
-        onClick: e[1] || (e[1] = (...n) => a.togglePlay && a.togglePlay(...n)),
+        onClick: e[1] || (e[1] = (...o) => a.togglePlay && a.togglePlay(...o)),
         class: "bgm-button",
-        title: o.isPlaying ? "일시정지" : "재생",
-        "aria-label": o.isPlaying ? "BGM 일시정지" : "BGM 재생",
-        "aria-pressed": o.isPlaying
+        title: r.isPlaying ? "일시정지" : "재생",
+        "aria-label": r.isPlaying ? "BGM 일시정지" : "BGM 재생",
+        "aria-pressed": r.isPlaying
       }, [
         N(p, {
-          name: o.isPlaying ? "pause" : "play",
+          name: r.isPlaying ? "pause" : "play",
           size: 16
         }, null, 8, ["name"])
-      ], 8, gr),
-      i("div", yr, [
+      ], 8, yn),
+      i("div", bn, [
         e[5] || (e[5] = i("span", { class: "bgm-label" }, "BGM", -1)),
-        i("span", br, w(o.isPlaying ? "재생 중" : o.isPaused ? "일시정지" : "정지"), 1)
+        i("span", vn, w(r.isPlaying ? "재생 중" : r.isPaused ? "일시정지" : "정지"), 1)
       ]),
-      i("div", vr, [
+      i("div", _n, [
         i("button", {
-          onClick: e[2] || (e[2] = (...n) => a.toggleMute && a.toggleMute(...n)),
+          onClick: e[2] || (e[2] = (...o) => a.toggleMute && a.toggleMute(...o)),
           class: "volume-button",
-          title: o.isMuted ? "음소거 해제" : "음소거",
-          "aria-label": o.isMuted ? "음소거 해제" : "음소거",
-          "aria-pressed": o.isMuted
+          title: r.isMuted ? "음소거 해제" : "음소거",
+          "aria-label": r.isMuted ? "음소거 해제" : "음소거",
+          "aria-pressed": r.isMuted
         }, [
           N(p, {
-            name: o.isMuted ? "mute" : "volume",
+            name: r.isMuted ? "mute" : "volume",
             size: 14
           }, null, 8, ["name"])
-        ], 8, _r),
-        yo(i("input", {
-          "onUpdate:modelValue": e[3] || (e[3] = (n) => o.currentVolume = n),
+        ], 8, wn),
+        yr(i("input", {
+          "onUpdate:modelValue": e[3] || (e[3] = (o) => r.currentVolume = o),
           type: "range",
           min: "0",
           max: "1",
           step: "0.05",
           class: "volume-slider",
           "aria-label": "BGM 볼륨",
-          onInput: e[4] || (e[4] = (...n) => a.updateVolume && a.updateVolume(...n))
+          onInput: e[4] || (e[4] = (...o) => a.updateVolume && a.updateVolume(...o))
         }, null, 544), [
           [
-            bo,
-            o.currentVolume,
+            br,
+            r.currentVolume,
             void 0,
             { number: !0 }
           ]
@@ -1769,49 +1769,49 @@ function wr(s, e, t, l, o, a) {
     ])) : P("", !0)
   ])) : P("", !0);
 }
-const xr = /* @__PURE__ */ pe(ur, [["render", wr], ["__scopeId", "data-v-9e56580b"]]);
+const kn = /* @__PURE__ */ pe(dn, [["render", xn], ["__scopeId", "data-v-9e56580b"]]);
 function ws(s, e) {
   (e == null || e > s.length) && (e = s.length);
   for (var t = 0, l = Array(e); t < e; t++) l[t] = s[t];
   return l;
 }
-function kr(s) {
+function Tn(s) {
   if (Array.isArray(s)) return s;
 }
-function Tr(s, e) {
+function Cn(s, e) {
   var t = s == null ? null : typeof Symbol < "u" && s[Symbol.iterator] || s["@@iterator"];
   if (t != null) {
-    var l, o, a, p, n = [], c = !0, f = !1;
+    var l, r, a, p, o = [], c = !0, f = !1;
     try {
-      if (a = (t = t.call(s)).next, e !== 0) for (; !(c = (l = a.call(t)).done) && (n.push(l.value), n.length !== e); c = !0) ;
+      if (a = (t = t.call(s)).next, e !== 0) for (; !(c = (l = a.call(t)).done) && (o.push(l.value), o.length !== e); c = !0) ;
     } catch (m) {
-      f = !0, o = m;
+      f = !0, r = m;
     } finally {
       try {
         if (!c && t.return != null && (p = t.return(), Object(p) !== p)) return;
       } finally {
-        if (f) throw o;
+        if (f) throw r;
       }
     }
-    return n;
+    return o;
   }
 }
-function Cr() {
+function An() {
   throw new TypeError(`Invalid attempt to destructure non-iterable instance.
 In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`);
 }
-function Ar(s, e) {
-  return kr(s) || Tr(s, e) || Sr(s, e) || Cr();
+function Sn(s, e) {
+  return Tn(s) || Cn(s, e) || Pn(s, e) || An();
 }
-function Sr(s, e) {
+function Pn(s, e) {
   if (s) {
     if (typeof s == "string") return ws(s, e);
     var t = {}.toString.call(s).slice(8, -1);
     return t === "Object" && s.constructor && (t = s.constructor.name), t === "Map" || t === "Set" ? Array.from(s) : t === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? ws(s, e) : void 0;
   }
 }
-const $s = Object.entries, xs = Object.setPrototypeOf, Pr = Object.isFrozen, Er = Object.getPrototypeOf, Mr = Object.getOwnPropertyDescriptor;
-let te = Object.freeze, se = Object.seal, Ve = Object.create, Hs = typeof Reflect < "u" && Reflect, Ht = Hs.apply, Ut = Hs.construct;
+const $s = Object.entries, xs = Object.setPrototypeOf, En = Object.isFrozen, Mn = Object.getPrototypeOf, Dn = Object.getOwnPropertyDescriptor;
+let te = Object.freeze, se = Object.seal, Ve = Object.create, Hs = typeof Reflect < "u" && Reflect, Ht = Hs.apply, Ft = Hs.construct;
 te || (te = function(e) {
   return e;
 });
@@ -1819,25 +1819,25 @@ se || (se = function(e) {
   return e;
 });
 Ht || (Ht = function(e, t) {
-  for (var l = arguments.length, o = new Array(l > 2 ? l - 2 : 0), a = 2; a < l; a++) o[a - 2] = arguments[a];
-  return e.apply(t, o);
+  for (var l = arguments.length, r = new Array(l > 2 ? l - 2 : 0), a = 2; a < l; a++) r[a - 2] = arguments[a];
+  return e.apply(t, r);
 });
-Ut || (Ut = function(e) {
-  for (var t = arguments.length, l = new Array(t > 1 ? t - 1 : 0), o = 1; o < t; o++) l[o - 1] = arguments[o];
+Ft || (Ft = function(e) {
+  for (var t = arguments.length, l = new Array(t > 1 ? t - 1 : 0), r = 1; r < t; r++) l[r - 1] = arguments[r];
   return new e(...l);
 });
-const Ie = ee(Array.prototype.forEach), Dr = ee(Array.prototype.lastIndexOf), ks = ee(Array.prototype.pop), Xe = ee(Array.prototype.push), Br = ee(Array.prototype.splice), Ge = Array.isArray, Qe = ee(String.prototype.toLowerCase), Rt = ee(String.prototype.toString), Ts = ee(String.prototype.match), Ke = ee(String.prototype.replace), Cs = ee(String.prototype.indexOf), Rr = ee(String.prototype.trim), Or = ee(Number.prototype.toString), Ir = ee(Boolean.prototype.toString), As = typeof BigInt > "u" ? null : ee(BigInt.prototype.toString), Ss = typeof Symbol > "u" ? null : ee(Symbol.prototype.toString), le = ee(Object.prototype.hasOwnProperty), Je = ee(Object.prototype.toString), ne = ee(RegExp.prototype.test), Pe = Lr(TypeError);
+const Ie = ee(Array.prototype.forEach), Rn = ee(Array.prototype.lastIndexOf), ks = ee(Array.prototype.pop), Xe = ee(Array.prototype.push), Bn = ee(Array.prototype.splice), Ge = Array.isArray, Qe = ee(String.prototype.toLowerCase), Bt = ee(String.prototype.toString), Ts = ee(String.prototype.match), Ke = ee(String.prototype.replace), Cs = ee(String.prototype.indexOf), On = ee(String.prototype.trim), In = ee(Number.prototype.toString), Ln = ee(Boolean.prototype.toString), As = typeof BigInt > "u" ? null : ee(BigInt.prototype.toString), Ss = typeof Symbol > "u" ? null : ee(Symbol.prototype.toString), le = ee(Object.prototype.hasOwnProperty), Je = ee(Object.prototype.toString), oe = ee(RegExp.prototype.test), Pe = Nn(TypeError);
 function ee(s) {
   return function(e) {
     e instanceof RegExp && (e.lastIndex = 0);
-    for (var t = arguments.length, l = new Array(t > 1 ? t - 1 : 0), o = 1; o < t; o++) l[o - 1] = arguments[o];
+    for (var t = arguments.length, l = new Array(t > 1 ? t - 1 : 0), r = 1; r < t; r++) l[r - 1] = arguments[r];
     return Ht(s, e, l);
   };
 }
-function Lr(s) {
+function Nn(s) {
   return function() {
     for (var e = arguments.length, t = new Array(e), l = 0; l < e; l++) t[l] = arguments[l];
-    return Ut(s, t);
+    return Ft(s, t);
   };
 }
 function j(s, e) {
@@ -1845,36 +1845,36 @@ function j(s, e) {
   if (xs && xs(s, null), !Ge(e)) return s;
   let l = e.length;
   for (; l--; ) {
-    let o = e[l];
-    if (typeof o == "string") {
-      const a = t(o);
-      a !== o && (Pr(e) || (e[l] = a), o = a);
+    let r = e[l];
+    if (typeof r == "string") {
+      const a = t(r);
+      a !== r && (En(e) || (e[l] = a), r = a);
     }
-    s[o] = !0;
+    s[r] = !0;
   }
   return s;
 }
-function Nr(s) {
+function $n(s) {
   for (let e = 0; e < s.length; e++) le(s, e) || (s[e] = null);
   return s;
 }
 function he(s) {
   const e = Ve(null);
   for (const l of $s(s)) {
-    var t = Ar(l, 2);
-    const o = t[0], a = t[1];
-    le(s, o) && (Ge(a) ? e[o] = Nr(a) : a && typeof a == "object" && a.constructor === Object ? e[o] = he(a) : e[o] = a);
+    var t = Sn(l, 2);
+    const r = t[0], a = t[1];
+    le(s, r) && (Ge(a) ? e[r] = $n(a) : a && typeof a == "object" && a.constructor === Object ? e[r] = he(a) : e[r] = a);
   }
   return e;
 }
-function $r(s) {
+function Hn(s) {
   switch (typeof s) {
     case "string":
       return s;
     case "number":
-      return Or(s);
+      return In(s);
     case "boolean":
-      return Ir(s);
+      return Ln(s);
     case "bigint":
       return As ? As(s) : "0";
     case "symbol":
@@ -1897,21 +1897,21 @@ function $r(s) {
 }
 function ge(s, e) {
   for (; s !== null; ) {
-    const l = Mr(s, e);
+    const l = Dn(s, e);
     if (l) {
       if (l.get) return ee(l.get);
       if (typeof l.value == "function") return ee(l.value);
     }
-    s = Er(s);
+    s = Mn(s);
   }
   function t() {
     return null;
   }
   return t;
 }
-function Hr(s) {
+function Fn(s) {
   try {
-    return ne(s, ""), !0;
+    return oe(s, ""), !0;
   } catch {
     return !1;
   }
@@ -2110,7 +2110,7 @@ const Ps = te([
   "feSpotLight",
   "feTile",
   "feTurbulence"
-]), Ur = te([
+]), Un = te([
   "animate",
   "color-profile",
   "cursor",
@@ -2164,7 +2164,7 @@ const Ps = te([
   "munder",
   "munderover",
   "mprescripts"
-]), Fr = te([
+]), zn = te([
   "maction",
   "maligngroup",
   "malignmark",
@@ -2553,7 +2553,7 @@ const Ps = te([
   "xlink:title",
   "xml:space",
   "xmlns:xlink"
-]), zr = se(/{{[\w\W]*|^[\w\W]*}}/g), jr = se(/<%[\w\W]*|^[\w\W]*%>/g), Vr = se(/\${[\w\W]*/g), Gr = se(/^data-[\-\w.\u00B7-\uFFFF]+$/), qr = se(/^aria-[\-\w]+$/), Bs = se(/^(?:(?:(?:f|ht)tps?|mailto|tel|callto|sms|cid|xmpp|matrix):|[^a-z]|[a-z+.\-]+(?:[^a-z+.\-:]|$))/i), Wr = se(/^(?:\w+script|data):/i), Yr = se(/[\u0000-\u0020\u00A0\u1680\u180E\u2000-\u2029\u205F\u3000]/g), Zr = se(/^html$/i), Xr = se(/^[a-z][.\w]*(-[.\w]+)+$/i), Rs = se(/<[/\w!]/g), Os = se(/<[/\w]/g), Kr = se(/<\/no(script|embed|frames)/i), Jr = se(/\/>/i), de = {
+]), jn = se(/{{[\w\W]*|^[\w\W]*}}/g), Vn = se(/<%[\w\W]*|^[\w\W]*%>/g), Gn = se(/\${[\w\W]*/g), qn = se(/^data-[\-\w.\u00B7-\uFFFF]+$/), Wn = se(/^aria-[\-\w]+$/), Rs = se(/^(?:(?:(?:f|ht)tps?|mailto|tel|callto|sms|cid|xmpp|matrix):|[^a-z]|[a-z+.\-]+(?:[^a-z+.\-:]|$))/i), Yn = se(/^(?:\w+script|data):/i), Zn = se(/[\u0000-\u0020\u00A0\u1680\u180E\u2000-\u2029\u205F\u3000]/g), Xn = se(/^html$/i), Kn = se(/^[a-z][.\w]*(-[.\w]+)+$/i), Bs = se(/<[/\w!]/g), Os = se(/<[/\w]/g), Jn = se(/<\/no(script|embed|frames)/i), Qn = se(/\/>/i), de = {
   element: 1,
   attribute: 2,
   text: 3,
@@ -2566,7 +2566,7 @@ const Ps = te([
   documentType: 10,
   documentFragment: 11,
   notation: 12
-}, Us = [
+}, Fs = [
   "style",
   "script",
   "xmp",
@@ -2575,18 +2575,18 @@ const Ps = te([
   "noframes",
   "plaintext",
   "noscript"
-], Qr = te(j({}, Us)), ea = (function() {
+], ea = te(j({}, Fs)), ta = (function() {
   const s = {};
-  return Ie(Us, (e) => {
+  return Ie(Fs, (e) => {
     s[e] = se(new RegExp("</" + e + "(?=[\\t\\n\\f\\r />])", "i"));
   }), te(s);
-})(), ta = function() {
+})(), sa = function() {
   return typeof window > "u" ? null : window;
-}, sa = function(e, t) {
+}, ra = function(e, t) {
   if (typeof e != "object" || typeof e.createPolicy != "function") return null;
   let l = null;
-  const o = "data-tt-policy-suffix";
-  t && t.hasAttribute(o) && (l = t.getAttribute(o));
+  const r = "data-tt-policy-suffix";
+  t && t.hasAttribute(r) && (l = t.getAttribute(r));
   const a = "dompurify" + (l ? "#" + l : "");
   try {
     return e.createPolicy(a, {
@@ -2612,55 +2612,55 @@ const Ps = te([
     uponSanitizeElement: [],
     uponSanitizeShadowNode: []
   };
-}, Ee = function(e, t, l, o) {
-  return le(e, t) && Ge(e[t]) ? j(o.base ? he(o.base) : {}, e[t], o.transform) : l;
+}, Ee = function(e, t, l, r) {
+  return le(e, t) && Ge(e[t]) ? j(r.base ? he(r.base) : {}, e[t], r.transform) : l;
 }, $t = function(e, t, l) {
-  const o = le(e, t) ? e[t] : void 0;
-  return o && typeof o == "object" ? he(o) : l();
+  const r = le(e, t) ? e[t] : void 0;
+  return r && typeof r == "object" ? he(r) : l();
 };
-function Fs() {
-  let s = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : ta();
-  const e = (y) => Fs(y);
+function Us() {
+  let s = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : sa();
+  const e = (y) => Us(y);
   if (e.version = "3.4.16", e.removed = [], !s || !s.document || s.document.nodeType !== de.document || !s.Element)
     return e.isSupported = !1, e;
   let t = s.document;
-  const l = t, o = l.currentScript;
+  const l = t, r = l.currentScript;
   s.DocumentFragment;
-  const a = s.HTMLTemplateElement, p = s.Node, n = s.Element, c = s.NodeFilter;
+  const a = s.HTMLTemplateElement, p = s.Node, o = s.Element, c = s.NodeFilter;
   s.NamedNodeMap === void 0 && (s.NamedNodeMap || s.MozNamedAttrMap), s.HTMLFormElement;
-  const f = s.DOMParser, m = s.trustedTypes, _ = n.prototype, b = ge(_, "cloneNode"), S = ge(_, "remove"), k = ge(_, "removeAttributeNode"), A = ge(_, "nextSibling"), x = ge(_, "childNodes"), C = ge(_, "parentNode"), I = ge(_, "shadowRoot"), R = ge(_, "attributes"), M = p && p.prototype ? ge(p.prototype, "nodeType") : null, T = p && p.prototype ? ge(p.prototype, "nodeName") : null, D = p && p.prototype ? ge(p.prototype, "ownerDocument") : null, E = function(r) {
-    return M ? M(r) : r.nodeType;
-  }, L = function(r) {
-    return T ? T(r) : r.nodeName;
+  const f = s.DOMParser, m = s.trustedTypes, _ = o.prototype, b = ge(_, "cloneNode"), S = ge(_, "remove"), k = ge(_, "removeAttributeNode"), A = ge(_, "nextSibling"), x = ge(_, "childNodes"), C = ge(_, "parentNode"), I = ge(_, "shadowRoot"), B = ge(_, "attributes"), M = p && p.prototype ? ge(p.prototype, "nodeType") : null, T = p && p.prototype ? ge(p.prototype, "nodeName") : null, D = p && p.prototype ? ge(p.prototype, "ownerDocument") : null, E = function(n) {
+    return M ? M(n) : n.nodeType;
+  }, L = function(n) {
+    return T ? T(n) : n.nodeName;
   };
   if (typeof a == "function") {
     const y = t.createElement("template");
     y.content && y.content.ownerDocument && (t = y.content.ownerDocument);
   }
-  let B, U = "", V, $ = !1, G = 0;
+  let R, F = "", V, $ = !1, G = 0;
   const me = function() {
     if (G > 0) throw Pe('A configured TRUSTED_TYPES_POLICY callback (createHTML or createScriptURL) must not call DOMPurify.sanitize, as that causes infinite recursion. Do not pass a policy whose callbacks wrap DOMPurify as TRUSTED_TYPES_POLICY; see the "DOMPurify and Trusted Types" section of the README.');
-  }, J = function(r) {
+  }, J = function(n) {
     me(), G++;
     try {
-      return B.createHTML(r);
+      return R.createHTML(n);
     } finally {
       G--;
     }
-  }, qe = function(r) {
+  }, qe = function(n) {
     me(), G++;
     try {
-      return B.createScriptURL(r);
+      return R.createScriptURL(n);
     } finally {
       G--;
     }
   }, Vt = function() {
-    return $ || (V = sa(m, o), $ = !0), V;
-  }, F = t, Z = F.implementation, oe = F.createNodeIterator, De = F.createDocumentFragment, Gt = F.getElementsByTagName, yt = l.importNode;
+    return $ || (V = ra(m, r), $ = !0), V;
+  }, U = t, Z = U.implementation, re = U.createNodeIterator, De = U.createDocumentFragment, Gt = U.getElementsByTagName, yt = l.importNode;
   let q = Is();
   e.isSupported = typeof $s == "function" && typeof C == "function" && Z && Z.createHTMLDocument !== void 0;
-  const qs = zr, Ws = jr, Ys = Vr, Zs = Gr, Xs = qr, Ks = Wr, qt = Yr, Js = Xr;
-  let Wt = Bs, W = null;
+  const Ws = jn, Ys = Vn, Zs = Gn, Xs = qn, Ks = Wn, Js = Yn, qt = Zn, Qs = Kn;
+  let Wt = Rs, W = null;
   const bt = j({}, [
     ...Ps,
     ...Ot,
@@ -2709,7 +2709,7 @@ function Fs() {
       value: null
     }
   }));
-  let Zt = !0, _t = !0, Xt = !1, Kt = !0, Ae = !1, Be = !0, Re = !1, wt = !1, tt = null, st = null, xt = !1, Le = !1, ot = !1, nt = !1, Jt = !0, Qt = !1;
+  let Zt = !0, _t = !0, Xt = !1, Kt = !0, Ae = !1, Re = !0, Be = !1, wt = !1, tt = null, st = null, xt = !1, Le = !1, rt = !1, ot = !1, Jt = !0, Qt = !1;
   const es = "user-content-";
   let kt = !0, Tt = !1, Ne = {}, $e = null;
   const ts = j({}, [
@@ -2741,7 +2741,7 @@ function Fs() {
     "xmp"
   ]);
   let ss = null;
-  const os = j({}, [
+  const rs = j({}, [
     "audio",
     "video",
     "img",
@@ -2749,8 +2749,8 @@ function Fs() {
     "image",
     "track"
   ]);
-  let ns = null;
-  const rs = j({}, [
+  let os = null;
+  const ns = j({}, [
     "alt",
     "class",
     "for",
@@ -2765,13 +2765,13 @@ function Fs() {
     "value",
     "style",
     "xmlns"
-  ]), rt = "http://www.w3.org/1998/Math/MathML", at = "http://www.w3.org/2000/svg", xe = "http://www.w3.org/1999/xhtml";
+  ]), nt = "http://www.w3.org/1998/Math/MathML", at = "http://www.w3.org/2000/svg", xe = "http://www.w3.org/1999/xhtml";
   let He = xe, Ct = !1, At = null;
-  const Qs = j({}, [
-    rt,
+  const er = j({}, [
+    nt,
     at,
     xe
-  ], Rt), as = te([
+  ], Bt), as = te([
     "mi",
     "mo",
     "mn",
@@ -2781,7 +2781,7 @@ function Fs() {
   let St = j({}, as);
   const is = te(["annotation-xml"]);
   let Pt = j({}, is);
-  const eo = j({}, [
+  const tr = j({}, [
     "title",
     "style",
     "font",
@@ -2789,74 +2789,74 @@ function Fs() {
     "script"
   ]);
   let Ye = null;
-  const to = ["application/xhtml+xml", "text/html"], so = "text/html";
-  let Q = null, Ue = null;
-  const oo = t.createElement("form"), ls = function(r) {
-    return r instanceof RegExp || r instanceof Function;
+  const sr = ["application/xhtml+xml", "text/html"], rr = "text/html";
+  let Q = null, Fe = null;
+  const or = t.createElement("form"), ls = function(n) {
+    return n instanceof RegExp || n instanceof Function;
   }, Et = function() {
-    let r = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {};
-    if (Ue && Ue === r) return;
-    (!r || typeof r != "object") && (r = {}), r = he(r), Ye = to.indexOf(r.PARSER_MEDIA_TYPE) === -1 ? so : r.PARSER_MEDIA_TYPE, Q = Ye === "application/xhtml+xml" ? Rt : Qe, W = Ee(r, "ALLOWED_TAGS", bt, { transform: Q }), Y = Ee(r, "ALLOWED_ATTR", vt, { transform: Q }), At = Ee(r, "ALLOWED_NAMESPACES", Qs, { transform: Rt }), ns = Ee(r, "ADD_URI_SAFE_ATTR", rs, {
+    let n = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {};
+    if (Fe && Fe === n) return;
+    (!n || typeof n != "object") && (n = {}), n = he(n), Ye = sr.indexOf(n.PARSER_MEDIA_TYPE) === -1 ? rr : n.PARSER_MEDIA_TYPE, Q = Ye === "application/xhtml+xml" ? Bt : Qe, W = Ee(n, "ALLOWED_TAGS", bt, { transform: Q }), Y = Ee(n, "ALLOWED_ATTR", vt, { transform: Q }), At = Ee(n, "ALLOWED_NAMESPACES", er, { transform: Bt }), os = Ee(n, "ADD_URI_SAFE_ATTR", ns, {
+      transform: Q,
+      base: ns
+    }), ss = Ee(n, "ADD_DATA_URI_TAGS", rs, {
       transform: Q,
       base: rs
-    }), ss = Ee(r, "ADD_DATA_URI_TAGS", os, {
-      transform: Q,
-      base: os
-    }), $e = Ee(r, "FORBID_CONTENTS", ts, { transform: Q }), We = Ee(r, "FORBID_TAGS", he({}), { transform: Q }), Yt = Ee(r, "FORBID_ATTR", he({}), { transform: Q }), Ne = le(r, "USE_PROFILES") ? r.USE_PROFILES && typeof r.USE_PROFILES == "object" ? he(r.USE_PROFILES) : r.USE_PROFILES : !1, Zt = r.ALLOW_ARIA_ATTR !== !1, _t = r.ALLOW_DATA_ATTR !== !1, Xt = r.ALLOW_UNKNOWN_PROTOCOLS || !1, Kt = r.ALLOW_SELF_CLOSE_IN_ATTR !== !1, Ae = r.SAFE_FOR_TEMPLATES || !1, Be = r.SAFE_FOR_XML !== !1, Re = r.WHOLE_DOCUMENT || !1, Le = r.RETURN_DOM || !1, ot = r.RETURN_DOM_FRAGMENT || !1, nt = r.RETURN_TRUSTED_TYPE || !1, xt = r.FORCE_BODY || !1, Jt = r.SANITIZE_DOM !== !1, Qt = r.SANITIZE_NAMED_PROPS || !1, kt = r.KEEP_CONTENT !== !1, Tt = r.IN_PLACE || !1, Wt = Hr(r.ALLOWED_URI_REGEXP) ? r.ALLOWED_URI_REGEXP : Bs, He = typeof r.NAMESPACE == "string" ? r.NAMESPACE : xe, St = $t(r, "MATHML_TEXT_INTEGRATION_POINTS", () => j({}, as)), Pt = $t(r, "HTML_INTEGRATION_POINTS", () => j({}, is));
-    const d = $t(r, "CUSTOM_ELEMENT_HANDLING", () => Ve(null));
-    if (we = Ve(null), le(d, "tagNameCheck") && ls(d.tagNameCheck) && (we.tagNameCheck = d.tagNameCheck), le(d, "attributeNameCheck") && ls(d.attributeNameCheck) && (we.attributeNameCheck = d.attributeNameCheck), le(d, "allowCustomizedBuiltInElements") && typeof d.allowCustomizedBuiltInElements == "boolean" && (we.allowCustomizedBuiltInElements = d.allowCustomizedBuiltInElements), se(we), Ae && (_t = !1), ot && (Le = !0), Ne && (W = j({}, Es), Y = Ve(null), Ne.html === !0 && (j(W, Ps), j(Y, Ms)), Ne.svg === !0 && (j(W, Ot), j(Y, Nt), j(Y, mt)), Ne.svgFilters === !0 && (j(W, It), j(Y, Nt), j(Y, mt)), Ne.mathMl === !0 && (j(W, Lt), j(Y, Ds), j(Y, mt))), Ce.tagCheck = null, Ce.attributeCheck = null, le(r, "ADD_TAGS") && (typeof r.ADD_TAGS == "function" ? Ce.tagCheck = r.ADD_TAGS : Ge(r.ADD_TAGS) && (W === bt && (W = he(W)), j(W, r.ADD_TAGS, Q))), le(r, "ADD_ATTR") && (typeof r.ADD_ATTR == "function" ? Ce.attributeCheck = r.ADD_ATTR : Ge(r.ADD_ATTR) && (Y === vt && (Y = he(Y)), j(Y, r.ADD_ATTR, Q))), le(r, "ADD_FORBID_CONTENTS") && Ge(r.ADD_FORBID_CONTENTS) && ($e === ts && ($e = he($e)), j($e, r.ADD_FORBID_CONTENTS, Q)), kt && (W["#text"] = !0), Re && j(W, [
+    }), $e = Ee(n, "FORBID_CONTENTS", ts, { transform: Q }), We = Ee(n, "FORBID_TAGS", he({}), { transform: Q }), Yt = Ee(n, "FORBID_ATTR", he({}), { transform: Q }), Ne = le(n, "USE_PROFILES") ? n.USE_PROFILES && typeof n.USE_PROFILES == "object" ? he(n.USE_PROFILES) : n.USE_PROFILES : !1, Zt = n.ALLOW_ARIA_ATTR !== !1, _t = n.ALLOW_DATA_ATTR !== !1, Xt = n.ALLOW_UNKNOWN_PROTOCOLS || !1, Kt = n.ALLOW_SELF_CLOSE_IN_ATTR !== !1, Ae = n.SAFE_FOR_TEMPLATES || !1, Re = n.SAFE_FOR_XML !== !1, Be = n.WHOLE_DOCUMENT || !1, Le = n.RETURN_DOM || !1, rt = n.RETURN_DOM_FRAGMENT || !1, ot = n.RETURN_TRUSTED_TYPE || !1, xt = n.FORCE_BODY || !1, Jt = n.SANITIZE_DOM !== !1, Qt = n.SANITIZE_NAMED_PROPS || !1, kt = n.KEEP_CONTENT !== !1, Tt = n.IN_PLACE || !1, Wt = Fn(n.ALLOWED_URI_REGEXP) ? n.ALLOWED_URI_REGEXP : Rs, He = typeof n.NAMESPACE == "string" ? n.NAMESPACE : xe, St = $t(n, "MATHML_TEXT_INTEGRATION_POINTS", () => j({}, as)), Pt = $t(n, "HTML_INTEGRATION_POINTS", () => j({}, is));
+    const d = $t(n, "CUSTOM_ELEMENT_HANDLING", () => Ve(null));
+    if (we = Ve(null), le(d, "tagNameCheck") && ls(d.tagNameCheck) && (we.tagNameCheck = d.tagNameCheck), le(d, "attributeNameCheck") && ls(d.attributeNameCheck) && (we.attributeNameCheck = d.attributeNameCheck), le(d, "allowCustomizedBuiltInElements") && typeof d.allowCustomizedBuiltInElements == "boolean" && (we.allowCustomizedBuiltInElements = d.allowCustomizedBuiltInElements), se(we), Ae && (_t = !1), rt && (Le = !0), Ne && (W = j({}, Es), Y = Ve(null), Ne.html === !0 && (j(W, Ps), j(Y, Ms)), Ne.svg === !0 && (j(W, Ot), j(Y, Nt), j(Y, mt)), Ne.svgFilters === !0 && (j(W, It), j(Y, Nt), j(Y, mt)), Ne.mathMl === !0 && (j(W, Lt), j(Y, Ds), j(Y, mt))), Ce.tagCheck = null, Ce.attributeCheck = null, le(n, "ADD_TAGS") && (typeof n.ADD_TAGS == "function" ? Ce.tagCheck = n.ADD_TAGS : Ge(n.ADD_TAGS) && (W === bt && (W = he(W)), j(W, n.ADD_TAGS, Q))), le(n, "ADD_ATTR") && (typeof n.ADD_ATTR == "function" ? Ce.attributeCheck = n.ADD_ATTR : Ge(n.ADD_ATTR) && (Y === vt && (Y = he(Y)), j(Y, n.ADD_ATTR, Q))), le(n, "ADD_FORBID_CONTENTS") && Ge(n.ADD_FORBID_CONTENTS) && ($e === ts && ($e = he($e)), j($e, n.ADD_FORBID_CONTENTS, Q)), kt && (W["#text"] = !0), Be && j(W, [
       "html",
       "head",
       "body"
-    ]), W.table && (j(W, ["tbody"]), delete We.tbody), r.TRUSTED_TYPES_POLICY) {
-      if (typeof r.TRUSTED_TYPES_POLICY.createHTML != "function") throw Pe('TRUSTED_TYPES_POLICY configuration option must provide a "createHTML" hook.');
-      if (typeof r.TRUSTED_TYPES_POLICY.createScriptURL != "function") throw Pe('TRUSTED_TYPES_POLICY configuration option must provide a "createScriptURL" hook.');
-      const g = B;
-      B = r.TRUSTED_TYPES_POLICY;
+    ]), W.table && (j(W, ["tbody"]), delete We.tbody), n.TRUSTED_TYPES_POLICY) {
+      if (typeof n.TRUSTED_TYPES_POLICY.createHTML != "function") throw Pe('TRUSTED_TYPES_POLICY configuration option must provide a "createHTML" hook.');
+      if (typeof n.TRUSTED_TYPES_POLICY.createScriptURL != "function") throw Pe('TRUSTED_TYPES_POLICY configuration option must provide a "createScriptURL" hook.');
+      const g = R;
+      R = n.TRUSTED_TYPES_POLICY;
       try {
-        U = J("");
+        F = J("");
       } catch (v) {
-        throw B = g, v;
+        throw R = g, v;
       }
-    } else r.TRUSTED_TYPES_POLICY === null ? (B = void 0, U = "") : (B === void 0 && (B = Vt()), B && typeof U == "string" && (U = J("")));
-    te && te(r), Ue = r;
+    } else n.TRUSTED_TYPES_POLICY === null ? (R = void 0, F = "") : (R === void 0 && (R = Vt()), R && typeof F == "string" && (F = J("")));
+    te && te(n), Fe = n;
   }, cs = j({}, [
     ...Ot,
     ...It,
-    ...Ur
-  ]), us = j({}, [...Lt, ...Fr]), no = function(r, d, g) {
-    return d.namespaceURI === xe ? r === "svg" : d.namespaceURI === rt ? r === "svg" && (g === "annotation-xml" || St[g]) : !!cs[r];
-  }, ro = function(r, d, g) {
-    return d.namespaceURI === xe ? r === "math" : d.namespaceURI === at ? r === "math" && Pt[g] : !!us[r];
-  }, ao = function(r, d, g) {
-    return d.namespaceURI === at && !Pt[g] || d.namespaceURI === rt && !St[g] ? !1 : !us[r] && (eo[r] || !cs[r]);
-  }, io = function(r) {
-    let d = C(r);
+    ...Un
+  ]), us = j({}, [...Lt, ...zn]), nr = function(n, d, g) {
+    return d.namespaceURI === xe ? n === "svg" : d.namespaceURI === nt ? n === "svg" && (g === "annotation-xml" || St[g]) : !!cs[n];
+  }, ar = function(n, d, g) {
+    return d.namespaceURI === xe ? n === "math" : d.namespaceURI === at ? n === "math" && Pt[g] : !!us[n];
+  }, ir = function(n, d, g) {
+    return d.namespaceURI === at && !Pt[g] || d.namespaceURI === nt && !St[g] ? !1 : !us[n] && (tr[n] || !cs[n]);
+  }, lr = function(n) {
+    let d = C(n);
     (!d || !d.tagName) && (d = {
       namespaceURI: He,
       tagName: "template"
     });
-    const g = Qe(r.tagName), v = Qe(d.tagName);
-    return At[r.namespaceURI] ? r.namespaceURI === at ? no(g, d, v) : r.namespaceURI === rt ? ro(g, d, v) : r.namespaceURI === xe ? ao(g, d, v) : !!(Ye === "application/xhtml+xml" && At[r.namespaceURI]) : !1;
-  }, Se = function(r) {
-    Xe(e.removed, { element: r });
+    const g = Qe(n.tagName), v = Qe(d.tagName);
+    return At[n.namespaceURI] ? n.namespaceURI === at ? nr(g, d, v) : n.namespaceURI === nt ? ar(g, d, v) : n.namespaceURI === xe ? ir(g, d, v) : !!(Ye === "application/xhtml+xml" && At[n.namespaceURI]) : !1;
+  }, Se = function(n) {
+    Xe(e.removed, { element: n });
     try {
-      C(r).removeChild(r);
+      C(n).removeChild(n);
     } catch {
-      if (S(r), !C(r)) throw Pe("a node selected for removal could not be detached from its tree and cannot be safely returned; refusing to sanitize in place");
+      if (S(n), !C(n)) throw Pe("a node selected for removal could not be detached from its tree and cannot be safely returned; refusing to sanitize in place");
     }
-  }, ds = function(r, d, g) {
+  }, ds = function(n, d, g) {
     try {
-      k(r, d);
+      k(n, d);
     } catch {
       try {
-        r.removeAttribute(g);
+        n.removeAttribute(g);
       } catch {
       }
     }
-  }, it = function(r) {
-    lt(r);
-    const d = x(r);
+  }, it = function(n) {
+    lt(n);
+    const d = x(n);
     if (d) {
       const v = [];
       Ie(d, (O) => {
@@ -2868,14 +2868,14 @@ function Fs() {
         }
       });
     }
-    const g = R(r);
+    const g = B(n);
     if (g) for (let v = g.length - 1; v >= 0; --v) {
       const O = g[v], H = O && O.name;
-      typeof H == "string" && ds(r, O, H);
+      typeof H == "string" && ds(n, O, H);
     }
-  }, Oe = function(r, d, g) {
+  }, Oe = function(n, d, g) {
     if (!g) try {
-      g = d.getAttributeNode(r);
+      g = d.getAttributeNode(n);
     } catch {
       g = null;
     }
@@ -2884,45 +2884,45 @@ function Fs() {
       from: d
     });
     try {
-      g ? k(d, g) : d.removeAttribute(r);
+      g ? k(d, g) : d.removeAttribute(n);
     } catch {
       try {
-        d.removeAttribute(r);
+        d.removeAttribute(n);
       } catch {
       }
     }
-    if (r === "is")
-      if (Le || ot) try {
+    if (n === "is")
+      if (Le || rt) try {
         Se(d);
       } catch {
       }
       else try {
-        d.setAttribute(r, "");
+        d.setAttribute(n, "");
       } catch {
       }
-  }, lo = function(r) {
-    const d = R(r);
+  }, cr = function(n) {
+    const d = B(n);
     if (d)
       for (let g = d.length - 1; g >= 0; --g) {
         const v = d[g], O = v && v.name;
-        typeof O != "string" || Y[Q(O)] || ds(r, v, O);
+        typeof O != "string" || Y[Q(O)] || ds(n, v, O);
       }
-  }, lt = function(r) {
-    const d = [r];
+  }, lt = function(n) {
+    const d = [n];
     for (; d.length > 0; ) {
       const g = d.pop();
-      E(g) === de.element && lo(g);
+      E(g) === de.element && cr(g);
       const v = x(g);
       if (v) for (let O = v.length - 1; O >= 0; --O) d.push(v[O]);
     }
-  }, hs = function(r, d) {
-    return Be ? r === "patchsrc" ? !0 : r === "for" && d !== "label" && d !== "output" : !1;
-  }, co = function(r) {
-    if (!Be) return;
-    const d = [r];
+  }, hs = function(n, d) {
+    return Re ? n === "patchsrc" ? !0 : n === "for" && d !== "label" && d !== "output" : !1;
+  }, ur = function(n) {
+    if (!Re) return;
+    const d = [n];
     for (; d.length > 0; ) {
       const g = d.pop(), v = E(g);
-      if (v === de.processingInstruction || v === de.comment && ne(Os, g.data)) {
+      if (v === de.processingInstruction || v === de.comment && oe(Os, g.data)) {
         try {
           S(g);
         } catch {
@@ -2939,15 +2939,15 @@ function Fs() {
       const O = x(g);
       if (O) for (let H = O.length - 1; H >= 0; --H) d.push(O[H]);
     }
-  }, ps = function(r) {
+  }, ps = function(n) {
     let d = null, g = null;
-    if (xt) r = "<remove></remove>" + r;
+    if (xt) n = "<remove></remove>" + n;
     else {
-      const H = Ts(r, /^[\r\n\t ]+/);
+      const H = Ts(n, /^[\r\n\t ]+/);
       g = H && H[0];
     }
-    Ye === "application/xhtml+xml" && He === xe && (r = '<html xmlns="http://www.w3.org/1999/xhtml"><head></head><body>' + r + "</body></html>");
-    const v = B ? J(r) : r;
+    Ye === "application/xhtml+xml" && He === xe && (n = '<html xmlns="http://www.w3.org/1999/xhtml"><head></head><body>' + n + "</body></html>");
+    const v = R ? J(n) : n;
     if (He === xe) try {
       d = new f().parseFromString(v, Ye);
     } catch {
@@ -2955,104 +2955,104 @@ function Fs() {
     if (!d || !d.documentElement) {
       d = Z.createDocument(He, "template", null);
       try {
-        d.documentElement.innerHTML = Ct ? U : v;
+        d.documentElement.innerHTML = Ct ? F : v;
       } catch {
       }
     }
     const O = d.body || d.documentElement;
-    return r && g && O.insertBefore(t.createTextNode(g), O.childNodes[0] || null), He === xe ? Gt.call(d, Re ? "html" : "body")[0] : Re ? d.documentElement : O;
-  }, ms = function(r) {
-    const d = D ? D(r) : r.ownerDocument;
-    return oe.call(d || r, r, c.SHOW_ELEMENT | c.SHOW_COMMENT | c.SHOW_TEXT | c.SHOW_PROCESSING_INSTRUCTION | c.SHOW_CDATA_SECTION, null);
-  }, ct = function(r) {
-    return r = Ke(r, qs, " "), r = Ke(r, Ws, " "), r = Ke(r, Ys, " "), r;
-  }, Mt = function(r) {
+    return n && g && O.insertBefore(t.createTextNode(g), O.childNodes[0] || null), He === xe ? Gt.call(d, Be ? "html" : "body")[0] : Be ? d.documentElement : O;
+  }, ms = function(n) {
+    const d = D ? D(n) : n.ownerDocument;
+    return re.call(d || n, n, c.SHOW_ELEMENT | c.SHOW_COMMENT | c.SHOW_TEXT | c.SHOW_PROCESSING_INSTRUCTION | c.SHOW_CDATA_SECTION, null);
+  }, ct = function(n) {
+    return n = Ke(n, Ws, " "), n = Ke(n, Ys, " "), n = Ke(n, Zs, " "), n;
+  }, Mt = function(n) {
     var d;
-    r.normalize();
-    const g = D ? D(r) : r.ownerDocument, v = oe.call(g || r, r, c.SHOW_TEXT | c.SHOW_COMMENT | c.SHOW_CDATA_SECTION | c.SHOW_PROCESSING_INSTRUCTION, null);
+    n.normalize();
+    const g = D ? D(n) : n.ownerDocument, v = re.call(g || n, n, c.SHOW_TEXT | c.SHOW_COMMENT | c.SHOW_CDATA_SECTION | c.SHOW_PROCESSING_INSTRUCTION, null);
     let O = v.nextNode();
     for (; O; )
       O.data = ct(O.data), O = v.nextNode();
-    const H = (d = r.querySelectorAll) === null || d === void 0 ? void 0 : d.call(r, "template");
+    const H = (d = n.querySelectorAll) === null || d === void 0 ? void 0 : d.call(n, "template");
     H && Ie(H, (z) => {
-      Fe(z.content) && Mt(z.content);
+      Ue(z.content) && Mt(z.content);
     });
-  }, ut = function(r) {
-    const d = T ? T(r) : null;
-    return typeof d != "string" || Q(d) !== "form" ? !1 : typeof r.nodeName != "string" || typeof r.textContent != "string" || typeof r.removeChild != "function" || r.attributes !== R(r) || typeof r.removeAttribute != "function" || typeof r.removeAttributeNode != "function" || typeof r.getAttributeNode != "function" || typeof r.setAttribute != "function" || typeof r.namespaceURI != "string" || typeof r.insertBefore != "function" || typeof r.hasChildNodes != "function" || r.nodeType !== M(r) || r.childNodes !== x(r);
-  }, Fe = function(r) {
-    if (!M || typeof r != "object" || r === null) return !1;
+  }, ut = function(n) {
+    const d = T ? T(n) : null;
+    return typeof d != "string" || Q(d) !== "form" ? !1 : typeof n.nodeName != "string" || typeof n.textContent != "string" || typeof n.removeChild != "function" || n.attributes !== B(n) || typeof n.removeAttribute != "function" || typeof n.removeAttributeNode != "function" || typeof n.getAttributeNode != "function" || typeof n.setAttribute != "function" || typeof n.namespaceURI != "string" || typeof n.insertBefore != "function" || typeof n.hasChildNodes != "function" || n.nodeType !== M(n) || n.childNodes !== x(n);
+  }, Ue = function(n) {
+    if (!M || typeof n != "object" || n === null) return !1;
     try {
-      return M(r) === de.documentFragment;
+      return M(n) === de.documentFragment;
     } catch {
       return !1;
     }
-  }, Ze = function(r) {
-    if (!M || typeof r != "object" || r === null) return !1;
+  }, Ze = function(n) {
+    if (!M || typeof n != "object" || n === null) return !1;
     try {
-      return typeof M(r) == "number";
+      return typeof M(n) == "number";
     } catch {
       return !1;
     }
   };
-  function ke(y, r, d) {
+  function ke(y, n, d) {
     y.length !== 0 && Ie(y, (g) => {
-      g.call(e, r, d, Ue);
+      g.call(e, n, d, Fe);
     });
   }
-  const uo = function(r, d) {
-    return !!(Be && r.hasChildNodes() && !Ze(r.firstElementChild) && ne(Rs, r.textContent) && ne(Rs, r.innerHTML) || Be && r.namespaceURI === xe && Qr[d] && (Ze(r.firstElementChild) || typeof r.textContent == "string" && ne(ea[d], r.textContent)) || r.nodeType === de.processingInstruction || Be && r.nodeType === de.comment && ne(Os, r.data));
-  }, dt = function(r, d) {
-    if (r instanceof RegExp) return ne(r, d);
-    if (r instanceof Function) {
+  const dr = function(n, d) {
+    return !!(Re && n.hasChildNodes() && !Ze(n.firstElementChild) && oe(Bs, n.textContent) && oe(Bs, n.innerHTML) || Re && n.namespaceURI === xe && ea[d] && (Ze(n.firstElementChild) || typeof n.textContent == "string" && oe(ta[d], n.textContent)) || n.nodeType === de.processingInstruction || Re && n.nodeType === de.comment && oe(Os, n.data));
+  }, dt = function(n, d) {
+    if (n instanceof RegExp) return oe(n, d);
+    if (n instanceof Function) {
       for (var g = arguments.length, v = new Array(g > 2 ? g - 2 : 0), O = 2; O < g; O++) v[O - 2] = arguments[O];
-      return !!r(d, ...v);
+      return !!n(d, ...v);
     }
     return !1;
-  }, ho = function(r, d, g) {
+  }, hr = function(n, d, g) {
     if (!We[d] && bs(d) && dt(we.tagNameCheck, d)) return !1;
     if (kt && !$e[d]) {
-      const v = C(r), O = x(r);
+      const v = C(n), O = x(n);
       if (O && v) {
         const H = O.length;
         for (let z = H - 1; z >= 0; --z) {
-          const X = r === g ? b(O[z], !0) : O[z];
-          v.insertBefore(X, A(r));
+          const X = n === g ? b(O[z], !0) : O[z];
+          v.insertBefore(X, A(n));
         }
       }
     }
-    return Se(r), !0;
-  }, fs = function(r, d, g, v) {
-    return r.length === 0 ? d : d === g || d === v ? he(d) : d;
-  }, ze = function(r, d) {
-    return r === d || C(r) !== null ? !1 : (Tt && lt(r), !0);
-  }, gs = function(r, d) {
-    if (ke(q.beforeSanitizeElements, r, null), ze(r, d)) return !0;
-    if (ut(r))
-      return Se(r), !0;
-    const g = Q(L(r));
-    if (W = fs(q.uponSanitizeElement, W, bt, tt), ke(q.uponSanitizeElement, r, {
+    return Se(n), !0;
+  }, fs = function(n, d, g, v) {
+    return n.length === 0 ? d : d === g || d === v ? he(d) : d;
+  }, ze = function(n, d) {
+    return n === d || C(n) !== null ? !1 : (Tt && lt(n), !0);
+  }, gs = function(n, d) {
+    if (ke(q.beforeSanitizeElements, n, null), ze(n, d)) return !0;
+    if (ut(n))
+      return Se(n), !0;
+    const g = Q(L(n));
+    if (W = fs(q.uponSanitizeElement, W, bt, tt), ke(q.uponSanitizeElement, n, {
       tagName: g,
       allowedTags: W
-    }), ze(r, d)) return !0;
-    if (uo(r, g))
-      return Se(r), !0;
+    }), ze(n, d)) return !0;
+    if (dr(n, g))
+      return Se(n), !0;
     if (We[g] || !(Ce.tagCheck instanceof Function && Ce.tagCheck(g)) && !W[g]) {
-      const v = ho(r, g, d);
-      return v === !1 && (ke(q.afterSanitizeElements, r, null), ze(r, d)) ? !0 : v;
+      const v = hr(n, g, d);
+      return v === !1 && (ke(q.afterSanitizeElements, n, null), ze(n, d)) ? !0 : v;
     }
-    if (E(r) === de.element && !io(r) || (g === "noscript" || g === "noembed" || g === "noframes") && ne(Kr, r.innerHTML))
-      return Se(r), !0;
-    if (Ae && r.nodeType === de.text) {
-      const v = ct(r.textContent);
-      r.textContent !== v && (Xe(e.removed, { element: r.cloneNode() }), r.textContent = v);
+    if (E(n) === de.element && !lr(n) || (g === "noscript" || g === "noembed" || g === "noframes") && oe(Jn, n.innerHTML))
+      return Se(n), !0;
+    if (Ae && n.nodeType === de.text) {
+      const v = ct(n.textContent);
+      n.textContent !== v && (Xe(e.removed, { element: n.cloneNode() }), n.textContent = v);
     }
-    return ke(q.afterSanitizeElements, r, null), ze(r, d);
-  }, ys = function(r, d, g) {
-    if (Yt[d] || hs(d, r) || Jt && (d === "id" || d === "name") && (g in t || g in oo)) return !1;
-    const v = Y[d] || Ce.attributeCheck instanceof Function && Ce.attributeCheck(d, r);
-    return _t && ne(Zs, d) || Zt && ne(Xs, d) ? !0 : v ? ns[d] || ne(Wt, Ke(g, qt, "")) || (d === "src" || d === "xlink:href" || d === "href") && r !== "script" && Cs(g, "data:") === 0 && ss[r] || Xt && !ne(Ks, Ke(g, qt, "")) ? !0 : !g : bs(r) && dt(we.tagNameCheck, r) && dt(we.attributeNameCheck, d, r) || d === "is" && we.allowCustomizedBuiltInElements && dt(we.tagNameCheck, g);
-  }, po = j({}, [
+    return ke(q.afterSanitizeElements, n, null), ze(n, d);
+  }, ys = function(n, d, g) {
+    if (Yt[d] || hs(d, n) || Jt && (d === "id" || d === "name") && (g in t || g in or)) return !1;
+    const v = Y[d] || Ce.attributeCheck instanceof Function && Ce.attributeCheck(d, n);
+    return _t && oe(Xs, d) || Zt && oe(Ks, d) ? !0 : v ? os[d] || oe(Wt, Ke(g, qt, "")) || (d === "src" || d === "xlink:href" || d === "href") && n !== "script" && Cs(g, "data:") === 0 && ss[n] || Xt && !oe(Js, Ke(g, qt, "")) ? !0 : !g : bs(n) && dt(we.tagNameCheck, n) && dt(we.attributeNameCheck, d, n) || d === "is" && we.allowCustomizedBuiltInElements && dt(we.tagNameCheck, g);
+  }, pr = j({}, [
     "annotation-xml",
     "color-profile",
     "font-face",
@@ -3061,26 +3061,26 @@ function Fs() {
     "font-face-src",
     "font-face-uri",
     "missing-glyph"
-  ]), bs = function(r) {
-    return !po[Qe(r)] && ne(Js, r);
-  }, mo = function(r, d, g, v) {
-    if (B && typeof m == "object" && typeof m.getAttributeType == "function" && !g) switch (m.getAttributeType(r, d)) {
+  ]), bs = function(n) {
+    return !pr[Qe(n)] && oe(Qs, n);
+  }, mr = function(n, d, g, v) {
+    if (R && typeof m == "object" && typeof m.getAttributeType == "function" && !g) switch (m.getAttributeType(n, d)) {
       case "TrustedHTML":
         return J(v);
       case "TrustedScriptURL":
         return qe(v);
     }
     return v;
-  }, fo = function(r, d, g, v) {
+  }, fr = function(n, d, g, v) {
     try {
-      return g ? r.setAttributeNS(g, d, v) : r.setAttribute(d, v), ut(r) ? (Se(r), !1) : !0;
+      return g ? n.setAttributeNS(g, d, v) : n.setAttribute(d, v), ut(n) ? (Se(n), !1) : !0;
     } catch {
-      return Oe(d, r), !1;
+      return Oe(d, n), !1;
     }
-  }, vs = function(r, d) {
-    if (ke(q.beforeSanitizeAttributes, r, null), ze(r, d)) return;
-    const g = r.attributes;
-    if (!g || ut(r)) return;
+  }, vs = function(n, d) {
+    if (ke(q.beforeSanitizeAttributes, n, null), ze(n, d)) return;
+    const g = n.attributes;
+    if (!g || ut(n)) return;
     Y = fs(q.uponSanitizeAttribute, Y, vt, st);
     const v = {
       attrName: "",
@@ -3090,47 +3090,47 @@ function Fs() {
       forceKeepAttr: void 0
     };
     let O = g.length;
-    const H = Q(r.nodeName);
+    const H = Q(n.nodeName);
     for (; O--; ) {
-      const z = g[O], X = z.name, fe = z.namespaceURI, ue = z.value, je = Q(X), Bt = ue;
-      let ae = X === "value" ? Bt : Rr(Bt), _s = !1;
-      if (v.attrName = je, v.attrValue = ae, v.keepAttr = !0, v.forceKeepAttr = void 0, ke(q.uponSanitizeAttribute, r, v), ae = v.attrValue, Qt && (je === "id" || je === "name") && Cs(ae, es) !== 0 && (Oe(X, r, z), ae = es + ae, _s = !0), Be && ne(/((--!?|])>)|<\/(style|script|title|xmp|textarea|noscript|iframe|noembed|noframes)/i, ae)) {
-        Oe(X, r, z);
+      const z = g[O], X = z.name, fe = z.namespaceURI, ue = z.value, je = Q(X), Rt = ue;
+      let ae = X === "value" ? Rt : On(Rt), _s = !1;
+      if (v.attrName = je, v.attrValue = ae, v.keepAttr = !0, v.forceKeepAttr = void 0, ke(q.uponSanitizeAttribute, n, v), ae = v.attrValue, Qt && (je === "id" || je === "name") && Cs(ae, es) !== 0 && (Oe(X, n, z), ae = es + ae, _s = !0), Re && oe(/((--!?|])>)|<\/(style|script|title|xmp|textarea|noscript|iframe|noembed|noframes)/i, ae)) {
+        Oe(X, n, z);
         continue;
       }
       if (je === "attributename" && Ts(ae, "href")) {
-        Oe(X, r, z);
+        Oe(X, n, z);
         continue;
       }
       if (!v.forceKeepAttr) {
         if (!v.keepAttr) {
-          Oe(X, r, z);
+          Oe(X, n, z);
           continue;
         }
-        if (!Kt && ne(Jr, ae)) {
-          Oe(X, r, z);
+        if (!Kt && oe(Qn, ae)) {
+          Oe(X, n, z);
           continue;
         }
         if (Ae && (ae = ct(ae)), !ys(H, je, ae)) {
-          Oe(X, r, z);
+          Oe(X, n, z);
           continue;
         }
-        ae = mo(H, je, fe, ae), ae !== Bt && fo(r, X, fe, ae) && _s && ks(e.removed);
+        ae = mr(H, je, fe, ae), ae !== Rt && fr(n, X, fe, ae) && _s && ks(e.removed);
       }
     }
-    ke(q.afterSanitizeAttributes, r, null), ze(r, d);
-  }, ht = function(r) {
+    ke(q.afterSanitizeAttributes, n, null), ze(n, d);
+  }, ht = function(n) {
     let d = null;
-    const g = ms(r);
-    for (ke(q.beforeSanitizeShadowDOM, r, null); d = g.nextNode(); )
-      if (ke(q.uponSanitizeShadowNode, d, null), gs(d, r), vs(d, r), Fe(d.content) && ht(d.content), E(d) === de.element) {
+    const g = ms(n);
+    for (ke(q.beforeSanitizeShadowDOM, n, null); d = g.nextNode(); )
+      if (ke(q.uponSanitizeShadowNode, d, null), gs(d, n), vs(d, n), Ue(d.content) && ht(d.content), E(d) === de.element) {
         const v = I(d);
-        Fe(v) && (Dt(v), ht(v));
+        Ue(v) && (Dt(v), ht(v));
       }
-    ke(q.afterSanitizeShadowDOM, r, null);
-  }, Dt = function(r) {
+    ke(q.afterSanitizeShadowDOM, n, null);
+  }, Dt = function(n) {
     const d = [{
-      node: r,
+      node: n,
       shadow: null
     }];
     for (; d.length > 0; ) {
@@ -3148,7 +3148,7 @@ function Fs() {
         const z = T ? T(v) : null;
         if (typeof z == "string" && Q(z) === "template") {
           const X = v.content;
-          Fe(X) && d.push({
+          Ue(X) && d.push({
             node: X,
             shadow: null
           });
@@ -3156,7 +3156,7 @@ function Fs() {
       }
       if (O) {
         const z = I(v);
-        Fe(z) && d.push({
+        Ue(z) && d.push({
           node: null,
           shadow: z
         }, {
@@ -3167,14 +3167,14 @@ function Fs() {
     }
   };
   return e.sanitize = function(y) {
-    let r = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {}, d = null, g = null, v = null, O = null;
-    if (Ct = !y, Ct && (y = "<!-->"), typeof y != "string" && !Ze(y) && (y = $r(y), typeof y != "string"))
+    let n = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {}, d = null, g = null, v = null, O = null;
+    if (Ct = !y, Ct && (y = "<!-->"), typeof y != "string" && !Ze(y) && (y = Hn(y), typeof y != "string"))
       throw Pe("dirty is not a string, aborting");
     if (!e.isSupported) return y;
-    wt ? (W = tt, Y = st) : Et(r), (q.uponSanitizeElement.length > 0 || q.uponSanitizeAttribute.length > 0) && (W = he(W)), q.uponSanitizeAttribute.length > 0 && (Y = he(Y)), e.removed = [];
+    wt ? (W = tt, Y = st) : Et(n), (q.uponSanitizeElement.length > 0 || q.uponSanitizeAttribute.length > 0) && (W = he(W)), q.uponSanitizeAttribute.length > 0 && (Y = he(Y)), e.removed = [];
     const H = Tt && typeof y != "string" && Ze(y);
     if (H) {
-      co(y);
+      ur(y);
       const fe = L(y);
       if (typeof fe == "string") {
         const ue = Q(fe);
@@ -3191,15 +3191,15 @@ function Fs() {
     } else if (Ze(y))
       d = ps("<!---->"), g = d.ownerDocument.importNode(y, !0), g.nodeType === de.element && g.nodeName === "BODY" || g.nodeName === "HTML" ? d = g : d.appendChild(g), Dt(d);
     else {
-      if (!Le && !Ae && !Re && y.indexOf("<") === -1) return B && nt ? J(y) : y;
-      if (d = ps(y), !d) return Le ? null : nt ? U : "";
+      if (!Le && !Ae && !Be && y.indexOf("<") === -1) return R && ot ? J(y) : y;
+      if (d = ps(y), !d) return Le ? null : ot ? F : "";
     }
     d && xt && Se(d.firstChild);
     const z = H ? y : d;
     try {
       const fe = ms(z);
       for (; v = fe.nextNode(); )
-        gs(v, z), vs(v, z), Fe(v.content) && ht(v.content);
+        gs(v, z), vs(v, z), Ue(v.content) && ht(v.content);
     } catch (fe) {
       throw H && (it(y), Ie(e.removed, (ue) => {
         ue.element && lt(ue.element);
@@ -3213,30 +3213,30 @@ function Fs() {
       return Ae && Mt(y), y;
     }
     if (Le) {
-      if (Ae && Mt(d), ot)
+      if (Ae && Mt(d), rt)
         for (O = De.call(d.ownerDocument); d.firstChild; ) O.appendChild(d.firstChild);
       else O = d;
       return (Y.shadowroot || Y.shadowrootmode) && (O = yt.call(l, O, !0)), O;
     }
-    let X = Re ? d.outerHTML : d.innerHTML;
-    return Re && W["!doctype"] && d.ownerDocument && d.ownerDocument.doctype && d.ownerDocument.doctype.name && ne(Zr, d.ownerDocument.doctype.name) && (X = "<!DOCTYPE " + d.ownerDocument.doctype.name + `>
-` + X), Ae && (X = ct(X)), B && nt ? J(X) : X;
+    let X = Be ? d.outerHTML : d.innerHTML;
+    return Be && W["!doctype"] && d.ownerDocument && d.ownerDocument.doctype && d.ownerDocument.doctype.name && oe(Xn, d.ownerDocument.doctype.name) && (X = "<!DOCTYPE " + d.ownerDocument.doctype.name + `>
+` + X), Ae && (X = ct(X)), R && ot ? J(X) : X;
   }, e.setConfig = function() {
     let y = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {};
     Et(y), wt = !0, tt = W, st = Y;
   }, e.clearConfig = function() {
-    Ue = null, wt = !1, tt = null, st = null, B = V, U = "";
-  }, e.isValidAttribute = function(y, r, d) {
-    Ue || Et({});
-    const g = Q(y), v = Q(r);
+    Fe = null, wt = !1, tt = null, st = null, R = V, F = "";
+  }, e.isValidAttribute = function(y, n, d) {
+    Fe || Et({});
+    const g = Q(y), v = Q(n);
     return ys(g, v, d);
-  }, e.addHook = function(y, r) {
-    typeof r == "function" && le(q, y) && Xe(q[y], r);
-  }, e.removeHook = function(y, r) {
+  }, e.addHook = function(y, n) {
+    typeof n == "function" && le(q, y) && Xe(q[y], n);
+  }, e.removeHook = function(y, n) {
     if (le(q, y)) {
-      if (r !== void 0) {
-        const d = Dr(q[y], r);
-        return d === -1 ? void 0 : Br(q[y], d, 1)[0];
+      if (n !== void 0) {
+        const d = Rn(q[y], n);
+        return d === -1 ? void 0 : Bn(q[y], d, 1)[0];
       }
       return ks(q[y]);
     }
@@ -3246,7 +3246,7 @@ function Fs() {
     q = Is();
   }, e;
 }
-var oa = Fs();
+var oa = Us();
 function ft(s) {
   return s == null ? "" : (typeof s != "string" && (s = String(s)), oa.sanitize(s, {
     FORBID_TAGS: ["style", "iframe", "object", "embed", "form", "input", "textarea", "svg", "math", "link", "base"],
@@ -3268,21 +3268,21 @@ function et(s) {
     return "";
   }
 }
-const ra = /https?:\/\/(fonts\.googleapis\.com|fonts\.gstatic\.com|cdn\.jsdelivr\.net|fastly\.jsdelivr\.net)\//i;
-function aa(s) {
-  return !s || typeof s != "string" ? "" : s.replace(/@import[^;]*;?/gi, (e) => ra.test(e) ? e : "").replace(/expression\s*\(/gi, "expr​(").replace(/<\/?\s*style/gi, "").replace(/(javascript|vbscript)\s*:/gi, "blocked:");
-}
+const aa = /https?:\/\/(fonts\.googleapis\.com|fonts\.gstatic\.com|cdn\.jsdelivr\.net|fastly\.jsdelivr\.net)\//i;
 function ia(s) {
-  return s == null ? "" : String(s).replace(/[;{}<>@]/g, "").replace(/url\s*\(/gi, "").replace(/expression\s*\(/gi, "").replace(/(javascript|vbscript)\s*:/gi, "").trim();
+  return !s || typeof s != "string" ? "" : s.replace(/@import[^;]*;?/gi, (e) => aa.test(e) ? e : "").replace(/expression\s*\(/gi, "expr​(").replace(/<\/?\s*style/gi, "").replace(/(javascript|vbscript)\s*:/gi, "blocked:");
 }
 function la(s) {
+  return s == null ? "" : String(s).replace(/[;{}<>@]/g, "").replace(/url\s*\(/gi, "").replace(/expression\s*\(/gi, "").replace(/(javascript|vbscript)\s*:/gi, "").trim();
+}
+function ca(s) {
   if (!s || typeof s != "object") return s;
   const e = {};
   for (const [t, l] of Object.entries(s))
-    e[t] = typeof l == "string" ? ia(l) : l;
+    e[t] = typeof l == "string" ? la(l) : l;
   return e;
 }
-const ca = {
+const ua = {
   components: { AppIcon: _e },
   name: "HandoutDisplay",
   mixins: [Ns],
@@ -3341,24 +3341,24 @@ const ca = {
   beforeUnmount() {
     window.removeEventListener("keydown", this.handleKeyPress), document.body.style.overflow = "";
   }
-}, ua = {
+}, da = {
   key: 0,
   class: "handout-header"
-}, da = { class: "handout-title" }, ha = { class: "handout-content" }, pa = ["src", "alt"], ma = {
+}, ha = { class: "handout-title" }, pa = { class: "handout-content" }, ma = ["src", "alt"], fa = {
   key: 1,
   class: "handout-placeholder"
-}, fa = {
+}, ga = {
   key: 2,
   class: "handout-description"
 };
-function ga(s, e, t, l, o, a) {
+function ya(s, e, t, l, r, a) {
   const p = K("AppIcon");
   return u(), ye(ce, { name: "handout-overlay" }, {
     default: ie(() => [
       t.isVisible ? (u(), h("div", {
         key: 0,
         class: "handout-overlay",
-        onClick: e[3] || (e[3] = (...n) => a.handleOverlayClick && a.handleOverlayClick(...n))
+        onClick: e[3] || (e[3] = (...o) => a.handleOverlayClick && a.handleOverlayClick(...o))
       }, [
         i("div", {
           class: "handout-container",
@@ -3372,7 +3372,7 @@ function ga(s, e, t, l, o, a) {
         }, [
           i("button", {
             class: "modal-close handout-close",
-            onClick: e[0] || (e[0] = (...n) => a.close && a.close(...n)),
+            onClick: e[0] || (e[0] = (...o) => a.close && a.close(...o)),
             title: "닫기 (ESC)",
             "aria-label": "닫기"
           }, [
@@ -3381,24 +3381,24 @@ function ga(s, e, t, l, o, a) {
               size: 24
             })
           ]),
-          t.handout.title ? (u(), h("div", ua, [
-            i("h2", da, w(t.handout.title), 1)
+          t.handout.title ? (u(), h("div", da, [
+            i("h2", ha, w(t.handout.title), 1)
           ])) : P("", !0),
-          i("div", ha, [
+          i("div", pa, [
             t.handout.imageUrl ? (u(), h("img", {
               key: 0,
               src: a.safeSrc(t.handout.imageUrl),
               alt: t.handout.title || "핸드아웃",
               class: "handout-image",
-              onError: e[1] || (e[1] = (...n) => a.handleImageError && a.handleImageError(...n))
-            }, null, 40, pa)) : (u(), h("div", ma, [
+              onError: e[1] || (e[1] = (...o) => a.handleImageError && a.handleImageError(...o))
+            }, null, 40, ma)) : (u(), h("div", fa, [
               N(p, {
                 name: "photo",
                 size: 64
               }),
               e[4] || (e[4] = i("p", null, "이미지를 불러올 수 없습니다", -1))
             ])),
-            t.handout.description ? (u(), h("div", fa, [
+            t.handout.description ? (u(), h("div", ga, [
               i("p", null, w(t.handout.description), 1)
             ])) : P("", !0)
           ])
@@ -3408,76 +3408,76 @@ function ga(s, e, t, l, o, a) {
     _: 1
   });
 }
-const ya = /* @__PURE__ */ pe(ca, [["render", ga], ["__scopeId", "data-v-03517b6a"]]);
-function ba(s, e, t = []) {
+const ba = /* @__PURE__ */ pe(ua, [["render", ya], ["__scopeId", "data-v-03517b6a"]]);
+function va(s, e, t = []) {
   const l = (Array.isArray(e) ? e : [e]).filter(Boolean);
   if (!s || typeof s != "string" || l.length === 0) return "";
-  const o = s.replace(/\/\*[\s\S]*?\*\//g, "");
-  return zs(o, l, t).trim();
+  const r = s.replace(/\/\*[\s\S]*?\*\//g, "");
+  return zs(r, l, t).trim();
 }
-const va = /^@(media|supports|container|layer)\b/i, _a = /^(:root|html|body)$/i, wa = /^(:root|html|body)[\s>]+(.+)$/i;
+const _a = /^@(media|supports|container|layer)\b/i, wa = /^(:root|html|body)$/i, xa = /^(:root|html|body)[\s>]+(.+)$/i;
 function zs(s, e, t) {
   const l = [];
-  let o = 0;
-  for (; o < s.length; ) {
-    const a = s.slice(o), p = jt(a, "{};"), n = p < 0 ? null : { index: p, 0: a[p] };
-    if (!n) break;
-    const c = o + n.index, f = s[c];
+  let r = 0;
+  for (; r < s.length; ) {
+    const a = s.slice(r), p = jt(a, "{};"), o = p < 0 ? null : { index: p, 0: a[p] };
+    if (!o) break;
+    const c = r + o.index, f = s[c];
     if (f === ";") {
-      const S = s.slice(o, c + 1).trim();
-      S.startsWith("@") && l.push(S), o = c + 1;
+      const S = s.slice(r, c + 1).trim();
+      S.startsWith("@") && l.push(S), r = c + 1;
       continue;
     }
     if (f === "}") {
-      o = c + 1;
+      r = c + 1;
       continue;
     }
-    const m = s.slice(o, c).trim(), _ = xa(s, c), b = s.slice(c + 1, _);
+    const m = s.slice(r, c).trim(), _ = ka(s, c), b = s.slice(c + 1, _);
     if (m.startsWith("@"))
-      if (va.test(m)) {
+      if (_a.test(m)) {
         const S = zs(b, e, t);
         S && l.push(`${m} {
 ${S}
 }`);
       } else
         l.push(`${m} {${b}}`);
-    else m && l.push(`${Ca(m, e, t)} {${b}}`);
-    o = _ + 1;
+    else m && l.push(`${Aa(m, e, t)} {${b}}`);
+    r = _ + 1;
   }
   return l.join(`
 `);
 }
 function jt(s, e, t = 0) {
-  let l = "", o = 0, a = 0;
+  let l = "", r = 0, a = 0;
   for (let p = t; p < s.length; p++) {
-    const n = s[p];
-    if (n === "\\") {
+    const o = s[p];
+    if (o === "\\") {
       p++;
       continue;
     }
     if (l) {
-      n === l && (l = "");
+      o === l && (l = "");
       continue;
     }
-    if (n === '"' || n === "'") {
-      l = n;
+    if (o === '"' || o === "'") {
+      l = o;
       continue;
     }
-    if (n === "(" && o++, n === ")" && o--, n === "[" && a++, n === "]" && a--, !o && !a && e.includes(n)) return p;
+    if (o === "(" && r++, o === ")" && r--, o === "[" && a++, o === "]" && a--, !r && !a && e.includes(o)) return p;
   }
   return -1;
 }
-function xa(s, e) {
+function ka(s, e) {
   let t = 1, l = e + 1;
   for (; l < s.length; ) {
-    const o = jt(s, "{}", l);
-    if (o < 0) return s.length;
-    if (t += s[o] === "{" ? 1 : -1, !t) return o;
-    l = o + 1;
+    const r = jt(s, "{}", l);
+    if (r < 0) return s.length;
+    if (t += s[r] === "{" ? 1 : -1, !t) return r;
+    l = r + 1;
   }
   return s.length;
 }
-function ka(s) {
+function Ta(s) {
   const e = [];
   let t = 0;
   for (; t < s.length; ) {
@@ -3490,84 +3490,85 @@ function ka(s) {
   }
   return e;
 }
-function Ta(s, e) {
+function Ca(s, e) {
   return s === e || s.startsWith(e + " ") || s.startsWith(e + ".") || s.startsWith(e + ":") || s.startsWith(e + ">") || s.startsWith(e + "[");
 }
-function Ca(s, e, t) {
-  const l = ka(s).map((a) => a.trim().replace(/\s+/g, " ")).filter(Boolean), o = [];
+function Aa(s, e, t) {
+  const l = Ta(s).map((a) => a.trim().replace(/\s+/g, " ")).filter(Boolean), r = [];
   for (let a of l) {
     const p = t.find((c) => a === c || a.startsWith(c + " ") || a.startsWith(c + ":") || a.startsWith(c + ".") || a.startsWith(c + "[") || a.startsWith(c + ">") || a.startsWith(c + "+") || a.startsWith(c + "~"));
     if (p) {
-      e.forEach((c) => o.push(c + a.slice(p.length)));
+      e.forEach((c) => r.push(c + a.slice(p.length)));
       continue;
     }
-    if (_a.test(a)) {
-      e.forEach((c) => o.push(c));
+    if (wa.test(a)) {
+      e.forEach((c) => r.push(c));
       continue;
     }
-    const n = a.match(wa);
-    if (n) {
-      e.forEach((c) => o.push(`${c} ${n[2]}`));
+    const o = a.match(xa);
+    if (o) {
+      e.forEach((c) => r.push(`${c} ${o[2]}`));
       continue;
     }
-    if (e.some((c) => Ta(a, c))) {
-      o.push(a);
+    if (e.some((c) => Ca(a, c))) {
+      r.push(a);
       continue;
     }
-    e.forEach((c) => o.push(`${c} ${a}`));
+    e.forEach((c) => r.push(`${c} ${a}`));
   }
-  return [...new Set(o)].join(`,
+  return [...new Set(r)].join(`,
 `);
 }
-function js(s = {}) {
-  const e = la(s) || {}, t = s.globalBackgroundImage;
+const js = ".character-display .character-avatar img { border: 0 !important; border-radius: 0 !important; }";
+function Vs(s = {}) {
+  const e = ca(s) || {}, t = s.globalBackgroundImage;
   if (t && t !== "none") {
-    const l = String(t).match(/^url\(\s*["']?(.*?)["']?\s*\)$/i), o = l && et(l[1]);
-    e.globalBackgroundImage = o ? `url(${JSON.stringify(o)})` : "";
+    const l = String(t).match(/^url\(\s*["']?(.*?)["']?\s*\)$/i), r = l && et(l[1]);
+    e.globalBackgroundImage = r ? `url(${JSON.stringify(r)})` : "";
   }
   return e;
 }
-function Aa(s = {}) {
-  s = js(s);
+function Sa(s = {}) {
+  s = Vs(s);
   const e = [
     "/* VNLog Custom CSS - EmbedPlayerView */",
     ":root {"
   ];
-  return s.dialogBackground && e.push(`  --custom-dialog-bg: ${s.dialogBackground};`), s.dialogBorderColor && e.push(`  --custom-dialog-border: ${s.dialogBorderColor};`), s.dialogBorderWidth && e.push(`  --custom-dialog-border-width: ${s.dialogBorderWidth};`), s.dialogTextColor && e.push(`  --custom-dialog-text: ${s.dialogTextColor};`), s.dialogNameFontSize && e.push(`  --custom-dialog-name-size: ${s.dialogNameFontSize};`), s.dialogTextFontSize && e.push(`  --custom-dialog-text-size: ${s.dialogTextFontSize};`), s.dialogPadding && e.push(`  --custom-dialog-padding: ${s.dialogPadding};`), s.dialogBorderRadius && e.push(`  --custom-dialog-radius: ${s.dialogBorderRadius};`), s.dialogMinHeight && e.push(`  --custom-dialog-min-height: ${s.dialogMinHeight};`), s.dialogLineHeight && e.push(`  --custom-dialog-line-height: ${s.dialogLineHeight};`), s.characterMaxHeight && e.push(`  --custom-character-max-height: ${s.characterMaxHeight};`), s.characterMaxWidth && e.push(`  --custom-character-max-width: ${s.characterMaxWidth};`), s.characterInactiveOpacity && e.push(`  --custom-character-inactive-opacity: ${s.characterInactiveOpacity};`), s.characterBorderRadius && e.push(`  --custom-character-border-radius: ${s.characterBorderRadius};`), s.characterBorderWidth && e.push(`  --custom-character-border-width: ${s.characterBorderWidth};`), s.characterTransition && e.push(`  --custom-character-transition: ${s.characterTransition};`), s.controlsBackground && e.push(`  --custom-controls-bg: ${s.controlsBackground};`), s.controlsBorderColor && e.push(`  --custom-controls-border: ${s.controlsBorderColor};`), s.controlsButtonColor && e.push(`  --custom-controls-button: ${s.controlsButtonColor};`), s.controlsButtonHoverColor && e.push(`  --custom-controls-button-hover: ${s.controlsButtonHoverColor};`), s.controlsButtonBg && e.push(`  --custom-controls-button-bg: ${s.controlsButtonBg};`), s.controlsButtonHoverBg && e.push(`  --custom-controls-button-hover-bg: ${s.controlsButtonHoverBg};`), s.controlsProgressColor && e.push(`  --custom-controls-progress: ${s.controlsProgressColor};`), s.controlsProgressBg && e.push(`  --custom-controls-progress-bg: ${s.controlsProgressBg};`), s.controlsButtonSize && e.push(`  --custom-controls-button-size: ${s.controlsButtonSize};`), s.controlsPrimaryButtonSize && e.push(`  --custom-controls-primary-button-size: ${s.controlsPrimaryButtonSize};`), s.controlsBorderRadius && e.push(`  --custom-controls-border-radius: ${s.controlsBorderRadius};`), s.overlayBackground && e.push(`  --custom-overlay-bg: ${s.overlayBackground};`), s.overlayBlur && e.push(`  --custom-overlay-blur: ${s.overlayBlur};`), s.overlayContentBackground && e.push(`  --custom-overlay-content-bg: ${s.overlayContentBackground};`), s.overlayTextColor && e.push(`  --custom-overlay-text: ${s.overlayTextColor};`), s.overlayBorderRadius && e.push(`  --custom-overlay-radius: ${s.overlayBorderRadius};`), s.overlayPadding && e.push(`  --custom-overlay-padding: ${s.overlayPadding};`), s.overlayMaxWidth && e.push(`  --custom-overlay-max-width: ${s.overlayMaxWidth};`), s.globalBackground && (e.push(`  --custom-global-bg: ${s.globalBackground};`), e.push(`  --bg-color: ${s.globalBackground};`)), s.globalTextColor && (e.push(`  --custom-global-text: ${s.globalTextColor};`), e.push(`  --text-color: ${s.globalTextColor};`)), s.globalFontFamily && (e.push(`  --custom-global-font: ${s.globalFontFamily};`), e.push(`  --font-pretendard: ${s.globalFontFamily};`)), s.globalLineHeight && e.push(`  --custom-global-line-height: ${s.globalLineHeight};`), s.globalBackgroundImage && (e.push(`  --bg-image: ${s.globalBackgroundImage};`), e.push(`  --custom-global-background-image: ${s.globalBackgroundImage};`)), s.globalBackgroundSize && (e.push(`  --bg-image-size: ${s.globalBackgroundSize};`), e.push(`  --custom-global-background-size: ${s.globalBackgroundSize};`)), e.push("}"), e.push(""), e.join(`
+  return s.dialogBackground && e.push(`  --custom-dialog-bg: ${s.dialogBackground};`), s.dialogBorderColor && e.push(`  --custom-dialog-border: ${s.dialogBorderColor};`), s.dialogBorderWidth && e.push(`  --custom-dialog-border-width: ${s.dialogBorderWidth};`), s.dialogTextColor && e.push(`  --custom-dialog-text: ${s.dialogTextColor};`), s.dialogNameFontSize && e.push(`  --custom-dialog-name-size: ${s.dialogNameFontSize};`), s.dialogTextFontSize && e.push(`  --custom-dialog-text-size: ${s.dialogTextFontSize};`), s.dialogPadding && e.push(`  --custom-dialog-padding: ${s.dialogPadding};`), s.dialogBorderRadius && e.push(`  --custom-dialog-radius: ${s.dialogBorderRadius};`), s.dialogMinHeight && e.push(`  --custom-dialog-min-height: ${s.dialogMinHeight};`), s.dialogLineHeight && e.push(`  --custom-dialog-line-height: ${s.dialogLineHeight};`), s.characterFrame === "custom" && e.push("  --custom-character-frame: custom;"), s.characterMaxHeight && e.push(`  --custom-character-max-height: ${s.characterMaxHeight};`), s.characterMaxWidth && e.push(`  --custom-character-max-width: ${s.characterMaxWidth};`), s.characterInactiveOpacity && e.push(`  --custom-character-inactive-opacity: ${s.characterInactiveOpacity};`), s.characterBorderRadius && e.push(`  --custom-character-border-radius: ${s.characterBorderRadius};`), s.characterBorderWidth && e.push(`  --custom-character-border-width: ${s.characterBorderWidth};`), s.characterTransition && e.push(`  --custom-character-transition: ${s.characterTransition};`), s.controlsBackground && e.push(`  --custom-controls-bg: ${s.controlsBackground};`), s.controlsBorderColor && e.push(`  --custom-controls-border: ${s.controlsBorderColor};`), s.controlsButtonColor && e.push(`  --custom-controls-button: ${s.controlsButtonColor};`), s.controlsButtonHoverColor && e.push(`  --custom-controls-button-hover: ${s.controlsButtonHoverColor};`), s.controlsButtonBg && e.push(`  --custom-controls-button-bg: ${s.controlsButtonBg};`), s.controlsButtonHoverBg && e.push(`  --custom-controls-button-hover-bg: ${s.controlsButtonHoverBg};`), s.controlsProgressColor && e.push(`  --custom-controls-progress: ${s.controlsProgressColor};`), s.controlsProgressBg && e.push(`  --custom-controls-progress-bg: ${s.controlsProgressBg};`), s.controlsButtonSize && e.push(`  --custom-controls-button-size: ${s.controlsButtonSize};`), s.controlsPrimaryButtonSize && e.push(`  --custom-controls-primary-button-size: ${s.controlsPrimaryButtonSize};`), s.controlsBorderRadius && e.push(`  --custom-controls-border-radius: ${s.controlsBorderRadius};`), s.overlayBackground && e.push(`  --custom-overlay-bg: ${s.overlayBackground};`), s.overlayBlur && e.push(`  --custom-overlay-blur: ${s.overlayBlur};`), s.overlayContentBackground && e.push(`  --custom-overlay-content-bg: ${s.overlayContentBackground};`), s.overlayTextColor && e.push(`  --custom-overlay-text: ${s.overlayTextColor};`), s.overlayBorderRadius && e.push(`  --custom-overlay-radius: ${s.overlayBorderRadius};`), s.overlayPadding && e.push(`  --custom-overlay-padding: ${s.overlayPadding};`), s.overlayMaxWidth && e.push(`  --custom-overlay-max-width: ${s.overlayMaxWidth};`), s.globalBackground && (e.push(`  --custom-global-bg: ${s.globalBackground};`), e.push(`  --bg-color: ${s.globalBackground};`)), s.globalTextColor && (e.push(`  --custom-global-text: ${s.globalTextColor};`), e.push(`  --text-color: ${s.globalTextColor};`)), s.globalFontFamily && (e.push(`  --custom-global-font: ${s.globalFontFamily};`), e.push(`  --font-pretendard: ${s.globalFontFamily};`)), s.globalLineHeight && e.push(`  --custom-global-line-height: ${s.globalLineHeight};`), s.globalBackgroundImage && (e.push(`  --bg-image: ${s.globalBackgroundImage};`), e.push(`  --custom-global-background-image: ${s.globalBackgroundImage};`)), s.globalBackgroundSize && (e.push(`  --bg-image-size: ${s.globalBackgroundSize};`), e.push(`  --custom-global-background-size: ${s.globalBackgroundSize};`)), e.push("}"), e.push(""), e.join(`
 `);
 }
-function Sa(s = {}) {
-  const e = js(s), t = [
+function Pa(s = {}) {
+  const e = Vs(s), t = [
     "/* ========================================",
     "   VNLog Custom CSS - Direct Override",
     "   ======================================== */",
     ""
   ];
-  return e.dialogBackground && (t.push("/* Dialog Box Container - Background */"), t.push(".dialog-box {"), t.push(`  background-color: ${e.dialogBackground} !important;`), t.push("}"), t.push("")), e.dialogBorderColor && (t.push("/* Dialog Box Container - Border Color */"), t.push(".dialog-box {"), t.push(`  border-color: ${e.dialogBorderColor} !important;`), t.push("}"), t.push("")), e.dialogBorderWidth && (t.push("/* Dialog Box Container - Border Width */"), t.push(".dialog-box {"), t.push(`  border-width: ${e.dialogBorderWidth} !important;`), t.push("  border-style: solid !important;"), t.push("}"), t.push("")), e.dialogBorderRadius && (t.push("/* Dialog Box Container - Border Radius */"), t.push(".dialog-box {"), t.push(`  border-radius: ${e.dialogBorderRadius} !important;`), t.push("}"), t.push("")), e.dialogPadding && (t.push("/* Dialog Box Container - Padding */"), t.push(".dialog-box {"), t.push(`  padding: ${e.dialogPadding} !important;`), t.push("}"), t.push("")), e.dialogMinHeight && (t.push("/* Dialog Box Container - Min Height */"), t.push(".dialog-box {"), t.push(`  min-height: ${e.dialogMinHeight} !important;`), t.push("}"), t.push("")), e.dialogNameFontSize && (t.push("/* Dialog Character Name - Font Size */"), t.push(".dialog-box .character-name {"), t.push(`  font-size: ${e.dialogNameFontSize} !important;`), t.push("}"), t.push("")), e.dialogTextColor && (t.push("/* Dialog Text - Color */"), t.push(".dialog-box .dialog-text,"), t.push(".dialog-box .text-content {"), t.push(`  color: ${e.dialogTextColor} !important;`), t.push("}"), t.push("")), e.dialogTextFontSize && (t.push("/* Dialog Text - Font Size */"), t.push(".dialog-box .dialog-text,"), t.push(".dialog-box .text-content {"), t.push(`  font-size: ${e.dialogTextFontSize} !important;`), t.push("}"), t.push("")), e.dialogLineHeight && (t.push("/* Dialog Text - Line Height */"), t.push(".dialog-box .dialog-text,"), t.push(".dialog-box .text-content {"), t.push(`  line-height: ${e.dialogLineHeight} !important;`), t.push("}"), t.push("")), e.characterMaxWidth && (t.push("/* Character Image - Max Width */"), t.push(".character-display .character-avatar img {"), t.push(`  max-width: ${e.characterMaxWidth} !important;`), t.push("}"), t.push("")), e.characterMaxHeight && (t.push("/* Character Image - Max Height */"), t.push(".character-display .character-avatar img {"), t.push(`  max-height: ${e.characterMaxHeight} !important;`), t.push("}"), t.push("")), e.characterBorderRadius && (t.push("/* Character Image - Border Radius */"), t.push(".character-display .character-avatar img {"), t.push(`  border-radius: ${e.characterBorderRadius} !important;`), t.push("}"), t.push("")), e.characterBorderWidth && (t.push("/* Character Image - Border */"), t.push(".character-display .character-avatar img {"), t.push(`  border: ${e.characterBorderWidth} solid rgba(255, 255, 255, 0.3) !important;`), t.push("}"), t.push("")), e.characterTransition && (t.push("/* Character Image - Transition */"), t.push(".character-display .character-avatar img {"), t.push(`  transition: ${e.characterTransition} !important;`), t.push("}"), t.push("")), e.characterInactiveOpacity && (t.push("/* Character Inactive - Opacity */"), t.push(".character-display .character-wrapper:not(.is-speaking) .character-avatar img {"), t.push(`  opacity: ${e.characterInactiveOpacity} !important;`), t.push("}"), t.push("")), e.controlsBackground && (t.push("/* Playback Controls Container - Background */"), t.push(".playback-controls {"), t.push(`  background: ${e.controlsBackground} !important;`), t.push("}"), t.push("")), e.controlsBorderColor && (t.push("/* Playback Controls Container - Border Color */"), t.push(".playback-controls {"), t.push(`  border-color: ${e.controlsBorderColor} !important;`), t.push("}"), t.push("")), e.controlsBorderRadius && (t.push("/* Playback Controls Container - Border Radius */"), t.push(".playback-controls {"), t.push(`  border-radius: 0 0 ${e.controlsBorderRadius} ${e.controlsBorderRadius} !important;`), t.push("}"), t.push("")), e.controlsProgressBg && (t.push("/* Progress Bar - Background */"), t.push(".playback-controls .progress-bar {"), t.push(`  background: ${e.controlsProgressBg} !important;`), t.push("}"), t.push("")), e.controlsProgressColor && (t.push("/* Progress Fill - Color */"), t.push(".playback-controls .progress-fill {"), t.push(`  background: ${e.controlsProgressColor} !important;`), t.push("}"), t.push("")), e.controlsButtonSize && (t.push("/* Control Button - Size */"), t.push(".playback-controls .control-button {"), t.push(`  width: ${e.controlsButtonSize} !important;`), t.push(`  height: ${e.controlsButtonSize} !important;`), t.push("}"), t.push("")), e.controlsButtonBg && (t.push("/* Control Button - Background */"), t.push(".playback-controls .control-button {"), t.push(`  background: ${e.controlsButtonBg} !important;`), t.push("}"), t.push("")), e.controlsButtonColor && (t.push("/* Control Button - Color */"), t.push(".playback-controls .control-button {"), t.push(`  color: ${e.controlsButtonColor} !important;`), t.push("}"), t.push("")), e.controlsBorderRadius && (t.push("/* Control Button - Border Radius */"), t.push(".playback-controls .control-button,"), t.push(".playback-controls .speed-button {"), t.push(`  border-radius: ${e.controlsBorderRadius} !important;`), t.push("}"), t.push("")), e.controlsButtonHoverBg && (t.push("/* Control Button Hover - Background */"), t.push(".playback-controls .control-button:hover:not(:disabled) {"), t.push(`  background: ${e.controlsButtonHoverBg} !important;`), t.push("}"), t.push("")), e.controlsButtonHoverColor && (t.push("/* Control Button Hover - Color */"), t.push(".playback-controls .control-button:hover:not(:disabled) {"), t.push(`  color: ${e.controlsButtonHoverColor} !important;`), t.push("}"), t.push("")), e.controlsPrimaryButtonSize && (t.push("/* Primary Control Button - Size */"), t.push(".playback-controls .control-button.primary {"), t.push(`  width: ${e.controlsPrimaryButtonSize} !important;`), t.push(`  height: ${e.controlsPrimaryButtonSize} !important;`), t.push("}"), t.push("")), e.overlayBackground && (t.push("/* Overlay Background - Color */"), t.push(".dice-overlay,"), t.push(".scene-description-overlay {"), t.push(`  background: ${e.overlayBackground} !important;`), t.push("}"), t.push("")), e.overlayBlur && (t.push("/* Overlay Background - Blur */"), t.push(".dice-overlay,"), t.push(".scene-description-overlay {"), t.push(`  backdrop-filter: blur(${e.overlayBlur}) !important;`), t.push("}"), t.push("")), e.overlayContentBackground && (t.push("/* Overlay Content Box - Background */"), t.push(".dice-overlay-content,"), t.push(".scene-description-content {"), t.push(`  background: ${e.overlayContentBackground} !important;`), t.push("}"), t.push("")), e.overlayTextColor && (t.push("/* Overlay Content Box - Text Color */"), t.push(".dice-overlay-content,"), t.push(".scene-description-content {"), t.push(`  color: ${e.overlayTextColor} !important;`), t.push("}"), t.push("")), e.overlayBorderRadius && (t.push("/* Overlay Content Box - Border Radius */"), t.push(".dice-overlay-content,"), t.push(".scene-description-content {"), t.push(`  border-radius: ${e.overlayBorderRadius} !important;`), t.push("}"), t.push("")), e.overlayPadding && (t.push("/* Overlay Content Box - Padding */"), t.push(".dice-overlay-content,"), t.push(".scene-description-content {"), t.push(`  padding: ${e.overlayPadding} !important;`), t.push("}"), t.push("")), e.overlayMaxWidth && (t.push("/* Overlay Content Box - Max Width */"), t.push(".dice-overlay-content,"), t.push(".scene-description-content {"), t.push(`  max-width: ${e.overlayMaxWidth} !important;`), t.push("}"), t.push("")), e.globalBackground && (t.push("/* Global Container - Background Color */"), t.push(".embed-player-view,"), t.push(".player-view {"), t.push(`  background-color: ${e.globalBackground} !important;`), t.push("}"), t.push("")), e.globalTextColor && (t.push("/* Global - Text Color (All Elements) */"), t.push(".embed-player-view,"), t.push(".player-view {"), t.push(`  color: ${e.globalTextColor} !important;`), t.push("}"), t.push("")), e.globalFontFamily && (t.push("/* Global - Font Family (All Elements) */"), t.push(".embed-player-view,"), t.push(".player-view {"), t.push(`  font-family: ${e.globalFontFamily} !important;`), t.push("}"), t.push("")), e.globalLineHeight && (t.push("/* Global - Line Height (All Elements) */"), t.push(".embed-player-view,"), t.push(".player-view {"), t.push(`  line-height: ${e.globalLineHeight} !important;`), t.push("}"), t.push("")), e.globalBackgroundImage && (t.push("/* Global Container - Background Image */"), t.push(".embed-player-view,"), t.push(".player-view {"), t.push(`  background-image: ${e.globalBackgroundImage} !important;`), e.globalBackgroundSize && t.push(`  background-size: ${e.globalBackgroundSize} !important;`), t.push("  background-position: center !important;"), t.push("  background-repeat: no-repeat !important;"), t.push("  background-attachment: scroll !important;"), t.push("}"), t.push("")), e.controlsBackground && (t.push("/* Player Header - Background */"), t.push(".player-view .player-header,"), t.push(".embed-player-view .player-header {"), t.push(`  background: ${e.controlsBackground} !important;`), t.push("}"), t.push("")), e.controlsBorderColor && (t.push("/* Player Header - Border Color */"), t.push(".player-view .player-header,"), t.push(".embed-player-view .player-header {"), t.push(`  border-bottom-color: ${e.controlsBorderColor} !important;`), t.push("}"), t.push("")), e.controlsButtonBg && (t.push("/* Header Back Button - Background */"), t.push(".player-view .player-header .back-button {"), t.push(`  background: ${e.controlsButtonBg} !important;`), t.push("}"), t.push("")), e.controlsButtonColor && (t.push("/* Header Back Button - Color */"), t.push(".player-view .player-header .back-button {"), t.push(`  color: ${e.controlsButtonColor} !important;`), t.push("}"), t.push("")), e.controlsBorderRadius && (t.push("/* Header Back Button - Border Radius */"), t.push(".player-view .player-header .back-button {"), t.push(`  border-radius: ${e.controlsBorderRadius} !important;`), t.push("}"), t.push("")), e.controlsButtonHoverBg && (t.push("/* Header Back Button Hover - Background */"), t.push(".player-view .player-header .back-button:hover {"), t.push(`  background: ${e.controlsButtonHoverBg} !important;`), t.push("}"), t.push("")), e.controlsButtonBg && (t.push("/* Header Buttons - Background */"), t.push(".player-view .player-header .header-button,"), t.push(".embed-player-view .player-header .header-button {"), t.push(`  background: ${e.controlsButtonBg} !important;`), t.push("}"), t.push("")), e.controlsButtonColor && (t.push("/* Header Buttons - Color */"), t.push(".player-view .player-header .header-button,"), t.push(".embed-player-view .player-header .header-button {"), t.push(`  color: ${e.controlsButtonColor} !important;`), t.push("}"), t.push("")), e.controlsBorderRadius && (t.push("/* Header Buttons - Border Radius */"), t.push(".player-view .player-header .header-button,"), t.push(".embed-player-view .player-header .header-button {"), t.push(`  border-radius: ${e.controlsBorderRadius} !important;`), t.push("}"), t.push("")), e.controlsButtonHoverBg && (t.push("/* Header Buttons Hover - Background */"), t.push(".player-view .player-header .header-button:hover,"), t.push(".embed-player-view .player-header .header-button:hover {"), t.push(`  background: ${e.controlsButtonHoverBg} !important;`), t.push("}"), t.push("")), e.controlsButtonHoverColor && (t.push("/* Header Buttons Hover - Color */"), t.push(".player-view .player-header .header-button:hover,"), t.push(".embed-player-view .player-header .header-button:hover {"), t.push(`  color: ${e.controlsButtonHoverColor} !important;`), t.push("}"), t.push("")), e.globalTextColor && (t.push("/* Header Title - Color */"), t.push(".player-view .player-header .log-title,"), t.push(".embed-player-view .player-header .embed-title {"), t.push(`  color: ${e.globalTextColor} !important;`), t.push("}"), t.push("")), t.join(`
+  return e.dialogBackground && (t.push("/* Dialog Box Container - Background */"), t.push(".dialog-box {"), t.push(`  background-color: ${e.dialogBackground} !important;`), t.push("}"), t.push("")), e.dialogBorderColor && (t.push("/* Dialog Box Container - Border Color */"), t.push(".dialog-box {"), t.push(`  border-color: ${e.dialogBorderColor} !important;`), t.push("}"), t.push("")), e.dialogBorderWidth && (t.push("/* Dialog Box Container - Border Width */"), t.push(".dialog-box {"), t.push(`  border-width: ${e.dialogBorderWidth} !important;`), t.push("  border-style: solid !important;"), t.push("}"), t.push("")), e.dialogBorderRadius && (t.push("/* Dialog Box Container - Border Radius */"), t.push(".dialog-box {"), t.push(`  border-radius: ${e.dialogBorderRadius} !important;`), t.push("}"), t.push("")), e.dialogPadding && (t.push("/* Dialog Box Container - Padding */"), t.push(".dialog-box {"), t.push(`  padding: ${e.dialogPadding} !important;`), t.push("}"), t.push("")), e.dialogMinHeight && (t.push("/* Dialog Box Container - Min Height */"), t.push(".dialog-box {"), t.push(`  min-height: ${e.dialogMinHeight} !important;`), t.push("}"), t.push("")), e.dialogNameFontSize && (t.push("/* Dialog Character Name - Font Size */"), t.push(".dialog-box .character-name {"), t.push(`  font-size: ${e.dialogNameFontSize} !important;`), t.push("}"), t.push("")), e.dialogTextColor && (t.push("/* Dialog Text - Color */"), t.push(".dialog-box .dialog-text,"), t.push(".dialog-box .text-content {"), t.push(`  color: ${e.dialogTextColor} !important;`), t.push("}"), t.push("")), e.dialogTextFontSize && (t.push("/* Dialog Text - Font Size */"), t.push(".dialog-box .dialog-text,"), t.push(".dialog-box .text-content {"), t.push(`  font-size: ${e.dialogTextFontSize} !important;`), t.push("}"), t.push("")), e.dialogLineHeight && (t.push("/* Dialog Text - Line Height */"), t.push(".dialog-box .dialog-text,"), t.push(".dialog-box .text-content {"), t.push(`  line-height: ${e.dialogLineHeight} !important;`), t.push("}"), t.push("")), e.characterMaxWidth && (t.push("/* Character Image - Max Width */"), t.push(".character-display .character-avatar img {"), t.push(`  max-width: ${e.characterMaxWidth} !important;`), t.push("}"), t.push("")), e.characterMaxHeight && (t.push("/* Character Image - Max Height */"), t.push(".character-display .character-avatar img {"), t.push(`  max-height: ${e.characterMaxHeight} !important;`), t.push("}"), t.push("")), e.characterFrame === "custom" && e.characterBorderRadius && (t.push("/* Character Image - Border Radius */"), t.push(".character-display .character-avatar img {"), t.push(`  border-radius: ${e.characterBorderRadius} !important;`), t.push("}"), t.push("")), e.characterFrame === "custom" && e.characterBorderWidth && (t.push("/* Character Image - Border */"), t.push(".character-display .character-avatar img {"), t.push(`  border: ${e.characterBorderWidth} solid rgba(255, 255, 255, 0.3) !important;`), t.push("}"), t.push("")), e.characterFrame !== "custom" && t.push(js), e.characterTransition && (t.push("/* Character Image - Transition */"), t.push(".character-display .character-avatar img {"), t.push(`  transition: ${e.characterTransition} !important;`), t.push("}"), t.push("")), e.characterInactiveOpacity && (t.push("/* Character Inactive - Opacity */"), t.push(".character-display .character-wrapper:not(.is-speaking) .character-avatar img {"), t.push(`  opacity: ${e.characterInactiveOpacity} !important;`), t.push("}"), t.push("")), e.controlsBackground && (t.push("/* Playback Controls Container - Background */"), t.push(".playback-controls {"), t.push(`  background: ${e.controlsBackground} !important;`), t.push("}"), t.push("")), e.controlsBorderColor && (t.push("/* Playback Controls Container - Border Color */"), t.push(".playback-controls {"), t.push(`  border-color: ${e.controlsBorderColor} !important;`), t.push("}"), t.push("")), e.controlsBorderRadius && (t.push("/* Playback Controls Container - Border Radius */"), t.push(".playback-controls {"), t.push(`  border-radius: 0 0 ${e.controlsBorderRadius} ${e.controlsBorderRadius} !important;`), t.push("}"), t.push("")), e.controlsProgressBg && (t.push("/* Progress Bar - Background */"), t.push(".playback-controls .progress-bar {"), t.push(`  background: ${e.controlsProgressBg} !important;`), t.push("}"), t.push("")), e.controlsProgressColor && (t.push("/* Progress Fill - Color */"), t.push(".playback-controls .progress-fill {"), t.push(`  background: ${e.controlsProgressColor} !important;`), t.push("}"), t.push("")), e.controlsButtonSize && (t.push("/* Control Button - Size */"), t.push(".playback-controls .control-button:not(.autoplay-button) {"), t.push(`  width: ${e.controlsButtonSize} !important;`), t.push("}"), t.push(".playback-controls .control-button {"), t.push(`  height: ${e.controlsButtonSize} !important;`), t.push("}"), t.push("")), e.controlsButtonBg && (t.push("/* Control Button - Background */"), t.push(".playback-controls .control-button {"), t.push(`  background: ${e.controlsButtonBg} !important;`), t.push("}"), t.push("")), e.controlsButtonColor && (t.push("/* Control Button - Color */"), t.push(".playback-controls .control-button {"), t.push(`  color: ${e.controlsButtonColor} !important;`), t.push("}"), t.push("")), e.controlsBorderRadius && (t.push("/* Control Button - Border Radius */"), t.push(".playback-controls .control-button,"), t.push(".playback-controls .speed-button {"), t.push(`  border-radius: ${e.controlsBorderRadius} !important;`), t.push("}"), t.push("")), e.controlsButtonHoverBg && (t.push("/* Control Button Hover - Background */"), t.push(".playback-controls .control-button:hover:not(:disabled) {"), t.push(`  background: ${e.controlsButtonHoverBg} !important;`), t.push("}"), t.push("")), e.controlsButtonHoverColor && (t.push("/* Control Button Hover - Color */"), t.push(".playback-controls .control-button:hover:not(:disabled) {"), t.push(`  color: ${e.controlsButtonHoverColor} !important;`), t.push("}"), t.push("")), e.controlsPrimaryButtonSize && (t.push("/* Primary Control Button - Size */"), t.push(".playback-controls .control-button.primary {"), t.push(`  width: ${e.controlsPrimaryButtonSize} !important;`), t.push(`  height: ${e.controlsPrimaryButtonSize} !important;`), t.push("}"), t.push("")), e.overlayBackground && (t.push("/* Overlay Background - Color */"), t.push(".dice-overlay,"), t.push(".scene-description-overlay {"), t.push(`  background: ${e.overlayBackground} !important;`), t.push("}"), t.push("")), e.overlayBlur && (t.push("/* Overlay Background - Blur */"), t.push(".dice-overlay,"), t.push(".scene-description-overlay {"), t.push(`  backdrop-filter: blur(${e.overlayBlur}) !important;`), t.push("}"), t.push("")), e.overlayContentBackground && (t.push("/* Overlay Content Box - Background */"), t.push(".dice-overlay-content,"), t.push(".scene-description-content {"), t.push(`  background: ${e.overlayContentBackground} !important;`), t.push("}"), t.push("")), e.overlayTextColor && (t.push("/* Overlay Content Box - Text Color */"), t.push(".dice-overlay-content,"), t.push(".scene-description-content {"), t.push(`  color: ${e.overlayTextColor} !important;`), t.push("}"), t.push("")), e.overlayBorderRadius && (t.push("/* Overlay Content Box - Border Radius */"), t.push(".dice-overlay-content,"), t.push(".scene-description-content {"), t.push(`  border-radius: ${e.overlayBorderRadius} !important;`), t.push("}"), t.push("")), e.overlayPadding && (t.push("/* Overlay Content Box - Padding */"), t.push(".dice-overlay-content,"), t.push(".scene-description-content {"), t.push(`  padding: ${e.overlayPadding} !important;`), t.push("}"), t.push("")), e.overlayMaxWidth && (t.push("/* Overlay Content Box - Max Width */"), t.push(".dice-overlay-content,"), t.push(".scene-description-content {"), t.push(`  max-width: ${e.overlayMaxWidth} !important;`), t.push("}"), t.push("")), e.globalBackground && (t.push("/* Global Container - Background Color */"), t.push(".embed-player-view,"), t.push(".player-view {"), t.push(`  background-color: ${e.globalBackground} !important;`), t.push("}"), t.push("")), e.globalTextColor && (t.push("/* Global - Text Color (All Elements) */"), t.push(".embed-player-view,"), t.push(".player-view {"), t.push(`  color: ${e.globalTextColor} !important;`), t.push("}"), t.push("")), e.globalFontFamily && (t.push("/* Global - Font Family (All Elements) */"), t.push(".embed-player-view,"), t.push(".player-view {"), t.push(`  font-family: ${e.globalFontFamily} !important;`), t.push("}"), t.push("")), e.globalLineHeight && (t.push("/* Global - Line Height (All Elements) */"), t.push(".embed-player-view,"), t.push(".player-view {"), t.push(`  line-height: ${e.globalLineHeight} !important;`), t.push("}"), t.push("")), e.globalBackgroundImage && (t.push("/* Global Container - Background Image */"), t.push(".embed-player-view,"), t.push(".player-view {"), t.push(`  background-image: ${e.globalBackgroundImage} !important;`), e.globalBackgroundSize && t.push(`  background-size: ${e.globalBackgroundSize} !important;`), t.push("  background-position: center !important;"), t.push("  background-repeat: no-repeat !important;"), t.push("  background-attachment: scroll !important;"), t.push("}"), t.push("")), e.controlsBackground && (t.push("/* Player Header - Background */"), t.push(".player-view .player-header,"), t.push(".embed-player-view .player-header {"), t.push(`  background: ${e.controlsBackground} !important;`), t.push("}"), t.push("")), e.controlsBorderColor && (t.push("/* Player Header - Border Color */"), t.push(".player-view .player-header,"), t.push(".embed-player-view .player-header {"), t.push(`  border-bottom-color: ${e.controlsBorderColor} !important;`), t.push("}"), t.push("")), e.controlsButtonBg && (t.push("/* Header Back Button - Background */"), t.push(".player-view .player-header .back-button {"), t.push(`  background: ${e.controlsButtonBg} !important;`), t.push("}"), t.push("")), e.controlsButtonColor && (t.push("/* Header Back Button - Color */"), t.push(".player-view .player-header .back-button {"), t.push(`  color: ${e.controlsButtonColor} !important;`), t.push("}"), t.push("")), e.controlsBorderRadius && (t.push("/* Header Back Button - Border Radius */"), t.push(".player-view .player-header .back-button {"), t.push(`  border-radius: ${e.controlsBorderRadius} !important;`), t.push("}"), t.push("")), e.controlsButtonHoverBg && (t.push("/* Header Back Button Hover - Background */"), t.push(".player-view .player-header .back-button:hover {"), t.push(`  background: ${e.controlsButtonHoverBg} !important;`), t.push("}"), t.push("")), e.controlsButtonBg && (t.push("/* Header Buttons - Background */"), t.push(".player-view .player-header .header-button,"), t.push(".embed-player-view .player-header .header-button {"), t.push(`  background: ${e.controlsButtonBg} !important;`), t.push("}"), t.push("")), e.controlsButtonColor && (t.push("/* Header Buttons - Color */"), t.push(".player-view .player-header .header-button,"), t.push(".embed-player-view .player-header .header-button {"), t.push(`  color: ${e.controlsButtonColor} !important;`), t.push("}"), t.push("")), e.controlsBorderRadius && (t.push("/* Header Buttons - Border Radius */"), t.push(".player-view .player-header .header-button,"), t.push(".embed-player-view .player-header .header-button {"), t.push(`  border-radius: ${e.controlsBorderRadius} !important;`), t.push("}"), t.push("")), e.controlsButtonHoverBg && (t.push("/* Header Buttons Hover - Background */"), t.push(".player-view .player-header .header-button:hover,"), t.push(".embed-player-view .player-header .header-button:hover {"), t.push(`  background: ${e.controlsButtonHoverBg} !important;`), t.push("}"), t.push("")), e.controlsButtonHoverColor && (t.push("/* Header Buttons Hover - Color */"), t.push(".player-view .player-header .header-button:hover,"), t.push(".embed-player-view .player-header .header-button:hover {"), t.push(`  color: ${e.controlsButtonHoverColor} !important;`), t.push("}"), t.push("")), e.globalTextColor && (t.push("/* Header Title - Color */"), t.push(".player-view .player-header .log-title,"), t.push(".embed-player-view .player-header .embed-title {"), t.push(`  color: ${e.globalTextColor} !important;`), t.push("}"), t.push("")), t.join(`
 `);
 }
-function Pa(s) {
+function Ea(s) {
   if (!s || typeof s != "object") return "";
-  const e = s.cssVars || s;
-  return [Aa(e), Sa(e), s.userCustomCSS || ""].join(`
+  const e = s.cssVars || s, t = e.characterFrame === "custom" ? "" : js;
+  return [Sa(e), Pa(e), s.userCustomCSS || "", t].join(`
 `);
 }
-let Ea = 0;
-const Ft = /* @__PURE__ */ new WeakMap();
-function Vs(s) {
-  s && (Ft.get(s)?.remove(), Ft.delete(s), s.removeAttribute("data-vnlog-style"));
+let Ma = 0;
+const Ut = /* @__PURE__ */ new WeakMap();
+function Gs(s) {
+  s && (Ut.get(s)?.remove(), Ut.delete(s), s.removeAttribute("data-vnlog-style"));
 }
-function Ma(s, e) {
-  if (!s?.setAttribute || (Vs(s), !e)) return;
-  const t = `stage-${++Ea}`;
+function Da(s, e) {
+  if (!s?.setAttribute || (Gs(s), !e)) return;
+  const t = `stage-${++Ma}`;
   s.setAttribute("data-vnlog-style", t);
   const l = document.createElement("style");
-  l.dataset.vnlogStyle = t, l.textContent = aa(ba(Pa(e), `[data-vnlog-style="${t}"]`, [".player-view", ".embed-player-view", ".vnlog-embed-player"])), document.head.appendChild(l), Ft.set(s, l);
+  l.dataset.vnlogStyle = t, l.textContent = ia(va(Ea(e), `[data-vnlog-style="${t}"]`, [".player-view", ".embed-player-view", ".vnlog-embed-player"])), document.head.appendChild(l), Ut.set(s, l);
 }
-const Da = { primaryColor: "--primary-color", textColor: "--text-color", bgColor: "--bg-color", bgSecondary: "--bg-secondary", borderColor: "--border-color", fontFamily: "--font-pretendard" };
+const Ra = { primaryColor: "--primary-color", textColor: "--text-color", bgColor: "--bg-color", bgSecondary: "--bg-secondary", borderColor: "--border-color", fontFamily: "--font-pretendard" };
 function Ba(s, e = {}) {
   if (s?.style) {
-    for (const [t, l] of Object.entries(Da))
+    for (const [t, l] of Object.entries(Ra))
       s.style.removeProperty(l), e[t] && s.style.setProperty(l, e[t]);
     s.style.removeProperty("--font-family"), s.style.removeProperty("font-family"), zt(s, e.bgImageUrl, e.bgImageOpacity, e.bgImageSize);
   }
@@ -3575,10 +3576,10 @@ function Ba(s, e = {}) {
 function zt(s, e, t = 0.3, l = "cover") {
   if (!s?.style) return;
   s.style.removeProperty("--bg-image"), s.style.removeProperty("--bg-image-size");
-  const o = et(e);
-  if (o) {
+  const r = et(e);
+  if (r) {
     const a = Math.max(0, Math.min(1, Number(t ?? 0.3)));
-    s.style.setProperty("--bg-image", `linear-gradient(rgba(0,0,0,${1 - a}),rgba(0,0,0,${1 - a})), url(${JSON.stringify(o)})`), s.style.setProperty("--bg-image-size", l || "cover");
+    s.style.setProperty("--bg-image", `linear-gradient(rgba(0,0,0,${1 - a}),rgba(0,0,0,${1 - a})), url(${JSON.stringify(r)})`), s.style.setProperty("--bg-image-size", l || "cover");
   }
 }
 function gt(s) {
@@ -3586,7 +3587,7 @@ function gt(s) {
   const e = s.trim();
   return /^(?:var\(|inherit$|initial$|unset$|currentcolor$)/i.test(e) ? "" : e;
 }
-const Ra = {
+const Oa = {
   name: "CharacterDisplay",
   props: {
     // 현재 스텝 정보
@@ -3660,44 +3661,44 @@ const Ra = {
       immediate: !0
     }
   }
-}, Oa = {
+}, Ia = {
   key: 0,
   class: "character-display"
-}, Ia = { class: "character-container" }, La = { class: "character-avatar" }, Na = ["src", "alt"], $a = {
+}, La = { class: "character-container" }, Na = { class: "character-avatar" }, $a = ["src", "alt"], Ha = {
   key: 1,
   class: "image-fallback",
   role: "status"
 };
-function Ha(s, e, t, l, o, a) {
-  return a.currentCharacter?.avatarUrl ? (u(), h("div", Oa, [
-    i("div", Ia, [
+function Fa(s, e, t, l, r, a) {
+  return a.currentCharacter?.avatarUrl ? (u(), h("div", Ia, [
+    i("div", La, [
       N(ce, {
         name: "character-fade",
         mode: "out-in"
       }, {
         default: ie(() => [
-          a.currentCharacter && a.currentCharacter.avatarUrl && !o.failedImageIds.has(a.currentCharacter.avatarUrl) ? (u(), h("div", {
+          a.currentCharacter && a.currentCharacter.avatarUrl && !r.failedImageIds.has(a.currentCharacter.avatarUrl) ? (u(), h("div", {
             key: a.currentCharacter.id + ":" + a.currentCharacter.avatarUrl,
             class: ve(["character-wrapper", {
               "is-speaking": a.currentCharacter.id === a.speakingCharacterId
             }]),
             style: be(a.getCharacterStyle(a.currentCharacter))
           }, [
-            i("div", La, [
+            i("div", Na, [
               i("img", {
                 src: a.safeSrc(a.currentCharacter.avatarUrl),
                 alt: a.currentCharacter.name,
                 onError: e[0] || (e[0] = (p) => a.handleImageError(a.currentCharacter))
-              }, null, 40, Na)
+              }, null, 40, $a)
             ])
-          ], 6)) : a.currentCharacter?.avatarUrl ? (u(), h("p", $a, "인물 이미지를 불러오지 못했어요.")) : P("", !0)
+          ], 6)) : a.currentCharacter?.avatarUrl ? (u(), h("p", Ha, "인물 이미지를 불러오지 못했어요.")) : P("", !0)
         ]),
         _: 1
       })
     ])
   ])) : P("", !0);
 }
-const Ua = /* @__PURE__ */ pe(Ra, [["render", Ha], ["__scopeId", "data-v-ecb6ecb7"]]), Fa = {
+const Ua = /* @__PURE__ */ pe(Oa, [["render", Fa], ["__scopeId", "data-v-ecb6ecb7"]]), za = {
   components: { AppIcon: _e },
   name: "StatusChange",
   props: {
@@ -3712,48 +3713,48 @@ const Ua = /* @__PURE__ */ pe(Ra, [["render", Ha], ["__scopeId", "data-v-ecb6ecb
       return e.includes("침식") ? "bolt" : e.includes("hp") || e.includes("생명") || e.includes("체력") || e.includes("mp") || e.includes("마나") || e.includes("마력") ? "heart" : e.includes("san") || e.includes("정신") || e.includes("이성") ? "sparkles" : "chart";
     }
   }
-}, za = {
+}, ja = {
   key: 0,
   class: "status-change-container"
-}, ja = { class: "status-icon" }, Va = { class: "status-info" }, Ga = { class: "character-name" }, qa = { class: "status-name" }, Wa = { class: "status-values" }, Ya = { class: "old-value" }, Za = { class: "new-value" }, Xa = {
+}, Va = { class: "status-icon" }, Ga = { class: "status-info" }, qa = { class: "character-name" }, Wa = { class: "status-name" }, Ya = { class: "status-values" }, Za = { class: "old-value" }, Xa = { class: "new-value" }, Ka = {
   key: 1,
   class: "new-value"
-}, Ka = {
+}, Ja = {
   key: 2,
   class: "old-value"
 };
-function Ja(s, e, t, l, o, a) {
+function Qa(s, e, t, l, r, a) {
   const p = K("AppIcon");
-  return t.statusChanges && t.statusChanges.length > 0 ? (u(), h("div", za, [
-    (u(!0), h(re, null, Te(t.statusChanges, (n, c) => (u(), h("div", {
+  return t.statusChanges && t.statusChanges.length > 0 ? (u(), h("div", ja, [
+    (u(!0), h(ne, null, Te(t.statusChanges, (o, c) => (u(), h("div", {
       key: c,
-      class: ve(["status-change", { "is-positive": n.delta > 0, "is-negative": n.delta < 0 }])
+      class: ve(["status-change", { "is-positive": o.delta > 0, "is-negative": o.delta < 0 }])
     }, [
-      i("div", ja, [
+      i("div", Va, [
         N(p, {
-          name: a.getStatusIcon(n.statusName),
+          name: a.getStatusIcon(o.statusName),
           size: 16
         }, null, 8, ["name"])
       ]),
-      i("div", Va, [
-        i("span", Ga, w(n.characterName), 1),
-        i("span", qa, w(n.statusName), 1)
+      i("div", Ga, [
+        i("span", qa, w(o.characterName), 1),
+        i("span", Wa, w(o.statusName), 1)
       ]),
-      i("div", Wa, [
-        n.oldValue !== null && n.newValue !== null ? (u(), h(re, { key: 0 }, [
-          i("span", Ya, w(n.oldValue), 1),
+      i("div", Ya, [
+        o.oldValue !== null && o.newValue !== null ? (u(), h(ne, { key: 0 }, [
+          i("span", Za, w(o.oldValue), 1),
           e[0] || (e[0] = i("span", { class: "arrow" }, "→", -1)),
-          i("span", Za, w(n.newValue), 1)
-        ], 64)) : n.oldValue === null && n.newValue !== null ? (u(), h("span", Xa, w(n.newValue), 1)) : n.oldValue !== null && n.newValue === null ? (u(), h("span", Ka, w(n.oldValue), 1)) : P("", !0),
-        n.delta !== 0 ? (u(), h("span", {
+          i("span", Xa, w(o.newValue), 1)
+        ], 64)) : o.oldValue === null && o.newValue !== null ? (u(), h("span", Ka, w(o.newValue), 1)) : o.oldValue !== null && o.newValue === null ? (u(), h("span", Ja, w(o.oldValue), 1)) : P("", !0),
+        o.delta !== 0 ? (u(), h("span", {
           key: 3,
-          class: ve(["delta", { "delta-positive": n.delta > 0, "delta-negative": n.delta < 0 }])
-        }, w(n.delta > 0 ? "+" : "") + w(n.delta), 3)) : P("", !0)
+          class: ve(["delta", { "delta-positive": o.delta > 0, "delta-negative": o.delta < 0 }])
+        }, w(o.delta > 0 ? "+" : "") + w(o.delta), 3)) : P("", !0)
       ])
     ], 2))), 128))
   ])) : P("", !0);
 }
-const Qa = /* @__PURE__ */ pe(Fa, [["render", Ja], ["__scopeId", "data-v-ce1a3fab"]]), ei = {
+const ei = /* @__PURE__ */ pe(za, [["render", Qa], ["__scopeId", "data-v-ce1a3fab"]]), ti = {
   components: { AppIcon: _e },
   name: "DXCombo",
   props: {
@@ -3772,136 +3773,136 @@ const Qa = /* @__PURE__ */ pe(Fa, [["render", Ja], ["__scopeId", "data-v-ce1a3fa
 `), t = t.replace(/\\t/g, "	"), t = t.replace(/\\r/g, "\r"), t;
     }
   }
-}, ti = {
+}, si = {
   key: 0,
   class: "dx-combo-container"
-}, si = { class: "combo-header" }, oi = { class: "combo-icon" }, ni = { class: "combo-label" }, ri = {
+}, ri = { class: "combo-header" }, oi = { class: "combo-icon" }, ni = { class: "combo-label" }, ai = {
   key: 0,
   class: "combo-name"
-}, ai = {
+}, ii = {
   key: 1,
   class: "erosion-cost"
-}, ii = { class: "combo-effects" }, li = { class: "effect-name" }, ci = { class: "effect-level" }, ui = {
+}, li = { class: "combo-effects" }, ci = { class: "effect-name" }, ui = { class: "effect-level" }, di = {
   key: 0,
   class: "combo-info-row"
-}, di = {
+}, hi = {
   key: 0,
   class: "info-item"
-}, hi = { class: "info-value" }, pi = {
+}, pi = { class: "info-value" }, mi = {
   key: 1,
   class: "info-item"
-}, mi = { class: "info-value" }, fi = {
+}, fi = { class: "info-value" }, gi = {
   key: 2,
   class: "info-item"
-}, gi = { class: "info-value" }, yi = {
+}, yi = { class: "info-value" }, bi = {
   key: 3,
   class: "info-item"
-}, bi = { class: "info-value" }, vi = {
+}, vi = { class: "info-value" }, _i = {
   key: 1,
   class: "combo-stats-row"
-}, _i = {
+}, wi = {
   key: 0,
   class: "info-item"
-}, wi = { class: "info-value" }, xi = {
+}, xi = { class: "info-value" }, ki = {
   key: 1,
   class: "info-item"
-}, ki = { class: "info-value" }, Ti = {
+}, Ti = { class: "info-value" }, Ci = {
   key: 2,
   class: "info-item"
-}, Ci = { class: "info-value" }, Ai = {
+}, Ai = { class: "info-value" }, Si = {
   key: 3,
   class: "info-item"
-}, Si = { class: "info-value" }, Pi = {
+}, Pi = { class: "info-value" }, Ei = {
   key: 2,
   class: "combo-description"
-}, Ei = {
+}, Mi = {
   key: 3,
   class: "combo-dice-roll"
-}, Mi = { class: "dice-roll-header" }, Di = { class: "dice-roll-content" }, Bi = { class: "dice-formula" }, Ri = { class: "dice-detail" }, Oi = { class: "dice-result" };
-function Ii(s, e, t, l, o, a) {
+}, Di = { class: "dice-roll-header" }, Ri = { class: "dice-roll-content" }, Bi = { class: "dice-formula" }, Oi = { class: "dice-detail" }, Ii = { class: "dice-result" };
+function Li(s, e, t, l, r, a) {
   const p = K("AppIcon");
-  return t.dxCombos && t.dxCombos.length > 0 ? (u(), h("div", ti, [
-    (u(!0), h(re, null, Te(t.dxCombos, (n, c) => (u(), h("div", {
+  return t.dxCombos && t.dxCombos.length > 0 ? (u(), h("div", si, [
+    (u(!0), h(ne, null, Te(t.dxCombos, (o, c) => (u(), h("div", {
       key: c,
       class: "dx-combo"
     }, [
-      i("div", si, [
+      i("div", ri, [
         i("div", oi, [
           N(p, {
             name: "bolt",
             size: 16
           })
         ]),
-        i("span", ni, w(n.isSingleEffect ? "이펙트" : "콤보"), 1),
-        n.comboName ? (u(), h("span", ri, w(a.decodeHtml(n.comboName)), 1)) : P("", !0),
-        n.erosionCost ? (u(), h("span", ai, w(n.erosionCost) + "↑", 1)) : P("", !0)
+        i("span", ni, w(o.isSingleEffect ? "이펙트" : "콤보"), 1),
+        o.comboName ? (u(), h("span", ai, w(a.decodeHtml(o.comboName)), 1)) : P("", !0),
+        o.erosionCost ? (u(), h("span", ii, w(o.erosionCost) + "↑", 1)) : P("", !0)
       ]),
-      i("div", ii, [
-        (u(!0), h(re, null, Te(n.effects, (f, m) => (u(), h("div", {
+      i("div", li, [
+        (u(!0), h(ne, null, Te(o.effects, (f, m) => (u(), h("div", {
           key: m,
           class: "combo-effect"
         }, [
-          i("span", li, w(a.decodeHtml(f.name)), 1),
-          i("span", ci, "Lv." + w(f.level), 1)
+          i("span", ci, w(a.decodeHtml(f.name)), 1),
+          i("span", ui, "Lv." + w(f.level), 1)
         ]))), 128))
       ]),
-      n.timing || n.difficulty || n.target || n.range ? (u(), h("div", ui, [
-        n.timing ? (u(), h("span", di, [
+      o.timing || o.difficulty || o.target || o.range ? (u(), h("div", di, [
+        o.timing ? (u(), h("span", hi, [
           e[0] || (e[0] = i("span", { class: "info-label" }, "타이밍:", -1)),
-          i("span", hi, w(a.decodeHtml(n.timing)), 1)
+          i("span", pi, w(a.decodeHtml(o.timing)), 1)
         ])) : P("", !0),
-        n.difficulty ? (u(), h("span", pi, [
+        o.difficulty ? (u(), h("span", mi, [
           e[1] || (e[1] = i("span", { class: "info-label" }, "난이도:", -1)),
-          i("span", mi, w(a.decodeHtml(n.difficulty)), 1)
+          i("span", fi, w(a.decodeHtml(o.difficulty)), 1)
         ])) : P("", !0),
-        n.target ? (u(), h("span", fi, [
+        o.target ? (u(), h("span", gi, [
           e[2] || (e[2] = i("span", { class: "info-label" }, "대상:", -1)),
-          i("span", gi, w(a.decodeHtml(n.target)), 1)
+          i("span", yi, w(a.decodeHtml(o.target)), 1)
         ])) : P("", !0),
-        n.range ? (u(), h("span", yi, [
+        o.range ? (u(), h("span", bi, [
           e[3] || (e[3] = i("span", { class: "info-label" }, "사거리:", -1)),
-          i("span", bi, w(a.decodeHtml(n.range)), 1)
+          i("span", vi, w(a.decodeHtml(o.range)), 1)
         ])) : P("", !0)
       ])) : P("", !0),
-      n.dice || n.critical || n.attack || n.erosion ? (u(), h("div", vi, [
-        n.dice ? (u(), h("span", _i, [
+      o.dice || o.critical || o.attack || o.erosion ? (u(), h("div", _i, [
+        o.dice ? (u(), h("span", wi, [
           e[4] || (e[4] = i("span", { class: "info-label" }, "다이스:", -1)),
-          i("span", wi, w(a.decodeHtml(n.dice)), 1)
+          i("span", xi, w(a.decodeHtml(o.dice)), 1)
         ])) : P("", !0),
-        n.critical ? (u(), h("span", xi, [
+        o.critical ? (u(), h("span", ki, [
           e[5] || (e[5] = i("span", { class: "info-label" }, "크리치:", -1)),
-          i("span", ki, w(a.decodeHtml(n.critical)), 1)
+          i("span", Ti, w(a.decodeHtml(o.critical)), 1)
         ])) : P("", !0),
-        n.attack ? (u(), h("span", Ti, [
+        o.attack ? (u(), h("span", Ci, [
           e[6] || (e[6] = i("span", { class: "info-label" }, "공격력:", -1)),
-          i("span", Ci, w(a.decodeHtml(n.attack)), 1)
+          i("span", Ai, w(a.decodeHtml(o.attack)), 1)
         ])) : P("", !0),
-        n.erosion ? (u(), h("span", Ai, [
+        o.erosion ? (u(), h("span", Si, [
           e[7] || (e[7] = i("span", { class: "info-label" }, "침식:", -1)),
-          i("span", Si, w(a.decodeHtml(n.erosion)), 1)
+          i("span", Pi, w(a.decodeHtml(o.erosion)), 1)
         ])) : P("", !0)
       ])) : P("", !0),
-      n.description ? (u(), h("div", Pi, w(a.decodeHtml(n.description)), 1)) : P("", !0),
-      n.diceRoll ? (u(), h("div", Ei, [
-        i("div", Mi, [
+      o.description ? (u(), h("div", Ei, w(a.decodeHtml(o.description)), 1)) : P("", !0),
+      o.diceRoll ? (u(), h("div", Mi, [
+        i("div", Di, [
           N(p, {
             name: "cube",
             size: 14
           }),
           e[8] || (e[8] = i("span", { class: "dice-roll-label" }, "판정", -1))
         ]),
-        i("div", Di, [
-          i("span", Bi, w(n.diceRoll.formula), 1),
+        i("div", Ri, [
+          i("span", Bi, w(o.diceRoll.formula), 1),
           e[9] || (e[9] = i("span", { class: "dice-separator" }, "→", -1)),
-          i("span", Ri, w(n.diceRoll.diceRolls), 1),
+          i("span", Oi, w(o.diceRoll.diceRolls), 1),
           e[10] || (e[10] = i("span", { class: "dice-separator" }, "→", -1)),
-          i("span", Oi, w(n.diceRoll.result), 1)
+          i("span", Ii, w(o.diceRoll.result), 1)
         ])
       ])) : P("", !0)
     ]))), 128))
   ])) : P("", !0);
 }
-const Gs = /* @__PURE__ */ pe(ei, [["render", Ii], ["__scopeId", "data-v-74c73457"]]), Li = {
+const qs = /* @__PURE__ */ pe(ti, [["render", Li], ["__scopeId", "data-v-74c73457"]]), Ni = {
   name: "Illustration",
   props: {
     illustrations: {
@@ -3924,38 +3925,38 @@ const Gs = /* @__PURE__ */ pe(ei, [["render", Ii], ["__scopeId", "data-v-74c7345
     handleImageLoad() {
     }
   }
-}, Ni = {
+}, $i = {
   key: 0,
   class: "illustration-container"
-}, $i = ["src", "alt", "onError"], Hi = {
+}, Hi = ["src", "alt", "onError"], Fi = {
   key: 1,
   class: "image-fallback",
   role: "status"
 };
-function Ui(s, e, t, l, o, a) {
-  return t.illustrations && t.illustrations.length > 0 ? (u(), h("div", Ni, [
-    (u(!0), h(re, null, Te(t.illustrations, (p, n) => (u(), h("div", {
-      key: n + ":" + p.url,
+function Ui(s, e, t, l, r, a) {
+  return t.illustrations && t.illustrations.length > 0 ? (u(), h("div", $i, [
+    (u(!0), h(ne, null, Te(t.illustrations, (p, o) => (u(), h("div", {
+      key: o + ":" + p.url,
       class: "illustration-item"
     }, [
-      o.failedImages.has(p.url) ? (u(), h("p", Hi, "이미지를 불러오지 못했어요." + w(p.alt ? " (" + p.alt + ")" : ""), 1)) : (u(), h("img", {
+      r.failedImages.has(p.url) ? (u(), h("p", Fi, "이미지를 불러오지 못했어요." + w(p.alt ? " (" + p.alt + ")" : ""), 1)) : (u(), h("img", {
         key: 0,
         src: a.safeSrc(p.url),
         alt: p.alt || "삽화",
         class: "illustration-image",
         onError: (c) => a.handleImageError(p.url),
         onLoad: e[0] || (e[0] = (...c) => a.handleImageLoad && a.handleImageLoad(...c))
-      }, null, 40, $i))
+      }, null, 40, Hi))
     ]))), 128))
   ])) : P("", !0);
 }
-const Fi = /* @__PURE__ */ pe(Li, [["render", Ui], ["__scopeId", "data-v-d4e59a7f"]]), zi = {
+const zi = /* @__PURE__ */ pe(Ni, [["render", Ui], ["__scopeId", "data-v-d4e59a7f"]]), ji = {
   name: "DialogBox",
   components: {
     AppIcon: _e,
-    StatusChange: Qa,
-    DXCombo: Gs,
-    Illustration: Fi
+    StatusChange: ei,
+    DXCombo: qs,
+    Illustration: zi
   },
   props: {
     stepKey: {
@@ -4112,18 +4113,18 @@ const Fi = /* @__PURE__ */ pe(Li, [["render", Ui], ["__scopeId", "data-v-d4e59a7
     // 원본 HTML을 1회만 DOM 파싱해 평탄한 토큰 배열로 변환.
     // 토큰: {t:'o', v:'<span ...>', close:'</span>'} | {t:'x', v:'</span>'} | {t:'c', v:'글'}
     tokenizeHtml(s) {
-      const e = new DOMParser().parseFromString(ft(s), "text/html").body, t = [], l = (o) => {
-        if (o.nodeType === Node.TEXT_NODE) {
-          const a = o.textContent || "";
+      const e = new DOMParser().parseFromString(ft(s), "text/html").body, t = [], l = (r) => {
+        if (r.nodeType === Node.TEXT_NODE) {
+          const a = r.textContent || "";
           for (const p of a) t.push({ t: "c", v: p });
-        } else if (o.nodeType === Node.ELEMENT_NODE) {
-          const a = o.tagName.toLowerCase(), p = Array.from(o.attributes).map((f) => `${f.name}="${f.value}"`).join(" "), n = `<${a}${p ? " " + p : ""}>`, c = `</${a}>`;
-          t.push({ t: "o", v: n, close: c });
-          for (const f of o.childNodes) l(f);
+        } else if (r.nodeType === Node.ELEMENT_NODE) {
+          const a = r.tagName.toLowerCase(), p = Array.from(r.attributes).map((f) => `${f.name}="${f.value}"`).join(" "), o = `<${a}${p ? " " + p : ""}>`, c = `</${a}>`;
+          t.push({ t: "o", v: o, close: c });
+          for (const f of r.childNodes) l(f);
           t.push({ t: "x", v: c });
         }
       };
-      for (const o of e.childNodes) l(o);
+      for (const r of e.childNodes) l(r);
       return t;
     },
     // 토큰을 다음 한 글자가 나올 때까지 소비하며 누적 버퍼를 갱신.
@@ -4149,10 +4150,10 @@ const Fi = /* @__PURE__ */ pe(Li, [["render", Ui], ["__scopeId", "data-v-d4e59a7
       if (this.isTyping = !1, this.isComplete = !0, this.$emit("typing-complete"), this.autoAdvance, this.hasOverlay, this.text.length, this.autoAdvance && !this.hasOverlay) {
         let e = 1500;
         s && (e = 3e3);
-        const t = this.text.length * this.typingSpeed / this.autoPlaySpeed, o = t + e / this.autoPlaySpeed < 3e3 / this.autoPlaySpeed ? 3e3 / this.autoPlaySpeed - t : e / this.autoPlaySpeed;
-        Math.max(o, e), this.autoAdvanceTimer = setTimeout(() => {
+        const t = this.text.length * this.typingSpeed / this.autoPlaySpeed, r = t + e / this.autoPlaySpeed < 3e3 / this.autoPlaySpeed ? 3e3 / this.autoPlaySpeed - t : e / this.autoPlaySpeed;
+        Math.max(r, e), this.autoAdvanceTimer = setTimeout(() => {
           this.autoAdvance && !this.hasOverlay ? (this.autoAdvanceTimer = null, this.$emit("advance")) : (this.autoAdvance, this.hasOverlay, this.autoAdvanceTimer = null);
-        }, Math.max(o, e));
+        }, Math.max(r, e));
       }
     },
     handleClick() {
@@ -4171,15 +4172,15 @@ const Fi = /* @__PURE__ */ pe(Li, [["render", Ui], ["__scopeId", "data-v-d4e59a7
   beforeUnmount() {
     this.stopTyping(), this.stopAutoAdvance();
   }
-}, ji = ["innerHTML"], Vi = {
+}, Vi = ["innerHTML"], Gi = {
   class: "sr-only",
   "aria-live": "polite"
-}, Gi = {
+}, qi = {
   key: 0,
   class: "continue-indicator"
 };
-function qi(s, e, t, l, o, a) {
-  const p = K("AppIcon"), n = K("Illustration"), c = K("DXCombo"), f = K("StatusChange");
+function Wi(s, e, t, l, r, a) {
+  const p = K("AppIcon"), o = K("Illustration"), c = K("DXCombo"), f = K("StatusChange");
   return u(), h("div", {
     class: ve(["dialog-box", {
       "dialog-system": t.stepType === "system",
@@ -4196,22 +4197,22 @@ function qi(s, e, t, l, o, a) {
     }, w(t.characterName), 5)) : P("", !0),
     t.text && t.text.trim().length > 0 ? (u(), h("div", {
       key: 1,
-      class: ve(["dialog-text", { "is-typing": o.isTyping, "is-narration": !t.characterName }])
+      class: ve(["dialog-text", { "is-typing": r.isTyping, "is-narration": !t.characterName }])
     }, [
       i("p", {
         class: "text-content",
         innerHTML: a.decodedText,
         "aria-hidden": "true"
-      }, null, 8, ji),
-      i("p", Vi, w(a.srText), 1),
-      !o.isTyping && !o.isComplete ? (u(), h("div", Gi, [
+      }, null, 8, Vi),
+      i("p", Gi, w(a.srText), 1),
+      !r.isTyping && !r.isComplete ? (u(), h("div", qi, [
         N(p, {
           name: "down",
           size: 12
         })
       ])) : P("", !0)
     ], 2)) : P("", !0),
-    t.illustrations && t.illustrations.length > 0 ? (u(), ye(n, {
+    t.illustrations && t.illustrations.length > 0 ? (u(), ye(o, {
       key: 2,
       illustrations: t.illustrations
     }, null, 8, ["illustrations"])) : P("", !0),
@@ -4225,7 +4226,7 @@ function qi(s, e, t, l, o, a) {
     }, null, 8, ["statusChanges"])) : P("", !0)
   ], 6);
 }
-const Wi = /* @__PURE__ */ pe(zi, [["render", qi], ["__scopeId", "data-v-f093e7df"]]), Yi = {
+const Yi = /* @__PURE__ */ pe(ji, [["render", Wi], ["__scopeId", "data-v-f093e7df"]]), Zi = {
   components: { AppIcon: _e },
   name: "DiceRoll",
   props: {
@@ -4293,10 +4294,10 @@ const Wi = /* @__PURE__ */ pe(zi, [["render", qi], ["__scopeId", "data-v-f093e7d
       })), this.animated ? this.processedRolls.forEach((t, l) => {
         if (t.type === "choice" || t.type === "judgement")
           return;
-        const o = setTimeout(() => {
+        const r = setTimeout(() => {
           e === this._animGen && this.animateRoll(l, e);
         }, l * 200);
-        this._animTimers.push(o);
+        this._animTimers.push(r);
       }) : this.processedRolls.forEach((t) => {
         t.showResult = !0;
       });
@@ -4307,8 +4308,8 @@ const Wi = /* @__PURE__ */ pe(zi, [["render", qi], ["__scopeId", "data-v-f093e7d
       t.isAnimating = !0, this.playSoundEffect && this.playDiceSound();
       const l = setTimeout(() => {
         if (e !== this._animGen) return;
-        const o = this.processedRolls[s];
-        o && (o.isAnimating = !1, o.showResult = !0);
+        const r = this.processedRolls[s];
+        r && (r.isAnimating = !1, r.showResult = !0);
       }, this.animationDuration);
       this._animTimers.push(l);
     },
@@ -4326,55 +4327,55 @@ const Wi = /* @__PURE__ */ pe(zi, [["render", qi], ["__scopeId", "data-v-f093e7d
     this.clearAnimTimers(), this._animGen++, this.audioContext && this.audioContext.state !== "closed" && this.audioContext.close().catch(() => {
     });
   }
-}, Zi = { class: "dice-roll-container" }, Xi = { class: "dice-icon-wrapper" }, Ki = { class: "dice-result choice-result" }, Ji = ["onClick", "title", "aria-label", "aria-expanded"], Qi = {
+}, Xi = { class: "dice-roll-container" }, Ki = { class: "dice-icon-wrapper" }, Ji = { class: "dice-result choice-result" }, Qi = ["onClick", "title", "aria-label", "aria-expanded"], el = {
   key: 0,
   class: "dice-details choice-options"
-}, el = {
+}, tl = {
   key: 1,
   class: "ougi-full-wrapper"
-}, tl = { class: "ougi-header" }, sl = { class: "dice-icon-wrapper" }, ol = { class: "ougi-info" }, nl = { class: "ougi-title-line" }, rl = { class: "ougi-name" }, al = { class: "ougi-main-name" }, il = { class: "ougi-info-table" }, ll = { key: 0 }, cl = { key: 0 }, ul = { class: "ougi-presentation" }, dl = { key: 1 }, hl = { key: 2 }, pl = { class: "ougi-ninpou" }, ml = { class: "shinobigami-full-wrapper" }, fl = { class: "shinobigami-header" }, gl = { class: "dice-icon-wrapper" }, yl = { class: "shinobigami-info" }, bl = { class: "shinobigami-main" }, vl = { class: "dice-formula" }, _l = { class: "shinobigami-result-line" }, wl = {
+}, sl = { class: "ougi-header" }, rl = { class: "dice-icon-wrapper" }, ol = { class: "ougi-info" }, nl = { class: "ougi-title-line" }, al = { class: "ougi-name" }, il = { class: "ougi-main-name" }, ll = { class: "ougi-info-table" }, cl = { key: 0 }, ul = { key: 0 }, dl = { class: "ougi-presentation" }, hl = { key: 1 }, pl = { key: 2 }, ml = { class: "ougi-ninpou" }, fl = { class: "shinobigami-full-wrapper" }, gl = { class: "shinobigami-header" }, yl = { class: "dice-icon-wrapper" }, bl = { class: "shinobigami-info" }, vl = { class: "shinobigami-main" }, _l = { class: "dice-formula" }, wl = { class: "shinobigami-result-line" }, xl = {
   key: 1,
   class: "dice-placeholder"
-}, xl = { class: "shinobigami-judgement" }, kl = {
+}, kl = { class: "shinobigami-judgement" }, Tl = {
   key: 0,
   class: "shinobigami-info-table"
-}, Tl = { key: 0 }, Cl = { key: 1 }, Al = { key: 2 }, Sl = { key: 3 }, Pl = { key: 4 }, El = ["onClick", "title", "aria-label", "aria-expanded"], Ml = {
+}, Cl = { key: 0 }, Al = { key: 1 }, Sl = { key: 2 }, Pl = { key: 3 }, El = { key: 4 }, Ml = ["onClick", "title", "aria-label", "aria-expanded"], Dl = {
   key: 0,
   class: "dice-details shinobigami-details"
-}, Dl = { class: "shinobigami-formula" }, Bl = { class: "shinobigami-rolls" }, Rl = { key: 0 }, Ol = { key: 1 }, Il = { class: "judgement-header" }, Ll = { class: "dice-icon-wrapper" }, Nl = { class: "judgement-info" }, $l = { class: "judgement-main" }, Hl = { class: "dice-formula" }, Ul = { class: "judgement-result-line" }, Fl = {
+}, Rl = { class: "shinobigami-formula" }, Bl = { class: "shinobigami-rolls" }, Ol = { key: 0 }, Il = { key: 1 }, Ll = { class: "judgement-header" }, Nl = { class: "dice-icon-wrapper" }, $l = { class: "judgement-info" }, Hl = { class: "judgement-main" }, Fl = { class: "dice-formula" }, Ul = { class: "judgement-result-line" }, zl = {
   key: 1,
   class: "dice-placeholder"
-}, zl = { class: "judgement-text" }, jl = ["onClick", "title", "aria-label", "aria-expanded"], Vl = {
+}, jl = { class: "judgement-text" }, Vl = ["onClick", "title", "aria-label", "aria-expanded"], Gl = {
   key: 0,
   class: "dice-details"
-}, Gl = { class: "dice-formula" }, ql = {
+}, ql = { class: "dice-formula" }, Wl = {
   key: 1,
   class: "dice-placeholder"
-}, Wl = {
+}, Yl = {
   key: 0,
   class: "dice-details-wrapper"
-}, Yl = ["onClick", "title"], Zl = {
+}, Zl = ["onClick", "title"], Xl = {
   key: 0,
   class: "dice-details"
 };
-function Xl(s, e, t, l, o, a) {
+function Kl(s, e, t, l, r, a) {
   const p = K("AppIcon");
-  return u(), h("div", Zi, [
-    N(vo, {
+  return u(), h("div", Xi, [
+    N(vr, {
       name: "dice-list",
       tag: "div",
       class: "dice-rolls"
     }, {
       default: ie(() => [
-        (u(!0), h(re, null, Te(o.processedRolls, (n, c) => (u(), h("div", {
-          key: `${n.formula}-${c}`,
+        (u(!0), h(ne, null, Te(r.processedRolls, (o, c) => (u(), h("div", {
+          key: `${o.formula}-${c}`,
           class: ve(["dice-roll", [
-            { "is-animating": n.isAnimating },
-            `roll-type-${n.type}`
+            { "is-animating": o.isAnimating },
+            `roll-type-${o.type}`
           ]])
         }, [
-          n.type === "choice" ? (u(), h(re, { key: 0 }, [
-            i("div", Xi, [
+          o.type === "choice" ? (u(), h(ne, { key: 0 }, [
+            i("div", Ki, [
               N(p, {
                 name: "target",
                 size: 18,
@@ -4383,23 +4384,23 @@ function Xl(s, e, t, l, o, a) {
             ]),
             e[0] || (e[0] = i("span", { class: "dice-formula" }, "선택", -1)),
             e[1] || (e[1] = i("span", { class: "dice-arrow" }, "→", -1)),
-            i("span", Ki, w(n.result), 1),
+            i("span", Ji, w(o.result), 1),
             i("button", {
               class: "details-toggle",
               onClick: (f) => a.toggleDetails(c),
-              title: n.showDetails ? "옵션 숨기기" : "옵션 보기",
-              "aria-label": n.showDetails ? "옵션 숨기기" : "옵션 보기",
-              "aria-expanded": n.showDetails
+              title: o.showDetails ? "옵션 숨기기" : "옵션 보기",
+              "aria-label": o.showDetails ? "옵션 숨기기" : "옵션 보기",
+              "aria-expanded": o.showDetails
             }, [
               N(p, {
-                name: n.showDetails ? "down" : "play",
+                name: o.showDetails ? "down" : "play",
                 size: 12
               }, null, 8, ["name"])
-            ], 8, Ji),
+            ], 8, Qi),
             N(ce, { name: "details-expand" }, {
               default: ie(() => [
-                n.showDetails ? (u(), h("div", Qi, [
-                  (u(!0), h(re, null, Te(n.options, (f, m) => (u(), h("span", {
+                o.showDetails ? (u(), h("div", el, [
+                  (u(!0), h(ne, null, Te(o.options, (f, m) => (u(), h("span", {
                     key: m,
                     class: "choice-option"
                   }, w(f), 1))), 128))
@@ -4407,9 +4408,9 @@ function Xl(s, e, t, l, o, a) {
               ]),
               _: 2
             }, 1024)
-          ], 64)) : n.type === "ougi" ? (u(), h("div", el, [
-            i("div", tl, [
-              i("div", sl, [
+          ], 64)) : o.type === "ougi" ? (u(), h("div", tl, [
+            i("div", sl, [
+              i("div", rl, [
                 N(p, {
                   name: "star",
                   size: 20,
@@ -4422,94 +4423,94 @@ function Xl(s, e, t, l, o, a) {
                     class: "ougi-character",
                     style: be({ color: t.characterColor })
                   }, w(t.characterName), 5),
-                  i("span", rl, "【奥義: " + w(n.ougiType) + "】", 1),
-                  i("span", al, w(n.ougiName), 1)
+                  i("span", al, "【奥義: " + w(o.ougiType) + "】", 1),
+                  i("span", il, w(o.ougiName), 1)
                 ]),
-                i("table", il, [
+                i("table", ll, [
                   i("tbody", null, [
                     i("tr", null, [
                       e[2] || (e[2] = i("th", null, "지정 특기", -1)),
                       i("td", null, [
-                        (u(!0), h(re, null, Te(n.skills, (f, m) => (u(), h("span", {
+                        (u(!0), h(ne, null, Te(o.skills, (f, m) => (u(), h("span", {
                           key: m,
                           class: "ougi-skill"
                         }, [
                           Ls(" 《" + w(f) + "》", 1),
-                          m < n.skills.length - 1 ? (u(), h("span", ll, ", ")) : P("", !0)
+                          m < o.skills.length - 1 ? (u(), h("span", cl, ", ")) : P("", !0)
                         ]))), 128))
                       ])
                     ]),
-                    n.presentation ? (u(), h("tr", cl, [
+                    o.presentation ? (u(), h("tr", ul, [
                       e[3] || (e[3] = i("th", null, "연출", -1)),
-                      i("td", ul, w(n.presentation), 1)
+                      i("td", dl, w(o.presentation), 1)
                     ])) : P("", !0),
-                    n.ougiEffect ? (u(), h("tr", dl, [
+                    o.ougiEffect ? (u(), h("tr", hl, [
                       e[4] || (e[4] = i("th", null, "효과", -1)),
-                      i("td", null, w(n.ougiEffect), 1)
+                      i("td", null, w(o.ougiEffect), 1)
                     ])) : P("", !0),
-                    n.ninpouInfo ? (u(), h("tr", hl, [
+                    o.ninpouInfo ? (u(), h("tr", pl, [
                       e[5] || (e[5] = i("th", null, "인법", -1)),
-                      i("td", pl, w(n.ninpouInfo), 1)
+                      i("td", ml, w(o.ninpouInfo), 1)
                     ])) : P("", !0)
                   ])
                 ])
               ])
             ])
-          ])) : n.type === "shinobigami" ? (u(), h(re, { key: 2 }, [
-            i("div", ml, [
-              i("div", fl, [
-                i("div", gl, [
+          ])) : o.type === "shinobigami" ? (u(), h(ne, { key: 2 }, [
+            i("div", fl, [
+              i("div", gl, [
+                i("div", yl, [
                   N(p, {
                     name: "bolt",
                     size: 18,
                     class: "dice-icon"
                   })
                 ]),
-                i("div", yl, [
-                  i("div", bl, [
+                i("div", bl, [
+                  i("div", vl, [
                     i("span", {
                       class: "shinobigami-character",
                       style: be({ color: t.characterColor })
                     }, w(t.characterName), 5),
-                    i("span", vl, "【" + w(n.checkName) + "】", 1)
+                    i("span", _l, "【" + w(o.checkName) + "】", 1)
                   ]),
-                  i("div", _l, [
+                  i("div", wl, [
                     e[6] || (e[6] = i("span", { class: "dice-arrow" }, "→", -1)),
                     N(ce, {
                       name: "dice-result",
                       mode: "out-in"
                     }, {
                       default: ie(() => [
-                        n.showResult ? (u(), h("span", {
-                          key: n.result,
+                        o.showResult ? (u(), h("span", {
+                          key: o.result,
                           class: "dice-result"
-                        }, w(n.result), 1)) : (u(), h("span", wl, "???"))
+                        }, w(o.result), 1)) : (u(), h("span", xl, "???"))
                       ]),
                       _: 2
                     }, 1024),
-                    i("span", xl, w(n.judgement), 1)
+                    i("span", kl, w(o.judgement), 1)
                   ]),
-                  n.additionalInfo ? (u(), h("table", kl, [
+                  o.additionalInfo ? (u(), h("table", Tl, [
                     i("tbody", null, [
-                      n.additionalInfo.type ? (u(), h("tr", Tl, [
+                      o.additionalInfo.type ? (u(), h("tr", Cl, [
                         e[7] || (e[7] = i("th", null, "타입", -1)),
-                        i("td", null, w(n.additionalInfo.type), 1)
+                        i("td", null, w(o.additionalInfo.type), 1)
                       ])) : P("", !0),
-                      n.additionalInfo.range ? (u(), h("tr", Cl, [
+                      o.additionalInfo.range ? (u(), h("tr", Al, [
                         e[8] || (e[8] = i("th", null, "간격", -1)),
-                        i("td", null, w(n.additionalInfo.range.replace("간격:", "").trim()), 1)
+                        i("td", null, w(o.additionalInfo.range.replace("간격:", "").trim()), 1)
                       ])) : P("", !0),
-                      n.additionalInfo.cost ? (u(), h("tr", Al, [
+                      o.additionalInfo.cost ? (u(), h("tr", Sl, [
                         e[9] || (e[9] = i("th", null, "코스트", -1)),
-                        i("td", null, w(n.additionalInfo.cost.replace("코스트:", "").trim()), 1)
+                        i("td", null, w(o.additionalInfo.cost.replace("코스트:", "").trim()), 1)
                       ])) : P("", !0),
-                      n.additionalInfo.skill ? (u(), h("tr", Sl, [
+                      o.additionalInfo.skill ? (u(), h("tr", Pl, [
                         e[10] || (e[10] = i("th", null, "특기", -1)),
-                        i("td", null, w(n.additionalInfo.skill), 1)
+                        i("td", null, w(o.additionalInfo.skill), 1)
                       ])) : P("", !0),
-                      n.additionalInfo.description ? (u(), h("tr", Pl, [
+                      o.additionalInfo.description ? (u(), h("tr", El, [
                         e[11] || (e[11] = i("th", null, "설명", -1)),
-                        i("td", null, w(n.additionalInfo.description), 1)
+                        i("td", null, w(o.additionalInfo.description), 1)
                       ])) : P("", !0)
                     ])
                   ])) : P("", !0)
@@ -4519,42 +4520,42 @@ function Xl(s, e, t, l, o, a) {
             i("button", {
               class: "details-toggle",
               onClick: (f) => a.toggleDetails(c),
-              title: n.showDetails ? "상세 숨기기" : "상세 보기",
-              "aria-label": n.showDetails ? "상세 숨기기" : "상세 보기",
-              "aria-expanded": n.showDetails
+              title: o.showDetails ? "상세 숨기기" : "상세 보기",
+              "aria-label": o.showDetails ? "상세 숨기기" : "상세 보기",
+              "aria-expanded": o.showDetails
             }, [
               N(p, {
-                name: n.showDetails ? "down" : "play",
+                name: o.showDetails ? "down" : "play",
                 size: 12
               }, null, 8, ["name"])
-            ], 8, El),
+            ], 8, Ml),
             N(ce, { name: "details-expand" }, {
               default: ie(() => [
-                n.showDetails ? (u(), h("div", Ml, [
-                  i("div", Dl, w(n.command), 1),
+                o.showDetails ? (u(), h("div", Dl, [
+                  i("div", Rl, w(o.command), 1),
                   i("div", Bl, [
-                    n.diceExpression ? (u(), h("span", Rl, "주사위: " + w(n.diceExpression), 1)) : (u(), h("span", Ol, "개별 주사위: " + w(n.diceRolls), 1))
+                    o.diceExpression ? (u(), h("span", Ol, "주사위: " + w(o.diceExpression), 1)) : (u(), h("span", Il, "개별 주사위: " + w(o.diceRolls), 1))
                   ])
                 ])) : P("", !0)
               ]),
               _: 2
             }, 1024)
-          ], 64)) : n.type === "judgement" ? (u(), h(re, { key: 3 }, [
-            i("div", Il, [
-              i("div", Ll, [
+          ], 64)) : o.type === "judgement" ? (u(), h(ne, { key: 3 }, [
+            i("div", Ll, [
+              i("div", Nl, [
                 N(p, {
                   name: "scale",
                   size: 18,
                   class: "dice-icon"
                 })
               ]),
-              i("div", Nl, [
-                i("div", $l, [
+              i("div", $l, [
+                i("div", Hl, [
                   i("span", {
                     class: "judgement-character",
                     style: be({ color: t.characterColor })
                   }, w(t.characterName), 5),
-                  i("span", Hl, w(n.checkName), 1)
+                  i("span", Fl, w(o.checkName), 1)
                 ]),
                 i("div", Ul, [
                   e[12] || (e[12] = i("span", { class: "dice-arrow" }, "→", -1)),
@@ -4563,38 +4564,38 @@ function Xl(s, e, t, l, o, a) {
                     mode: "out-in"
                   }, {
                     default: ie(() => [
-                      n.showResult ? (u(), h("span", {
-                        key: n.result,
+                      o.showResult ? (u(), h("span", {
+                        key: o.result,
                         class: "dice-result"
-                      }, w(n.result), 1)) : (u(), h("span", Fl, "???"))
+                      }, w(o.result), 1)) : (u(), h("span", zl, "???"))
                     ]),
                     _: 2
                   }, 1024),
-                  i("span", zl, w(n.judgement), 1)
+                  i("span", jl, w(o.judgement), 1)
                 ])
               ])
             ]),
             i("button", {
               class: "details-toggle",
               onClick: (f) => a.toggleDetails(c),
-              title: n.showDetails ? "상세 숨기기" : "상세 보기",
-              "aria-label": n.showDetails ? "상세 숨기기" : "상세 보기",
-              "aria-expanded": n.showDetails
+              title: o.showDetails ? "상세 숨기기" : "상세 보기",
+              "aria-label": o.showDetails ? "상세 숨기기" : "상세 보기",
+              "aria-expanded": o.showDetails
             }, [
               N(p, {
-                name: n.showDetails ? "down" : "play",
+                name: o.showDetails ? "down" : "play",
                 size: 12
               }, null, 8, ["name"])
-            ], 8, jl),
+            ], 8, Vl),
             N(ce, { name: "details-expand" }, {
               default: ie(() => [
-                n.showDetails ? (u(), h("div", Vl, w(n.formula), 1)) : P("", !0)
+                o.showDetails ? (u(), h("div", Gl, w(o.formula), 1)) : P("", !0)
               ]),
               _: 2
             }, 1024)
-          ], 64)) : (u(), h(re, { key: 4 }, [
+          ], 64)) : (u(), h(ne, { key: 4 }, [
             i("div", {
-              class: ve(["dice-icon-wrapper", { "is-rolling": n.isAnimating }])
+              class: ve(["dice-icon-wrapper", { "is-rolling": o.isAnimating }])
             }, [
               N(p, {
                 name: "cube",
@@ -4602,34 +4603,34 @@ function Xl(s, e, t, l, o, a) {
                 class: "dice-icon"
               })
             ], 2),
-            i("span", Gl, w(n.formula), 1),
+            i("span", ql, w(o.formula), 1),
             e[13] || (e[13] = i("span", { class: "dice-arrow" }, "→", -1)),
             N(ce, {
               name: "dice-result",
               mode: "out-in"
             }, {
               default: ie(() => [
-                n.showResult ? (u(), h("span", {
-                  key: n.result,
+                o.showResult ? (u(), h("span", {
+                  key: o.result,
                   class: "dice-result"
-                }, w(n.result), 1)) : (u(), h("span", ql, "???"))
+                }, w(o.result), 1)) : (u(), h("span", Wl, "???"))
               ]),
               _: 2
             }, 1024),
-            n.type === "dx3" && n.diceRolls ? (u(), h("div", Wl, [
+            o.type === "dx3" && o.diceRolls ? (u(), h("div", Yl, [
               i("button", {
                 class: "details-toggle",
                 onClick: (f) => a.toggleDetails(c),
-                title: n.showDetails ? "상세 숨기기" : "상세 보기"
+                title: o.showDetails ? "상세 숨기기" : "상세 보기"
               }, [
                 N(p, {
-                  name: n.showDetails ? "down" : "play",
+                  name: o.showDetails ? "down" : "play",
                   size: 12
                 }, null, 8, ["name"])
-              ], 8, Yl),
+              ], 8, Zl),
               N(ce, { name: "details-expand" }, {
                 default: ie(() => [
-                  n.showDetails ? (u(), h("div", Zl, w(n.diceRolls), 1)) : P("", !0)
+                  o.showDetails ? (u(), h("div", Xl, w(o.diceRolls), 1)) : P("", !0)
                 ]),
                 _: 2
               }, 1024)
@@ -4641,9 +4642,9 @@ function Xl(s, e, t, l, o, a) {
     })
   ]);
 }
-const Kl = /* @__PURE__ */ pe(Yi, [["render", Xl], ["__scopeId", "data-v-2975c275"]]), Jl = {
+const Jl = /* @__PURE__ */ pe(Zi, [["render", Kl], ["__scopeId", "data-v-2975c275"]]), Ql = {
   name: "PlayerStage",
-  components: { AppIcon: _e, CharacterDisplay: Ua, DialogBox: Wi, DiceRoll: Kl, DXCombo: Gs },
+  components: { AppIcon: _e, CharacterDisplay: Ua, DialogBox: Yi, DiceRoll: Jl, DXCombo: qs },
   props: {
     currentStep: { type: Object, default: null },
     characters: { type: Object, default: () => ({}) },
@@ -4708,40 +4709,40 @@ const Kl = /* @__PURE__ */ pe(Yi, [["render", Xl], ["__scopeId", "data-v-2975c27
       return s.type === "system" ? s.character.name || "시스템" : s.type === "narrator" ? "" : s.character.name;
     }
   }
-}, Ql = {
+}, ec = {
   ref: "stage",
   class: "player-stage"
-}, ec = {
+}, tc = {
   key: 1,
   ref: "dialogRegion",
   class: "dialog-wrapper",
   tabindex: "0",
   role: "region",
   "aria-label": "대사"
-}, tc = {
+}, sc = {
   key: 1,
   class: "dialog-placeholder"
-}, sc = { class: "dice-overlay-hint" }, oc = { class: "combo-overlay-header" }, nc = { class: "combo-character-info" }, rc = { class: "dice-overlay-hint" }, ac = { class: "scene-description-content" }, ic = { class: "scene-description-header" }, lc = { class: "scene-number" }, cc = { class: "scene-title" }, uc = {
+}, rc = { class: "dice-overlay-hint" }, oc = { class: "combo-overlay-header" }, nc = { class: "combo-character-info" }, ac = { class: "dice-overlay-hint" }, ic = { class: "scene-description-content" }, lc = { class: "scene-description-header" }, cc = { class: "scene-number" }, uc = { class: "scene-title" }, dc = {
   key: 0,
   class: "scene-pcs"
-}, dc = { class: "scene-pcs-value" }, hc = {
+}, hc = { class: "scene-pcs-value" }, pc = {
   key: 1,
   class: "scene-description-text"
 };
-function pc(s, e, t, l, o, a) {
-  const p = K("CharacterDisplay"), n = K("DialogBox"), c = K("DiceRoll"), f = K("AppIcon"), m = K("DXCombo");
-  return u(), h(re, null, [
-    i("div", Ql, [
+function mc(s, e, t, l, r, a) {
+  const p = K("CharacterDisplay"), o = K("DialogBox"), c = K("DiceRoll"), f = K("AppIcon"), m = K("DXCombo");
+  return u(), h(ne, null, [
+    i("div", ec, [
       t.currentStep && !t.currentStep.isSceneDescription && t.characters ? (u(), ye(p, {
         key: 0,
         ref: "portrait",
-        style: be({ "--portrait-dialog-inset": o.portraitInset + "px" }),
+        style: be({ "--portrait-dialog-inset": r.portraitInset + "px" }),
         "current-step": t.currentStep,
         characters: t.characters,
         layout: "single"
       }, null, 8, ["style", "current-step", "characters"])) : P("", !0),
-      !t.currentStep || t.currentStep.type !== "scene-description" ? (u(), h("div", ec, [
-        t.currentStep && t.currentStep.character ? (u(), ye(n, {
+      !t.currentStep || t.currentStep.type !== "scene-description" ? (u(), h("div", tc, [
+        t.currentStep && t.currentStep.character ? (u(), ye(o, {
           key: 0,
           "step-key": t.dialogStepKey,
           "step-type": t.currentStep.type || "dialogue",
@@ -4756,7 +4757,7 @@ function pc(s, e, t, l, o, a) {
           "has-overlay": t.hasActiveOverlay,
           onAdvance: e[0] || (e[0] = (_) => s.$emit("advance")),
           onTypingComplete: e[1] || (e[1] = (_) => s.$emit("typing-complete"))
-        }, null, 8, ["step-key", "step-type", "character-name", "character-color", "text", "status-changes", "illustrations", "typing-speed", "auto-play-speed", "auto-advance", "has-overlay"])) : (u(), h("div", tc, [
+        }, null, 8, ["step-key", "step-type", "character-name", "character-color", "text", "status-changes", "illustrations", "typing-speed", "auto-play-speed", "auto-advance", "has-overlay"])) : (u(), h("div", sc, [
           i("p", null, w(t.placeholderText), 1)
         ]))
       ], 512)) : P("", !0)
@@ -4780,7 +4781,7 @@ function pc(s, e, t, l, o, a) {
               animated: !0,
               "play-sound-effect": !1
             }, null, 8, ["dice-rolls", "character-name", "character-color"]),
-            i("div", sc, [
+            i("div", rc, [
               N(f, {
                 name: "pointer",
                 size: 14
@@ -4813,7 +4814,7 @@ function pc(s, e, t, l, o, a) {
               ])
             ]),
             N(m, { dxCombos: t.currentDxCombos }, null, 8, ["dxCombos"]),
-            i("div", rc, [
+            i("div", ac, [
               N(f, {
                 name: "pointer",
                 size: 14
@@ -4832,16 +4833,16 @@ function pc(s, e, t, l, o, a) {
           class: "scene-description-overlay",
           onClick: e[6] || (e[6] = (_) => s.$emit("close-scene-description"))
         }, [
-          i("div", ac, [
-            i("div", ic, [
-              i("span", lc, "씬 " + w(t.sceneDescriptionData.number), 1),
-              i("span", cc, w(t.sceneDescriptionData.title), 1)
+          i("div", ic, [
+            i("div", lc, [
+              i("span", cc, "씬 " + w(t.sceneDescriptionData.number), 1),
+              i("span", uc, w(t.sceneDescriptionData.title), 1)
             ]),
-            t.sceneDescriptionData.pcs ? (u(), h("div", uc, [
+            t.sceneDescriptionData.pcs ? (u(), h("div", dc, [
               e[9] || (e[9] = i("span", { class: "scene-pcs-label" }, "PC:", -1)),
-              i("span", dc, w(t.sceneDescriptionData.pcs), 1)
+              i("span", hc, w(t.sceneDescriptionData.pcs), 1)
             ])) : P("", !0),
-            t.sceneDescriptionData.description ? (u(), h("div", hc, w(t.sceneDescriptionData.description), 1)) : P("", !0),
+            t.sceneDescriptionData.description ? (u(), h("div", pc, w(t.sceneDescriptionData.description), 1)) : P("", !0),
             e[10] || (e[10] = i("div", { class: "scene-description-hint" }, "클릭하여 닫기", -1))
           ])
         ])) : P("", !0)
@@ -4850,15 +4851,15 @@ function pc(s, e, t, l, o, a) {
     })
   ], 64);
 }
-const mc = /* @__PURE__ */ pe(Jl, [["render", pc], ["__scopeId", "data-v-f79cf6e4"]]), fc = {
+const fc = /* @__PURE__ */ pe(Ql, [["render", mc], ["__scopeId", "data-v-f79cf6e4"]]), gc = {
   name: "VNLogEmbedPlayer",
   components: {
     AppIcon: _e,
-    PlaybackControls: zn,
-    SceneSelectorModal: cr,
-    BGMPlayer: xr,
-    HandoutDisplay: ya,
-    PlayerStage: mc
+    PlaybackControls: zo,
+    SceneSelectorModal: un,
+    BGMPlayer: kn,
+    HandoutDisplay: ba,
+    PlayerStage: fc
   },
   props: {
     vnData: {
@@ -4958,7 +4959,7 @@ const mc = /* @__PURE__ */ pe(Jl, [["render", pc], ["__scopeId", "data-v-f79cf6e
       if (!s) return;
       Ba(s, { ...this.theme, bgImageUrl: this.theme.bgImageUrl || this.theme.bgImage });
       const e = this.currentStepData?.effects;
-      e?.background && zt(s, e.background, e.backgroundOpacity), Ma(s, this.vnData.customCSS);
+      e?.background && zt(s, e.background, e.backgroundOpacity), Da(s, this.vnData.customCSS);
     },
     handleAdvance() {
       this.nextStep();
@@ -5096,17 +5097,17 @@ const mc = /* @__PURE__ */ pe(Jl, [["render", pc], ["__scopeId", "data-v-f79cf6e
     }
   },
   beforeUnmount() {
-    Vs(this.$refs.embedRoot), this.stopAutoPlay(), this.sfxAudio && (this.sfxAudio.pause(), this.sfxAudio = null);
+    Gs(this.$refs.embedRoot), this.stopAutoPlay(), this.sfxAudio && (this.sfxAudio.pause(), this.sfxAudio = null);
   }
-}, gc = {
+}, yc = {
   class: "vnlog-embed-player",
   ref: "embedRoot"
-}, yc = { class: "player-container" }, bc = { class: "player-header" }, vc = { class: "log-title" }, _c = { class: "header-buttons" };
-function wc(s, e, t, l, o, a) {
-  const p = K("AppIcon"), n = K("PlayerStage"), c = K("HandoutDisplay"), f = K("PlaybackControls"), m = K("SceneSelectorModal"), _ = K("BGMPlayer");
-  return u(), h("div", gc, [
-    i("div", yc, [
-      i("div", bc, [
+}, bc = { class: "player-container" }, vc = { class: "player-header" }, _c = { class: "log-title" }, wc = { class: "header-buttons" };
+function xc(s, e, t, l, r, a) {
+  const p = K("AppIcon"), o = K("PlayerStage"), c = K("HandoutDisplay"), f = K("PlaybackControls"), m = K("SceneSelectorModal"), _ = K("BGMPlayer");
+  return u(), h("div", yc, [
+    i("div", bc, [
+      i("div", vc, [
         t.homeUrl ? (u(), h("button", {
           key: 0,
           onClick: e[0] || (e[0] = (...b) => a.goHome && a.goHome(...b)),
@@ -5119,8 +5120,8 @@ function wc(s, e, t, l, o, a) {
             size: 20
           })
         ])) : P("", !0),
-        i("h2", vc, w(a.title), 1),
-        i("div", _c, [
+        i("h2", _c, w(a.title), 1),
+        i("div", wc, [
           i("button", {
             onClick: e[1] || (e[1] = (...b) => a.openSceneSelector && a.openSceneSelector(...b)),
             class: "header-button",
@@ -5135,34 +5136,34 @@ function wc(s, e, t, l, o, a) {
           ])
         ])
       ]),
-      N(n, {
+      N(o, {
         "current-step": a.currentStepData,
         characters: t.vnData.characters,
         "dialog-step-key": a.dialogStepKey,
         "typing-speed": 30,
-        "auto-play-speed": o.autoPlaySpeed,
-        "auto-play-enabled": o.isAutoPlaying,
+        "auto-play-speed": r.autoPlaySpeed,
+        "auto-play-enabled": r.isAutoPlaying,
         "has-active-overlay": a.hasOverlay,
         "placeholder-text": "클릭하여 시작",
-        "show-dice-overlay": o.showDiceOverlay,
-        "current-dice-rolls": o.currentDiceRolls,
-        "dice-character-name": o.diceCharacterName,
-        "dice-character-color": o.diceCharacterColor,
-        "show-combo-overlay": o.showComboOverlay,
-        "current-dx-combos": o.currentDXCombos,
-        "combo-character-name": o.comboCharacterName,
-        "combo-character-color": o.comboCharacterColor,
-        "show-scene-description": o.showSceneDescription,
-        "scene-description-data": o.sceneDescriptionData,
+        "show-dice-overlay": r.showDiceOverlay,
+        "current-dice-rolls": r.currentDiceRolls,
+        "dice-character-name": r.diceCharacterName,
+        "dice-character-color": r.diceCharacterColor,
+        "show-combo-overlay": r.showComboOverlay,
+        "current-dx-combos": r.currentDXCombos,
+        "combo-character-name": r.comboCharacterName,
+        "combo-character-color": r.comboCharacterColor,
+        "show-scene-description": r.showSceneDescription,
+        "scene-description-data": r.sceneDescriptionData,
         onAdvance: a.handleAdvance,
         onCloseDiceOverlay: a.closeDiceOverlay,
         onCloseComboOverlay: a.closeComboOverlay,
         onCloseSceneDescription: a.closeSceneDescription
       }, null, 8, ["current-step", "characters", "dialog-step-key", "auto-play-speed", "auto-play-enabled", "has-active-overlay", "show-dice-overlay", "current-dice-rolls", "dice-character-name", "dice-character-color", "show-combo-overlay", "current-dx-combos", "combo-character-name", "combo-character-color", "show-scene-description", "scene-description-data", "onAdvance", "onCloseDiceOverlay", "onCloseComboOverlay", "onCloseSceneDescription"]),
-      o.currentHandout ? (u(), ye(c, {
+      r.currentHandout ? (u(), ye(c, {
         key: 0,
-        handout: o.currentHandout,
-        "is-visible": o.showHandout,
+        handout: r.currentHandout,
+        "is-visible": r.showHandout,
         onClose: a.closeHandout
       }, null, 8, ["handout", "is-visible", "onClose"])) : P("", !0),
       N(f, {
@@ -5170,8 +5171,8 @@ function wc(s, e, t, l, o, a) {
         "total-steps": a.totalSteps,
         "has-previous-step": a.currentStepNumber > 1,
         "has-next-step": a.currentStepNumber < a.totalSteps,
-        "auto-play-enabled": o.isAutoPlaying,
-        "auto-play-speed": o.autoPlaySpeed,
+        "auto-play-enabled": r.isAutoPlaying,
+        "auto-play-speed": r.autoPlaySpeed,
         "current-scene-name": a.currentSceneName,
         onPrevious: a.previousStep,
         onNext: a.nextStep,
@@ -5179,70 +5180,70 @@ function wc(s, e, t, l, o, a) {
         onChangeSpeed: a.changeAutoPlaySpeed
       }, null, 8, ["current-step-number", "total-steps", "has-previous-step", "has-next-step", "auto-play-enabled", "auto-play-speed", "current-scene-name", "onPrevious", "onNext", "onToggleAutoplay", "onChangeSpeed"])
     ]),
-    o.showSceneSelector ? (u(), ye(m, {
+    r.showSceneSelector ? (u(), ye(m, {
       key: 0,
-      "is-visible": o.showSceneSelector,
+      "is-visible": r.showSceneSelector,
       scenes: t.vnData.scenes,
-      "current-scene-index": o.currentSceneIndex,
-      "current-step-index": o.currentStepIndex,
+      "current-scene-index": r.currentSceneIndex,
+      "current-step-index": r.currentStepIndex,
       onClose: a.closeSceneSelector,
       onGoToStep: a.handleGoToStep
     }, null, 8, ["is-visible", "scenes", "current-scene-index", "current-step-index", "onClose", "onGoToStep"])) : P("", !0),
-    o.bgmSettings.url ? (u(), ye(_, {
+    r.bgmSettings.url ? (u(), ye(_, {
       key: 1,
-      "bgm-url": o.bgmSettings.url,
-      "bgm-type": o.bgmSettings.type,
-      volume: o.bgmSettings.volume,
-      "auto-play": o.bgmSettings.autoPlay
+      "bgm-url": r.bgmSettings.url,
+      "bgm-type": r.bgmSettings.type,
+      volume: r.bgmSettings.volume,
+      "auto-play": r.bgmSettings.autoPlay
     }, null, 8, ["bgm-url", "bgm-type", "volume", "auto-play"])) : P("", !0)
   ], 512);
 }
-const xc = /* @__PURE__ */ pe(fc, [["render", wc], ["__scopeId", "data-v-2226bfaa"]]);
-class Tc {
+const kc = /* @__PURE__ */ pe(gc, [["render", xc], ["__scopeId", "data-v-2226bfaa"]]);
+class Cc {
   /**
    * HTML 로그 파싱
    * @param {string} htmlContent - HTML 형식의 로그 내용
    * @returns {Object} VN 데이터 구조
    */
   static parseHTMLLog(e) {
-    const l = new DOMParser().parseFromString(e, "text/html"), o = {
+    const l = new DOMParser().parseFromString(e, "text/html"), r = {
       title: "코코포리아 로그",
       scenes: [],
       characters: {},
       handouts: []
     }, a = l.querySelectorAll(".ccl_tab");
     if (a.length > 0)
-      a.forEach((p, n) => {
-        const c = this.parseScene(p, n);
-        c.steps.length > 0 && o.scenes.push(c), this.collectCharacters(p, o.characters);
+      a.forEach((p, o) => {
+        const c = this.parseScene(p, o);
+        c.steps.length > 0 && r.scenes.push(c), this.collectCharacters(p, r.characters);
       });
     else {
       const p = l.querySelector(".ccfolia_wrap");
       if (p && p.querySelectorAll(".gap").length > 0) {
-        const n = this.parseCCLogCustom(p);
-        n.steps.length > 0 && o.scenes.push(n), this.collectCharactersCustom(p, o.characters);
+        const o = this.parseCCLogCustom(p);
+        o.steps.length > 0 && r.scenes.push(o), this.collectCharactersCustom(p, r.characters);
       } else {
-        const n = l.querySelector(".cclog_wrap") || l.body, c = this.parseSceneFlat(n);
-        c.steps.length > 0 && o.scenes.push(c), this.collectCharactersFlat(n, o.characters);
+        const o = l.querySelector(".cclog_wrap") || l.body, c = this.parseSceneFlat(o);
+        c.steps.length > 0 && r.scenes.push(c), this.collectCharactersFlat(o, r.characters);
       }
     }
-    return o;
+    return r;
   }
   /**
    * 씬(탭) 파싱
    */
   static parseScene(e, t) {
-    const l = e.querySelector(".ccl_tabtitle"), o = l ? l.textContent.trim() : `씬 ${t + 1}`, a = {
+    const l = e.querySelector(".ccl_tabtitle"), r = l ? l.textContent.trim() : `씬 ${t + 1}`, a = {
       id: `scene_${t}`,
-      name: o,
+      name: r,
       description: null,
       steps: []
     }, p = e.querySelectorAll(".ccl_player");
-    let n = 0;
+    let o = 0;
     return p.forEach((c) => {
-      const f = this.parseStep(c, t, n);
+      const f = this.parseStep(c, t, o);
       f && f.length > 0 && f.forEach((m) => {
-        m.channel = o, m.channelType = e.classList.contains("ccl_main") ? "main" : "other", a.steps.push(m), n++;
+        m.channel = r, m.channelType = e.classList.contains("ccl_main") ? "main" : "other", a.steps.push(m), o++;
       });
     }), a;
   }
@@ -5250,14 +5251,14 @@ class Tc {
    * 스텝(대사) 파싱 - <br> 태그 기준으로 분할
    */
   static parseStep(e, t, l) {
-    const o = e.classList.contains("system"), a = e.classList.contains("narrator"), p = e.querySelector(".ccl_Uname"), n = e.querySelector(".ccl_Utext"), c = e.querySelector(".ccl_imgWrap img");
-    if (!n) return null;
-    const f = p ? p.textContent.trim() : "", m = p ? this.extractColor(p) : "var(--text-color)", _ = n.innerHTML.trim(), b = c ? c.getAttribute("src") : null, S = /^씬\s+(\d+)::\s*(.+?)(?:\s*\(([^)]+)\))?\s*(?:<br|$)/i, k = _.match(S);
+    const r = e.classList.contains("system"), a = e.classList.contains("narrator"), p = e.querySelector(".ccl_Uname"), o = e.querySelector(".ccl_Utext"), c = e.querySelector(".ccl_imgWrap img");
+    if (!o) return null;
+    const f = p ? p.textContent.trim() : "", m = p ? this.extractColor(p) : "var(--text-color)", _ = o.innerHTML.trim(), b = c ? c.getAttribute("src") : null, S = /^씬\s+(\d+)::\s*(.+?)(?:\s*\(([^)]+)\))?\s*(?:<br|$)/i, k = _.match(S);
     if (k) {
-      const E = k[1], L = k[2] ? k[2].trim() : "", B = k[3] ? k[3].trim() : null;
-      let U = "";
+      const E = k[1], L = k[2] ? k[2].trim() : "", R = k[3] ? k[3].trim() : null;
+      let F = "";
       const V = _.indexOf("<br>");
-      return V !== -1 && (U = this.cleanText(_.substring(V + 4))), _.substring(0, 100), [
+      return V !== -1 && (F = this.cleanText(_.substring(V + 4))), _.substring(0, 100), [
         {
           id: `scene_${t}_desc_${l}`,
           type: "scene-description",
@@ -5267,28 +5268,28 @@ class Tc {
           isSceneDescription: !0,
           sceneNumber: E,
           sceneTitle: L,
-          scenePCs: B,
-          sceneDescription: U,
+          scenePCs: R,
+          sceneDescription: F,
           avatarUrl: b
         }
       ];
     }
     const A = _;
     if (!A || !A.trim()) return null;
-    const { rolls: x, ougis: C, shinobigamis: I } = this.extractDiceRolls(A), R = this.extractStatusChanges(A), M = this.extractDXCombo(A);
+    const { rolls: x, ougis: C, shinobigamis: I } = this.extractDiceRolls(A), B = this.extractStatusChanges(A), M = this.extractDXCombo(A);
     let T = A;
-    if ((x.length > 0 || C.length > 0 || I.length > 0 || R.length > 0 || M.length > 0) && (T = this.removeDiceCommands(A)), !this.cleanText(T).trim())
+    if ((x.length > 0 || C.length > 0 || I.length > 0 || B.length > 0 || M.length > 0) && (T = this.removeDiceCommands(A)), !this.cleanText(T).trim())
       if (C.length > 0)
         T = "* 오의";
       else if (I.length > 0)
         T = "* 인법";
       else if (x.length > 0) {
-        const E = x.some((B) => B.type === "judgement"), L = x.some((B) => B.type === "choice");
+        const E = x.some((R) => R.type === "judgement"), L = x.some((R) => R.type === "choice");
         E ? T = "* 판정" : L ? T = "* 선택" : T = "* 다이스";
-      } else R.length > 0 ? T = "* 상태 변화" : M.length > 0 && (M.length > 1 || M[0].effects && M[0].effects.length > 1 ? T = "* 콤보" : T = "* 이펙트");
+      } else B.length > 0 ? T = "* 상태 변화" : M.length > 0 && (M.length > 1 || M[0].effects && M[0].effects.length > 1 ? T = "* 콤보" : T = "* 이펙트");
     return [{
       id: `step_${t}_${l}`,
-      type: o ? "system" : a ? "narrator" : "dialogue",
+      type: r ? "system" : a ? "narrator" : "dialogue",
       character: {
         name: f,
         color: m,
@@ -5302,8 +5303,8 @@ class Tc {
       hasOugi: C.length > 0,
       shinobigamis: I,
       hasShinobigami: I.length > 0,
-      statusChanges: R,
-      hasStatusChange: R.length > 0,
+      statusChanges: B,
+      hasStatusChange: B.length > 0,
       dxCombos: M,
       hasDXCombo: M.length > 0,
       effects: {
@@ -5334,11 +5335,11 @@ class Tc {
       description: null,
       steps: []
     }, l = e.querySelectorAll(".gap");
-    let o = 0;
+    let r = 0;
     return l.forEach((a) => {
-      const p = this.parseStepFlat(a, 0, o);
-      p && p.length > 0 && p.forEach((n) => {
-        t.steps.push(n), o++;
+      const p = this.parseStepFlat(a, 0, r);
+      p && p.length > 0 && p.forEach((o) => {
+        t.steps.push(o), r++;
       });
     }), t;
   }
@@ -5346,32 +5347,32 @@ class Tc {
    * 플랫 형식 스텝 파싱
    */
   static parseStepFlat(e, t, l) {
-    const o = e.querySelector("p");
-    if (!o) return null;
+    const r = e.querySelector("p");
+    if (!r) return null;
     if ((e.getAttribute("style") || "").includes("display: flow-root"))
-      return this.parseFlowRootStep(o, t, l);
-    const n = e.querySelector(".msg_container img"), c = o.querySelectorAll("span");
+      return this.parseFlowRootStep(r, t, l);
+    const o = e.querySelector(".msg_container img"), c = r.querySelectorAll("span");
     let f = "", m = "var(--text-color)", _ = "";
     c.forEach((E) => {
       window.getComputedStyle || E.style.fontWeight, (E.style.fontWeight === "bold" || E.getAttribute("style")?.includes("font-weight: bold")) && (f || (f = E.textContent.trim(), m = this.extractColorFromStyle(E.getAttribute("style")) || "var(--text-color)"));
     });
-    const b = o.innerHTML, S = b.indexOf("<br>");
+    const b = r.innerHTML, S = b.indexOf("<br>");
     if (S !== -1 && (_ = b.substring(S + 4).trim()), !_) return null;
-    const k = n ? n.getAttribute("src") : null, A = _;
+    const k = o ? o.getAttribute("src") : null, A = _;
     if (!A || !A.trim()) return null;
-    const { rolls: x, ougis: C, shinobigamis: I } = this.extractDiceRolls(A), R = this.extractStatusChanges(A), M = this.extractDXCombo(A);
+    const { rolls: x, ougis: C, shinobigamis: I } = this.extractDiceRolls(A), B = this.extractStatusChanges(A), M = this.extractDXCombo(A);
     let T = A;
-    if ((x.length > 0 || C.length > 0 || I.length > 0 || R.length > 0 || M.length > 0) && (T = this.removeDiceCommands(A)), !this.cleanText(T).trim()) {
+    if ((x.length > 0 || C.length > 0 || I.length > 0 || B.length > 0 || M.length > 0) && (T = this.removeDiceCommands(A)), !this.cleanText(T).trim()) {
       if (C.length > 0)
         T = "* 오의";
       else if (I.length > 0)
         T = "* 인법";
       else if (x.length > 0) {
-        const E = x.some((U) => U.type === "judgement"), L = x.some((U) => U.type === "choice"), B = x.some((U) => U.type === "table");
-        E ? T = "* 판정" : B ? T = "* 장면표" : L ? T = "* 선택" : T = "* 다이스";
+        const E = x.some((F) => F.type === "judgement"), L = x.some((F) => F.type === "choice"), R = x.some((F) => F.type === "table");
+        E ? T = "* 판정" : R ? T = "* 장면표" : L ? T = "* 선택" : T = "* 다이스";
       }
     }
-    return R.length > 0 && !this.cleanText(T).trim() && (T = "* 상태 변화"), M.length > 0 && !this.cleanText(T).trim() && (M.length > 1 || M[0].effects && M[0].effects.length > 1 ? T = "* 콤보" : T = "* 이펙트"), [{
+    return B.length > 0 && !this.cleanText(T).trim() && (T = "* 상태 변화"), M.length > 0 && !this.cleanText(T).trim() && (M.length > 1 || M[0].effects && M[0].effects.length > 1 ? T = "* 콤보" : T = "* 이펙트"), [{
       id: `step_${t}_${l}`,
       type: f === "GM" ? "narrator" : "dialogue",
       character: {
@@ -5387,8 +5388,8 @@ class Tc {
       hasOugi: C.length > 0,
       shinobigamis: I,
       hasShinobigami: I.length > 0,
-      statusChanges: R,
-      hasStatusChange: R.length > 0,
+      statusChanges: B,
+      hasStatusChange: B.length > 0,
       dxCombos: M,
       hasDXCombo: M.length > 0,
       effects: {
@@ -5403,13 +5404,13 @@ class Tc {
    * 캐릭터 정보 수집
    */
   static collectCharacters(e, t) {
-    e.querySelectorAll(".ccl_player:not(.system):not(.narrator)").forEach((o) => {
-      const a = o.querySelector(".ccl_Uname"), p = o.querySelector(".ccl_imgWrap img");
+    e.querySelectorAll(".ccl_player:not(.system):not(.narrator)").forEach((r) => {
+      const a = r.querySelector(".ccl_Uname"), p = r.querySelector(".ccl_imgWrap img");
       if (a) {
-        const n = a.textContent.trim(), c = this.extractColor(a), f = p ? p.getAttribute("src") : null;
-        n && !t[n] && (t[n] = {
+        const o = a.textContent.trim(), c = this.extractColor(a), f = p ? p.getAttribute("src") : null;
+        o && !t[o] && (t[o] = {
           id: `char_${Object.keys(t).length}`,
-          name: n,
+          name: o,
           color: c,
           avatarUrl: f,
           emotions: {
@@ -5424,52 +5425,52 @@ class Tc {
    * 예: 예시 인물 - 판정 cc<=26 이성체크(1D100<=26) ＞ 12 ＞ 어려운 성공
    */
   static parseFlowRootStep(e, t, l) {
-    const o = e.querySelectorAll("span");
-    let a = "", p = "var(--text-color)", n = "", c = !1, f = null;
-    if (o.forEach((C, I) => {
-      const R = C.getAttribute("style") || "", M = C.textContent.trim();
-      if (R.includes("background: black") || R.includes("background:black")) {
+    const r = e.querySelectorAll("span");
+    let a = "", p = "var(--text-color)", o = "", c = !1, f = null;
+    if (r.forEach((C, I) => {
+      const B = C.getAttribute("style") || "", M = C.textContent.trim();
+      if (B.includes("background: black") || B.includes("background:black")) {
         c = !0;
         const T = M.split(" - ");
         T.length >= 1 && (a = T[0].trim());
       }
       if (c && !f) {
-        const T = this.extractColorFromStyle(R);
-        T && !R.includes("background: black") && !R.includes("background:black") && (p = T);
+        const T = this.extractColorFromStyle(B);
+        T && !B.includes("background: black") && !B.includes("background:black") && (p = T);
       }
-      if (c && M && !R.includes("background: black") && !R.includes("background:black") && (M.includes("cc") || M.includes("CHOICE") || M.includes("choice") || M.includes("＞")) && !f) {
-        n = M, f = C;
-        const T = this.extractColorFromStyle(R);
+      if (c && M && !B.includes("background: black") && !B.includes("background:black") && (M.includes("cc") || M.includes("CHOICE") || M.includes("choice") || M.includes("＞")) && !f) {
+        o = M, f = C;
+        const T = this.extractColorFromStyle(B);
         T && (p = T);
       }
     }), !a) {
       const I = e.textContent.trim().match(/^([^-]+)\s*-\s*판정/);
       I && (a = I[1].trim());
     }
-    if (!n) {
+    if (!o) {
       const C = e.textContent.trim(), I = C.match(/([^-]+)\s*-\s*판정\s*(.+)/);
       if (I)
-        a || (a = I[1].trim()), n = I[2].trim();
+        a || (a = I[1].trim()), o = I[2].trim();
       else if (c) {
-        const R = C.split(/판정\s*/);
-        R.length > 1 && (n = R[1].trim());
+        const B = C.split(/판정\s*/);
+        B.length > 1 && (o = B[1].trim());
       }
-      n || (n = C);
+      o || (o = C);
     }
-    if (n = n.replace(/^[^-]+-\s*판정\s*/, "").trim(), !n) return null;
-    const { rolls: m, ougis: _, shinobigamis: b } = this.extractDiceRolls(n), S = this.extractStatusChanges(n);
-    let k = n;
-    if ((m.length > 0 || _.length > 0 || b.length > 0 || S.length > 0) && (k = this.removeDiceCommands(n)), (m.length > 0 || _.length > 0 || b.length > 0) && !k.trim())
+    if (o = o.replace(/^[^-]+-\s*판정\s*/, "").trim(), !o) return null;
+    const { rolls: m, ougis: _, shinobigamis: b } = this.extractDiceRolls(o), S = this.extractStatusChanges(o);
+    let k = o;
+    if ((m.length > 0 || _.length > 0 || b.length > 0 || S.length > 0) && (k = this.removeDiceCommands(o)), (m.length > 0 || _.length > 0 || b.length > 0) && !k.trim())
       if (_.length > 0)
         k = "* 오의";
       else if (b.length > 0)
         k = "* 인법";
       else {
-        const C = m.some((M) => M.type === "judgement"), I = m.some((M) => M.type === "choice"), R = m.some((M) => M.type === "table");
-        C ? k = "* 판정" : R ? k = "* 장면표" : I ? k = "* 선택" : k = "* 다이스";
+        const C = m.some((M) => M.type === "judgement"), I = m.some((M) => M.type === "choice"), B = m.some((M) => M.type === "table");
+        C ? k = "* 판정" : B ? k = "* 장면표" : I ? k = "* 선택" : k = "* 다이스";
       }
     S.length > 0 && !k.trim() && (k = "* 상태 변화");
-    const A = this.extractDXCombo(n);
+    const A = this.extractDXCombo(o);
     return A.length > 0 && !k.trim() && (A.length > 1 || A[0].effects && A[0].effects.length > 1 ? k = "* 콤보" : k = "* 이펙트"), [{
       id: `step_${t}_${l}`,
       type: "system",
@@ -5479,7 +5480,7 @@ class Tc {
         avatarUrl: null
       },
       text: this.cleanText(k),
-      rawText: n,
+      rawText: o,
       diceRolls: m,
       hasDice: m.length > 0,
       ougis: _,
@@ -5508,14 +5509,14 @@ class Tc {
       description: null,
       steps: []
     }, l = e.querySelectorAll(".gap, .message-container");
-    return `${l.length}`, l.forEach((o, a) => {
-      const n = (o.getAttribute("style") || "").includes("display: flow-root");
+    return `${l.length}`, l.forEach((r, a) => {
+      const o = (r.getAttribute("style") || "").includes("display: flow-root");
       let c = null;
-      if (n) {
-        const f = o.querySelector("p");
-        f ? c = this.parseFlowRootStep(f, 0, a) : c = this.parseCCLogCustomStep(o, 0, a);
+      if (o) {
+        const f = r.querySelector("p");
+        f ? c = this.parseFlowRootStep(f, 0, a) : c = this.parseCCLogCustomStep(r, 0, a);
       } else
-        c = this.parseCCLogCustomStep(o, 0, a);
+        c = this.parseCCLogCustomStep(r, 0, a);
       c && t.steps.push(...c);
     }), t;
   }
@@ -5523,36 +5524,36 @@ class Tc {
    * cclog-custom 형식 스텝 파싱
    */
   static parseCCLogCustomStep(e, t, l) {
-    const o = e.querySelector("p"), a = e.querySelector(".msg_container img"), p = a ? a.getAttribute("src") : null;
-    let n = "", c = "rgb(221, 221, 221)", f = [];
-    if (o)
-      o.querySelectorAll("span").forEach((D) => {
+    const r = e.querySelector("p"), a = e.querySelector(".msg_container img"), p = a ? a.getAttribute("src") : null;
+    let o = "", c = "rgb(221, 221, 221)", f = [];
+    if (r)
+      r.querySelectorAll("span").forEach((D) => {
         const E = D.getAttribute("style") || "", L = D.textContent.trim();
         if (E.includes("font-weight: bold")) {
-          n = L;
-          const B = E.match(/color:\s*rgb\(([^)]+)\)/);
-          B && (c = `rgb(${B[1]})`);
+          o = L;
+          const R = E.match(/color:\s*rgb\(([^)]+)\)/);
+          R && (c = `rgb(${R[1]})`);
         }
-      }), o.innerHTML.split(/<br\s*\/?>/).forEach((D) => {
+      }), r.innerHTML.split(/<br\s*\/?>/).forEach((D) => {
         const E = new DOMParser().parseFromString("", "text/html").createElement("div");
         E.innerHTML = D;
-        const L = (E.textContent || "").replace(/\u00A0/g, " ").trim(), B = /^-?\s*\d{4}\/\d{2}\/\d{2}/.test(L), U = !L || L === "(-)" || L === "-", V = L === n || n && L.includes(n);
-        !U && !V && !B && f.push(L);
+        const L = (E.textContent || "").replace(/\u00A0/g, " ").trim(), R = /^-?\s*\d{4}\/\d{2}\/\d{2}/.test(L), F = !L || L === "(-)" || L === "-", V = L === o || o && L.includes(o);
+        !F && !V && !R && f.push(L);
       });
     else {
-      let R = e.querySelector(".msg-normal-text, .dice, .desc, .msg-system-text, .msg-info-text, .msg-other-text, .info:not(.message-container), .other:not(.message-container)");
-      if (!R) {
+      let B = e.querySelector(".msg-normal-text, .dice, .desc, .msg-system-text, .msg-info-text, .msg-other-text, .info:not(.message-container), .other:not(.message-container)");
+      if (!B) {
         const E = Array.from(e.querySelectorAll("div, span")).filter((L) => !(!L || !L.textContent || !L.textContent.replace(/\u00A0/g, " ").trim() || L.querySelector && L.querySelector("strong") || L.classList && L.classList.contains("msg_container")));
-        R = E.length > 0 ? E[E.length - 1] : null;
+        B = E.length > 0 ? E[E.length - 1] : null;
       }
-      if (!R) return null;
+      if (!B) return null;
       const M = e.querySelector("strong");
       if (M) {
-        n = M.textContent.trim();
+        o = M.textContent.trim();
         const E = this.extractColorFromStyle(M.getAttribute("style") || "");
         E && (c = E);
       }
-      this.cleanText(R.innerHTML || "").split(/\n+/).map((E) => E.replace(/\u00A0/g, " ").trim()).filter((E) => E).forEach((E) => {
+      this.cleanText(B.innerHTML || "").split(/\n+/).map((E) => E.replace(/\u00A0/g, " ").trim()).filter((E) => E).forEach((E) => {
         !E || E === "(-)" || E === "-" || f.push(E);
       });
     }
@@ -5566,16 +5567,16 @@ class Tc {
       else if (S.length > 0)
         x = "* 인법";
       else if (_.length > 0) {
-        const R = _.some((D) => D.type === "judgement"), M = _.some((D) => D.type === "choice"), T = _.some((D) => D.type === "table");
-        R ? x = "* 판정" : T ? x = "* 장면표" : M ? x = "* 선택" : x = "* 다이스";
+        const B = _.some((D) => D.type === "judgement"), M = _.some((D) => D.type === "choice"), T = _.some((D) => D.type === "table");
+        B ? x = "* 판정" : T ? x = "* 장면표" : M ? x = "* 선택" : x = "* 다이스";
       } else k.length > 0 ? x = "* 상태 변화" : A.length > 0 && (A.length > 1 || A[0].effects && A[0].effects.length > 1 ? x = "* 콤보" : x = "* 이펙트");
-    const C = !!n;
+    const C = !!o;
     return [{
       id: `step_${t}_${l}`,
       sceneNumber: t,
       type: C ? "dialogue" : "system",
       character: {
-        name: n || "시스템",
+        name: o || "시스템",
         color: c,
         avatarUrl: C ? p : null
       },
@@ -5603,10 +5604,10 @@ class Tc {
    * cclog-custom 캐릭터 정보 수집
    */
   static collectCharactersCustom(e, t) {
-    e.querySelectorAll(".gap, .message-container").forEach((o) => {
-      const a = o.querySelector(".msg_container img"), p = a ? a.getAttribute("src") : null, n = o.querySelector("p");
-      if (n) {
-        n.querySelectorAll("span").forEach((S) => {
+    e.querySelectorAll(".gap, .message-container").forEach((r) => {
+      const a = r.querySelector(".msg_container img"), p = a ? a.getAttribute("src") : null, o = r.querySelector("p");
+      if (o) {
+        o.querySelectorAll("span").forEach((S) => {
           const k = S.getAttribute("style") || "";
           if (k.includes("font-weight: bold")) {
             const A = S.textContent.trim();
@@ -5622,7 +5623,7 @@ class Tc {
         });
         return;
       }
-      const c = o.querySelector("strong");
+      const c = r.querySelector("strong");
       if (!c) return;
       const f = c.textContent.trim();
       if (!f || t[f]) return;
@@ -5638,12 +5639,12 @@ class Tc {
    * 플랫 형식 캐릭터 정보 수집
    */
   static collectCharactersFlat(e, t) {
-    e.querySelectorAll(".gap").forEach((o) => {
-      const a = o.querySelector(".msg_container img"), p = o.querySelector("p");
+    e.querySelectorAll(".gap").forEach((r) => {
+      const a = r.querySelector(".msg_container img"), p = r.querySelector("p");
       if (p) {
-        const n = p.querySelectorAll("span");
+        const o = p.querySelectorAll("span");
         let c = "", f = "var(--text-color)";
-        if (n.forEach((m) => {
+        if (o.forEach((m) => {
           (m.style.fontWeight === "bold" || m.getAttribute("style")?.includes("font-weight: bold")) && (c || (c = m.textContent.trim(), f = this.extractColorFromStyle(m.getAttribute("style")) || "var(--text-color)"));
         }), c && !t[c]) {
           const m = a ? a.getAttribute("src") : null;
@@ -5692,17 +5693,17 @@ class Tc {
     const t = [];
     if (!e || e.indexOf("《") === -1) return t;
     const l = /(?:(\d+)[↑↓])?\s*([^《\|]+?)?\s*《C:([^》]+)》(?:\s*\|\s*([^\|]+)\s*\|\s*([^\|]+)\s*\|\s*(.+?))?(?:<br\s*\/?>|\n)?(?:\s*(\d+dx\d*(?:\+\d+)?)\s*\(([^)]+)\)\s*[＞>]\s*([^\s＞>]+)\s*[＞>]\s*(\d+))?(?:<br\s*\/?>|$)/gim;
-    let o;
-    for (; (o = l.exec(e)) !== null; ) {
-      const n = o[1] ? parseInt(o[1], 10) : null, c = o[2] ? o[2].trim() : "", f = o[3].trim(), m = o[4] ? o[4].trim() : "", _ = o[5] ? o[5].trim() : "", b = o[6] ? o[6].trim() : "", S = o[7], k = o[8], A = o[9], x = o[10], C = [];
-      if (f.split("+").forEach((R) => {
-        const M = R.trim().match(/(.+?)\((\d+)\)/);
+    let r;
+    for (; (r = l.exec(e)) !== null; ) {
+      const o = r[1] ? parseInt(r[1], 10) : null, c = r[2] ? r[2].trim() : "", f = r[3].trim(), m = r[4] ? r[4].trim() : "", _ = r[5] ? r[5].trim() : "", b = r[6] ? r[6].trim() : "", S = r[7], k = r[8], A = r[9], x = r[10], C = [];
+      if (f.split("+").forEach((B) => {
+        const M = B.trim().match(/(.+?)\((\d+)\)/);
         M && C.push({
           name: M[1].trim(),
           level: parseInt(M[2], 10)
         });
       }), C.length > 0) {
-        const R = m.split("/").map(($) => $.trim()), M = R[0] || "", T = R[1] || "", D = _.split("/").map(($) => $.trim()), E = (D[0] || "").replace(/^다이스\s*/i, ""), L = (D[1] || "").replace(/^크리치\s*/i, ""), B = (D[2] || "").replace(/^공격력\s*/i, ""), U = (D[3] || "").replace(/^침식\s*/i, "");
+        const B = m.split("/").map(($) => $.trim()), M = B[0] || "", T = B[1] || "", D = _.split("/").map(($) => $.trim()), E = (D[0] || "").replace(/^다이스\s*/i, ""), L = (D[1] || "").replace(/^크리치\s*/i, ""), R = (D[2] || "").replace(/^공격력\s*/i, ""), F = (D[3] || "").replace(/^침식\s*/i, "");
         let V = null;
         S && x && (V = {
           type: "dx3",
@@ -5715,24 +5716,24 @@ class Tc {
           isSingleEffect: C.length === 1,
           comboName: c,
           effects: C,
-          erosionCost: n,
+          erosionCost: o,
           timing: M,
           difficulty: T,
           dice: E,
           critical: L,
-          attack: B,
-          erosion: U,
+          attack: R,
+          erosion: F,
           description: b,
           diceRoll: V,
-          rawText: o[0]
+          rawText: r[0]
         });
       }
     }
     const a = /《([^》]+)》\s*Lv(\d+)\s*\|\s*([^\|]+)\s*\|\s*([^\|]+)\s*\|\s*([^\|]+)\s*\|\s*([^\|]+)\s*\|\s*([^\|]+)(?:\s*\|\s*(.+?))?(?:<br\s*\/?>|\n)?(?:\s*(\d+dx\d*(?:\+\d+)?)\s*\(([^)]+)\)\s*[＞>]\s*([^\s＞>]+)\s*[＞>]\s*(\d+))?(?:<br\s*\/?>|$)/gim;
-    for (; (o = a.exec(e)) !== null; ) {
-      const n = o[1].trim(), c = parseInt(o[2], 10), f = o[3].trim(), m = o[4].trim(), _ = o[5].trim(), b = o[6].trim(), S = o[7].trim(), k = o[8] ? o[8].trim() : "", A = o[9], x = o[10], C = o[11], I = o[12];
-      let R = null;
-      A && I && (R = {
+    for (; (r = a.exec(e)) !== null; ) {
+      const o = r[1].trim(), c = parseInt(r[2], 10), f = r[3].trim(), m = r[4].trim(), _ = r[5].trim(), b = r[6].trim(), S = r[7].trim(), k = r[8] ? r[8].trim() : "", A = r[9], x = r[10], C = r[11], I = r[12];
+      let B = null;
+      A && I && (B = {
         type: "dx3",
         formula: A.toUpperCase(),
         fullFormula: x,
@@ -5743,7 +5744,7 @@ class Tc {
         isSingleEffect: !0,
         effects: [
           {
-            name: n,
+            name: o,
             level: c
           }
         ],
@@ -5753,13 +5754,13 @@ class Tc {
         range: b,
         description: S,
         erosion: k,
-        diceRoll: R,
-        rawText: o[0]
+        diceRoll: B,
+        rawText: r[0]
       });
     }
     const p = /(?:(\d+)[↑↓])?\s*([^\|《]+?)?\s*(《[^》]+》(?:\s*\+\s*《[^》]+》)+)\s*(?:\|\s*([^\|]+)\s*\|\s*([^\|]+)\s*\|\s*(.+?))?(?:<br\s*\/?>|\n)?(?:\s*(\d+dx\d*(?:\+\d+)?)\s*\(([^)]+)\)\s*[＞>]\s*([^\s＞>]+)\s*[＞>]\s*(\d+))?(?:<br\s*\/?>|$)/gim;
-    for (; (o = p.exec(e)) !== null; ) {
-      const n = o[1] ? parseInt(o[1], 10) : null, c = o[2] ? o[2].trim() : "", f = o[3], m = o[4] ? o[4].trim() : "", _ = o[5] ? o[5].trim() : "", b = o[6] ? o[6].trim() : "", S = o[7], k = o[8], A = o[9], x = o[10], C = [], I = f.match(/《([^》]+)》/gi);
+    for (; (r = p.exec(e)) !== null; ) {
+      const o = r[1] ? parseInt(r[1], 10) : null, c = r[2] ? r[2].trim() : "", f = r[3], m = r[4] ? r[4].trim() : "", _ = r[5] ? r[5].trim() : "", b = r[6] ? r[6].trim() : "", S = r[7], k = r[8], A = r[9], x = r[10], C = [], I = f.match(/《([^》]+)》/gi);
       I && I.forEach(($) => {
         const G = $.match(/《(.+?)\((\d+)\)》/);
         G && C.push({
@@ -5767,7 +5768,7 @@ class Tc {
           level: parseInt(G[2], 10)
         });
       });
-      const R = m.split("/").map(($) => $.trim()), M = R[0] || "", T = R[1] || "", D = _.split("/").map(($) => $.trim()), E = (D[0] || "").replace(/^다이스\s*/i, ""), L = (D[1] || "").replace(/^크리치\s*/i, ""), B = (D[2] || "").replace(/^공격력\s*/i, ""), U = (D[3] || "").replace(/^침식\s*/i, "");
+      const B = m.split("/").map(($) => $.trim()), M = B[0] || "", T = B[1] || "", D = _.split("/").map(($) => $.trim()), E = (D[0] || "").replace(/^다이스\s*/i, ""), L = (D[1] || "").replace(/^크리치\s*/i, ""), R = (D[2] || "").replace(/^공격력\s*/i, ""), F = (D[3] || "").replace(/^침식\s*/i, "");
       let V = null;
       S && x && (V = {
         type: "dx3",
@@ -5780,16 +5781,16 @@ class Tc {
         isSingleEffect: !1,
         comboName: c,
         effects: C,
-        erosionCost: n,
+        erosionCost: o,
         timing: M,
         difficulty: T,
         dice: E,
         critical: L,
-        attack: B,
-        erosion: U,
+        attack: R,
+        erosion: F,
         description: b,
         diceRoll: V,
-        rawText: o[0]
+        rawText: r[0]
       });
     }
     return t;
@@ -5801,15 +5802,15 @@ class Tc {
    */
   static extractStatusChanges(e) {
     const t = [], l = /\[\s*([^\]]+)\s*\]\s*([^:：]+)\s*[：:]\s*(\d+)\s*[→>]\s*(\d+)/gi;
-    let o;
-    for (; (o = l.exec(e)) !== null; ) {
-      const a = o[1].trim(), p = o[2].trim(), n = parseInt(o[3], 10), c = parseInt(o[4], 10);
+    let r;
+    for (; (r = l.exec(e)) !== null; ) {
+      const a = r[1].trim(), p = r[2].trim(), o = parseInt(r[3], 10), c = parseInt(r[4], 10);
       t.push({
         characterName: a,
         statusName: p,
-        oldValue: n,
+        oldValue: o,
         newValue: c,
-        delta: c - n
+        delta: c - o
       });
     }
     return t;
@@ -5823,19 +5824,19 @@ class Tc {
    * 시노비가미 오의: "오의명 《특기1, 특기2》 | 설명 | 효과 【오의: 타입】"
    */
   static extractDiceRolls(e) {
-    const t = [], l = [], o = [], a = /([^《<]+?)\s*《([^》]+)》\s*\|\s*([^《\n]+?)【오의:\s*([^】]+)】/gi;
+    const t = [], l = [], r = [], a = /([^《<]+?)\s*《([^》]+)》\s*\|\s*([^《\n]+?)【오의:\s*([^】]+)】/gi;
     let p;
     if (e.indexOf("【오의:") !== -1)
       for (; (p = a.exec(e)) !== null; ) {
-        const T = p[1].trim(), D = p[2].trim(), E = p[3].trim(), L = p[4].trim(), B = E.split("|").map((G) => G.trim()).filter((G) => G);
-        let U = "", V = "", $ = "";
-        B.length >= 3 ? (U = B[0], V = B.slice(1, -1).join(" | "), $ = B[B.length - 1]) : B.length === 2 ? (U = B[0], $ = B[1]) : B.length === 1 && (U = B[0]), l.push({
+        const T = p[1].trim(), D = p[2].trim(), E = p[3].trim(), L = p[4].trim(), R = E.split("|").map((G) => G.trim()).filter((G) => G);
+        let F = "", V = "", $ = "";
+        R.length >= 3 ? (F = R[0], V = R.slice(1, -1).join(" | "), $ = R[R.length - 1]) : R.length === 2 ? (F = R[0], $ = R[1]) : R.length === 1 && (F = R[0]), l.push({
           type: "ougi",
           ougiName: T,
           // 오의 이름
           skills: D.split(/[,、]/).map((G) => G.trim()),
           // 지정 특기
-          presentation: U,
+          presentation: F,
           // 오의 연출
           ougiEffect: V,
           // 오의 효과 (생략 가능)
@@ -5845,9 +5846,9 @@ class Tc {
           // 오의 종류
         });
       }
-    const n = /(?:CHOICE|choice)\[([^\]]+)\]\s*(?:\([^)]*\))?\s*[＞>]\s*(.+?)(?:<|$)/gi;
+    const o = /(?:CHOICE|choice)\[([^\]]+)\]\s*(?:\([^)]*\))?\s*[＞>]\s*(.+?)(?:<|$)/gi;
     let c;
-    for (; (c = n.exec(e)) !== null; ) {
+    for (; (c = o.exec(e)) !== null; ) {
       const T = c[1].split(",").map((E) => E.trim()), D = c[2].trim();
       t.push({
         type: "choice",
@@ -5870,16 +5871,16 @@ class Tc {
     for (; (c = m.exec(e)) !== null; ) {
       c[1], c[2], c[3], c[4], c[5];
       const T = c[3].trim(), D = c[5], E = D.split(/\s*[＞>]\s*/), L = E[E.length - 1].trim();
-      let B = "", U = "", V = 0;
+      let R = "", F = "", V = 0;
       const $ = D.match(/\[([^\]]+)\]\s*[＞>]\s*(\d+)\[([^\]]+)\](?:[+\-]\d+)?\s*[＞>]\s*(\d+)/);
       if ($)
-        U = $[1], B = `${$[2]}[${$[3]}]`, V = parseInt($[4], 10);
+        F = $[1], R = `${$[2]}[${$[3]}]`, V = parseInt($[4], 10);
       else {
         const J = D.match(/(\d+\[[^\]]+\](?:[+\-]\d+)?)\s*[＞>]\s*(\d+)/);
         if (J) {
-          B = J[1];
-          const qe = B.match(/\[([^\]]+)\]/);
-          U = qe ? qe[1] : "", V = parseInt(J[2], 10);
+          R = J[1];
+          const qe = R.match(/\[([^\]]+)\]/);
+          F = qe ? qe[1] : "", V = parseInt(J[2], 10);
         }
       }
       const G = this.parseShinobiAdditionalInfo(T), me = {
@@ -5888,33 +5889,33 @@ class Tc {
         checkName: c[2],
         additionalInfo: G,
         formula: c[4],
-        diceRolls: U,
-        diceExpression: B,
+        diceRolls: F,
+        diceExpression: R,
         result: V,
         judgement: L
       };
-      o.push(me), _.push(c[0]);
+      r.push(me), _.push(c[0]);
     }
     const b = /\((\d*[A-Z]+[+\-]?\d*@\d+(?:#\d+)?(?:[+\-]\d+)?(?:(?:&gt;|&lt;|[<>=])+\d+)?)\)\s*[＞>]\s*(.+?)(?=<|\n|$)/gi;
     for (; (c = b.exec(e)) !== null; ) {
       if (_.some((G) => G.includes(c[0])))
         continue;
       const D = c[2], E = D.split(/\s*[＞>]\s*/), L = E[E.length - 1].trim();
-      let B = "", U = "", V = 0;
+      let R = "", F = "", V = 0;
       const $ = D.match(/(\d+\[[^\]]+\](?:[+\-]\d+)?)\s*[＞>]\s*(\d+)/);
       if ($) {
-        B = $[1];
-        const G = B.match(/\[([^\]]+)\]/);
-        U = G ? G[1] : "", V = parseInt($[2], 10);
+        R = $[1];
+        const G = R.match(/\[([^\]]+)\]/);
+        F = G ? G[1] : "", V = parseInt($[2], 10);
       }
-      o.push({
+      r.push({
         type: "shinobigami",
         command: c[1],
         checkName: "판정",
         additionalInfo: null,
         formula: c[1],
-        diceRolls: U,
-        diceExpression: B,
+        diceRolls: F,
+        diceExpression: R,
         result: V,
         judgement: L
       }), _.push(c[0]);
@@ -5976,7 +5977,7 @@ class Tc {
         result: parseInt(c[4], 10)
         // 31
       });
-    const I = /((?:\d+[dD]\d+[+\-]?)+)\s*\([^)]+\)\s*[＞>]\s*([^\s＞>]+)\s*[＞>]\s*(\d+)/gi, R = [];
+    const I = /((?:\d+[dD]\d+[+\-]?)+)\s*\([^)]+\)\s*[＞>]\s*([^\s＞>]+)\s*[＞>]\s*(\d+)/gi, B = [];
     for (; (c = I.exec(e)) !== null; ) {
       const T = c[1];
       T.toLowerCase().includes("dx") || (t.push({
@@ -5987,11 +5988,11 @@ class Tc {
         // "7[7]+8[8]"
         result: parseInt(c[3], 10)
         // 15
-      }), R.push(c[0]));
+      }), B.push(c[0]));
     }
     const M = /(\d+[dD]\d+)\s*(?:\([^)]+\))?\s*[＞>]\s*(\d+)/gi;
     for (; (c = M.exec(e)) !== null; ) {
-      const T = c[1], D = c[0], E = R.some((B) => B.includes(D)), L = k.some((B) => B.includes(D));
+      const T = c[1], D = c[0], E = B.some((R) => R.includes(D)), L = k.some((R) => R.includes(D));
       !T.toLowerCase().includes("dx") && !E && !L && t.push({
         type: "normal",
         formula: T.toUpperCase(),
@@ -6000,7 +6001,7 @@ class Tc {
         // 91
       });
     }
-    return { rolls: t, ougis: l, shinobigamis: o };
+    return { rolls: t, ougis: l, shinobigamis: r };
   }
   /**
    * 시노비가미 추가 정보 파싱
@@ -6009,7 +6010,7 @@ class Tc {
   static parseShinobiAdditionalInfo(e) {
     if (!e || !e.trim())
       return null;
-    const t = e.split("|").map((o) => o.trim()).filter((o) => o);
+    const t = e.split("|").map((r) => r.trim()).filter((r) => r);
     if (t.length === 0)
       return null;
     const l = {
@@ -6024,8 +6025,8 @@ class Tc {
       description: null
       // 나머지 설명
     };
-    return t.forEach((o, a) => {
-      a === 0 && o.includes("인법") ? l.type = o : o.includes("간격") ? l.range = o : o.includes("코스트") ? l.cost = o : o.includes("《") && o.includes("》") ? l.skill = o : l.description ? l.description += " | " + o : l.description = o;
+    return t.forEach((r, a) => {
+      a === 0 && r.includes("인법") ? l.type = r : r.includes("간격") ? l.range = r : r.includes("코스트") ? l.cost = r : r.includes("《") && r.includes("》") ? l.skill = r : l.description ? l.description += " | " + r : l.description = r;
     }), l;
   }
   /**
@@ -6082,12 +6083,12 @@ class Tc {
     e.length;
     const l = new DOMParser().parseFromString(e, "text/html");
     l.body;
-    const o = l.querySelector("title"), a = o ? o.textContent.replace("Chat Log for ", "").trim() : "Roll20 로그", p = {
+    const r = l.querySelector("title"), a = r ? r.textContent.replace("Chat Log for ", "").trim() : "Roll20 로그", p = {
       title: a,
       scenes: [],
       characters: {},
       handouts: []
-    }, n = {
+    }, o = {
       id: "scene_0",
       name: "로그",
       description: null,
@@ -6107,7 +6108,7 @@ class Tc {
     let m = 0, _ = null;
     return c.forEach((b, S) => {
       const k = this.parseRoll20Message(b, m, _);
-      k ? (`${m}`, k.character.name, k.text.substring(0, 50), n.steps.push(k), k.character && k.character.name && !p.characters[k.character.name] && (p.characters[k.character.name] = {
+      k ? (`${m}`, k.character.name, k.text.substring(0, 50), o.steps.push(k), k.character && k.character.name && !p.characters[k.character.name] && (p.characters[k.character.name] = {
         id: `char_${Object.keys(p.characters).length}`,
         name: k.character.name,
         color: gt(k.character.color),
@@ -6116,7 +6117,7 @@ class Tc {
           default: k.character.avatarUrl || null
         }
       }), _ = k.character, m++) : `${S}`;
-    }), n.steps.length > 0 && p.scenes.push(n), p;
+    }), o.steps.length > 0 && p.scenes.push(o), p;
   }
   /**
    * Roll20 저장본(msgdata)에서 메시지를 추출해 렌더된 .message DOM 요소로 합성
@@ -6127,11 +6128,11 @@ class Tc {
   static extractRoll20MsgDataMessages(e, t) {
     try {
       const l = /var\s+msgdata\s*=\s*"([A-Za-z0-9+/=]+)"/;
-      let o = null;
+      let r = null;
       for (const b of e.querySelectorAll("script"))
-        if (o = b.textContent.match(l), o) break;
-      if (o || (o = t.match(l)), !o) return [];
-      const a = atob(o[1]), p = Uint8Array.from(a, (b) => b.charCodeAt(0)), n = new TextDecoder("utf-8").decode(p), c = JSON.parse(n), m = (Array.isArray(c) ? c : [c]).flatMap((b) => Object.values(b || {}));
+        if (r = b.textContent.match(l), r) break;
+      if (r || (r = t.match(l)), !r) return [];
+      const a = atob(r[1]), p = Uint8Array.from(a, (b) => b.charCodeAt(0)), o = new TextDecoder("utf-8").decode(p), c = JSON.parse(o), m = (Array.isArray(c) ? c : [c]).flatMap((b) => Object.values(b || {}));
       m.sort(
         (b, S) => parseFloat(b[".priority"] || 0) - parseFloat(S[".priority"] || 0)
       );
@@ -6174,62 +6175,62 @@ class Tc {
    * @returns {Object|null} 스텝 데이터
    */
   static parseRoll20Message(e, t, l = null) {
-    const o = e.classList;
+    const r = e.classList;
     let a = "dialogue";
-    o.contains("desc") || o.contains("emote") ? a = "narrator" : o.contains("rollresult") && (a = "system");
+    r.contains("desc") || r.contains("emote") ? a = "narrator" : r.contains("rollresult") && (a = "system");
     const p = e.querySelector(".by");
-    let n = "", c = !1;
-    p ? (n = p.textContent.replace(":", "").trim(), (n === "GM" || n.includes("(GM)")) && (a = "narrator", n = "GM")) : a !== "narrator" && l ? (n = l.name, c = !0) : a === "narrator" && (n = "GM");
+    let o = "", c = !1;
+    p ? (o = p.textContent.replace(":", "").trim(), (o === "GM" || o.includes("(GM)")) && (a = "narrator", o = "GM")) : a !== "narrator" && l ? (o = l.name, c = !0) : a === "narrator" && (o = "GM");
     const f = e.querySelector(".avatar img");
     let m = f ? f.getAttribute("src") : null;
     m && m.startsWith("/") && (m = "https://app.roll20.net" + m), c && !m && l && l.avatarUrl && (m = l.avatarUrl);
     const _ = [];
-    e.querySelectorAll("img").forEach((F) => {
-      if (!F.closest(".avatar")) {
-        let Z = F.getAttribute("src");
-        const oe = F.getAttribute("alt") || "";
+    e.querySelectorAll("img").forEach((U) => {
+      if (!U.closest(".avatar")) {
+        let Z = U.getAttribute("src");
+        const re = U.getAttribute("alt") || "";
         Z && (Z.startsWith("/") && (Z = "https://app.roll20.net" + Z), _.push({
           url: Z,
-          alt: oe
+          alt: re
         }));
       }
     });
     let S = "", k = [], A = [], x = [];
     const C = e.querySelector(".sheet-rolltemplate-coc, .sheet-rolltemplate-coc-1");
     if (C) {
-      const F = this.parseRoll20DiceTemplate(C);
-      F && (k.push(F), S = "* 판정");
+      const U = this.parseRoll20DiceTemplate(C);
+      U && (k.push(U), S = "* 판정");
     }
-    e.querySelectorAll("[class*='sheet-rolltemplate-']").forEach((F) => {
-      if (!F.classList.contains("sheet-rolltemplate-coc") && !F.classList.contains("sheet-rolltemplate-coc-1") && !F.classList.contains("sheet-rolltemplate-Dx3Dice")) {
-        const Z = this.parseRoll20TableTemplate(F);
+    e.querySelectorAll("[class*='sheet-rolltemplate-']").forEach((U) => {
+      if (!U.classList.contains("sheet-rolltemplate-coc") && !U.classList.contains("sheet-rolltemplate-coc-1") && !U.classList.contains("sheet-rolltemplate-Dx3Dice")) {
+        const Z = this.parseRoll20TableTemplate(U);
         Z && (S || (S = Z.html));
       }
     });
-    const R = e.querySelector(".sheet-rolltemplate-Dx3Dice");
-    R && (S = `<div class="roll20-dx3-template">${R.outerHTML}</div>`);
+    const B = e.querySelector(".sheet-rolltemplate-Dx3Dice");
+    B && (S = `<div class="roll20-dx3-template">${B.outerHTML}</div>`);
     let M = null;
     const T = /<strong>([^<]+)<\/strong>\s*\/\s*<span[^>]*>(\d*)<\/span>\s*<span[^>]*>\s*→\s*<\/span>\s*<b>(\d*)<\/b>/;
     let D = e.innerHTML.match(T);
     if (D) {
-      const F = D[1].trim(), Z = D[2] ? parseInt(D[2], 10) : null, oe = D[3] ? parseInt(D[3], 10) : null;
-      if (M = D[0], Z !== null || oe !== null) {
-        const De = (oe || 0) - (Z || 0);
+      const U = D[1].trim(), Z = D[2] ? parseInt(D[2], 10) : null, re = D[3] ? parseInt(D[3], 10) : null;
+      if (M = D[0], Z !== null || re !== null) {
+        const De = (re || 0) - (Z || 0);
         x.push({
-          characterName: n,
-          statusName: F,
+          characterName: o,
+          statusName: U,
           oldValue: Z,
-          newValue: oe,
+          newValue: re,
           delta: De
         });
       }
     } else {
       e.textContent;
-      const F = /(침식률|HP|MP|SAN|正気度|侵蝕率)\s*<span[^>]*inlinerollresult[^>]*>(\d+)<\/span>\s*(상승|하강|증가|감소|上昇|減少)/i;
-      if (D = e.innerHTML.match(F), D) {
-        const Z = D[1].trim(), oe = parseInt(D[2], 10), yt = D[3].match(/상승|증가|上昇/) ? oe : -oe;
+      const U = /(침식률|HP|MP|SAN|正気度|侵蝕率)\s*<span[^>]*inlinerollresult[^>]*>(\d+)<\/span>\s*(상승|하강|증가|감소|上昇|減少)/i;
+      if (D = e.innerHTML.match(U), D) {
+        const Z = D[1].trim(), re = parseInt(D[2], 10), yt = D[3].match(/상승|증가|上昇/) ? re : -re;
         M = D[0], x.push({
-          characterName: n,
+          characterName: o,
           statusName: Z,
           oldValue: null,
           // 이전 값을 알 수 없음
@@ -6240,42 +6241,42 @@ class Tc {
       }
     }
     const E = e.querySelectorAll(".inlinerollresult");
-    E.length > 0 && !C && !R && !D && E.forEach((F) => {
-      const Z = F.getAttribute("title"), oe = F.textContent.trim();
-      if (Z && oe) {
+    E.length > 0 && !C && !B && !D && E.forEach((U) => {
+      const Z = U.getAttribute("title"), re = U.textContent.trim();
+      if (Z && re) {
         const De = Z.match(/Rolling\s+([^\s=]+)/i);
         De && k.push({
           type: "inline",
           formula: De[1].toUpperCase(),
-          result: parseInt(oe, 10) || oe
+          result: parseInt(re, 10) || re
         });
       }
     });
     const L = e.cloneNode(!0);
-    [".by", ".tstamp", ".avatar", ".spacer", ".flyout", "[class*='sheet-rolltemplate']"].forEach((F) => {
-      L.querySelectorAll(F).forEach((oe) => oe.remove());
-    }), L.querySelectorAll("a").forEach((F) => {
-      F.querySelector("img") && F.remove();
-    }), L.querySelectorAll(".inlinerollresult").forEach((F) => {
-      F.removeAttribute("title"), F.removeAttribute("original-title"), F.className = "inlinerollresult";
+    [".by", ".tstamp", ".avatar", ".spacer", ".flyout", "[class*='sheet-rolltemplate']"].forEach((U) => {
+      L.querySelectorAll(U).forEach((re) => re.remove());
+    }), L.querySelectorAll("a").forEach((U) => {
+      U.querySelector("img") && U.remove();
+    }), L.querySelectorAll(".inlinerollresult").forEach((U) => {
+      U.removeAttribute("title"), U.removeAttribute("original-title"), U.className = "inlinerollresult";
     });
     let $ = L.innerHTML.trim();
     M && ($ = $.replace(M, "")), $ = $.replace(/<br\s*\/?>/gi, " "), $ = $.replace(/<div>/gi, " "), $ = $.replace(/<\/div>/gi, "");
     const G = new DOMParser().parseFromString("", "text/html").createElement("div");
     G.innerHTML = $;
     let me = $, J = G.textContent.trim();
-    if (n && J.startsWith(n)) {
-      const F = n.length;
-      J = J.substring(F).trim(), me = me.replace(new RegExp(`^${n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}`), "").trim();
+    if (o && J.startsWith(o)) {
+      const U = o.length;
+      J = J.substring(U).trim(), me = me.replace(new RegExp(`^${o.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}`), "").trim();
     }
     return J.startsWith(":") && (J = J.substring(1).trim(), me = me.replace(/^:\s*/, "")), J && J !== S && (S = me || J), !S && _.length === 0 ? null : (e.querySelector("em") && (S = S), {
       id: `step_0_${t}`,
       type: a,
-      sourceMessageType: o.contains("desc") ? "desc" : o.contains("emote") ? "emote" : "general",
+      sourceMessageType: r.contains("desc") ? "desc" : r.contains("emote") ? "emote" : "general",
       isContinuation: c,
-      isOwnMessage: o.contains("you"),
+      isOwnMessage: r.contains("you"),
       character: {
-        name: n || "알 수 없음",
+        name: o || "알 수 없음",
         color: gt(c ? l?.color : p?.style.color),
         avatarUrl: m
       },
@@ -6305,31 +6306,31 @@ class Tc {
   static parseRoll20DiceTemplate(e) {
     try {
       const t = e.querySelector("caption")?.textContent.trim(), l = e.querySelectorAll("tr");
-      let o = null, a = null, p = null, n = null;
+      let r = null, a = null, p = null, o = null;
       if (l.forEach((c) => {
         const f = c.querySelector(".sheet-template_label")?.textContent.trim(), m = c.querySelector(".sheet-template_value");
         if (f && m) {
           const _ = m.textContent.trim();
           if (f.includes("기준치") || f.includes("value")) {
             const b = _.split("/");
-            o = parseInt(b[0], 10);
+            r = parseInt(b[0], 10);
           } else if (f.includes("굴림") || f.includes("rolled")) {
             const b = _.match(/\d+/);
             b && (a = parseInt(b[0], 10));
             const S = _.match(/\d+/g);
-            S && S.length > 1 && (n = S.slice(1).map((k) => parseInt(k, 10)));
+            S && S.length > 1 && (o = S.slice(1).map((k) => parseInt(k, 10)));
           } else (f.includes("판정결과") || f.includes("result") || f.includes("판정")) && (p = _);
         }
       }), a !== null) {
         const c = {
           type: "judgement",
           checkName: t || "판정",
-          formula: o ? `1D100<=${o}` : "1D100",
-          threshold: o || 100,
+          formula: r ? `1D100<=${r}` : "1D100",
+          threshold: r || 100,
           result: a,
           judgement: p || "알 수 없음"
         };
-        return n && n.length > 0 && (c.bonusDice = n), c;
+        return o && o.length > 0 && (c.bonusDice = o), c;
       }
     } catch (t) {
       console.error("Roll20 다이스 템플릿 파싱 오류:", t);
@@ -6343,15 +6344,15 @@ class Tc {
    */
   static parseRoll20DX3Template(e) {
     try {
-      const t = e.querySelector(".sheet-chname")?.textContent.trim(), l = e.querySelector(".sheet-title")?.textContent.trim(), o = e.querySelector(".sheet-sub-title")?.textContent.trim(), a = e.querySelector(".sheet-mid-title")?.textContent.trim(), p = e.querySelector(".sheet-descript")?.textContent.trim();
-      let n = null, c = null, f = null;
+      const t = e.querySelector(".sheet-chname")?.textContent.trim(), l = e.querySelector(".sheet-title")?.textContent.trim(), r = e.querySelector(".sheet-sub-title")?.textContent.trim(), a = e.querySelector(".sheet-mid-title")?.textContent.trim(), p = e.querySelector(".sheet-descript")?.textContent.trim();
+      let o = null, c = null, f = null;
       const m = e.querySelector(".sheet-dicearea");
       if (m) {
         const A = m.querySelector(".inlinerollresult");
         if (A) {
-          n = parseInt(A.textContent.trim(), 10);
+          o = parseInt(A.textContent.trim(), 10);
           const x = e.querySelector(".sheet-sub-title .inlinerollresult");
-          x && x.getAttribute("title")?.match(/Rolling\s+\d+\s*=\s*(\d+)/i) && (c = o.trim());
+          x && x.getAttribute("title")?.match(/Rolling\s+\d+\s*=\s*(\d+)/i) && (c = r.trim());
         }
       }
       const _ = e.querySelector(".sheet-dicedetail .inlinerollresult");
@@ -6383,10 +6384,10 @@ class Tc {
         erosion: b.erosion || "",
         spec: b.spec || "",
         description: p || "",
-        diceRoll: n ? {
+        diceRoll: o ? {
           type: "dx3",
           formula: c || "",
-          result: n,
+          result: o,
           detail: f || ""
         } : null
       };
@@ -6404,18 +6405,18 @@ class Tc {
     try {
       const t = e.querySelector("caption")?.textContent.trim(), l = e.querySelector("table");
       if (!l) return null;
-      let o = '<div class="roll20-table">';
-      return t && (o += `<div class="table-caption"><strong>${t}</strong></div>`), o += "<table>", l.querySelectorAll("tr").forEach((p) => {
-        const n = p.querySelectorAll("td");
-        n.length > 0 && (o += "<tr>", n.forEach((c) => {
+      let r = '<div class="roll20-table">';
+      return t && (r += `<div class="table-caption"><strong>${t}</strong></div>`), r += "<table>", l.querySelectorAll("tr").forEach((p) => {
+        const o = p.querySelectorAll("td");
+        o.length > 0 && (r += "<tr>", o.forEach((c) => {
           const f = c.querySelector(".inlinerollresult");
           let m = c.innerHTML;
-          m = m.replace(/<span[^>]*>/gi, ""), m = m.replace(/<\/span>/gi, ""), o += `<td>${m}</td>`;
-        }), o += "</tr>");
-      }), o += "</table></div>", {
+          m = m.replace(/<span[^>]*>/gi, ""), m = m.replace(/<\/span>/gi, ""), r += `<td>${m}</td>`;
+        }), r += "</tr>");
+      }), r += "</table></div>", {
         type: "table",
         caption: t,
-        html: o
+        html: r
       };
     } catch (t) {
       console.error("Roll20 테이블 템플릿 파싱 오류:", t);
@@ -6433,13 +6434,13 @@ class Tc {
    * 아바타 정보가 없으므로 스탠딩은 룸 ZIP 결합(이름 매칭)으로 채워진다.
    */
   static parseCcfoliaOfficialLog(e) {
-    const l = new DOMParser().parseFromString(e, "text/html"), o = {
+    const l = new DOMParser().parseFromString(e, "text/html"), r = {
       title: "코코포리아 로그",
       scenes: [],
       characters: {},
       handouts: []
     }, a = { id: "scene_0", name: "로그", description: null, steps: [] }, p = /^\[\s*(.+?)\s*\]\s*(\S+)\s*:\s*(\d+)\s*→\s*(\d+)\s*$/;
-    let n = 0;
+    let o = 0;
     return l.querySelectorAll("p").forEach((c) => {
       const f = c.querySelectorAll(":scope > span");
       if (f.length < 3) return;
@@ -6456,19 +6457,19 @@ class Tc {
         A = "system";
         const I = b.match(p);
         if (I) {
-          const R = parseInt(I[3], 10), M = parseInt(I[4], 10);
+          const B = parseInt(I[3], 10), M = parseInt(I[4], 10);
           x.push({
             characterName: I[1],
             statusName: I[2],
-            oldValue: R,
+            oldValue: B,
             newValue: M,
-            delta: M - R
+            delta: M - B
           });
         }
       } else m === "GM" && (A = "narrator");
       const { rolls: C } = this.extractDiceRolls(b);
       a.steps.push({
-        id: `step_0_${n}`,
+        id: `step_0_${o}`,
         channel: S,
         type: A,
         character: { name: m || "알 수 없음", color: k, avatarUrl: null },
@@ -6483,44 +6484,44 @@ class Tc {
         illustrations: [],
         hasIllustration: !1,
         effects: { sfx: null, bgm: null, background: null, backgroundOpacity: 0.3 }
-      }), m && m !== "system" && !o.characters[m] && (o.characters[m] = {
-        id: `char_${Object.keys(o.characters).length}`,
+      }), m && m !== "system" && !r.characters[m] && (r.characters[m] = {
+        id: `char_${Object.keys(r.characters).length}`,
         name: m,
         color: k,
         avatarUrl: null,
         emotions: { default: null }
-      }), n++;
-    }), a.steps.length > 0 && o.scenes.push(a), o;
+      }), o++;
+    }), a.steps.length > 0 && r.scenes.push(a), r;
   }
   static parse(e, t = null, l = "auto") {
     if (!e)
       throw new Error("로그 내용이 비어있습니다.");
-    let o;
+    let r;
     if (l === "ccfolia-export")
-      o = this.parseCcfoliaOfficialLog(e);
+      r = this.parseCcfoliaOfficialLog(e);
     else if (l === "roll20")
-      o = this.parseRoll20Log(e);
+      r = this.parseRoll20Log(e);
     else if (l === "cocofolia")
-      o = this.parseHTMLLog(e);
+      r = this.parseHTMLLog(e);
     else if (l === "cclog-custom")
-      o = this.parseHTMLLog(e);
+      r = this.parseHTMLLog(e);
     else if (l === "auto")
       if (e.trimStart().startsWith("<")) {
         const a = new DOMParser().parseFromString(e, "text/html");
-        a.querySelector(".message .by") || /var\s+msgdata\s*=/.test(e) ? o = this.parseRoll20Log(e) : a.querySelector(".ccl_tab, .cclog_wrap, .ccfolia_wrap, .ccl_player") ? o = this.parseHTMLLog(e) : (o = this.parseCcfoliaOfficialLog(e), o.scenes.length || (o = this.parseHTMLLog(e)));
+        a.querySelector(".message .by") || /var\s+msgdata\s*=/.test(e) ? r = this.parseRoll20Log(e) : a.querySelector(".ccl_tab, .cclog_wrap, .ccfolia_wrap, .ccl_player") ? r = this.parseHTMLLog(e) : (r = this.parseCcfoliaOfficialLog(e), r.scenes.length || (r = this.parseHTMLLog(e)));
       } else if (e.trim().startsWith("{") || e.trim().startsWith("["))
         try {
-          o = JSON.parse(e);
+          r = JSON.parse(e);
         } catch (a) {
           throw new Error("JSON 파싱 실패: " + a.message);
         }
       else
-        o = this.parseTextLog(e);
-    if (o.fileCode = this.generateFileCode(e), t) {
+        r = this.parseTextLog(e);
+    if (r.fileCode = this.generateFileCode(e), t) {
       const a = t.replace(/\.(txt|log|json|html)$/i, "");
-      o.title = a || o.title, o.fileName = t;
+      r.title = a || r.title, r.fileName = t;
     }
-    return o;
+    return r;
   }
   /**
    * 파일 내용 기반 해시 코드 생성
@@ -6530,17 +6531,17 @@ class Tc {
   static generateFileCode(e) {
     let t = 0;
     for (let l = 0; l < e.length; l++) {
-      const o = e.charCodeAt(l);
-      t = (t << 5) - t + o, t = t & t;
+      const r = e.charCodeAt(l);
+      t = (t << 5) - t + r, t = t & t;
     }
     return "file_" + Math.abs(t).toString(36) + "_" + e.length;
   }
 }
-function Cc(s) {
-  s.component("AppIcon", _e), s.component("VNLogEmbedPlayer", xc);
+function Ac(s) {
+  s.component("AppIcon", _e), s.component("VNLogEmbedPlayer", kc);
 }
 export {
-  Tc as LogParserService,
-  xc as VNLogEmbedPlayer,
-  Cc as install
+  Cc as LogParserService,
+  kc as VNLogEmbedPlayer,
+  Ac as install
 };
