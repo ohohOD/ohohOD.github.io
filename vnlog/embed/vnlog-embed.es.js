@@ -2747,8 +2747,8 @@ const Ur = {
   },
   computed: {
     speakingCharacterId() {
-      var s;
-      return !this.currentStep || this.currentStep.type === "system" || this.currentStep.type === "narrator" ? null : ((s = this.currentStep.character) == null ? void 0 : s.id) || null;
+      var s, e;
+      return !this.currentStep || this.currentStep.type === "system" || this.currentStep.type === "narrator" ? null : ((s = this.currentStep.character) == null ? void 0 : s.id) || ((e = this.currentStep.character) == null ? void 0 : e.name) || null;
     },
     currentCharacter() {
       return this.currentStep ? this.getCurrentCharacter() : null;
@@ -2824,7 +2824,7 @@ function Wr(s, e, t, i, o, r) {
     ])
   ]);
 }
-const Zr = /* @__PURE__ */ de(Ur, [["render", Wr], ["__scopeId", "data-v-c631365e"]]), Yr = {
+const Zr = /* @__PURE__ */ de(Ur, [["render", Wr], ["__scopeId", "data-v-bdb45f23"]]), Yr = {
   components: { AppIcon: ve },
   name: "StatusChange",
   props: {
