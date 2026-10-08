@@ -1,4 +1,4 @@
-import{J as N}from"./AppSelect-ClyW_g6S.js";const O=`
+import{J as N}from"./AppSelect-CbnM0MTa.js";const O=`
 .player-view, .embed-player-view { background-image: none !important; }
 .player-stage {
   background-color: #050505;
