@@ -4864,7 +4864,7 @@ function bc(s, e, t, i, r, a) {
     })
   ], 64);
 }
-const vc = /* @__PURE__ */ pe(rc, [["render", bc], ["__scopeId", "data-v-f79cf6e4"]]), _c = {
+const vc = /* @__PURE__ */ pe(rc, [["render", bc], ["__scopeId", "data-v-74f72dab"]]), _c = {
   name: "VNLogEmbedPlayer",
   components: {
     AppIcon: ve,
